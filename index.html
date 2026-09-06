@@ -48,7 +48,7 @@ button,input{font:inherit}
 .skill-label{display:inline-flex;align-items:center;gap:6px;position:relative;outline:none;cursor:help;line-height:1.3}.skill-label .info{width:16px;height:16px;border:1px solid #48556b;border-radius:50%;display:inline-grid;place-items:center;color:var(--blue);font-size:10px;flex:0 0 auto}
 .skill-label::after{content:attr(data-tip);position:absolute;z-index:30;left:0;bottom:calc(100% + 10px);width:min(360px,80vw);padding:10px 12px;border:1px solid #46536a;border-radius:10px;background:#0b1017;color:#eef2f7;box-shadow:0 12px 30px rgba(0,0,0,.42);font-size:12px;font-weight:500;line-height:1.45;opacity:0;visibility:hidden;transform:translateY(4px);transition:.12s;pointer-events:none;white-space:normal}.skill-label:hover::after,.skill-label:focus::after{opacity:1;visibility:visible;transform:translateY(0)}
 .attack{display:grid;grid-template-columns:1.35fr .55fr 1.1fr 1fr;gap:9px;padding:9px 0;border-bottom:1px solid var(--line);align-items:center}.attack:last-child{border-bottom:0}.attack small{color:var(--muted)}
-.spell{display:grid;grid-template-columns:170px 95px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);align-items:start}.spell:last-child{border-bottom:0}.spell .desc{font-size:13px;color:#d4dae5;line-height:1.45}.spell .flavor{display:block;color:var(--blue);font-size:11px;margin-top:3px}
+.spell{display:grid;grid-template-columns:95px 180px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);align-items:start}.spell:last-child{border-bottom:0}.spell .desc{font-size:13px;color:#d4dae5;line-height:1.45}.spell .flavor{display:block;color:var(--blue);font-size:11px;margin-top:3px}
 .resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.resource{border:1px solid var(--line);background:var(--panel2);border-radius:13px;padding:12px}.resource-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.resource h4{font-size:13px;margin:0}.resource .recharge{font-size:10px;color:var(--muted);white-space:nowrap}.resource p{font-size:12px;color:#cfd6e2;line-height:1.45;margin:8px 0 0}.counter{display:flex;align-items:center;gap:6px;margin-top:10px}.counter button{width:28px;height:28px;border:1px solid var(--line);background:#1b2230;color:white;border-radius:8px;cursor:pointer}.counter .value{min-width:60px;text-align:center;font-weight:850;color:var(--blue)}
 .slot-grid{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px}.slot{border:1px solid var(--line);background:var(--panel2);border-radius:12px;padding:10px;min-width:145px}.slot strong{display:block}.slot small{color:var(--muted)}
 .note{border:1px solid rgba(85,167,255,.28);background:rgba(85,167,255,.08);border-radius:12px;padding:11px 12px;color:#dfebfa;font-size:12px;line-height:1.45}
@@ -151,7 +151,7 @@ function spellSlots(c){
 }
 function spells(c){
  if(!c.spellsDetailed?.length) return `<div class="note">Brak zaklęć lub mocy zapisanych jako zaklęcia.</div>`;
- return c.spellsDetailed.map(s=>`<div class="spell"><strong>${s.name}${s.flavorName?`<span class="flavor">Reskin: ${s.flavorName}</span>`:""}</strong><div><span class="tag level">${s.levelLabel}</span></div><div class="desc">${s.description}</div></div>`).join("");
+ return c.spellsDetailed.map(s=>`<div class="spell"><div><span class="tag level">${s.levelLabel}</span></div><strong>${s.name}${s.flavorName?`<span class="flavor">Reskin: ${s.flavorName}</span>`:""}</strong><div class="desc">${s.description}</div></div>`).join("");
 }
 function safeId(s){return "c_"+btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g,"")}
 function getCounter(key,max){const v=localStorage.getItem("marvel:"+key);return v===null?max:Math.max(0,Math.min(max,Number(v)))}
@@ -189,7 +189,7 @@ function render(id){
   card("Featy",featList(c))+
   card("Marvelowe moce i przedmioty",c.marvel?.length?c.marvel.map(x=>`<div class="feature"><h4>${x[0]} <span class="tag">homebrew</span></h4><p>${x[1]}</p></div>`).join(""):`<div class="note">Brak dodatkowych cech homebrew.</div>`)+
   card("Ataki",attacks(c),true)+
-  card("Zaklęcia i moce zapisane jako zaklęcia",spells(c),true)+
+  card("Zaklęcia i moce zapisane jako zaklęcia — poziom przed nazwą",spells(c),true)+
   card("Biegłości i informacje",rows(profRows(c)),true);
  location.hash=c.id;
 }

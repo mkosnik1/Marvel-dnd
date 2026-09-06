@@ -17,3 +17,7 @@ Wersja zawiera:
 Jeśli zmieniasz dane ręcznie:
 - index.html czyta characters.js.
 - characters.json jest wygodną kopią danych. Jeśli chcesz, możesz później generować characters.js z JSON-a.
+
+Aktualizacja v2:
+- Poziom zaklęcia jest wyświetlany przed nazwą każdego czaru.
+- Iron Man: Historia / Wiedza o świecie zamiast Historia / Inżynieria.
