@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marvel D&D 5e – Karty bohaterów</title>
+<style>
+:root{
+  --bg:#0c0f14; --panel:#171b23; --panel2:#11151c; --line:#2a3240;
+  --text:#eef2f7; --muted:#9da8b8; --blue:#55a7ff; --red:#ef4b59;
+  --gold:#f0c35c; --green:#7bd889; --purple:#b792ff; --shadow:0 12px 32px rgba(0,0,0,.28)
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#090b0f,#111722 72%,#0c0f14);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,input{font:inherit}
+.app{min-height:100vh;display:grid;grid-template-columns:330px minmax(0,1fr)}
+.sidebar{position:sticky;top:0;height:100vh;overflow:auto;border-right:1px solid var(--line);padding:22px;background:rgba(12,15,20,.96);backdrop-filter:blur(12px)}
+.brand{display:flex;gap:12px;align-items:center;margin-bottom:18px}
+.logo{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-weight:950;background:linear-gradient(135deg,var(--red),#ff8b71);box-shadow:var(--shadow)}
+.brand h1{font-size:18px;margin:0}.brand small{display:block;color:var(--muted);margin-top:3px}
+.search{width:100%;padding:11px 12px;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:12px;outline:none}
+.search:focus{border-color:var(--blue)}
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:11px 0 16px}
+.filter{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:6px 10px;cursor:pointer;font-size:12px}
+.filter.active{color:white;border-color:var(--blue);background:#1a2635}
+.category-hint{min-height:34px;margin:-7px 0 14px;color:var(--muted);font-size:11px;line-height:1.4}
+.char-list{display:flex;flex-direction:column;gap:8px}
+.char-btn{width:100%;text-align:left;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:13px;padding:12px 13px;cursor:pointer;transition:.15s}
+.char-btn:hover{transform:translateY(-1px);border-color:#46536b}.char-btn.active{border-color:var(--blue);background:linear-gradient(180deg,#202a39,#19212d)}
+.char-name{font-weight:800;display:block}.char-meta{display:block;color:var(--muted);font-size:11px;margin-top:3px;line-height:1.35}
+.main{padding:28px 34px 56px;min-width:0}
+.hero{background:radial-gradient(circle at top right,rgba(85,167,255,.14),transparent 34%),var(--panel);border:1px solid var(--line);border-radius:24px;padding:27px;box-shadow:var(--shadow)}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:850;color:var(--blue)}
+.hero h2{font-size:36px;line-height:1.05;margin:7px 0 4px}.real{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.chip{background:#111720;border:1px solid var(--line);border-radius:999px;padding:6px 9px;color:#d9e0ea;font-size:12px}
+.stats{display:grid;grid-template-columns:repeat(6,minmax(85px,1fr));gap:9px;margin-top:21px}
+.stat{border:1px solid var(--line);background:var(--panel2);border-radius:13px;padding:11px;text-align:center}.stat .lab{color:var(--muted);font-size:10px;letter-spacing:.09em}.stat .score{font-weight:900;font-size:24px}.stat .mod{color:var(--blue);font-size:12px}
+.quick{display:grid;grid-template-columns:repeat(6,minmax(90px,1fr));gap:9px;margin-top:10px}.q{border:1px solid var(--line);background:var(--panel2);border-radius:12px;padding:10px 11px}.q span{display:block;color:var(--muted);font-size:10px}.q strong{font-size:17px}
+.toolbar{display:flex;justify-content:flex-end;gap:8px;margin:12px 0 18px}.toolbar button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:10px;padding:8px 11px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.card{border:1px solid var(--line);background:var(--panel);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}.card.full{grid-column:1/-1}
+.card-head{display:flex;justify-content:space-between;align-items:center;padding:15px 17px;border-bottom:1px solid var(--line)}.card-head h3{margin:0;font-size:15px}.card-body{padding:15px 17px}
+.rows{display:grid}.row{display:grid;grid-template-columns:minmax(130px,40%) 1fr;gap:12px;padding:8px 0;border-bottom:1px dashed #303747}.row:last-child{border-bottom:0}.k{color:var(--muted)}.v{font-weight:700}
+.feature{border:1px solid var(--line);background:var(--panel2);border-radius:13px;padding:12px 13px;margin-bottom:9px}.feature:last-child{margin-bottom:0}.feature h4{margin:0 0 5px;font-size:13px}.feature p{margin:0;color:#d4dae5;font-size:13px;line-height:1.5}
+.rules-name{display:block;color:var(--muted);font-size:10px;margin-top:3px;font-weight:500}
+.tag{display:inline-block;margin-left:6px;border-radius:999px;padding:2px 6px;font-size:9px;letter-spacing:.08em;text-transform:uppercase;background:var(--gold);color:#18130a;vertical-align:2px}.tag.prof{background:var(--green)}.tag.exp{background:var(--gold)}.tag.level{background:var(--purple);color:#140b24}
+.skill-help{margin-bottom:12px;padding:10px 12px;border:1px solid rgba(85,167,255,.28);background:rgba(85,167,255,.07);border-radius:12px;color:#cfd9e8;font-size:12px;line-height:1.45}
+.skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px}.skill-header,.skill-row{display:grid;grid-template-columns:minmax(210px,1.7fr) 90px 58px 94px;gap:8px;align-items:center}.skill-header{padding:7px 0 9px;border-bottom:1px solid var(--line);color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:800}.skill-row{padding:8px 0;border-bottom:1px dashed #303747}.skill-row .ability{color:var(--muted);font-size:11px}.skill-row .bonus{font-weight:850}.skill-row .status{font-size:10px;color:var(--muted)}
+.skill-label{display:inline-flex;align-items:center;gap:6px;position:relative;outline:none;cursor:help;line-height:1.3}.skill-label .info{width:16px;height:16px;border:1px solid #48556b;border-radius:50%;display:inline-grid;place-items:center;color:var(--blue);font-size:10px;flex:0 0 auto}
+.skill-label::after{content:attr(data-tip);position:absolute;z-index:30;left:0;bottom:calc(100% + 10px);width:min(360px,80vw);padding:10px 12px;border:1px solid #46536a;border-radius:10px;background:#0b1017;color:#eef2f7;box-shadow:0 12px 30px rgba(0,0,0,.42);font-size:12px;font-weight:500;line-height:1.45;opacity:0;visibility:hidden;transform:translateY(4px);transition:.12s;pointer-events:none;white-space:normal}.skill-label:hover::after,.skill-label:focus::after{opacity:1;visibility:visible;transform:translateY(0)}
+.attack{display:grid;grid-template-columns:1.35fr .55fr 1.1fr 1fr;gap:9px;padding:9px 0;border-bottom:1px solid var(--line);align-items:center}.attack:last-child{border-bottom:0}.attack small{color:var(--muted)}
+.spell{display:grid;grid-template-columns:170px 95px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);align-items:start}.spell:last-child{border-bottom:0}.spell .desc{font-size:13px;color:#d4dae5;line-height:1.45}.spell .flavor{display:block;color:var(--blue);font-size:11px;margin-top:3px}
+.resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.resource{border:1px solid var(--line);background:var(--panel2);border-radius:13px;padding:12px}.resource-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.resource h4{font-size:13px;margin:0}.resource .recharge{font-size:10px;color:var(--muted);white-space:nowrap}.resource p{font-size:12px;color:#cfd6e2;line-height:1.45;margin:8px 0 0}.counter{display:flex;align-items:center;gap:6px;margin-top:10px}.counter button{width:28px;height:28px;border:1px solid var(--line);background:#1b2230;color:white;border-radius:8px;cursor:pointer}.counter .value{min-width:60px;text-align:center;font-weight:850;color:var(--blue)}
+.slot-grid{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px}.slot{border:1px solid var(--line);background:var(--panel2);border-radius:12px;padding:10px;min-width:145px}.slot strong{display:block}.slot small{color:var(--muted)}
+.note{border:1px solid rgba(85,167,255,.28);background:rgba(85,167,255,.08);border-radius:12px;padding:11px 12px;color:#dfebfa;font-size:12px;line-height:1.45}
+.footer{text-align:center;color:var(--muted);font-size:11px;margin-top:28px}
+@media(max-width:1050px){.app{grid-template-columns:1fr}.sidebar{position:relative;height:auto;border-right:0;border-bottom:1px solid var(--line)}.char-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.stats{grid-template-columns:repeat(3,1fr)}.quick{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:720px){.main{padding:17px}.grid{grid-template-columns:1fr}.card.full{grid-column:auto}.char-list{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.quick{grid-template-columns:repeat(2,1fr)}.skill-grid{grid-template-columns:1fr}.skill-header{display:none}.skill-header,.skill-row{grid-template-columns:minmax(160px,1.5fr) 78px 52px 82px}.row,.spell{grid-template-columns:1fr}.attack{grid-template-columns:1fr 1fr}.resource-grid{grid-template-columns:1fr}.hero h2{font-size:29px}}
+@media print{body{background:white;color:black}.sidebar,.toolbar,.counter button{display:none!important}.app{display:block}.main{padding:0}.hero,.card{box-shadow:none;background:white;border-color:#bbb;break-inside:avoid}.feature,.stat,.q,.resource,.slot{background:white}.k,.real,.rules-name,.skill-row .ability,.skill-row .status,.attack small,.footer{color:#555!important}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="logo">M</div><div><h1>Marvel D&D 5e</h1><small>Modularne karty, poziom 5</small></div></div>
+  <input id="search" class="search" placeholder="Szukaj postaci, drużyny, klasy...">
+  <div class="filters" id="filters"></div>
+  <div id="categoryHint" class="category-hint"></div>
+  <div class="char-list" id="charList"></div>
+</aside>
+<main class="main">
+  <section class="hero" id="hero"></section>
+  <div class="toolbar"><button id="resetBtn">Reset zasobów</button><button onclick="window.print()">Drukuj kartę</button></div>
+  <section class="grid" id="content"></section>
+  <div class="footer">Dane postaci są oddzielone od HTML w pliku characters.js. characters.json jest czytelnym eksportem tych samych danych.</div>
+</main>
+</div>
+<script src="characters.js"></script>
+<script>
+const DB = window.MARVEL_DND_DB;
+const PB = 3;
+const ABILITIES=["STR","DEX","CON","INT","WIS","CHA"];
+let activeFilter="Wszyscy";
+let activeCharacterId="cap";
+
+function mod(score){return Math.floor((score-10)/2)}
+function fmt(n){return n>=0?`+${n}`:`${n}`}
+function hp(c){
+ const hd=DB.hitdie[c.cls], con=mod(c.stats.CON), avg=DB.fixedPerLevel[hd];
+ let value=hd+con+4*(avg+con);
+ if(c.feats.includes("Tough")) value+=10;
+ return value;
+}
+function initiative(c){
+ let n=mod(c.stats.DEX);
+ if(c.feats.includes("Alert")) n+=5;
+ if((c.raceRules||c.race)==="Harengon") n+=PB;
+ return n;
+}
+function skillBonus(c,skill){
+ const a=DB.skillAbility[skill];
+ let n=mod(c.stats[a]);
+ if(c.expertise.includes(skill)) n+=PB*2;
+ else if(c.skillProfs.includes(skill)) n+=PB;
+ return n;
+}
+function passive(c,skill){return 10+skillBonus(c,skill)}
+function saveBonus(c,a){return mod(c.stats[a])+(c.saveProfs.includes(a)?PB:0)}
+function escapeAttr(s){return String(s).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+function skillDisplayName(c,skill){
+ const pl=DB.skillPL[skill]||skill;
+ const alias=(c.skillAliases&&c.skillAliases[skill])||DB.skillAliasDefault[skill];
+ return alias?`${pl} / ${alias}`:pl;
+}
+function skillTooltip(c,skill){
+ const a=DB.skillAbility[skill], alias=(c.skillAliases&&c.skillAliases[skill])||DB.skillAliasDefault[skill];
+ return `${DB.skillPL[skill]} (${DB.abilityPL[a]}). ${DB.skillTooltips[skill]}${alias?` Współczesny reskin na tej karcie: „${alias}”.`:""} Reskin nie zmienia mechaniki testu.`;
+}
+function card(title,body,full=false){return `<section class="card ${full?"full":""}"><div class="card-head"><h3>${title}</h3></div><div class="card-body">${body}</div></section>`}
+function rows(items){return `<div class="rows">${items.map(([k,v])=>`<div class="row"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("")}</div>`}
+function features(items){
+ if(!items?.length) return `<div class="note">Brak danych.</div>`;
+ return items.map(x=>`<div class="feature"><h4>${x.name}<span class="rules-name">Mechanika D&D: ${x.rulesName}</span></h4><p>${x.description}</p></div>`).join("");
+}
+function featList(c){
+ if(!c.feats?.length) return `<div class="note">Brak featów.</div>`;
+ return c.feats.map(f=>`<div class="feature"><h4>${f}</h4><p>${DB.featDesc[f]||"Opis featu nie został dodany."}</p></div>`).join("");
+}
+function skillsTable(c){
+ const names=Object.keys(DB.skillAbility);
+ const header=`<div class="skill-header"><div>Umiejętność</div><div>Atrybut</div><div>Premia</div><div>Biegłość</div></div>`;
+ const body=names.map(s=>{
+   const exp=c.expertise.includes(s), prof=c.skillProfs.includes(s), a=DB.skillAbility[s];
+   return `<div class="skill-row">
+     <strong><span class="skill-label" tabindex="0" data-tip="${escapeAttr(skillTooltip(c,s))}">${skillDisplayName(c,s)} <span class="info">i</span></span></strong>
+     <div class="ability">${DB.abilityPL[a]}</div><div class="bonus">${fmt(skillBonus(c,s))}</div>
+     <div class="status">${exp?'<span class="tag exp">Ekspertyza</span>':prof?'<span class="tag prof">Biegłość</span>':'—'}</div>
+   </div>`;
+ }).join("");
+ return `<div class="skill-help">Nazwa po „/” jest reskinem pasującym do bohatera. Najedź na nazwę, żeby zobaczyć zastosowania i atrybut.</div><div class="skill-grid">${header}${body}</div>`;
+}
+function attacks(c){
+ if(!c.attacks?.length) return `<div class="note">Brak osobnych ataków.</div>`;
+ return c.attacks.map(a=>`<div class="attack"><strong>${a[0]}</strong><div>${a[1]}</div><div>${a[2]}</div><small>${a[3]}</small></div>`).join("");
+}
+function spellSlots(c){
+ if(!c.spellSlotsDetailed?.length) return `<div class="note">Brak klasowych spell slotów.</div>`;
+ return `<div class="slot-grid">${c.spellSlotsDetailed.map(s=>{
+   const key=`${c.id}:slot:${s.level}`, val=getCounter(key,s.max);
+   return `<div class="slot"><strong>${s.name}</strong><small>${s.recharge}</small><div class="counter"><button onclick="changeCounter('${key}',${s.max},-1)">−</button><span class="value" id="${safeId(key)}">${val} / ${s.max}</span><button onclick="changeCounter('${key}',${s.max},1)">+</button></div></div>`;
+ }).join("")}</div>`;
+}
+function spells(c){
+ if(!c.spellsDetailed?.length) return `<div class="note">Brak zaklęć lub mocy zapisanych jako zaklęcia.</div>`;
+ return c.spellsDetailed.map(s=>`<div class="spell"><strong>${s.name}${s.flavorName?`<span class="flavor">Reskin: ${s.flavorName}</span>`:""}</strong><div><span class="tag level">${s.levelLabel}</span></div><div class="desc">${s.description}</div></div>`).join("");
+}
+function safeId(s){return "c_"+btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g,"")}
+function getCounter(key,max){const v=localStorage.getItem("marvel:"+key);return v===null?max:Math.max(0,Math.min(max,Number(v)))}
+function changeCounter(key,max,delta){const v=getCounter(key,max), nv=Math.max(0,Math.min(max,v+delta));localStorage.setItem("marvel:"+key,nv);const el=document.getElementById(safeId(key));if(el)el.textContent=`${nv} / ${max}`}
+function resources(c){
+ if(!c.resources?.length) return `<div class="note">Brak osobnej puli zasobów do śledzenia.</div>`;
+ return `<div class="resource-grid">${c.resources.map((r,i)=>{
+   const key=`${c.id}:resource:${i}`;
+   const counter=r.max!==null&&r.max!==undefined?`<div class="counter"><button onclick="changeCounter('${key}',${r.max},-1)">−</button><span class="value" id="${safeId(key)}">${getCounter(key,r.max)} / ${r.max}${r.unit?` ${r.unit}`:""}</span><button onclick="changeCounter('${key}',${r.max},1)">+</button></div>`:"";
+   return `<div class="resource"><div class="resource-top"><h4>${r.name}</h4><span class="recharge">${r.recharge||""}</span></div><p>${r.description||""}</p>${counter}</div>`;
+ }).join("")}</div>`;
+}
+function profRows(c){
+ const cp=DB.classProfs[c.cls]||["—","—"];
+ return [["Pochodzenie Marvela",c.race],["Mechanika pochodzenia",c.raceRules],["Klasa",`${c.cls} 5`],["Podklasa",c.subclass],["Background",c.background],["Drużyna",c.team||"—"],["Armor",cp[0]],["Weapons",cp[1]],["Tools",c.tools||DB.bgTools[c.background]||"—"],["Languages",c.languages||"English"]];
+}
+function render(id){
+ const c=DB.characters.find(x=>x.id===id)||DB.characters[0];activeCharacterId=c.id;
+ document.querySelectorAll(".char-btn").forEach(b=>b.classList.toggle("active",b.dataset.id===c.id));
+ document.getElementById("hero").innerHTML=`
+  <div class="eyebrow">${c.group} • poziom 5 • 6,500 XP</div><h2>${c.name}</h2><div class="real">${c.realName}</div>
+  <div class="chips"><span class="chip">Pochodzenie: ${c.race}</span><span class="chip">${c.cls} 5</span><span class="chip">${c.subclass}</span>${c.team?`<span class="chip">${c.team}</span>`:""}<span class="chip">${c.alignment}</span></div>
+  <div class="stats">${ABILITIES.map(a=>`<div class="stat"><div class="lab">${a}</div><div class="score">${c.stats[a]}</div><div class="mod">${fmt(mod(c.stats[a]))}</div></div>`).join("")}</div>
+  <div class="quick"><div class="q"><span>AC</span><strong>${c.ac}</strong></div><div class="q"><span>HP</span><strong>${hp(c)}</strong></div><div class="q"><span>Speed</span><strong>${c.speed} ft</strong></div><div class="q"><span>Initiative</span><strong>${fmt(initiative(c))}</strong></div><div class="q"><span>Proficiency</span><strong>+3</strong></div><div class="q"><span>Hit Dice</span><strong>5d${DB.hitdie[c.cls]}</strong></div></div>`;
+ const saves=ABILITIES.map(a=>[a,`${fmt(saveBonus(c,a))}${c.saveProfs.includes(a)?" • biegłość":""}`]);
+ document.getElementById("content").innerHTML=
+  card("Saving Throws",rows(saves))+
+  card("Wartości pasywne",rows([["Passive Perception",passive(c,"Perception")],["Passive Investigation",passive(c,"Investigation")],["Passive Insight",passive(c,"Insight")]]))+
+  card("Umiejętności",skillsTable(c),true)+
+  card("Zasoby",resources(c),true)+
+  card("Spell slots",spellSlots(c),true)+
+  card("Pochodzenie Marvela — pełny reskin",features(c.originFeatures),true)+
+  card("Cechy klasowe — reskin",features(c.classFeaturesDetailed),true)+
+  card("Cechy podklasy — reskin",features(c.subclassFeaturesDetailed),true)+
+  card("Featy",featList(c))+
+  card("Marvelowe moce i przedmioty",c.marvel?.length?c.marvel.map(x=>`<div class="feature"><h4>${x[0]} <span class="tag">homebrew</span></h4><p>${x[1]}</p></div>`).join(""):`<div class="note">Brak dodatkowych cech homebrew.</div>`)+
+  card("Ataki",attacks(c),true)+
+  card("Zaklęcia i moce zapisane jako zaklęcia",spells(c),true)+
+  card("Biegłości i informacje",rows(profRows(c)),true);
+ location.hash=c.id;
+}
+function filters(){
+ const groups=["Wszyscy","Mutanci","Małe ziemniaczki","Duże ziemniaczki"];
+ const descriptions={"Wszyscy":"Wszystkie dostępne postacie.","Mutanci":"Mutanci i postacie ze środowiska X-Men / X-Force.","Małe ziemniaczki":"Bohaterowie uliczni i postacie działające w mniejszej skali.","Duże ziemniaczki":"Avengers, magia, kosmos i cięższa artyleria."};
+ const el=document.getElementById("filters");
+ el.innerHTML=groups.map(g=>`<button class="filter ${g===activeFilter?"active":""}" data-filter="${g}">${g}</button>`).join("");
+ document.getElementById("categoryHint").textContent=descriptions[activeFilter];
+ el.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{activeFilter=b.dataset.filter;filters();buildList(document.getElementById("search").value)});
+}
+function buildList(q=""){
+ q=q.trim().toLowerCase();
+ const visible=DB.characters.filter(c=>(activeFilter==="Wszyscy"||c.group===activeFilter)&&(`${c.name} ${c.realName} ${c.race} ${c.raceRules} ${c.cls} ${c.subclass} ${c.team||""}`.toLowerCase().includes(q)));
+ const el=document.getElementById("charList");
+ el.innerHTML=visible.map(c=>`<button class="char-btn" data-id="${c.id}"><span class="char-name">${c.name}</span><span class="char-meta">${c.realName}<br>${c.race} • ${c.cls} • ${c.subclass}${c.team?`<br>${c.team}`:""}</span></button>`).join("");
+ el.querySelectorAll(".char-btn").forEach(b=>b.onclick=()=>render(b.dataset.id));
+}
+document.getElementById("search").addEventListener("input",e=>buildList(e.target.value));
+document.getElementById("resetBtn").addEventListener("click",()=>{
+ Object.keys(localStorage).filter(k=>k.startsWith("marvel:"+activeCharacterId+":")).forEach(k=>localStorage.removeItem(k));
+ render(activeCharacterId);
+});
+filters();buildList();render(location.hash.replace("#","")||"cap");
+</script>
+</body>
+</html>
