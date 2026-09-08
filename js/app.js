@@ -3,6 +3,7 @@ import "./mechanics-pl-final.js";
 import { loadRules, loadCharacterRegistry, loadAllCharacters } from "./data-loader.js";
 import { resetCharacterCounters } from "./state.js";
 import { renderCharacter } from "./render.js";
+import { cleanupRenderedCard } from "./post-render-cleanup.js";
 
 const heroEl = document.getElementById("hero");
 const contentEl = document.getElementById("content");
@@ -50,6 +51,7 @@ function selectCharacter(id){
   activeCharacterId = character.id;
   renderList();
   renderCharacter(character, rules, heroEl, contentEl);
+  cleanupRenderedCard(heroEl, contentEl);
   location.hash = character.id;
 }
 
