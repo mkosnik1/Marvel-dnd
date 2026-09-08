@@ -4,7 +4,7 @@
   "realName": "Illyana Rasputina",
   "race": "Mutantka teleportacji i magii",
   "cls": "Warlock",
-  "subclass": "Archfey",
+  "subclass": "Hexblade",
   "background": "Haunted One",
   "alignment": "Chaotic Good",
   "stats": {
@@ -15,7 +15,7 @@
     "WIS": 8,
     "CHA": 16
   },
-  "ac": 14,
+  "ac": 17,
   "speed": 30,
   "saveProfs": [
     "WIS",
@@ -25,7 +25,8 @@
     "Arcana",
     "Intimidation",
     "Religion",
-    "Stealth"
+    "Stealth",
+    "Perception"
   ],
   "expertise": [],
   "feats": [
@@ -33,20 +34,38 @@
   ],
   "marvel": [
     [
-      "Stepping Disc",
-      "Blessing of the Raven Queen i Misty Step są portalami teleportacyjnymi. Raz na Long Rest możesz zabrać ze sobą jednego willing sojusznika stojącego 5 ft od ciebie."
+      "Dyski teleportacyjne",
+      "Teleportacja Magik zawsze prowadzi przez Limbo. Blessing of the Raven Queen daje 3 teleportacje po 30 ft na Long Rest i po każdej zapewnia resistance na wszystkie obrażenia do początku następnej tury. Misty Step daje kolejny teleport 30 ft, a Thunder Step pozwala przeskoczyć 90 ft i zabrać jednego willing sojusznika stojącego 5 ft od ciebie."
     ],
     [
-      "Soulsword",
-      "Pact weapon w formie longsword. Ataki mogą zadawać force zamiast slashing i liczą się jako magiczne."
+      "Soulsword / Miecz Duszy",
+      "Pact Weapon w formie longsword. Dzięki Hex Warrior używasz CHA do attack i damage rolls. Improved Pact Weapon daje +1 do attack i damage, a Thirsting Blade pozwala atakować dwa razy podczas Attack Action. Ataki Soulsword zadają force zamiast slashing i liczą się jako magiczne. Eldritch Smite pozwala po trafieniu zużyć Pact Magic slot, aby zadać dodatkowe 4d8 force i przewrócić cel Huge lub mniejszy."
+    ],
+    [
+      "Rozcinanie magii",
+      "Counterspell i Dispel Magic są fabularnie wykonywane cięciem Soulsword. Counterspell przecina powstające zaklęcie, a Dispel Magic rozrywa już działającą magię, klątwę lub barierę, jeśli dany efekt może zostać zakończony przez Dispel Magic. Mechanicznie działają jak standardowe zaklęcia D&D 5e."
+    ],
+    [
+      "Eldritch Armor / Pancerz Limbo",
+      "Mechanicznie używasz half plate, co przy DEX 14 daje AC 17. Fabularnie pancerz materializuje się na ciele Illyany. Armor of Agathys wzmacnia go dodatkowo: przy slocie 3. poziomu daje 15 Temporary HP i zadaje 15 cold damage przeciwnikowi, który trafi cię atakiem melee, dopóki te Temporary HP pozostają."
+    ],
+    [
+      "Darkchylde",
+      "Hexblade's Curse reprezentuje chwilowe przebudzenie demonicznej strony Illyany. Jako Bonus Action oznaczasz cel w 30 ft na 1 minutę. Zadajesz mu dodatkowe +3 damage, trafienia krytyczne uzyskujesz na 19–20, a gdy cel umrze, odzyskujesz 8 HP. W czasie działania klątwy pojawiają się demoniczne cechy Darkchylde."
     ]
   ],
   "attacks": [
     [
       "Soulsword",
-      "+6",
-      "1d8+3 force",
+      "+7",
+      "2 × 1d8+4 force",
       "melee"
+    ],
+    [
+      "Soulsword + Eldritch Smite",
+      "+7",
+      "1d8+4 + 4d8 force",
+      "po trafieniu, koszt 1 Pact Magic slot"
     ],
     [
       "Eldritch Blast",
@@ -55,10 +74,16 @@
       "120 ft"
     ],
     [
-      "Misty Step",
+      "Dysk teleportacyjny",
       "—",
       "teleport 30 ft",
       "Bonus Action"
+    ],
+    [
+      "Thunder Step / Wielki Dysk",
+      "—",
+      "teleport 90 ft + 1 sojusznik",
+      "Action, koszt 1 Pact Magic slot"
     ]
   ],
   "group": "Mutanci",
@@ -75,7 +100,8 @@
     "Arcana": "Magia Limbo",
     "Religion": "Demonologia",
     "Intimidation": "Aura Limbo",
-    "Investigation": "Portale"
+    "Investigation": "Portale",
+    "Perception": "Wyczuwanie zagrożenia"
   },
   "originFeatures": [
     {
@@ -86,17 +112,22 @@
     {
       "name": "Odporność na wyniszczającą energię",
       "rulesName": "Necrotic Resistance",
-      "description": "Otrzymujesz połowę necrotic damage."
+      "description": "Masz resistance na necrotic damage."
     },
     {
-      "name": "Teleportacja bojowa",
+      "name": "Dysk teleportacyjny",
       "rulesName": "Blessing of the Raven Queen",
-      "description": "Jako Bonus Action teleportujesz się do 30 ft na wolne pole, które widzisz. Masz 3 użycia na Long Rest. Po teleportacji do początku następnej tury masz resistance na wszystkie obrażenia."
+      "description": "Jako Bonus Action teleportujesz się do 30 ft na wolne pole, które widzisz. Masz 3 użycia na Long Rest. Od 3. poziomu po teleportacji do początku następnej tury masz resistance na wszystkie obrażenia. Fabularnie znikasz w Limbo i natychmiast wychodzisz z kolejnego dysku."
+    },
+    {
+      "name": "Odporność umysłu",
+      "rulesName": "Fey Ancestry",
+      "description": "Masz advantage na saving throws przeciwko Charmed, a magia nie może cię uśpić."
     },
     {
       "name": "Wyostrzone zmysły",
       "rulesName": "Keen Senses",
-      "description": "Masz biegłość w Perception. Premia jest już uwzględniona na karcie."
+      "description": "Masz proficiency w Perception."
     },
     {
       "name": "Kontrolowany odpoczynek",
@@ -106,56 +137,61 @@
   ],
   "classFeaturesDetailed": [
     {
-      "name": "Magia źródła",
+      "name": "Magia Limbo",
       "rulesName": "Pact Magic",
-      "description": "Używasz CHA. Spell Save DC 14, Spell Attack +6. Masz 2 spell slots 3. poziomu i oba wracają po Short lub Long Rest."
+      "description": "Używasz CHA. Spell Save DC 14, Spell Attack +6. Masz 2 spell slots 3. poziomu i oba wracają po Short lub Long Rest. Wszystkie Warlock Spells rzucane ze slotów są automatycznie rzucane jako zaklęcia 3. poziomu."
     },
     {
-      "name": "Źródło / patron mocy",
-      "rulesName": "Otherworldly Patron",
-      "description": "Wybrany patron: Archfey."
+      "name": "Źródło mocy: Limbo i Soulsword",
+      "rulesName": "Otherworldly Patron: Hexblade",
+      "description": "Mechanicznie używasz patrona Hexblade. Fabularnie nie służysz obcej istocie: źródłem tej mechaniki jest twoje związanie z Limbo, demoniczna magia oraz Soulsword utworzony z własnej duszy."
     },
     {
       "name": "Stałe ulepszenia mocy",
       "rulesName": "Eldritch Invocations",
-      "description": "Masz dokładnie 3 invocations: Agonizing Blast, Devil's Sight, Improved Pact Weapon. Nie wydają spell slotów i są dostępne stale."
+      "description": "Masz dokładnie 3 invocations: Improved Pact Weapon, Thirsting Blade i Eldritch Smite. Nie są osobnymi spellami."
     },
     {
-      "name": "Agonizing Blast",
-      "rulesName": "Eldritch Invocation: Agonizing Blast",
-      "description": "Gdy promień Eldritch Blast trafia, dodajesz CHA modifier do jego obrażeń. Na 5. poziomie Eldritch Blast tworzy dwa osobne promienie i bonus dodajesz do każdego trafionego promienia."
-    },
-    {
-      "name": "Devil's Sight",
-      "rulesName": "Eldritch Invocation: Devil's Sight",
-      "description": "Widzisz normalnie w zwykłej i magicznej ciemności do 120 ft."
-    },
-    {
-      "name": "Improved Pact Weapon",
+      "name": "Wzmocniony Miecz Duszy",
       "rulesName": "Eldritch Invocation: Improved Pact Weapon",
-      "description": "Twoja Pact Weapon daje +1 do attack i damage rolls, jeśli nie ma już własnego magicznego bonusu. Może służyć jako spellcasting focus. Możesz tworzyć także shortbow, longbow, light crossbow albo heavy crossbow."
+      "description": "Soulsword daje +1 do attack i damage rolls, jeśli nie ma już własnego magicznego bonusu, i może służyć jako spellcasting focus."
+    },
+    {
+      "name": "Mistrzyni Miecza Duszy",
+      "rulesName": "Eldritch Invocation: Thirsting Blade",
+      "description": "Gdy wykonujesz Attack Action swoim Pact Weapon, możesz zaatakować nim dwa razy zamiast raz."
+    },
+    {
+      "name": "Uderzenie w duszę",
+      "rulesName": "Eldritch Invocation: Eldritch Smite",
+      "description": "Raz na turę, gdy trafisz Pact Weapon, możesz zużyć Warlock spell slot. Przy slocie 3. poziomu zadajesz dodatkowe 4d8 force damage i możesz przewrócić cel, jeśli jest Huge lub mniejszy."
     },
     {
       "name": "Soulsword / broń paktu",
-      "rulesName": "Pact Boon",
-      "description": "Jako Action tworzysz w wolnej ręce Pact Weapon albo wiążesz z paktem posiadaną magiczną broń. Masz z nią proficiency i liczy się jako magiczna. Jeśli pozostaje ponad 5 ft od ciebie przez 1 minutę, znika; możesz przywołać ją ponownie jako Action."
+      "rulesName": "Pact of the Blade",
+      "description": "Jako Action tworzysz w wolnej ręce Pact Weapon albo wiążesz z paktem posiadaną magiczną broń. Masz z nią proficiency i liczy się jako magiczna. Dla Magik zawsze przyjmuje postać Soulsword."
     },
     {
       "name": "Rozwój na 4. poziomie: Fey Touched",
       "rulesName": "Ability Score Improvement",
-      "description": "Na 4. poziomie masz feat Fey Touched. Wybrany wzrost cechy: +1 CHA. Znasz Misty Step oraz Dissonant Whispers. Każde z tych zaklęć możesz rzucić raz na Long Rest bez zużywania spell slota, a później także swoimi normalnymi slotami."
+      "description": "Na 4. poziomie masz feat Fey Touched. Wybrany wzrost cechy: +1 CHA. Znasz Misty Step oraz Detect Magic. Każde z tych zaklęć możesz rzucić raz na Long Rest bez zużywania spell slota, a później także swoimi normalnymi slotami."
     }
   ],
   "subclassFeaturesDetailed": [
     {
-      "name": "Rozszerzony repertuar",
-      "rulesName": "Expanded Spell List",
-      "description": "Do listy Warlocka dodajesz zaklęcia patrona Archfey, dzięki czemu możesz wybierać je jako Warlock Spells przy zdobywaniu poziomów."
+      "name": "Przebudzenie Darkchylde",
+      "rulesName": "Hexblade's Curse",
+      "description": "Bonus Action. Wybierasz stworzenie, które widzisz w 30 ft, na 1 minutę. Dodajesz +3 do damage rolls przeciwko niemu, twoje attack rolls przeciwko niemu są critical hit przy 19–20, a gdy umrze, odzyskujesz 8 HP. Efekt kończy się wcześniej, jeśli zginiesz. 1 użycie na Short lub Long Rest."
     },
     {
-      "name": "Aura wpływu",
-      "rulesName": "Fey Presence",
-      "description": "Action. Każde wybrane stworzenie w 10-ft cube wychodzącym od ciebie wykonuje WIS Save DC 14. Przy porażce jest Charmed albo Frightened — twój wybór — do końca twojej następnej tury. 1 użycie na Short lub Long Rest."
+      "name": "Więź z Soulsword",
+      "rulesName": "Hex Warrior",
+      "description": "Masz proficiency w medium armor, shields i martial weapons. Po Long Rest możesz związać się z jedną bronią bez właściwości two-handed i używać CHA zamiast STR lub DEX do attack i damage rolls. Ta korzyść automatycznie obejmuje każdą broń stworzoną przez Pact of the Blade, więc Soulsword używa CHA."
+    },
+    {
+      "name": "Rozszerzony repertuar Hexblade",
+      "rulesName": "Expanded Spell List",
+      "description": "Do listy zaklęć, które możesz wybierać jako Warlock Spells, dochodzą: Shield i Wrathful Smite na 1. poziomie, Blur i Branding Smite na 2. poziomie oraz Blink i Elemental Weapon na 3. poziomie."
     }
   ],
   "spellSlotsDetailed": [
@@ -169,77 +205,104 @@
   "spellsDetailed": [
     {
       "name": "Eldritch Blast",
-      "flavorName": null,
+      "flavorName": "Pocisk energii Limbo",
       "level": 0,
       "levelLabel": "Cantrip",
-      "description": "Na 5. poziomie wystrzeliwujesz dwa promienie, każdy 1d10 force."
+      "description": "Na 5. poziomie wystrzeliwujesz dwa osobne promienie. Dla każdego wykonujesz spell attack +6; trafienie zadaje 1d10 force damage. Zasięg 120 ft."
+    },
+    {
+      "name": "Mage Hand",
+      "flavorName": "Dłoń Limbo",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Tworzysz widmową dłoń w 30 ft. Może manipulować przedmiotami, otwierać niezamknięte drzwi i pojemniki oraz przenosić przedmiot do 10 lb."
+    },
+    {
+      "name": "Minor Illusion",
+      "flavorName": "Iluzja Limbo",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Tworzysz niewielki obraz albo dźwięk w 30 ft. Iluzja trwa do 1 minuty."
     },
     {
       "name": "Armor of Agathys",
-      "flavorName": null,
+      "flavorName": "Eldritch Armor / Pancerz Limbo",
       "level": 1,
       "levelLabel": "1. poziom",
-      "description": "Daje 15 Temporary HP przy slocie 3. poziomu i zadaje 15 cold napastnikowi melee, dopóki HP trwają."
+      "description": "Przy twoim slocie 3. poziomu dostajesz 15 Temporary HP. Dopóki je masz, stworzenie, które trafi cię atakiem melee, otrzymuje 15 cold damage."
     },
     {
       "name": "Hex",
-      "flavorName": null,
+      "flavorName": "Piętno Limbo",
       "level": 1,
       "levelLabel": "1. poziom",
-      "description": "Bonus Action. +1d6 necrotic przy trafieniach przeciwko wybranemu celowi. Concentration."
+      "description": "Bonus Action. Oznaczasz cel w 90 ft. Gdy trafisz go atakiem, zadajesz dodatkowe 1d6 necrotic damage. Wybierasz też jedną ability, a cel ma disadvantage na ability checks z nią związane. Concentration."
+    },
+    {
+      "name": "Protection from Evil and Good",
+      "flavorName": "Ochrona przed istotami Limbo",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Concentration. Chronione stworzenie jest trudniejsze do trafienia przez aberrations, celestials, elementals, fey, fiends i undead oraz jest chronione przed Charmed, Frightened i possession pochodzącymi od tych istot."
     },
     {
       "name": "Misty Step",
-      "flavorName": "Krótki portal",
+      "flavorName": "Krótki dysk teleportacyjny",
       "level": 2,
       "levelLabel": "2. poziom",
-      "description": "Bonus Action. Teleport do 30 ft."
+      "description": "Bonus Action. Teleportujesz się do 30 ft na wolne pole, które widzisz. Z Fey Touched możesz użyć go raz na Long Rest bez zużywania spell slota."
     },
     {
-      "name": "Phantasmal Force",
-      "flavorName": "Iluzja mentalna",
-      "level": 2,
-      "levelLabel": "2. poziom",
-      "description": "INT Save. Tworzysz wiarygodną iluzję w umyśle celu."
+      "name": "Detect Magic",
+      "flavorName": "Wyczucie magii",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Concentration do 10 minut. Wyczuwasz obecność magii w 30 ft i możesz poznać jej szkołę. Z Fey Touched możesz użyć go raz na Long Rest bez zużywania spell slota."
+    },
+    {
+      "name": "Thunder Step",
+      "flavorName": "Wielki dysk teleportacyjny",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Action. Teleportujesz się do 90 ft na wolne pole, które widzisz. Możesz zabrać jednego willing sojusznika twojego rozmiaru lub mniejszego stojącego 5 ft od ciebie. Stworzenia w 10 ft od miejsca, z którego znikasz, wykonują CON Save; przy porażce otrzymują 3d10 thunder damage, przy sukcesie połowę."
     },
     {
       "name": "Counterspell",
-      "flavorName": "Przerwanie zaklęcia",
+      "flavorName": "Przecięcie zaklęcia",
       "level": 3,
       "levelLabel": "3. poziom",
-      "description": "Reaction. Próbujesz przerwać zaklęcie przeciwnika."
+      "description": "Reaction, gdy widzisz stworzenie rzucające zaklęcie w 60 ft. Zaklęcie 3. poziomu lub niższego zostaje przerwane automatycznie. Fabularnie przecinasz jego strukturę Soulsword."
+    },
+    {
+      "name": "Dispel Magic",
+      "flavorName": "Rozcięcie magii",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Action. Wybierasz stworzenie, obiekt albo magiczny efekt w 120 ft. Każde działające na nim zaklęcie 3. poziomu lub niższego kończy się automatycznie. Fabularnie rozcinasz efekt Soulsword."
     }
   ],
   "resources": [
     {
-      "name": "Pact Magic / sloty źródła",
+      "name": "Pact Magic / magia Limbo",
       "max": 2,
       "recharge": "Short Rest",
-      "description": "2 sloty 3. poziomu.",
+      "description": "2 sloty 3. poziomu. Możesz zużyć je na zaklęcia albo Eldritch Smite.",
       "kind": "resource",
       "unit": "sloty"
     },
     {
-      "name": "Eldritch Invocations / stałe ulepszenia",
-      "max": 3,
-      "recharge": "",
-      "description": "Na 5. poziomie znasz 3 invocations.",
-      "kind": "info",
-      "unit": ""
-    },
-    {
-      "name": "Fey Presence / aura wpływu",
+      "name": "Hexblade's Curse / Darkchylde",
       "max": 1,
       "recharge": "Short/Long Rest",
-      "description": "Action. Charmed albo Frightened w 10-ft cube po nieudanym WIS Save.",
+      "description": "Bonus Action. +3 damage, critical 19–20 i leczenie po śmierci oznaczonego celu.",
       "kind": "resource",
       "unit": "użycia"
     },
     {
-      "name": "Teleportacja bojowa",
+      "name": "Dyski teleportacyjne",
       "max": 3,
       "recharge": "Long Rest",
-      "description": "Blessing of the Raven Queen: teleport 30 ft.",
+      "description": "Blessing of the Raven Queen: teleport 30 ft jako Bonus Action i resistance na wszystkie obrażenia do początku następnej tury.",
       "kind": "resource",
       "unit": "użycia"
     },
@@ -247,23 +310,15 @@
       "name": "Misty Step z Fey Touched",
       "max": 1,
       "recharge": "Long Rest",
-      "description": "Jedno darmowe użycie bez slotu.",
+      "description": "Jeden darmowy teleport 30 ft bez zużywania spell slota.",
       "kind": "resource",
       "unit": "użycia"
     },
     {
-      "name": "Zaklęcie 1. poziomu z Fey Touched",
+      "name": "Detect Magic z Fey Touched",
       "max": 1,
       "recharge": "Long Rest",
-      "description": "Jedno darmowe użycie bez slotu.",
-      "kind": "resource",
-      "unit": "użycia"
-    },
-    {
-      "name": "Stepping Disc",
-      "max": 1,
-      "recharge": "Long Rest",
-      "description": "Blessing of the Raven Queen i Misty Step są portalami teleportacyjnymi. Raz na Long Rest możesz zabrać ze sobą jednego willing sojusznika stojącego 5 ft od ciebie.",
+      "description": "Jedno darmowe użycie bez zużywania spell slota.",
       "kind": "resource",
       "unit": "użycia"
     }
@@ -271,7 +326,7 @@
   "featDetails": [
     {
       "name": "Fey Touched",
-      "description": "Wybrany wzrost cechy: +1 CHA. Znasz Misty Step oraz Dissonant Whispers. Każde z tych zaklęć możesz rzucić raz na Long Rest bez zużywania spell slota, a później także swoimi normalnymi slotami."
+      "description": "Wybrany wzrost cechy: +1 CHA. Znasz Misty Step oraz Detect Magic. Każde z tych zaklęć możesz rzucić raz na Long Rest bez zużywania spell slota, a później także swoimi normalnymi slotami."
     }
   ]
 }
