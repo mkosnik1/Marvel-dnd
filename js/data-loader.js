@@ -1,4 +1,5 @@
 import { normalizeCharacter } from "./normalize-character.js";
+import { finalizeVisibleCharacter } from "./normalize-character-final.js";
 
 export async function loadJson(path) {
   const response = await fetch(path, { cache: "no-cache" });
@@ -17,7 +18,7 @@ export async function loadCharacterRegistry() {
 
 export async function loadCharacter(id) {
   const character = await loadJson(`data/characters/${encodeURIComponent(id)}.json`);
-  return normalizeCharacter(character);
+  return finalizeVisibleCharacter(normalizeCharacter(character));
 }
 
 export async function loadAllCharacters(ids) {
