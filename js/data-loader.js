@@ -4,6 +4,7 @@ import { addDualSkillNamesToCharacter, addDualSkillNamesToRules } from "./skill-
 import { applyMarvelPowerOverrides } from "./marvel-power-overrides.js";
 import { addAttackLabels } from "./attack-labels.js";
 import { enrichResourceDetails } from "./resource-details.js";
+import { finalCardAudit } from "./final-card-audit.js";
 
 export async function loadJson(path) {
   const response = await fetch(path, { cache: "no-cache" });
@@ -27,7 +28,7 @@ export async function loadCharacter(id) {
   const normalized = finalizeVisibleCharacter(normalizeCharacter(withDetailedResources));
   const withDetailedMarvelPowers = applyMarvelPowerOverrides(normalized);
   const withAttackLabels = addAttackLabels(withDetailedMarvelPowers);
-  return addDualSkillNamesToCharacter(withAttackLabels);
+  return finalCardAudit(addDualSkillNamesToCharacter(withAttackLabels));
 }
 
 export async function loadAllCharacters(ids) {
