@@ -1,3 +1,4 @@
+import "./mechanics-pl-extra.js";
 import { loadRules, loadCharacterRegistry, loadAllCharacters } from "./data-loader.js";
 import { resetCharacterCounters } from "./state.js";
 import { renderCharacter } from "./render.js";
