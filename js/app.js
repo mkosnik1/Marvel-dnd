@@ -22,7 +22,7 @@ const categories = {
 };
 
 function showError(error){
-  heroEl.innerHTML = `<div class="loading error"><strong>Nie udało się wczytać danych.</strong><br><br>${error.message}<br><br>Jeżeli otworzyłeś index.html bezpośrednio z dysku, uruchom start-server.bat albo serwer HTTP. Przeglądarki zwykle blokują fetch() lokalnych plików JSON dla adresów file://.</div>`;
+  heroEl.innerHTML = `<div class="loading error"><strong>Nie udało się wczytać danych.</strong><br><br>${error.message}<br><br>Jeżeli otworzyłeś index.html bezpośrednio z dysku, uruchom start-server.bat albo serwer HTTP. Przeglądarki zwykle blokują pobieranie lokalnych plików JSON dla adresów file://.</div>`;
   contentEl.innerHTML = "";
 }
 
@@ -39,7 +39,7 @@ function renderFilters(){
 function renderList(){
   const query = searchEl.value.trim().toLowerCase();
   const visible = characters.filter(c => (activeFilter === "Wszyscy" || c.group === activeFilter) && (`${c.name} ${c.realName} ${c.race} ${c.raceRules} ${c.cls} ${c.subclass} ${c.team || ""}`.toLowerCase().includes(query)));
-  charListEl.innerHTML = visible.map(c => `<button class="char-btn ${c.id===activeCharacterId ? "active" : ""}" data-id="${c.id}"><span class="char-name">${c.name}</span><span class="char-meta">${c.realName}<br>${c.race} • ${c.cls} • ${c.subclass}${c.team ? `<br>${c.team}` : ""}</span></button>`).join("");
+  charListEl.innerHTML = visible.map(c => `<button class="char-btn ${c.id===activeCharacterId ? "active" : ""}" data-id="${c.id}"><span class="char-name">${c.name}</span><span class="char-meta">${c.realName}<br>${c.race}${c.team ? `<br>${c.team}` : ""}</span></button>`).join("");
   charListEl.querySelectorAll("[data-id]").forEach(button => button.addEventListener("click", () => selectCharacter(button.dataset.id)));
 }
 
