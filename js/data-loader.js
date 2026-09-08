@@ -1,5 +1,6 @@
 import { normalizeCharacter } from "./normalize-character.js";
 import { finalizeVisibleCharacter } from "./normalize-character-final.js";
+import { addDualSkillNamesToCharacter, addDualSkillNamesToRules } from "./skill-dual-names.js";
 
 export async function loadJson(path) {
   const response = await fetch(path, { cache: "no-cache" });
@@ -8,7 +9,8 @@ export async function loadJson(path) {
 }
 
 export async function loadRules() {
-  return loadJson("data/rules.json");
+  const rules = await loadJson("data/rules.json");
+  return addDualSkillNamesToRules(rules);
 }
 
 export async function loadCharacterRegistry() {
@@ -18,7 +20,8 @@ export async function loadCharacterRegistry() {
 
 export async function loadCharacter(id) {
   const character = await loadJson(`data/characters/${encodeURIComponent(id)}.json`);
-  return finalizeVisibleCharacter(normalizeCharacter(character));
+  const normalized = finalizeVisibleCharacter(normalizeCharacter(character));
+  return addDualSkillNamesToCharacter(normalized);
 }
 
 export async function loadAllCharacters(ids) {
