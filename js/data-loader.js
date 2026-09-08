@@ -1,6 +1,7 @@
 import { normalizeCharacter } from "./normalize-character.js";
 import { finalizeVisibleCharacter } from "./normalize-character-final.js";
 import { addDualSkillNamesToCharacter, addDualSkillNamesToRules } from "./skill-dual-names.js";
+import { applyMarvelPowerOverrides } from "./marvel-power-overrides.js";
 
 export async function loadJson(path) {
   const response = await fetch(path, { cache: "no-cache" });
@@ -21,7 +22,8 @@ export async function loadCharacterRegistry() {
 export async function loadCharacter(id) {
   const character = await loadJson(`data/characters/${encodeURIComponent(id)}.json`);
   const normalized = finalizeVisibleCharacter(normalizeCharacter(character));
-  return addDualSkillNamesToCharacter(normalized);
+  const withDetailedMarvelPowers = applyMarvelPowerOverrides(normalized);
+  return addDualSkillNamesToCharacter(withDetailedMarvelPowers);
 }
 
 export async function loadAllCharacters(ids) {
