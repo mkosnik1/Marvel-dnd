@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marvel D&D 5e – Karty bohaterów</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="logo">M</div><div><h1>Marvel D&D 5e</h1><small>JSON per bohater • poziom 5</small></div></div>
+    <input id="search" class="search" placeholder="Szukaj postaci, drużyny, klasy...">
+    <div class="filters" id="filters"></div>
+    <div id="categoryHint" class="category-hint"></div>
+    <div class="char-list" id="charList"></div>
+  </aside>
+  <main class="main">
+    <section class="hero" id="hero"><div class="loading">Start aplikacji…</div></section>
+    <div class="toolbar"><button id="resetBtn">Reset zasobów</button><button onclick="window.print()">Drukuj kartę</button></div>
+    <section class="grid" id="content"></section>
+    <div class="footer">Każdy bohater jest osobnym plikiem JSON. JavaScript zawiera wyłącznie logikę aplikacji.</div>
+  </main>
+</div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

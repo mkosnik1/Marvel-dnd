@@ -1,0 +1,322 @@
+{
+  "id": "ironman",
+  "name": "Iron Man",
+  "realName": "Tony Stark",
+  "race": "Człowiek w pancerzu wspomaganym",
+  "cls": "Artificer",
+  "subclass": "Armorer",
+  "background": "Guild Artisan",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 13,
+    "CON": 16,
+    "INT": 16,
+    "WIS": 12,
+    "CHA": 10
+  },
+  "ac": 20,
+  "speed": 35,
+  "saveProfs": [
+    "CON",
+    "INT"
+  ],
+  "skillProfs": [
+    "Arcana",
+    "Investigation",
+    "Perception",
+    "Persuasion"
+  ],
+  "expertise": [],
+  "feats": [
+    "War Caster"
+  ],
+  "marvel": [
+    [
+      "Repulsor Flight",
+      "Bonus Action. Flying Speed 30 ft przez 10 minut. 2 użycia na Long Rest. Nie wymaga Concentration."
+    ]
+  ],
+  "attacks": [
+    [
+      "Lightning Launcher",
+      "+6",
+      "2d6+3 lightning",
+      "pierwsze trafienie w turze, 90/300"
+    ],
+    [
+      "Lightning Launcher",
+      "+6",
+      "1d6+3 lightning",
+      "kolejne trafienie, 90/300"
+    ],
+    [
+      "Thunder Gauntlet",
+      "+6",
+      "1d8+3 thunder",
+      "melee, Guardian"
+    ],
+    [
+      "Fire Bolt",
+      "+6",
+      "2d10 fire",
+      "120 ft"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "Tinker's Tools, Smith's Tools, Thieves' Tools, Vehicles (air)",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Warforged",
+  "skillAliases": {
+    "Arcana": "Technologia",
+    "Investigation": "Diagnostyka systemów",
+    "History": "Wiedza o świecie",
+    "Sleight of Hand": "Elektronika",
+    "Medicine": "Systemy medyczne"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Systemy podtrzymywania życia pancerza",
+      "rulesName": "Constructed Resilience",
+      "description": "Gdy masz aktywny pancerz, masz Advantage na saving throws przeciwko Poisoned, resistance na poison damage i odporność na choroby dzięki filtracji oraz systemom medycznym. Pancerz posiada zamknięty obieg powietrza, więc brak zewnętrznego źródła oddechu nie wpływa na ciebie podczas typowej sceny lub walki."
+    },
+    {
+      "name": "Tryb diagnostycznego czuwania",
+      "rulesName": "Sentry's Rest",
+      "description": "Podczas Long Rest przez 6 godzin odpoczywasz w pancerzu, a jego sensory nadal monitorują otoczenie. Pozostajesz świadomy i możesz normalnie widzieć oraz słyszeć."
+    },
+    {
+      "name": "Zintegrowana ochrona",
+      "rulesName": "Integrated Protection",
+      "description": "Masz stałe +1 AC. Założenie lub zdjęcie zintegrowanego pancerza wymaga 1 godziny, a świadomej postaci nie można go zdjąć wbrew jej woli."
+    },
+    {
+      "name": "Specjalistyczne wyszkolenie",
+      "rulesName": "Specialized Design",
+      "description": "Otrzymujesz biegłość w Percepcja oraz w Vehicles (air). Obie biegłości są już wpisane na kartę."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Improwizacja technologiczna",
+      "rulesName": "Magical Tinkering",
+      "description": "Dotykasz Tiny niemagicznego przedmiotu i nadajesz mu jeden prosty efekt: światło 5 ft, nagraną wiadomość do 6 sekund, zapach/dźwięk albo statyczny obraz/tekst. Możesz utrzymywać liczbę takich przedmiotów równą INT modifier."
+    },
+    {
+      "name": "Systemy i gadżety",
+      "rulesName": "Spellcasting",
+      "description": "Używasz INT. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 2× 2. poziomu. Możesz przygotować 5 zaklęć klasowych; zaklęcia podklasy przygotowane automatycznie nie liczą się do tego limitu."
+    },
+    {
+      "name": "Ulepszenia sprzętu — wybrany zestaw",
+      "rulesName": "Infuse Item",
+      "description": "Znasz 4 infusions: Enhanced Defense, Mind Sharpener, Homunculus Servant, Replicate Magic Item: Bag of Holding. Jednocześnie możesz utrzymywać 2; na tej karcie aktywne są: Enhanced Defense, Mind Sharpener."
+    },
+    {
+      "name": "Enhanced Defense — AKTYWNE",
+      "rulesName": "Infusion: Enhanced Defense",
+      "description": "Na tej karcie nakładasz infusion na pancerz lub tarczę. Przedmiot otrzymuje +1 AC. Jeśli jest oznaczony jako aktywny, bonus jest już uwzględniony w AC postaci."
+    },
+    {
+      "name": "Mind Sharpener — AKTYWNE",
+      "rulesName": "Infusion: Mind Sharpener",
+      "description": "Pancerz ma 4 ładunki. Gdy oblejesz CON Saving Throw wykonywany, aby utrzymać Concentration, możesz użyć Reaction i wydać 1 ładunek, aby zamiast tego zdać. O świcie odzyskuje 1d4 ładunków."
+    },
+    {
+      "name": "Homunculus Servant",
+      "rulesName": "Infusion: Homunculus Servant",
+      "description": "Tworzysz Tiny Construct przy użyciu klejnotu wartego co najmniej 100 gp. Działa zaraz po twojej turze. Bez polecenia wykonuje Dodge; jako Bonus Action możesz nakazać mu inną akcję. Force Strike używa twojego Spell Attack Bonus i zadaje 1d4+3 force."
+    },
+    {
+      "name": "Replicate Magic Item: Bag of Holding",
+      "rulesName": "Infusion: Replicate Magic Item: Bag of Holding",
+      "description": "Tworzysz Bag of Holding: mieści do 500 lb i 64 cubic ft zawartości, a sama zawsze waży 15 lb. Jej przebicie lub rozerwanie niszczy torbę i wyrzuca zawartość do Astral Plane."
+    },
+    {
+      "name": "Właściwe narzędzie",
+      "rulesName": "Right Tool for the Job",
+      "description": "Po 1 godzinie pracy z Tinker's Tools możesz stworzyć jeden zestaw Artisan's Tools. Poprzedni zestaw stworzony tą zdolnością znika, gdy tworzysz następny."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: War Caster",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat War Caster. Masz Advantage na CON Saving Throws wykonywane, aby utrzymać Concentration. Możesz wykonywać komponenty somatyczne z zajętymi rękami. Gdy przeciwnik prowokuje Opportunity Attack, możesz użyć Reaction i rzucić na niego zaklęcie o casting time 1 Action, które celuje wyłącznie w tę istotę."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Obsługa pancerza",
+      "rulesName": "Tools of the Trade",
+      "description": "Masz biegłość w heavy armor oraz Smith's Tools."
+    },
+    {
+      "name": "Systemy pancerza",
+      "rulesName": "Armorer Spells",
+      "description": "Zawsze przygotowane zaklęcia: 1. poziom — Magic Missile, Thunderwave; 2. poziom — Mirror Image, Shatter. Nie liczą się do limitu przygotowanych zaklęć Artificera."
+    },
+    {
+      "name": "Zintegrowany pancerz",
+      "rulesName": "Arcane Armor",
+      "description": "Jako Action aktywujesz Arcane Armor. Ignorujesz wymaganie STR pancerza. Komponenty materialne zaklęć Artificera obsługuje sam pancerz, więc nie musisz trzymać osobnego focusa. Pancerza nie można zdjąć wbrew twojej woli, może zastąpić brakujące kończyny, a założenie lub zdjęcie całego zestawu zajmuje Action."
+    },
+    {
+      "name": "Konfiguracja pancerza",
+      "rulesName": "Armor Model",
+      "description": "Domyślna konfiguracja tej karty: Infiltrator. Po Short lub Long Rest możesz przełączyć się na drugi tryb. Guardian i Infiltrator mają wszystkie efekty opisane w kolejnych pozycjach."
+    },
+    {
+      "name": "Guardian — rękawice uderzeniowe",
+      "rulesName": "Guardian: Thunder Gauntlets",
+      "description": "Melee weapon używa INT do attack i damage. Trafienie: 1d8 thunder + INT. Trafiony cel ma Disadvantage na attack rolls przeciwko wszystkim poza tobą do początku twojej następnej tury."
+    },
+    {
+      "name": "Guardian — pole ochronne",
+      "rulesName": "Guardian: Defensive Field",
+      "description": "Bonus Action. Otrzymujesz 5 Temporary HP. Masz 3 użycia na Long Rest."
+    },
+    {
+      "name": "Infiltrator — emiter dystansowy",
+      "rulesName": "Infiltrator: Lightning Launcher",
+      "description": "Ranged weapon, zasięg 90/300 ft, używa INT do attack i damage. Trafienie zadaje 1d6 lightning + INT. Raz na każdą twoją turę jedno trafienie tym emiterem zadaje dodatkowe 1d6 lightning."
+    },
+    {
+      "name": "Infiltrator — wspomagany ruch",
+      "rulesName": "Infiltrator: Powered Steps",
+      "description": "Walking Speed zwiększa się o 5 ft."
+    },
+    {
+      "name": "Infiltrator — kamuflaż",
+      "rulesName": "Infiltrator: Dampening Field",
+      "description": "Masz Advantage na Stealth checks. Jeśli noszony pancerz normalnie dawał Disadvantage na Stealth, Advantage i Disadvantage znoszą się i wykonujesz zwykły rzut."
+    },
+    {
+      "name": "Extra Attack",
+      "rulesName": "Extra Attack",
+      "description": "Od 5. poziomu Armorer wykonuje dwa ataki w Attack Action."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Mending",
+      "flavorName": "Szybka naprawa",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Casting time 1 minuta, Touch. Naprawiasz jedno pęknięcie lub uszkodzenie w przedmiocie, jeśli mieści się w 1 ft. Nie odtwarza utraconych właściwości magicznych."
+    },
+    {
+      "name": "Absorb Elements",
+      "flavorName": "Reaktywne ekranowanie",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction, resistance na acid/cold/fire/lightning/thunder do początku następnej tury."
+    },
+    {
+      "name": "Cure Wounds",
+      "flavorName": "Medkit / nanoboty",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Action, Touch. Cel odzyskuje 1d8+3 HP przy slocie 1. poziomu; +1d8 za każdy poziom slotu powyżej 1."
+    },
+    {
+      "name": "Faerie Fire",
+      "flavorName": "Target Lock",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Action, 20-ft cube w 60 ft, Concentration do 1 minuty. Cele wykonują DEX Save DC 14. Przy porażce świecą, nie mogą korzystać z Invisible, a attack rolls przeciwko nim mają Advantage, jeśli napastnik je widzi."
+    },
+    {
+      "name": "Magic Missile",
+      "flavorName": "Mikrorakiety",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Action, 120 ft. Tworzysz 3 pociski; każdy automatycznie trafia wybrany widoczny cel i zadaje 1d4+1 force. Wszystkie trafiają jednocześnie."
+    },
+    {
+      "name": "Thunderwave",
+      "flavorName": "Repulsor Burst",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "2d8 thunder, możliwe odepchnięcie 10 ft."
+    },
+    {
+      "name": "Heat Metal",
+      "flavorName": "Indukcyjny emiter",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "2d8 fire na metalowym przedmiocie; może zmusić do puszczenia go."
+    },
+    {
+      "name": "Mirror Image",
+      "flavorName": "Holograficzne wabiki",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Trzy holograficzne obrazy utrudniające trafienie."
+    },
+    {
+      "name": "Shatter",
+      "flavorName": "Ładunek soniczny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "3d8 thunder w 10-ft radius."
+    },
+    {
+      "name": "Web",
+      "flavorName": "Pianka / sieć obezwładniająca",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Action, 20-ft cube w 60 ft, Concentration do 1 godziny. Obszar jest difficult terrain i lightly obscured. Stworzenie zaczynające turę w sieci lub wchodzące w nią robi DEX Save DC 14; przy porażce jest Restrained. Action i STR check DC 14 pozwalają się uwolnić."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Aktywne ulepszenia",
+      "max": 2,
+      "recharge": "Long Rest",
+      "description": "Możesz utrzymywać 2 aktywne infusions. Obecnie: Enhanced Defense, Mind Sharpener.",
+      "kind": "resource",
+      "unit": "aktywne"
+    },
+    {
+      "name": "Defensive Field / pole ochronne",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Guardian: Bonus Action, 5 Temporary HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Repulsor Flight",
+      "max": 2,
+      "recharge": "Long Rest",
+      "description": "Bonus Action. Flying Speed 30 ft przez 10 minut. 2 użycia na Long Rest. Nie wymaga Concentration.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "War Caster",
+      "description": "Masz Advantage na CON Saving Throws wykonywane, aby utrzymać Concentration. Możesz wykonywać komponenty somatyczne z zajętymi rękami. Gdy przeciwnik prowokuje Opportunity Attack, możesz użyć Reaction i rzucić na niego zaklęcie o casting time 1 Action, które celuje wyłącznie w tę istotę."
+    }
+  ]
+}

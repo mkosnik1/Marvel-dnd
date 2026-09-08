@@ -1,0 +1,210 @@
+{
+  "id": "falcon",
+  "name": "Falcon",
+  "realName": "Sam Wilson",
+  "race": "Skrzydlaty taktyk",
+  "cls": "Fighter",
+  "subclass": "Battle Master",
+  "background": "Soldier",
+  "alignment": "Lawful Good",
+  "stats": {
+    "STR": 10,
+    "DEX": 16,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 13,
+    "CHA": 12
+  },
+  "ac": 17,
+  "speed": 30,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Perception",
+    "Persuasion",
+    "Survival"
+  ],
+  "expertise": [],
+  "feats": [
+    "Mobile",
+    "Alert"
+  ],
+  "marvel": [
+    [
+      "EXO-7 Wings",
+      "2 razy na Long Rest, Bonus Action, Flying Speed 40 ft przez 10 minut."
+    ],
+    [
+      "Redwing",
+      "Raz na Long Rest może użyć Help na sojuszniku w 30 ft jako Bonus Action dzięki dronowi Redwing."
+    ]
+  ],
+  "attacks": [
+    [
+      "SMG Burst",
+      "+7",
+      "1d8+5 piercing",
+      "ranged"
+    ],
+    [
+      "Shield Bash",
+      "+6",
+      "1d8+3 bludgeoning",
+      "melee"
+    ],
+    [
+      "Wing Sweep",
+      "+6",
+      "1d6+3 bludgeoning",
+      "melee"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": "Archery: +2 do attack rolls ranged weapon.",
+  "maneuvers": [
+    "Precision Attack",
+    "Bait and Switch",
+    "Pushing Attack"
+  ],
+  "tools": "Tinker's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Variant Human",
+  "team": "Avengers",
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "skillAliases": {
+    "Perception": "Rozpoznanie powietrzne",
+    "Persuasion": "Dowodzenie",
+    "Survival": "Operacje terenowe",
+    "Athletics": "Mobilność taktyczna"
+  },
+  "originFeatures": [
+    {
+      "name": "Wyjątkowe predyspozycje",
+      "rulesName": "Ability Score Increase",
+      "description": "Bonusy pochodzenia do cech są już uwzględnione w wynikach cech widocznych na karcie. Nie wybierasz ich ponownie podczas gry."
+    },
+    {
+      "name": "Dodatkowe wyszkolenie",
+      "rulesName": "Extra Skill",
+      "description": "Otrzymujesz biegłość w umiejętności Percepcja / Rozpoznanie powietrzne. Proficiency bonus +3 jest już uwzględniony w jej wartości na karcie."
+    },
+    {
+      "name": "Wczesna specjalizacja: Mobile",
+      "rulesName": "Bonus Feat",
+      "description": "Masz feat Mobile. +10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Archery: +2 do attack rolls ranged weapon."
+    },
+    {
+      "name": "Zryw adrenaliny",
+      "rulesName": "Second Wind",
+      "description": "Bonus Action. Odzyskujesz 1d10 + 5 HP. Masz 1 użycie i odzyskujesz je po Short lub Long Rest."
+    },
+    {
+      "name": "Eksplozja tempa",
+      "rulesName": "Action Surge",
+      "description": "Raz na Short lub Long Rest możesz w swojej turze wykonać dodatkową Action. Nie daje dodatkowej Bonus Action ani Reaction."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Alert",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Alert. +5 do Initiative. Gdy jesteś przytomny, nie możesz zostać zaskoczony. Niewidoczny napastnik nie dostaje Advantage na attack roll przeciwko tobie tylko dlatego, że go nie widzisz."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Taktyczne manewry",
+      "rulesName": "Combat Superiority",
+      "description": "Masz 4 Superiority Dice d8. Wracają po Short lub Long Rest. Maneuver Save DC 14. Wybrane manewry: Precision Attack, Bait and Switch, Pushing Attack."
+    },
+    {
+      "name": "Manewr: Precision Attack",
+      "rulesName": "Precision Attack",
+      "description": "Dodajesz Superiority Die do attack roll. Możesz zdecydować po rzucie, zanim poznasz ostateczny wynik."
+    },
+    {
+      "name": "Manewr: Bait and Switch",
+      "rulesName": "Bait and Switch",
+      "description": "Wydajesz 5 ft ruchu i zamieniasz się miejscami z sojusznikiem w 5 ft bez Opportunity Attacks. Jedno z was dostaje bonus do AC równy Superiority Die do początku twojej następnej tury."
+    },
+    {
+      "name": "Manewr: Pushing Attack",
+      "rulesName": "Pushing Attack",
+      "description": "Po trafieniu dodajesz Superiority Die do damage. Przy nieudanym STR Save możesz odepchnąć cel do 15 ft."
+    },
+    {
+      "name": "Profesjonalne wyszkolenie",
+      "rulesName": "Student of War",
+      "description": "Masz biegłość w Tinker's Tools. Biegłość jest już wpisana w sekcji narzędzi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Second Wind / zryw adrenaliny",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Bonus Action, odzyskuje 1d10+5 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Action Surge / eksplozja tempa",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Dodatkowa Action w swojej turze.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Superiority Dice / kości manewrów",
+      "max": 4,
+      "recharge": "Short Rest",
+      "description": "4 kości d8 do manewrów Battle Mastera.",
+      "kind": "resource",
+      "unit": "d8"
+    },
+    {
+      "name": "EXO-7 Wings",
+      "max": 2,
+      "recharge": "Long Rest",
+      "description": "2 razy na Long Rest, Bonus Action, Flying Speed 40 ft przez 10 minut.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Redwing",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest może użyć Help na sojuszniku w 30 ft jako Bonus Action dzięki dronowi Redwing.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Mobile",
+      "description": "+10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    },
+    {
+      "name": "Alert",
+      "description": "+5 do Initiative. Gdy jesteś przytomny, nie możesz zostać zaskoczony. Niewidoczny napastnik nie dostaje Advantage na attack roll przeciwko tobie tylko dlatego, że go nie widzisz."
+    }
+  ]
+}

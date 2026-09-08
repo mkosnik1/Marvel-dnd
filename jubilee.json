@@ -1,0 +1,265 @@
+{
+  "id": "jubilee",
+  "name": "Jubilee",
+  "realName": "Jubilation Lee",
+  "race": "Mutantka pirotechniczna",
+  "cls": "Sorcerer",
+  "subclass": "Divine Soul",
+  "background": "Far Traveler",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 14,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 12,
+    "CHA": 16
+  },
+  "ac": 15,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Performance",
+    "Persuasion",
+    "Sleight of Hand"
+  ],
+  "expertise": [],
+  "feats": [
+    "Spell Sniper"
+  ],
+  "marvel": [
+    [
+      "Plasmoid Fireworks",
+      "Gdy rzucasz zaklęcie zadające fire albo radiant damage, możesz opisać je jako serię kolorowych ładunków plazmy. Raz na turę możesz sprawić, że cel świeci dim light do początku twojej następnej tury."
+    ],
+    [
+      "Flashbang",
+      "Raz na Long Rest jako Action stworzenie w 15-ft cone wykonuje CON Save DC 14. Przy porażce jest Blinded do końca twojej następnej tury."
+    ]
+  ],
+  "attacks": [
+    [
+      "Fire Bolt",
+      "+6",
+      "2d10 fire",
+      "240 ft ze Spell Sniper"
+    ],
+    [
+      "Scorching Ray",
+      "+6",
+      "3 × 2d6 fire",
+      "120 ft"
+    ],
+    [
+      "Fireball",
+      "DEX DC 14",
+      "8d6 fire",
+      "150 ft"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Fire Genasi",
+  "team": "X-Men",
+  "gender": "Kobieta",
+  "isMutant": true,
+  "skillAliases": {
+    "Performance": "Pokaz pirotechniczny",
+    "Arcana": "Energia plazmowa",
+    "Sleight of Hand": "Sztuczki",
+    "Acrobatics": "Mobilność"
+  },
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Odporność termiczna",
+      "rulesName": "Fire Resistance",
+      "description": "Otrzymujesz połowę fire damage."
+    },
+    {
+      "name": "Kontrola energii cieplnej",
+      "rulesName": "Reach to the Blaze",
+      "description": "Znasz Produce Flame. Raz na Long Rest możesz rzucić Burning Hands, a od 5. poziomu również Flame Blade bez zużywania slotu; możesz też korzystać z własnych slotów."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Moce wrodzone",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 3× 2. poziomu, 2× 3. poziomu."
+    },
+    {
+      "name": "Źródło mocy",
+      "rulesName": "Sorcerous Origin",
+      "description": "Wybrane źródło: Divine Soul."
+    },
+    {
+      "name": "Rezerwa mocy",
+      "rulesName": "Font of Magic",
+      "description": "Masz 5 Sorcery Points na Long Rest. Możesz wydawać je na Metamagic albo zamieniać na spell slots; możesz też poświęcać sloty, aby odzyskać Sorcery Points."
+    },
+    {
+      "name": "Kontrola mocy — wybrane techniki",
+      "rulesName": "Metamagic",
+      "description": "Masz dwie techniki Metamagii: Quickened Spell, Careful Spell. Obie korzystają z tej samej puli 5 Sorcery Points, która wraca po Long Rest."
+    },
+    {
+      "name": "Quickened Spell",
+      "rulesName": "Metamagic: Quickened Spell",
+      "description": "Koszt: 2 Sorcery Points. Zaklęcie o casting time 1 Action rzucasz jako Bonus Action."
+    },
+    {
+      "name": "Careful Spell",
+      "rulesName": "Metamagic: Careful Spell",
+      "description": "Koszt: 1 Sorcery Point. Wybierasz do CHA modifier stworzeń objętych twoim zaklęciem; automatycznie zdają pierwszy saving throw przeciwko temu zaklęciu."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Spell Sniper",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Spell Sniper. Znasz dodatkowy cantrip Fire Bolt. Zasięg zaklęć wymagających attack roll jest podwojony, a ich ataki ignorują half i three-quarters cover."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Rozszerzony repertuar mocy",
+      "rulesName": "Divine Magic",
+      "description": "Na tej karcie z listy Clerica wybrane są: Guiding Bolt. Korzystają z CHA oraz tego samego Spell Save DC i Spell Attack Bonus co pozostałe moce Sorcerera."
+    },
+    {
+      "name": "Awaryjny zryw mocy",
+      "rulesName": "Favored by the Gods",
+      "description": "Raz na Short lub Long Rest, gdy nie zdasz saving throw albo spudłujesz attack roll, możesz dodać 2d4 do wyniku i potencjalnie zmienić porażkę w sukces."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 3,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    },
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Dancing Lights",
+      "flavorName": null,
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Tworzysz do czterech kolorowych świateł. Concentration."
+    },
+    {
+      "name": "Fire Bolt",
+      "flavorName": "Pocisk energii",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Ranged spell attack. 2d10 fire na 5. poziomie."
+    },
+    {
+      "name": "Burning Hands",
+      "flavorName": "Fala płomieni",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "15-ft cone. DEX Save. 3d6 fire."
+    },
+    {
+      "name": "Guiding Bolt",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Ranged spell attack. 4d6 radiant i Advantage na następny atak przeciwko celowi."
+    },
+    {
+      "name": "Scorching Ray",
+      "flavorName": "Seria wyładowań",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Tworzysz trzy promienie, każdy zadaje 2d6 fire po trafieniu."
+    },
+    {
+      "name": "Shatter",
+      "flavorName": "Eksplozja energii",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "10-ft radius. CON Save. 3d8 thunder."
+    },
+    {
+      "name": "Fireball",
+      "flavorName": "Nova Burst",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "20-ft radius. DEX Save. 8d6 fire."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Sorcery Points / rezerwa mocy",
+      "max": 5,
+      "recharge": "Long Rest",
+      "description": "Punkty do Metamagii i tworzenia spell slotów.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Metamagic",
+      "max": null,
+      "recharge": "",
+      "description": "Dostępne techniki: Quickened Spell, Careful Spell. Każde użycie wydaje punkty ze wspólnej puli 5 Sorcery Points.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Burning Hands",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Burning Hands bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Flame Blade",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Flame Blade bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Flashbang",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest jako Action stworzenie w 15-ft cone wykonuje CON Save DC 14. Przy porażce jest Blinded do końca twojej następnej tury.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Spell Sniper",
+      "description": "Znasz dodatkowy cantrip Fire Bolt. Zasięg zaklęć wymagających attack roll jest podwojony, a ich ataki ignorują half i three-quarters cover."
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "id": "hawkeye",
+  "name": "Hawkeye",
+  "realName": "Clint Barton",
+  "race": "Elitarny człowiek",
+  "cls": "Fighter",
+  "subclass": "Battle Master",
+  "background": "Soldier",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 17,
+    "CON": 13,
+    "INT": 12,
+    "WIS": 15,
+    "CHA": 10
+  },
+  "ac": 15,
+  "speed": 30,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Athletics",
+    "Perception",
+    "Stealth",
+    "Survival"
+  ],
+  "expertise": [],
+  "feats": [
+    "Sharpshooter",
+    "Piercer"
+  ],
+  "marvel": [
+    [
+      "Trick Arrows",
+      "3 specjalne strzały na Long Rest. Explosive: +2d6 fire. Grappling: tworzy do 50 ft liny. Electric: +2d6 lightning."
+    ]
+  ],
+  "attacks": [
+    [
+      "Longbow",
+      "+8",
+      "1d8+3 piercing",
+      "150/600"
+    ],
+    [
+      "Sharpshooter shot",
+      "+3",
+      "1d8+13 piercing",
+      "150/600"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": "Archery: +2 do ranged weapon attack rolls.",
+  "maneuvers": [
+    "Precision Attack",
+    "Pushing Attack",
+    "Trip Attack"
+  ],
+  "tools": "Woodcarver's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Variant Human",
+  "skillAliases": {
+    "Acrobatics": "Parkour",
+    "Perception": "Obserwacja celu",
+    "Survival": "Tropienie",
+    "Investigation": "Rozpoznanie"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wyjątkowe predyspozycje",
+      "rulesName": "Ability Score Increase",
+      "description": "Bonusy pochodzenia do cech są już uwzględnione w wynikach cech widocznych na karcie. Nie wybierasz ich ponownie podczas gry."
+    },
+    {
+      "name": "Dodatkowe wyszkolenie",
+      "rulesName": "Extra Skill",
+      "description": "Otrzymujesz biegłość w umiejętności Skradanie się / Infiltracja. Proficiency bonus +3 jest już uwzględniony w jej wartości na karcie."
+    },
+    {
+      "name": "Wczesna specjalizacja: Sharpshooter",
+      "rulesName": "Bonus Feat",
+      "description": "Masz feat Sharpshooter. Ranged weapon attacks ignorują half i three-quarters cover, a long range nie daje Disadvantage. Przed ranged weapon attack możesz przyjąć -5 do attack roll; jeśli trafisz, dodajesz +10 do damage."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Archery: +2 do ranged weapon attack rolls."
+    },
+    {
+      "name": "Zryw adrenaliny",
+      "rulesName": "Second Wind",
+      "description": "Bonus Action. Odzyskujesz 1d10 + 5 HP. Masz 1 użycie i odzyskujesz je po Short lub Long Rest."
+    },
+    {
+      "name": "Eksplozja tempa",
+      "rulesName": "Action Surge",
+      "description": "Raz na Short lub Long Rest możesz w swojej turze wykonać dodatkową Action. Nie daje dodatkowej Bonus Action ani Reaction."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Piercer",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Piercer. Wybrany wzrost cechy: +1 DEX. Raz na turę po zadaniu piercing damage możesz przerzucić jedną kość obrażeń i musisz użyć nowego wyniku. Przy critical hit dodajesz jedną dodatkową kość obrażeń broni."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Taktyczne manewry",
+      "rulesName": "Combat Superiority",
+      "description": "Masz 4 Superiority Dice d8. Wracają po Short lub Long Rest. Maneuver Save DC 14. Wybrane manewry: Precision Attack, Pushing Attack, Trip Attack."
+    },
+    {
+      "name": "Manewr: Precision Attack",
+      "rulesName": "Precision Attack",
+      "description": "Dodajesz Superiority Die do attack roll. Możesz zdecydować po rzucie, zanim poznasz ostateczny wynik."
+    },
+    {
+      "name": "Manewr: Pushing Attack",
+      "rulesName": "Pushing Attack",
+      "description": "Po trafieniu dodajesz Superiority Die do damage. Przy nieudanym STR Save możesz odepchnąć cel do 15 ft."
+    },
+    {
+      "name": "Manewr: Trip Attack",
+      "rulesName": "Trip Attack",
+      "description": "Po trafieniu wydajesz Superiority Die, dodajesz ją do damage. Cel Large lub mniejszy wykonuje STR Save; przy porażce pada Prone."
+    },
+    {
+      "name": "Profesjonalne wyszkolenie",
+      "rulesName": "Student of War",
+      "description": "Masz biegłość w Woodcarver's Tools. Biegłość jest już wpisana w sekcji narzędzi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Second Wind / zryw adrenaliny",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Bonus Action, odzyskuje 1d10+5 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Action Surge / eksplozja tempa",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Dodatkowa Action w swojej turze.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Superiority Dice / kości manewrów",
+      "max": 4,
+      "recharge": "Short Rest",
+      "description": "4 kości d8 do manewrów Battle Mastera.",
+      "kind": "resource",
+      "unit": "d8"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Sharpshooter",
+      "description": "Ranged weapon attacks ignorują half i three-quarters cover, a long range nie daje Disadvantage. Przed ranged weapon attack możesz przyjąć -5 do attack roll; jeśli trafisz, dodajesz +10 do damage."
+    },
+    {
+      "name": "Piercer",
+      "description": "Wybrany wzrost cechy: +1 DEX. Raz na turę po zadaniu piercing damage możesz przerzucić jedną kość obrażeń i musisz użyć nowego wyniku. Przy critical hit dodajesz jedną dodatkową kość obrażeń broni."
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "id": "magik",
+  "name": "Magik",
+  "realName": "Illyana Rasputina",
+  "race": "Mutantka teleportacji i magii",
+  "cls": "Warlock",
+  "subclass": "Archfey",
+  "background": "Haunted One",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 10,
+    "DEX": 14,
+    "CON": 14,
+    "INT": 12,
+    "WIS": 8,
+    "CHA": 16
+  },
+  "ac": 14,
+  "speed": 30,
+  "saveProfs": [
+    "WIS",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Arcana",
+    "Intimidation",
+    "Religion",
+    "Stealth"
+  ],
+  "expertise": [],
+  "feats": [
+    "Fey Touched"
+  ],
+  "marvel": [
+    [
+      "Stepping Disc",
+      "Blessing of the Raven Queen i Misty Step są portalami teleportacyjnymi. Raz na Long Rest możesz zabrać ze sobą jednego willing sojusznika stojącego 5 ft od ciebie."
+    ],
+    [
+      "Soulsword",
+      "Pact weapon w formie longsword. Ataki mogą zadawać force zamiast slashing i liczą się jako magiczne."
+    ]
+  ],
+  "attacks": [
+    [
+      "Soulsword",
+      "+6",
+      "1d8+3 force",
+      "melee"
+    ],
+    [
+      "Eldritch Blast",
+      "+6",
+      "2 × 1d10 force",
+      "120 ft"
+    ],
+    [
+      "Misty Step",
+      "—",
+      "teleport 30 ft",
+      "Bonus Action"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Shadar-kai",
+  "team": "X-Men",
+  "gender": "Kobieta",
+  "isMutant": true,
+  "skillAliases": {
+    "Arcana": "Magia Limbo",
+    "Religion": "Demonologia",
+    "Intimidation": "Aura Limbo",
+    "Investigation": "Portale"
+  },
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Odporność na wyniszczającą energię",
+      "rulesName": "Necrotic Resistance",
+      "description": "Otrzymujesz połowę necrotic damage."
+    },
+    {
+      "name": "Teleportacja bojowa",
+      "rulesName": "Blessing of the Raven Queen",
+      "description": "Jako Bonus Action teleportujesz się do 30 ft na wolne pole, które widzisz. Masz 3 użycia na Long Rest. Po teleportacji do początku następnej tury masz resistance na wszystkie obrażenia."
+    },
+    {
+      "name": "Wyostrzone zmysły",
+      "rulesName": "Keen Senses",
+      "description": "Masz biegłość w Perception. Premia jest już uwzględniona na karcie."
+    },
+    {
+      "name": "Kontrolowany odpoczynek",
+      "rulesName": "Trance",
+      "description": "Nie musisz spać. 4 godziny świadomej medytacji wystarczają, aby ukończyć Long Rest."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Magia źródła",
+      "rulesName": "Pact Magic",
+      "description": "Używasz CHA. Spell Save DC 14, Spell Attack +6. Masz 2 spell slots 3. poziomu i oba wracają po Short lub Long Rest."
+    },
+    {
+      "name": "Źródło / patron mocy",
+      "rulesName": "Otherworldly Patron",
+      "description": "Wybrany patron: Archfey."
+    },
+    {
+      "name": "Stałe ulepszenia mocy",
+      "rulesName": "Eldritch Invocations",
+      "description": "Masz dokładnie 3 invocations: Agonizing Blast, Devil's Sight, Improved Pact Weapon. Nie wydają spell slotów i są dostępne stale."
+    },
+    {
+      "name": "Agonizing Blast",
+      "rulesName": "Eldritch Invocation: Agonizing Blast",
+      "description": "Gdy promień Eldritch Blast trafia, dodajesz CHA modifier do jego obrażeń. Na 5. poziomie Eldritch Blast tworzy dwa osobne promienie i bonus dodajesz do każdego trafionego promienia."
+    },
+    {
+      "name": "Devil's Sight",
+      "rulesName": "Eldritch Invocation: Devil's Sight",
+      "description": "Widzisz normalnie w zwykłej i magicznej ciemności do 120 ft."
+    },
+    {
+      "name": "Improved Pact Weapon",
+      "rulesName": "Eldritch Invocation: Improved Pact Weapon",
+      "description": "Twoja Pact Weapon daje +1 do attack i damage rolls, jeśli nie ma już własnego magicznego bonusu. Może służyć jako spellcasting focus. Możesz tworzyć także shortbow, longbow, light crossbow albo heavy crossbow."
+    },
+    {
+      "name": "Soulsword / broń paktu",
+      "rulesName": "Pact Boon",
+      "description": "Jako Action tworzysz w wolnej ręce Pact Weapon albo wiążesz z paktem posiadaną magiczną broń. Masz z nią proficiency i liczy się jako magiczna. Jeśli pozostaje ponad 5 ft od ciebie przez 1 minutę, znika; możesz przywołać ją ponownie jako Action."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Fey Touched",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Fey Touched. Wybrany wzrost cechy: +1 CHA. Znasz Misty Step oraz Dissonant Whispers. Każde z tych zaklęć możesz rzucić raz na Long Rest bez zużywania spell slota, a później także swoimi normalnymi slotami."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Rozszerzony repertuar",
+      "rulesName": "Expanded Spell List",
+      "description": "Do listy Warlocka dodajesz zaklęcia patrona Archfey, dzięki czemu możesz wybierać je jako Warlock Spells przy zdobywaniu poziomów."
+    },
+    {
+      "name": "Aura wpływu",
+      "rulesName": "Fey Presence",
+      "description": "Action. Każde wybrane stworzenie w 10-ft cube wychodzącym od ciebie wykonuje WIS Save DC 14. Przy porażce jest Charmed albo Frightened — twój wybór — do końca twojej następnej tury. 1 użycie na Short lub Long Rest."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Short Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Eldritch Blast",
+      "flavorName": null,
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Na 5. poziomie wystrzeliwujesz dwa promienie, każdy 1d10 force."
+    },
+    {
+      "name": "Armor of Agathys",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Daje 15 Temporary HP przy slocie 3. poziomu i zadaje 15 cold napastnikowi melee, dopóki HP trwają."
+    },
+    {
+      "name": "Hex",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Bonus Action. +1d6 necrotic przy trafieniach przeciwko wybranemu celowi. Concentration."
+    },
+    {
+      "name": "Misty Step",
+      "flavorName": "Krótki portal",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Bonus Action. Teleport do 30 ft."
+    },
+    {
+      "name": "Phantasmal Force",
+      "flavorName": "Iluzja mentalna",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "INT Save. Tworzysz wiarygodną iluzję w umyśle celu."
+    },
+    {
+      "name": "Counterspell",
+      "flavorName": "Przerwanie zaklęcia",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Reaction. Próbujesz przerwać zaklęcie przeciwnika."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Pact Magic / sloty źródła",
+      "max": 2,
+      "recharge": "Short Rest",
+      "description": "2 sloty 3. poziomu.",
+      "kind": "resource",
+      "unit": "sloty"
+    },
+    {
+      "name": "Eldritch Invocations / stałe ulepszenia",
+      "max": 3,
+      "recharge": "",
+      "description": "Na 5. poziomie znasz 3 invocations.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Fey Presence / aura wpływu",
+      "max": 1,
+      "recharge": "Short/Long Rest",
+      "description": "Action. Charmed albo Frightened w 10-ft cube po nieudanym WIS Save.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Teleportacja bojowa",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Blessing of the Raven Queen: teleport 30 ft.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Misty Step z Fey Touched",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie bez slotu.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Zaklęcie 1. poziomu z Fey Touched",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie bez slotu.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Stepping Disc",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Blessing of the Raven Queen i Misty Step są portalami teleportacyjnymi. Raz na Long Rest możesz zabrać ze sobą jednego willing sojusznika stojącego 5 ft od ciebie.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Fey Touched",
+      "description": "Wybrany wzrost cechy: +1 CHA. Znasz Misty Step oraz Dissonant Whispers. Każde z tych zaklęć możesz rzucić raz na Long Rest bez zużywania spell slota, a później także swoimi normalnymi slotami."
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "strange",
+  "name": "Doctor Strange",
+  "realName": "Stephen Strange",
+  "race": "Mistrz Sztuk Mistycznych",
+  "cls": "Wizard",
+  "subclass": "School of Abjuration",
+  "background": "Sage",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 12,
+    "CON": 13,
+    "INT": 18,
+    "WIS": 15,
+    "CHA": 10
+  },
+  "ac": 14,
+  "speed": 30,
+  "saveProfs": [
+    "INT",
+    "WIS"
+  ],
+  "skillProfs": [
+    "Arcana",
+    "History",
+    "Insight",
+    "Investigation",
+    "Medicine"
+  ],
+  "expertise": [],
+  "feats": [
+    "Telekinetic"
+  ],
+  "marvel": [
+    [
+      "Cloak of Levitation",
+      "Raz na Long Rest możesz uzyskać Flying Speed 30 ft przez 10 minut bez Concentration."
+    ]
+  ],
+  "attacks": [
+    [
+      "Fire Bolt",
+      "+7",
+      "2d10 fire",
+      "120 ft"
+    ],
+    [
+      "Ray of Frost",
+      "+7",
+      "2d8 cold",
+      "60 ft"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Githzerai",
+  "skillAliases": {
+    "Arcana": "Mistyka",
+    "Religion": "Okultyzm",
+    "History": "Wiedza ezoteryczna",
+    "Investigation": "Analiza anomalii"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Dyscyplina umysłu",
+      "rulesName": "Mental Discipline",
+      "description": "Masz Advantage na saving throws przeciwko Charmed i Frightened."
+    },
+    {
+      "name": "Odporność mentalna",
+      "rulesName": "Psychic Resilience",
+      "description": "Otrzymujesz połowę psychic damage."
+    },
+    {
+      "name": "Moce mentalne",
+      "rulesName": "Githzerai Psionics",
+      "description": "Znasz Mage Hand. Raz na Long Rest możesz bez slotu użyć Shield oraz Detect Thoughts; możesz również rzucać je własnymi slotami, jeśli je posiadasz."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Sztuki mistyczne",
+      "rulesName": "Spellcasting",
+      "description": "Używasz INT. Spell Save DC 15, Spell Attack +7. Dostępne sloty: 4× 1. poziomu, 3× 2. poziomu, 2× 3. poziomu. Możesz przygotować 9 zaklęć klasowych; zaklęcia podklasy przygotowane automatycznie nie liczą się do tego limitu."
+    },
+    {
+      "name": "Odzyskanie koncentracji",
+      "rulesName": "Arcane Recovery",
+      "description": "Raz dziennie po Short Rest odzyskujesz zużyte spell slots o łącznym poziomie maksymalnie 3. Nie możesz w ten sposób odzyskać slotu wyższego niż 5. poziom."
+    },
+    {
+      "name": "Specjalizacja mistyczna",
+      "rulesName": "Arcane Tradition",
+      "description": "Wybrana tradycja: School of Abjuration."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Telekinetic",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Telekinetic. Wybrany wzrost cechy: +1 INT. Mage Hand ma zwiększony zasięg i może być niewidzialna. Jako Bonus Action wybierasz stworzenie w 30 ft; musi zdać STR Save DC 15, inaczej przesuwasz je o 5 ft w stronę od siebie albo do siebie."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Ekspertyza w ochronie",
+      "rulesName": "Abjuration Savant",
+      "description": "Czas i koszt przepisywania zaklęć Abjuration do spellbooka są zmniejszone o połowę."
+    },
+    {
+      "name": "Mistyczna osłona",
+      "rulesName": "Arcane Ward",
+      "description": "Gdy rzucisz zaklęcie Abjuration 1. poziomu lub wyższego, tworzysz osłonę o 14 HP. Ward przyjmuje obrażenia przed tobą. Gdy później rzucasz zaklęcie Abjuration 1. poziomu lub wyższego, Ward odzyskuje HP równe dwukrotności poziomu zaklęcia, do swojego maksimum."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 3,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    },
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Mage Hand",
+      "flavorName": "Astralna dłoń",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Magiczna dłoń do manipulowania przedmiotami. Telekinetic może uczynić ją niewidzialną."
+    },
+    {
+      "name": "Absorb Elements",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction, tymczasowa resistance na żywioł."
+    },
+    {
+      "name": "Mage Armor",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "AC = 13 + DEX modifier przez 8 godzin."
+    },
+    {
+      "name": "Magic Missile",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Automatycznie trafiające force darts."
+    },
+    {
+      "name": "Shield",
+      "flavorName": "Mistyczna tarcza",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction, +5 AC do początku następnej tury i blokuje Magic Missile."
+    },
+    {
+      "name": "Hold Person",
+      "flavorName": "Mistyczne więzy",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Paralyzed na humanoidzie po nieudanym WIS Save, Concentration."
+    },
+    {
+      "name": "Levitate",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Unosi stworzenie lub przedmiot."
+    },
+    {
+      "name": "Mirror Image",
+      "flavorName": "Astralne odbicia",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Trzy duplikaty utrudniające trafienie."
+    },
+    {
+      "name": "Misty Step",
+      "flavorName": "Krótki portal",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Bonus Action teleport 30 ft."
+    },
+    {
+      "name": "Counterspell",
+      "flavorName": "Przerwanie zaklęcia",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Reaction, próba przerwania rzucanego zaklęcia."
+    },
+    {
+      "name": "Dispel Magic",
+      "flavorName": "Rozproszenie zaklęcia",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Kończy aktywne efekty magiczne."
+    },
+    {
+      "name": "Fly",
+      "flavorName": "Lewitacja / peleryna",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Flying Speed 60 ft, Concentration."
+    },
+    {
+      "name": "Hypnotic Pattern",
+      "flavorName": "Hipnotyczny glif",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Duży obszar; WIS Save, przy porażce Charmed i Incapacitated."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Arcane Recovery / odzyskanie koncentracji",
+      "max": 3,
+      "recharge": "1× dziennie po Short Rest",
+      "description": "Odzyskujesz sloty o łącznym poziomie do 3.",
+      "kind": "resource",
+      "unit": "poziomy slotów"
+    },
+    {
+      "name": "Arcane Ward / mistyczna osłona",
+      "max": 14,
+      "recharge": "odnawiana zaklęciami Abjuration",
+      "description": "Osłona przyjmuje obrażenia przed tobą. Maksymalnie 14 HP.",
+      "kind": "resource",
+      "unit": "HP"
+    },
+    {
+      "name": "Shield",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Shield bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Detect Thoughts",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Detect Thoughts bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Cloak of Levitation",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest możesz uzyskać Flying Speed 30 ft przez 10 minut bez Concentration.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Telekinetic",
+      "description": "Wybrany wzrost cechy: +1 INT. Mage Hand ma zwiększony zasięg i może być niewidzialna. Jako Bonus Action wybierasz stworzenie w 30 ft; musi zdać STR Save DC 15, inaczej przesuwasz je o 5 ft w stronę od siebie albo do siebie."
+    }
+  ]
+}

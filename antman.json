@@ -1,0 +1,296 @@
+{
+  "id": "antman",
+  "name": "Ant-Man",
+  "realName": "Scott Lang",
+  "race": "Użytkownik cząstek Pyma",
+  "cls": "Artificer",
+  "subclass": "Armorer",
+  "background": "Criminal",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 15,
+    "CON": 13,
+    "INT": 17,
+    "WIS": 12,
+    "CHA": 10
+  },
+  "ac": 19,
+  "speed": 40,
+  "saveProfs": [
+    "CON",
+    "INT"
+  ],
+  "skillProfs": [
+    "Arcana",
+    "Investigation",
+    "Sleight of Hand",
+    "Stealth"
+  ],
+  "expertise": [],
+  "feats": [
+    "Mobile"
+  ],
+  "marvel": [
+    [
+      "Pym Particles",
+      "Gdy jesteś pomniejszony przez Enlarge/Reduce, możesz przechodzić przez otwory szerokości około 6 cali. Carrying capacity nie maleje od samego pomniejszenia."
+    ]
+  ],
+  "attacks": [
+    [
+      "Thunder Gauntlet",
+      "+6",
+      "1d8+3 thunder",
+      "Guardian"
+    ],
+    [
+      "Lightning Launcher",
+      "+6",
+      "2d6+3 lightning",
+      "pierwsze trafienie w turze"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Duergar",
+  "skillAliases": {
+    "Arcana": "Technologia kwantowa",
+    "Investigation": "Elektronika",
+    "Sleight of Hand": "Włamania",
+    "Stealth": "Miniaturyzacja"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Zaawansowane sensory",
+      "rulesName": "Superior Darkvision",
+      "description": "Widzisz w ciemności do 120 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Ochrona neurologiczna",
+      "rulesName": "Duergar Resilience",
+      "description": "Masz Advantage na saving throws przeciwko Charmed i Stunned."
+    },
+    {
+      "name": "Stabilizacja układu nerwowego",
+      "rulesName": "Psionic Fortitude",
+      "description": "Masz Advantage na saving throws przeciwko Charmed i Stunned. Nie wymaga to żadnej akcji ani wydawania zasobu."
+    },
+    {
+      "name": "Zmiana rozmiaru i kamuflaż",
+      "rulesName": "Duergar Magic",
+      "description": "Raz na Long Rest możesz rzucić Enlarge/Reduce bez spell slotu. Od 5. poziomu możesz też raz na Long Rest rzucić Invisibility bez spell slotu. Możesz używać własnych slotów do ponownych rzutów."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Improwizacja technologiczna",
+      "rulesName": "Magical Tinkering",
+      "description": "Dotykasz Tiny niemagicznego przedmiotu i nadajesz mu jeden prosty efekt: światło 5 ft, nagraną wiadomość do 6 sekund, zapach/dźwięk albo statyczny obraz/tekst. Możesz utrzymywać liczbę takich przedmiotów równą INT modifier."
+    },
+    {
+      "name": "Systemy i gadżety",
+      "rulesName": "Spellcasting",
+      "description": "Używasz INT. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 2× 2. poziomu. Możesz przygotować 5 zaklęć klasowych; zaklęcia podklasy przygotowane automatycznie nie liczą się do tego limitu."
+    },
+    {
+      "name": "Ulepszenia sprzętu — wybrany zestaw",
+      "rulesName": "Infuse Item",
+      "description": "Znasz 4 infusions: Enhanced Defense, Mind Sharpener, Homunculus Servant, Replicate Magic Item: Bag of Holding. Jednocześnie możesz utrzymywać 2; na tej karcie aktywne są: Enhanced Defense, Mind Sharpener."
+    },
+    {
+      "name": "Enhanced Defense — AKTYWNE",
+      "rulesName": "Infusion: Enhanced Defense",
+      "description": "Na tej karcie nakładasz infusion na pancerz lub tarczę. Przedmiot otrzymuje +1 AC. Jeśli jest oznaczony jako aktywny, bonus jest już uwzględniony w AC postaci."
+    },
+    {
+      "name": "Mind Sharpener — AKTYWNE",
+      "rulesName": "Infusion: Mind Sharpener",
+      "description": "Pancerz ma 4 ładunki. Gdy oblejesz CON Saving Throw wykonywany, aby utrzymać Concentration, możesz użyć Reaction i wydać 1 ładunek, aby zamiast tego zdać. O świcie odzyskuje 1d4 ładunków."
+    },
+    {
+      "name": "Homunculus Servant",
+      "rulesName": "Infusion: Homunculus Servant",
+      "description": "Tworzysz Tiny Construct przy użyciu klejnotu wartego co najmniej 100 gp. Działa zaraz po twojej turze. Bez polecenia wykonuje Dodge; jako Bonus Action możesz nakazać mu inną akcję. Force Strike używa twojego Spell Attack Bonus i zadaje 1d4+3 force."
+    },
+    {
+      "name": "Replicate Magic Item: Bag of Holding",
+      "rulesName": "Infusion: Replicate Magic Item: Bag of Holding",
+      "description": "Tworzysz Bag of Holding: mieści do 500 lb i 64 cubic ft zawartości, a sama zawsze waży 15 lb. Jej przebicie lub rozerwanie niszczy torbę i wyrzuca zawartość do Astral Plane."
+    },
+    {
+      "name": "Właściwe narzędzie",
+      "rulesName": "Right Tool for the Job",
+      "description": "Po 1 godzinie pracy z Tinker's Tools możesz stworzyć jeden zestaw Artisan's Tools. Poprzedni zestaw stworzony tą zdolnością znika, gdy tworzysz następny."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Mobile",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Mobile. +10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Obsługa pancerza",
+      "rulesName": "Tools of the Trade",
+      "description": "Masz biegłość w heavy armor oraz Smith's Tools."
+    },
+    {
+      "name": "Systemy pancerza",
+      "rulesName": "Armorer Spells",
+      "description": "Zawsze przygotowane zaklęcia: 1. poziom — Magic Missile, Thunderwave; 2. poziom — Mirror Image, Shatter. Nie liczą się do limitu przygotowanych zaklęć Artificera."
+    },
+    {
+      "name": "Zintegrowany pancerz",
+      "rulesName": "Arcane Armor",
+      "description": "Jako Action aktywujesz Arcane Armor. Ignorujesz wymaganie STR pancerza. Komponenty materialne zaklęć Artificera obsługuje sam pancerz, więc nie musisz trzymać osobnego focusa. Pancerza nie można zdjąć wbrew twojej woli, może zastąpić brakujące kończyny, a założenie lub zdjęcie całego zestawu zajmuje Action."
+    },
+    {
+      "name": "Konfiguracja pancerza",
+      "rulesName": "Armor Model",
+      "description": "Domyślna konfiguracja tej karty: Infiltrator. Po Short lub Long Rest możesz przełączyć się na drugi tryb. Guardian i Infiltrator mają wszystkie efekty opisane w kolejnych pozycjach."
+    },
+    {
+      "name": "Guardian — rękawice uderzeniowe",
+      "rulesName": "Guardian: Thunder Gauntlets",
+      "description": "Melee weapon używa INT do attack i damage. Trafienie: 1d8 thunder + INT. Trafiony cel ma Disadvantage na attack rolls przeciwko wszystkim poza tobą do początku twojej następnej tury."
+    },
+    {
+      "name": "Guardian — pole ochronne",
+      "rulesName": "Guardian: Defensive Field",
+      "description": "Bonus Action. Otrzymujesz 5 Temporary HP. Masz 3 użycia na Long Rest."
+    },
+    {
+      "name": "Infiltrator — emiter dystansowy",
+      "rulesName": "Infiltrator: Lightning Launcher",
+      "description": "Ranged weapon, zasięg 90/300 ft, używa INT do attack i damage. Trafienie zadaje 1d6 lightning + INT. Raz na każdą twoją turę jedno trafienie tym emiterem zadaje dodatkowe 1d6 lightning."
+    },
+    {
+      "name": "Infiltrator — wspomagany ruch",
+      "rulesName": "Infiltrator: Powered Steps",
+      "description": "Walking Speed zwiększa się o 5 ft."
+    },
+    {
+      "name": "Infiltrator — kamuflaż",
+      "rulesName": "Infiltrator: Dampening Field",
+      "description": "Masz Advantage na Stealth checks. Jeśli noszony pancerz normalnie dawał Disadvantage na Stealth, Advantage i Disadvantage znoszą się i wykonujesz zwykły rzut."
+    },
+    {
+      "name": "Extra Attack",
+      "rulesName": "Extra Attack",
+      "description": "Od 5. poziomu Armorer wykonuje dwa ataki w Attack Action."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Cure Wounds",
+      "flavorName": "Medkit / nanoboty",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "1d8+INT HP na 1. poziomie."
+    },
+    {
+      "name": "Magic Missile",
+      "flavorName": "Mikrorakiety",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Mikropociski, trzy trafienia po 1d4+1 force."
+    },
+    {
+      "name": "Thunderwave",
+      "flavorName": "Repulsor Burst",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "2d8 thunder, możliwe odepchnięcie."
+    },
+    {
+      "name": "Enlarge/Reduce",
+      "flavorName": "Zmiana rozmiaru Pyma",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Kluczowa moc Ant-Mana. Duergar daje darmowe użycie; możesz też rzucać zaklęcie przez dostępne mechaniki kampanii."
+    },
+    {
+      "name": "Mirror Image",
+      "flavorName": "Holograficzne wabiki",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Duplikaty/hologramy."
+    },
+    {
+      "name": "Shatter",
+      "flavorName": "Ładunek soniczny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "3d8 thunder w obszarze."
+    },
+    {
+      "name": "Web",
+      "flavorName": "Pianka / sieć obezwładniająca",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Technologiczna sieć, może nakładać Restrained."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Aktywne ulepszenia",
+      "max": 2,
+      "recharge": "Long Rest",
+      "description": "Możesz utrzymywać 2 aktywne infusions. Obecnie: Enhanced Defense, Mind Sharpener.",
+      "kind": "resource",
+      "unit": "aktywne"
+    },
+    {
+      "name": "Defensive Field / pole ochronne",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Guardian: Bonus Action, 5 Temporary HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Enlarge/Reduce / Cząstki Pyma",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Invisibility / kamuflaż Pyma",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Mobile",
+      "description": "+10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    }
+  ]
+}

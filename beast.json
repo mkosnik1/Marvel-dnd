@@ -1,0 +1,191 @@
+{
+  "id": "beast",
+  "name": "Beast",
+  "realName": "Hank McCoy",
+  "race": "Mutant bestialnej fizjologii",
+  "cls": "Monk",
+  "subclass": "Way of the Open Hand",
+  "background": "Sage",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 13,
+    "DEX": 16,
+    "CON": 14,
+    "INT": 14,
+    "WIS": 16,
+    "CHA": 8
+  },
+  "ac": 16,
+  "speed": 40,
+  "saveProfs": [
+    "STR",
+    "DEX"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Arcana",
+    "Athletics",
+    "Investigation",
+    "Perception"
+  ],
+  "expertise": [],
+  "feats": [
+    "Observant"
+  ],
+  "marvel": [
+    [
+      "Mutant Agility",
+      "Raz między odpoczynkami od ruchu możesz podwoić swój Speed do końca tury. Masz climbing speed równy walking speed i możesz używać naturalnych pazurów do wspinaczki. Te efekty wynikają z mutantycznej zwinności Hanka."
+    ],
+    [
+      "Brutal Grace",
+      "Raz na turę, gdy trafiasz Unarmed Strike po poruszeniu się co najmniej 20 ft, możesz przesunąć cel o 5 ft, jeśli jest Large lub mniejszy."
+    ]
+  ],
+  "attacks": [
+    [
+      "Unarmed Strike",
+      "+6",
+      "1d6+3 bludgeoning",
+      "melee"
+    ],
+    [
+      "Flurry of Blows",
+      "+6",
+      "2 × 1d6+3",
+      "Bonus Action, 1 Ki"
+    ],
+    [
+      "Stunning Strike",
+      "+6",
+      "1d6+3 + CON DC 14",
+      "1 Ki"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Tabaxi",
+  "team": "X-Men",
+  "gender": "Mężczyzna",
+  "isMutant": true,
+  "skillAliases": {
+    "Arcana": "Biochemia",
+    "Investigation": "Nauka",
+    "Nature": "Genetyka",
+    "Acrobatics": "Akrobatyka mutantyczna",
+    "Medicine": "Biologia"
+  },
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Nadludzka zwinność",
+      "rulesName": "Feline Agility",
+      "description": "Gdy zaczynasz poruszać się w swojej turze, możesz podwoić Speed do końca tej tury. Zdolność odnawia się po turze, w której nie wykorzystasz żadnego ruchu."
+    },
+    {
+      "name": "Pazury i wspinaczka",
+      "rulesName": "Cat's Claws",
+      "description": "Masz climbing speed równy walking speed. Naturalne pazury są unarmed strike: +STR + Proficiency Bonus do trafienia i 1d6 + STR modifier slashing damage."
+    },
+    {
+      "name": "Instynkt łowcy",
+      "rulesName": "Cat's Talent",
+      "description": "Masz biegłość w Perception i Stealth. Obie wartości są już policzone na karcie."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Styl walki wręcz",
+      "rulesName": "Martial Arts",
+      "description": "Możesz używać DEX zamiast STR do attack i damage rolls swoich unarmed strikes i monk weapons. Kość obrażeń Martial Arts na 5. poziomie to d6. Po Attack Action z unarmed strike lub monk weapon możesz wykonać jeden unarmed strike jako Bonus Action."
+    },
+    {
+      "name": "Punkty skupienia",
+      "rulesName": "Ki",
+      "description": "Masz 5 Ki Points. Wszystkie wracają po Short lub Long Rest."
+    },
+    {
+      "name": "Seria ciosów",
+      "rulesName": "Flurry of Blows",
+      "description": "Po Attack Action możesz wydać 1 Ki i jako Bonus Action wykonać dwa unarmed strikes."
+    },
+    {
+      "name": "Defensywna koncentracja",
+      "rulesName": "Patient Defense",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dodge."
+    },
+    {
+      "name": "Zryw mobilności",
+      "rulesName": "Step of the Wind",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dash albo Disengage. Do końca tury podwajasz też dystans skoku."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Unarmored Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz pancerza ani tarczy."
+    },
+    {
+      "name": "Przechwycenie pocisku",
+      "rulesName": "Deflect Missiles",
+      "description": "Reaction, gdy trafia cię ranged weapon attack. Zmniejszasz obrażenia o 1d10 + DEX modifier + 5. Jeśli zredukujesz damage do 0 i pocisk mieści się w jednej ręce, możesz wydać 1 Ki, aby natychmiast nim zaatakować w ramach tej samej Reaction."
+    },
+    {
+      "name": "Kontrolowany upadek",
+      "rulesName": "Slow Fall",
+      "description": "Reaction podczas spadania. Zmniejszasz fall damage o 25."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Observant",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Observant. Wybrany wzrost cechy: +1 INT. Masz +5 do Passive Perception i Passive Investigation. Jeśli widzisz usta mówiącej istoty i znasz jej język, potrafisz odczytać słowa z ruchu warg."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Ogłuszające trafienie",
+      "rulesName": "Stunning Strike",
+      "description": "Po trafieniu melee weapon attackiem możesz wydać 1 Ki. Cel wykonuje CON Save DC 14; przy porażce jest Stunned do końca twojej następnej tury."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Kontrola walki wręcz",
+      "rulesName": "Open Hand Technique",
+      "description": "Gdy trafisz jednym z ataków Flurry of Blows, wybierasz jeden efekt: cel wykonuje DEX Save albo pada Prone; wykonuje STR Save albo zostaje odepchnięty o 15 ft; albo nie może używać Reactions do końca twojej następnej tury."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Ki / punkty skupienia",
+      "max": 5,
+      "recharge": "Short Rest",
+      "description": "Wydawane na Flurry of Blows, Patient Defense, Step of the Wind i Stunning Strike.",
+      "kind": "resource",
+      "unit": "punkty"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Observant",
+      "description": "Wybrany wzrost cechy: +1 INT. Masz +5 do Passive Perception i Passive Investigation. Jeśli widzisz usta mówiącej istoty i znasz jej język, potrafisz odczytać słowa z ruchu warg."
+    }
+  ]
+}

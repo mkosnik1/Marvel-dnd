@@ -1,0 +1,248 @@
+{
+  "id": "blade",
+  "name": "Blade",
+  "realName": "Eric Brooks",
+  "race": "Daywalker",
+  "cls": "Ranger",
+  "subclass": "Monster Slayer",
+  "background": "Haunted One",
+  "alignment": "Neutral",
+  "stats": {
+    "STR": 12,
+    "DEX": 18,
+    "CON": 13,
+    "INT": 10,
+    "WIS": 15,
+    "CHA": 8
+  },
+  "ac": 16,
+  "speed": 35,
+  "saveProfs": [
+    "STR",
+    "DEX"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Athletics",
+    "Perception",
+    "Stealth",
+    "Survival"
+  ],
+  "expertise": [],
+  "feats": [
+    "Slasher"
+  ],
+  "marvel": [
+    [
+      "Daywalker",
+      "Advantage na saving throws przeciwko Charmed lub Frightened wywołanemu przez Undead. Undead nie mogą magicznie uśpić Blade'a."
+    ]
+  ],
+  "attacks": [
+    [
+      "Silvered Longsword",
+      "+7",
+      "1d8+4 slashing",
+      "melee"
+    ],
+    [
+      "Hand Crossbow",
+      "+7",
+      "1d6+4 piercing",
+      "30/120"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": "Dueling: +2 damage przy jednej broni jednoręcznej.",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Dhampir",
+  "skillAliases": {
+    "Religion": "Wiedza o wampirach",
+    "Survival": "Tropienie",
+    "Medicine": "Anatomia potworów",
+    "Perception": "Czujność",
+    "Investigation": "Łowy"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Nietypowa fizjologia",
+      "rulesName": "Deathless Nature",
+      "description": "Nie musisz oddychać. Ta cecha reprezentuje nietypową fizjologię postaci i nie wymaga żadnej dodatkowej akcji."
+    },
+    {
+      "name": "Przyczepność do powierzchni",
+      "rulesName": "Spider Climb",
+      "description": "Masz climbing speed równy walking speed. Możesz poruszać się po pionowych powierzchniach i po suficie, pozostawiając ręce wolne."
+    },
+    {
+      "name": "Wzmocniony atak naturalny",
+      "rulesName": "Vampiric Bite",
+      "description": "Masz naturalny atak ugryzieniem oparty na CON. Trafienie zadaje 1d4 piercing + CON. Liczbę razy równą PB na Long Rest możesz po trafieniu odzyskać HP równe zadanym obrażeniom albo dodać tę samą wartość jako bonus do następnego ability check lub attack roll."
+    },
+    {
+      "name": "Zachowane wyszkolenie",
+      "rulesName": "Ancestral Legacy",
+      "description": "Zachowujesz biegłość w: Atletyka, Percepcja. Są już uwzględnione na karcie."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja: Nieumarli",
+      "rulesName": "Favored Enemy",
+      "description": "Wybrany Favored Enemy: Undead. Masz Advantage na Survival checks wykonywane do tropienia Undead oraz Advantage na INT checks potrzebne do przypominania sobie informacji o nich."
+    },
+    {
+      "name": "Specjalizacja terenowa: podziemia i legowiska",
+      "rulesName": "Natural Explorer",
+      "description": "Wybrany teren: Underdark. Gdy podróżujesz przez podziemia, tunele i podobne legowiska przez co najmniej godzinę, trudny teren nie spowalnia grupy, nie gubicie się poza wpływem magii, zachowujesz czujność podczas innych czynności, możesz poruszać się skrycie w normalnym tempie samotnie, znajdujesz dwa razy więcej pożywienia i podczas tropienia poznajesz liczbę, rozmiary oraz czas przejścia tropionych stworzeń."
+    },
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Dueling: +2 damage przy jednej broni jednoręcznej."
+    },
+    {
+      "name": "Techniki łowcy",
+      "rulesName": "Spellcasting",
+      "description": "Używasz WIS. Spell Save DC 13, Spell Attack +5. Dostępne sloty: 4× 1. poziomu, 2× 2. poziomu."
+    },
+    {
+      "name": "Skan zagrożeń",
+      "rulesName": "Primeval Awareness",
+      "description": "Możesz wydać spell slot i przez 1 minutę za każdy poziom slotu wyczuwać, czy w promieniu 1 mili znajdują się Aberrations, Celestials, Dragons, Elementals, Fey, Fiends lub Undead. Nie poznajesz liczby ani dokładnego położenia."
+    },
+    {
+      "name": "Specjalizacja łowcy",
+      "rulesName": "Ranger Archetype",
+      "description": "Wybrana podklasa: Monster Slayer."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Slasher",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Slasher. Wybrany wzrost cechy: +1 DEX. Raz na turę po zadaniu slashing damage zmniejszasz Speed celu o 10 ft do początku swojej następnej tury. Po critical hit cel ma Disadvantage na attack rolls do początku twojej następnej tury."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Techniki łowcy",
+      "rulesName": "Monster Slayer Magic",
+      "description": "Zawsze znasz dodatkowe zaklęcia podklasy: Protection from Evil and Good oraz Zone of Truth na tym poziomie. Nie liczą się do limitu Ranger Spells Known."
+    },
+    {
+      "name": "Analiza celu",
+      "rulesName": "Hunter's Sense",
+      "description": "Action. Wybierasz widoczne stworzenie w 60 ft i poznajesz jego damage immunities, resistances oraz vulnerabilities. Masz 2 użycia na Long Rest."
+    },
+    {
+      "name": "Oznaczenie celu",
+      "rulesName": "Slayer's Prey",
+      "description": "Bonus Action. Oznaczasz widoczny cel w 60 ft. Pierwszy raz w każdej swojej turze, gdy trafisz go weapon attackiem, zadajesz dodatkowe 1d6 damage. Efekt trwa do następnego Short/Long Rest albo do oznaczenia innego celu."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Absorb Elements",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction, tymczasowa resistance na żywioł."
+    },
+    {
+      "name": "Cure Wounds",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "1d8+2 HP na 1. poziomie."
+    },
+    {
+      "name": "Hunter's Mark",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Bonus Action, +1d6 damage przeciwko oznaczonemu celowi."
+    },
+    {
+      "name": "Zephyr Strike",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Mobilność, brak Opportunity Attacks i wzmocniony pojedynczy atak."
+    },
+    {
+      "name": "Lesser Restoration",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Usuwa wybrane condition lub chorobę."
+    },
+    {
+      "name": "Pass without Trace",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "+10 do Stealth dla grupy w pobliżu, Concentration."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Hunter's Sense / analiza celu",
+      "max": 2,
+      "recharge": "Long Rest",
+      "description": "Poznajesz odporności, immunities i vulnerabilities wybranego celu.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Slayer's Prey / oznaczenie celu",
+      "max": null,
+      "recharge": "",
+      "description": "Bonus Action, +1d6 do pierwszego trafienia w każdej turze przeciwko oznaczonemu celowi.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Wzmocnienie z ugryzienia / instynktu",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Empowerment z mechaniki Vampiric Bite.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Slasher",
+      "description": "Wybrany wzrost cechy: +1 DEX. Raz na turę po zadaniu slashing damage zmniejszasz Speed celu o 10 ft do początku swojej następnej tury. Po critical hit cel ma Disadvantage na attack rolls do początku twojej następnej tury."
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "id": "emmafrost",
+  "name": "Emma Frost",
+  "realName": "Emma Frost",
+  "race": "Mutantka telepatyczna / diamentowa forma",
+  "cls": "Sorcerer",
+  "subclass": "Aberrant Mind",
+  "background": "Noble",
+  "alignment": "Neutral",
+  "stats": {
+    "STR": 8,
+    "DEX": 12,
+    "CON": 16,
+    "INT": 14,
+    "WIS": 10,
+    "CHA": 16
+  },
+  "ac": 15,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Deception",
+    "Insight",
+    "Persuasion",
+    "Investigation"
+  ],
+  "expertise": [],
+  "feats": [
+    "Telepathic"
+  ],
+  "marvel": [
+    [
+      "Diamond Form",
+      "Bonus Action, 2 użycia na Long Rest. Przez 1 minutę masz resistance na bludgeoning, piercing i slashing damage, ale nie możesz rzucać zaklęć innych niż cantrips. Kończysz formę jako Bonus Action."
+    ],
+    [
+      "Omega Telepath",
+      "Raz na Short Rest możesz po nieudanym WIS Save celu przeciwko twojemu enchantment lub psychic spell obniżyć jego rzut o 1d6."
+    ]
+  ],
+  "attacks": [
+    [
+      "Mind Sliver",
+      "INT DC 14",
+      "2d6 psychic",
+      "60 ft"
+    ],
+    [
+      "Tasha's Mind Whip",
+      "INT DC 14",
+      "3d6 psychic",
+      "90 ft"
+    ],
+    [
+      "Diamond Strike",
+      "+4",
+      "1d6+1 bludgeoning",
+      "melee"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "Jeweler's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Warforged",
+  "team": "X-Men",
+  "gender": "Kobieta",
+  "isMutant": true,
+  "skillAliases": {
+    "Insight": "Telepatia",
+    "Deception": "Manipulacja",
+    "Persuasion": "Wpływ społeczny",
+    "Arcana": "Psionika"
+  },
+  "originFeatures": [
+    {
+      "name": "Diamentowa odporność",
+      "rulesName": "Constructed Resilience",
+      "description": "Masz Advantage na saving throws przeciwko Poisoned, resistance na poison damage i odporność na choroby. Możesz funkcjonować bez oddychania podczas typowej sceny lub walki dzięki wyjątkowej fizjologii tej postaci."
+    },
+    {
+      "name": "Czuwanie podczas odpoczynku",
+      "rulesName": "Sentry's Rest",
+      "description": "Podczas Long Rest pozostajesz nieruchomy przez co najmniej 6 godzin, ale nadal jesteś świadomy otoczenia i możesz widzieć oraz słyszeć normalnie."
+    },
+    {
+      "name": "Zintegrowana ochrona",
+      "rulesName": "Integrated Protection",
+      "description": "Masz stałe +1 AC. Założenie lub zdjęcie zintegrowanego pancerza wymaga 1 godziny, a świadomej postaci nie można go zdjąć wbrew jej woli."
+    },
+    {
+      "name": "Specjalistyczne wyszkolenie",
+      "rulesName": "Specialized Design",
+      "description": "Otrzymujesz biegłość w Wnikliwość oraz w Jeweler's Tools. Obie biegłości są już wpisane na kartę."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Moce wrodzone",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 3× 2. poziomu, 2× 3. poziomu."
+    },
+    {
+      "name": "Źródło mocy",
+      "rulesName": "Sorcerous Origin",
+      "description": "Wybrane źródło: Aberrant Mind."
+    },
+    {
+      "name": "Rezerwa mocy",
+      "rulesName": "Font of Magic",
+      "description": "Masz 5 Sorcery Points na Long Rest. Możesz wydawać je na Metamagic albo zamieniać na spell slots; możesz też poświęcać sloty, aby odzyskać Sorcery Points."
+    },
+    {
+      "name": "Kontrola mocy — wybrane techniki",
+      "rulesName": "Metamagic",
+      "description": "Masz dwie techniki Metamagii: Subtle Spell, Heightened Spell. Obie korzystają z tej samej puli 5 Sorcery Points, która wraca po Long Rest."
+    },
+    {
+      "name": "Subtle Spell",
+      "rulesName": "Metamagic: Subtle Spell",
+      "description": "Koszt: 1 Sorcery Point. Rzucasz zaklęcie bez komponentów verbal i somatic. Komponent materialny nadal jest wymagany, jeśli zaklęcie go posiada."
+    },
+    {
+      "name": "Heightened Spell",
+      "rulesName": "Metamagic: Heightened Spell",
+      "description": "Koszt: 3 Sorcery Points. Jedno stworzenie będące celem zaklęcia ma Disadvantage na pierwszy saving throw przeciwko temu zaklęciu."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Telepathic",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Telepathic. Wybrany wzrost cechy: +1 CHA. Możesz telepatycznie mówić do istoty w 60 ft, jeśli zna co najmniej jeden język. Znasz Detect Thoughts i możesz rzucić je raz na Long Rest bez spell slota; możesz też używać własnych slotów."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Moce psioniczne",
+      "rulesName": "Psionic Spells",
+      "description": "Masz dodatkowe zaklęcia podklasy Aberrant Mind. Są zawsze znane i nie liczą się do limitu Sorcerer Spells Known. Ich lista jest uwzględniona w sekcji zaklęć."
+    },
+    {
+      "name": "Łącze telepatyczne",
+      "rulesName": "Telepathic Speech",
+      "description": "Jako Bonus Action wybierasz widoczne stworzenie w 30 ft. Przez 5 minut możeszcie komunikować się telepatycznie, jeśli oboje znacie co najmniej jeden język. Połączenie działa na odległość do 3 mil."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 3,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    },
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Mind Sliver",
+      "flavorName": "Psychiczna igła",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "INT Save. 2d6 psychic i kara 1d4 do kolejnego saving throw."
+    },
+    {
+      "name": "Detect Thoughts",
+      "flavorName": "Skan mentalny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Czytasz powierzchowne myśli. Możesz próbować wejść głębiej po WIS Save."
+    },
+    {
+      "name": "Hold Person",
+      "flavorName": "Psychiczna blokada",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Humanoid może zostać Paralyzed. Concentration."
+    },
+    {
+      "name": "Suggestion",
+      "flavorName": "Wpływ mentalny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Wpływasz na zachowanie celu, jeśli obleje WIS Save."
+    },
+    {
+      "name": "Tasha's Mind Whip",
+      "flavorName": "Uderzenie mentalne",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "3d6 psychic i ogranicza dostępne akcje celu."
+    },
+    {
+      "name": "Hypnotic Pattern",
+      "flavorName": null,
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "30-ft cube. WIS Save. Cele mogą zostać Charmed i Incapacitated."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Sorcery Points / rezerwa mocy",
+      "max": 5,
+      "recharge": "Long Rest",
+      "description": "Punkty do Metamagii i tworzenia spell slotów.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Metamagic",
+      "max": null,
+      "recharge": "",
+      "description": "Dostępne techniki: Subtle Spell, Heightened Spell. Każde użycie wydaje punkty ze wspólnej puli 5 Sorcery Points.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Detect Thoughts z Telepathic",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie bez slotu.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Diamond Form",
+      "max": 2,
+      "recharge": "Long Rest",
+      "description": "Bonus Action, 2 użycia na Long Rest. Przez 1 minutę masz resistance na bludgeoning, piercing i slashing damage, ale nie możesz rzucać zaklęć innych niż cantrips. Kończysz formę jako Bonus Action.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Omega Telepath",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Raz na Short Rest możesz po nieudanym WIS Save celu przeciwko twojemu enchantment lub psychic spell obniżyć jego rzut o 1d6.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Telepathic",
+      "description": "Wybrany wzrost cechy: +1 CHA. Możesz telepatycznie mówić do istoty w 60 ft, jeśli zna co najmniej jeden język. Znasz Detect Thoughts i możesz rzucić je raz na Long Rest bez spell slota; możesz też używać własnych slotów."
+    }
+  ]
+}

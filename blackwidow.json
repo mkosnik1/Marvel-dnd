@@ -1,0 +1,188 @@
+{
+  "id": "blackwidow",
+  "name": "Black Widow",
+  "realName": "Natasha Romanoff",
+  "race": "Agentka Czerwonego Pokoju",
+  "cls": "Rogue",
+  "subclass": "Assassin",
+  "background": "Criminal",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 16,
+    "CON": 13,
+    "INT": 12,
+    "WIS": 15,
+    "CHA": 10
+  },
+  "ac": 15,
+  "speed": 40,
+  "saveProfs": [
+    "DEX",
+    "INT"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Deception",
+    "Stealth",
+    "Perception",
+    "Insight",
+    "Investigation",
+    "Sleight of Hand"
+  ],
+  "expertise": [
+    "Stealth",
+    "Investigation"
+  ],
+  "feats": [
+    "Alert",
+    "Mobile"
+  ],
+  "marvel": [
+    [
+      "Widow's Bite",
+      "3 użycia na Long Rest. Po melee hit możesz dodać 1d6 lightning. Cel robi CON Save DC 13; przy porażce nie może używać Reactions do początku swojej następnej tury."
+    ]
+  ],
+  "attacks": [
+    [
+      "Rapier",
+      "+6",
+      "1d8+3 piercing + Sneak Attack",
+      "finesse"
+    ],
+    [
+      "Hand Crossbow",
+      "+6",
+      "1d6+3 piercing + Sneak Attack",
+      "30/120"
+    ],
+    [
+      "Widow's Bite",
+      "+6",
+      "atak + 1d6 lightning",
+      "3/LR"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Variant Human",
+  "skillAliases": {
+    "Deception": "Przykrywka",
+    "Investigation": "Wywiad",
+    "Sleight of Hand": "Sabotaż",
+    "Stealth": "Infiltracja",
+    "Insight": "Profilowanie"
+  },
+  "gender": "Kobieta",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wyjątkowe predyspozycje",
+      "rulesName": "Ability Score Increase",
+      "description": "Bonusy pochodzenia do cech są już uwzględnione w wynikach cech widocznych na karcie. Nie wybierasz ich ponownie podczas gry."
+    },
+    {
+      "name": "Dodatkowe wyszkolenie",
+      "rulesName": "Extra Skill",
+      "description": "Otrzymujesz biegłość w umiejętności Akrobatyka / Parkour. Proficiency bonus +3 jest już uwzględniony w jej wartości na karcie."
+    },
+    {
+      "name": "Wczesna specjalizacja: Alert",
+      "rulesName": "Bonus Feat",
+      "description": "Masz feat Alert. +5 do Initiative. Gdy jesteś przytomny, nie możesz zostać zaskoczony. Niewidoczny napastnik nie dostaje Advantage na attack roll przeciwko tobie tylko dlatego, że go nie widzisz."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Ekspertyza",
+      "rulesName": "Expertise",
+      "description": "Podwajasz Proficiency Bonus w: Skradanie się, Śledztwo. Premie na karcie są już policzone z podwójnym Proficiency Bonus."
+    },
+    {
+      "name": "Precyzyjne trafienie",
+      "rulesName": "Sneak Attack",
+      "description": "Raz na turę dodajesz 3d6 damage do trafienia finesse lub ranged weapon, jeśli masz Advantage albo przy celu stoi jego przeciwnik w 5 ft i nie masz Disadvantage."
+    },
+    {
+      "name": "Kod operacyjny",
+      "rulesName": "Thieves' Cant",
+      "description": "Znasz tajny kod przestępczego półświatka. Możesz przekazywać ukryte znaczenie w normalnej rozmowie; przekazanie takiej wiadomości trwa około cztery razy dłużej niż zwykłe zdanie."
+    },
+    {
+      "name": "Szybka akcja",
+      "rulesName": "Cunning Action",
+      "description": "W każdej turze możesz jako Bonus Action wykonać Dash, Disengage albo Hide."
+    },
+    {
+      "name": "Specjalizacja operacyjna",
+      "rulesName": "Roguish Archetype",
+      "description": "Wybrana podklasa: Assassin."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Mobile",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Mobile. +10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    },
+    {
+      "name": "Instynktowny unik",
+      "rulesName": "Uncanny Dodge",
+      "description": "Reaction po trafieniu przez napastnika, którego widzisz. Zmniejszasz obrażenia z tego jednego ataku o połowę."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Szkolenie operacyjne",
+      "rulesName": "Bonus Proficiencies",
+      "description": "Masz biegłość w Disguise Kit i Poisoner's Kit. Oba zestawy są częścią twojego szkolenia operacyjnego."
+    },
+    {
+      "name": "Zabójcza przewaga",
+      "rulesName": "Assassinate",
+      "description": "Masz Advantage na attack rolls przeciwko stworzeniu, które jeszcze nie wykonało swojej tury w tej walce. Każde trafienie przeciwko zaskoczonemu stworzeniu jest critical hitem."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Sneak Attack / precyzyjne trafienie",
+      "max": null,
+      "recharge": "1× na turę",
+      "description": "Dodatkowe 3d6 damage przy spełnieniu warunków.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Uncanny Dodge / instynktowny unik",
+      "max": null,
+      "recharge": "Reaction",
+      "description": "Po trafieniu przez widocznego przeciwnika zmniejszasz damage z ataku o połowę.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Widow's Bite",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "3 użycia na Long Rest. Po melee hit możesz dodać 1d6 lightning. Cel robi CON Save DC 13; przy porażce nie może używać Reactions do początku swojej następnej tury.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Alert",
+      "description": "+5 do Initiative. Gdy jesteś przytomny, nie możesz zostać zaskoczony. Niewidoczny napastnik nie dostaje Advantage na attack roll przeciwko tobie tylko dlatego, że go nie widzisz."
+    },
+    {
+      "name": "Mobile",
+      "description": "+10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    }
+  ]
+}

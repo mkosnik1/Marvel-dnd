@@ -1,0 +1,204 @@
+{
+  "id": "blackpanther",
+  "name": "Black Panther",
+  "realName": "T'Challa",
+  "race": "Wzmocniony Wakandyjczyk",
+  "cls": "Monk",
+  "subclass": "Way of the Kensei",
+  "background": "Noble",
+  "alignment": "Lawful Neutral",
+  "stats": {
+    "STR": 8,
+    "DEX": 17,
+    "CON": 13,
+    "INT": 12,
+    "WIS": 15,
+    "CHA": 10
+  },
+  "ac": 15,
+  "speed": 50,
+  "saveProfs": [
+    "STR",
+    "DEX"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Athletics",
+    "Insight",
+    "Perception",
+    "Stealth"
+  ],
+  "expertise": [],
+  "feats": [
+    "Mobile"
+  ],
+  "marvel": [
+    [
+      "Vibranium Suit",
+      "Redukuje otrzymywane bludgeoning, piercing lub slashing damage o 1d4. Raz na Short Rest po otrzymaniu obrażeń od celu w 10 ft zadaje mu thunder damage równy Proficiency Bonus."
+    ]
+  ],
+  "attacks": [
+    [
+      "Kensei Spear",
+      "+6",
+      "1d8+3 piercing",
+      "versatile"
+    ],
+    [
+      "Unarmed Strike",
+      "+6",
+      "1d6+3 bludgeoning",
+      "Martial Arts"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Tabaxi",
+  "skillAliases": {
+    "Arcana": "Technologia wakandyjska",
+    "History": "Wakanda",
+    "Nature": "Zielarstwo",
+    "Investigation": "Analiza",
+    "Stealth": "Infiltracja"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Nadludzka zwinność",
+      "rulesName": "Feline Agility",
+      "description": "Gdy zaczynasz poruszać się w swojej turze, możesz podwoić Speed do końca tej tury. Zdolność odnawia się po turze, w której nie wykorzystasz żadnego ruchu."
+    },
+    {
+      "name": "Pazury i wspinaczka",
+      "rulesName": "Cat's Claws",
+      "description": "Masz climbing speed równy walking speed. Naturalne pazury są unarmed strike: +STR + Proficiency Bonus do trafienia i 1d6 + STR modifier slashing damage."
+    },
+    {
+      "name": "Instynkt łowcy",
+      "rulesName": "Cat's Talent",
+      "description": "Masz biegłość w Perception i Stealth. Obie wartości są już policzone na karcie."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Styl walki wręcz",
+      "rulesName": "Martial Arts",
+      "description": "Możesz używać DEX zamiast STR do attack i damage rolls swoich unarmed strikes i monk weapons. Kość obrażeń Martial Arts na 5. poziomie to d6. Po Attack Action z unarmed strike lub monk weapon możesz wykonać jeden unarmed strike jako Bonus Action."
+    },
+    {
+      "name": "Punkty skupienia",
+      "rulesName": "Ki",
+      "description": "Masz 5 Ki Points. Wszystkie wracają po Short lub Long Rest."
+    },
+    {
+      "name": "Seria ciosów",
+      "rulesName": "Flurry of Blows",
+      "description": "Po Attack Action możesz wydać 1 Ki i jako Bonus Action wykonać dwa unarmed strikes."
+    },
+    {
+      "name": "Defensywna koncentracja",
+      "rulesName": "Patient Defense",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dodge."
+    },
+    {
+      "name": "Zryw mobilności",
+      "rulesName": "Step of the Wind",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dash albo Disengage. Do końca tury podwajasz też dystans skoku."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Unarmored Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz pancerza ani tarczy."
+    },
+    {
+      "name": "Przechwycenie pocisku",
+      "rulesName": "Deflect Missiles",
+      "description": "Reaction, gdy trafia cię ranged weapon attack. Zmniejszasz obrażenia o 1d10 + DEX modifier + 5. Jeśli zredukujesz damage do 0 i pocisk mieści się w jednej ręce, możesz wydać 1 Ki, aby natychmiast nim zaatakować w ramach tej samej Reaction."
+    },
+    {
+      "name": "Kontrolowany upadek",
+      "rulesName": "Slow Fall",
+      "description": "Reaction podczas spadania. Zmniejszasz fall damage o 25."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Mobile",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Mobile. +10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Ogłuszające trafienie",
+      "rulesName": "Stunning Strike",
+      "description": "Po trafieniu melee weapon attackiem możesz wydać 1 Ki. Cel wykonuje CON Save DC 13; przy porażce jest Stunned do końca twojej następnej tury."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Broń sygnaturowa",
+      "rulesName": "Kensei Weapons",
+      "description": "Wybrane Kensei Weapons: Spear, Shortbow. Możesz używać ich jako monk weapons i stosować z nimi zdolności Kensei."
+    },
+    {
+      "name": "Aktywna obrona",
+      "rulesName": "Agile Parry",
+      "description": "Jeśli w swojej Attack Action wykonasz co najmniej jeden unarmed strike, trzymając melee Kensei Weapon, otrzymujesz +2 AC do początku swojej następnej tury, o ile broń pozostaje w dłoni."
+    },
+    {
+      "name": "Precyzyjny strzał",
+      "rulesName": "Kensei's Shot",
+      "description": "Jako Bonus Action do końca tury każdy trafiony ranged attack Kensei Weapon zadaje dodatkowe 1d4 damage tego samego typu co broń."
+    },
+    {
+      "name": "Dyscyplina",
+      "rulesName": "Way of the Brush",
+      "description": "Masz biegłość w Calligrapher's Supplies. Ta biegłość reprezentuje dyscyplinę i precyzję treningu."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Ki / punkty skupienia",
+      "max": 5,
+      "recharge": "Short Rest",
+      "description": "Wydawane na Flurry of Blows, Patient Defense, Step of the Wind i Stunning Strike.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Vibranium Suit",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Redukuje otrzymywane bludgeoning, piercing lub slashing damage o 1d4. Raz na Short Rest po otrzymaniu obrażeń od celu w 10 ft zadaje mu thunder damage równy Proficiency Bonus.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Mobile",
+      "description": "+10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    }
+  ]
+}

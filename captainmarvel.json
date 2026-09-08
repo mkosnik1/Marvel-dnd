@@ -1,0 +1,270 @@
+{
+  "id": "captainmarvel",
+  "name": "Captain Marvel",
+  "realName": "Carol Danvers",
+  "race": "Kosmiczna czempionka",
+  "cls": "Sorcerer",
+  "subclass": "Divine Soul",
+  "background": "Soldier",
+  "alignment": "Lawful Good",
+  "stats": {
+    "STR": 10,
+    "DEX": 14,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 12,
+    "CHA": 16
+  },
+  "ac": 15,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Insight",
+    "Perception",
+    "Persuasion"
+  ],
+  "expertise": [],
+  "feats": [
+    "Spell Sniper"
+  ],
+  "marvel": [
+    [
+      "Binary Energy",
+      "Guiding Bolt: ranged spell attack +6, zasięg 120 ft, 4d6 radiant; następny attack roll przeciwko trafionemu celowi przed końcem twojej następnej tury ma Advantage. Fire Bolt: ranged spell attack +6, zasięg 240 ft dzięki Spell Sniper, 2d10 fire."
+    ],
+    [
+      "Photon Flight",
+      "Możesz uzyskać Flying Speed 60 ft przez maksymalnie 10 minut z Concentration. Raz na Short Rest, gdy aktywujesz ten lot na sobie, zyskujesz 5 Temporary HP."
+    ]
+  ],
+  "attacks": [
+    [
+      "Guiding Bolt",
+      "+6",
+      "4d6 radiant",
+      "240 ft ze Spell Sniper"
+    ],
+    [
+      "Fire Bolt",
+      "+6",
+      "2d10 fire",
+      "240 ft ze Spell Sniper"
+    ],
+    [
+      "Solar Burst",
+      "DEX DC 14",
+      "8d6 radiant",
+      "20-ft radius, 1/LR"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Air Genasi",
+  "team": "Avengers",
+  "gender": "Kobieta",
+  "isMutant": false,
+  "skillAliases": {
+    "Athletics": "Pilot bojowy",
+    "Perception": "Skan bojowy",
+    "Persuasion": "Dowodzenie",
+    "Insight": "Instynkt lotniczy"
+  },
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Nadzwyczajna wydolność",
+      "rulesName": "Unending Breath",
+      "description": "Możesz wstrzymywać oddech bez ograniczenia czasu, dopóki nie jesteś Incapacitated."
+    },
+    {
+      "name": "Odporność na energię",
+      "rulesName": "Lightning Resistance",
+      "description": "Otrzymujesz połowę lightning damage."
+    },
+    {
+      "name": "Kontrola energii i ruchu",
+      "rulesName": "Mingle with the Wind",
+      "description": "Znasz Shocking Grasp. Raz na Long Rest możesz rzucić Feather Fall bez slotu, a od 5. poziomu także Levitate. Jeśli masz własne sloty, możesz używać ich do ponownych rzutów tych zaklęć."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Moce wrodzone",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 3× 2. poziomu, 2× 3. poziomu."
+    },
+    {
+      "name": "Źródło mocy",
+      "rulesName": "Sorcerous Origin",
+      "description": "Wybrane źródło: Divine Soul."
+    },
+    {
+      "name": "Rezerwa mocy",
+      "rulesName": "Font of Magic",
+      "description": "Masz 5 Sorcery Points na Long Rest. Możesz wydawać je na Metamagic albo zamieniać na spell slots; możesz też poświęcać sloty, aby odzyskać Sorcery Points."
+    },
+    {
+      "name": "Kontrola mocy — wybrane techniki",
+      "rulesName": "Metamagic",
+      "description": "Masz dwie techniki Metamagii: Quickened Spell, Distant Spell. Obie korzystają z tej samej puli 5 Sorcery Points, która wraca po Long Rest."
+    },
+    {
+      "name": "Quickened Spell",
+      "rulesName": "Metamagic: Quickened Spell",
+      "description": "Koszt: 2 Sorcery Points. Zaklęcie o casting time 1 Action rzucasz jako Bonus Action."
+    },
+    {
+      "name": "Distant Spell",
+      "rulesName": "Metamagic: Distant Spell",
+      "description": "Koszt: 1 Sorcery Point. Jeśli zaklęcie ma zasięg co najmniej 5 ft, podwajasz go. Jeśli ma zasięg Touch, otrzymuje zasięg 30 ft."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Spell Sniper",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Spell Sniper. Znasz dodatkowy cantrip Fire Bolt. Zasięg zaklęć wymagających attack roll jest podwojony, a ich ataki ignorują half i three-quarters cover."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Rozszerzony repertuar mocy",
+      "rulesName": "Divine Magic",
+      "description": "Na tej karcie z listy Clerica wybrane są: Guiding Bolt. Korzystają z CHA oraz tego samego Spell Save DC i Spell Attack Bonus co pozostałe moce Sorcerera."
+    },
+    {
+      "name": "Awaryjny zryw mocy",
+      "rulesName": "Favored by the Gods",
+      "description": "Raz na Short lub Long Rest, gdy nie zdasz saving throw albo spudłujesz attack roll, możesz dodać 2d4 do wyniku i potencjalnie zmienić porażkę w sukces."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 3,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    },
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Shocking Grasp",
+      "flavorName": null,
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Kosmiczne wyładowanie w zwarciu."
+    },
+    {
+      "name": "Guiding Bolt",
+      "flavorName": "Energetyczny promień",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "4d6 radiant i Advantage na następny atak przeciwko celowi."
+    },
+    {
+      "name": "Shield",
+      "flavorName": "Tarcza energetyczna",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction. +5 AC."
+    },
+    {
+      "name": "Scorching Ray",
+      "flavorName": "Seria promieni",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Trzy energetyczne pociski po 2d6 fire."
+    },
+    {
+      "name": "Counterspell",
+      "flavorName": null,
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Przerywa zaklęcia."
+    },
+    {
+      "name": "Fireball",
+      "flavorName": "Wybuch kosmicznej energii",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Action, punkt w 150 ft, 20-ft radius. Każde stworzenie wykonuje DEX Save DC 14; otrzymuje 8d6 fire przy porażce albo połowę przy sukcesie."
+    },
+    {
+      "name": "Fly",
+      "flavorName": "Kosmiczny lot",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Flying Speed 60 ft. Concentration."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Sorcery Points / rezerwa mocy",
+      "max": 5,
+      "recharge": "Long Rest",
+      "description": "Punkty do Metamagii i tworzenia spell slotów.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Metamagic",
+      "max": null,
+      "recharge": "",
+      "description": "Dostępne techniki: Quickened Spell, Distant Spell. Każde użycie wydaje punkty ze wspólnej puli 5 Sorcery Points.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Feather Fall",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Feather Fall bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Levitate",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Levitate bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Photon Flight — energetyczny boost",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Raz na Short Rest, gdy aktywujesz Fly na sobie, otrzymujesz 5 Temporary HP. Fly daje Flying Speed 60 ft przez maksymalnie 10 minut i wymaga Concentration.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Spell Sniper",
+      "description": "Znasz dodatkowy cantrip Fire Bolt. Zasięg zaklęć wymagających attack roll jest podwojony, a ich ataki ignorują half i three-quarters cover."
+    }
+  ]
+}

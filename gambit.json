@@ -1,0 +1,196 @@
+{
+  "id": "gambit",
+  "name": "Gambit",
+  "realName": "Remy LeBeau",
+  "race": "Mutant energii kinetycznej",
+  "cls": "Fighter",
+  "subclass": "Battle Master",
+  "background": "Criminal",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 10,
+    "DEX": 16,
+    "CON": 14,
+    "INT": 8,
+    "WIS": 12,
+    "CHA": 14
+  },
+  "ac": 16,
+  "speed": 30,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Deception",
+    "Sleight of Hand",
+    "Stealth",
+    "Persuasion"
+  ],
+  "expertise": [],
+  "feats": [
+    "Sharpshooter",
+    "Mobile"
+  ],
+  "marvel": [
+    [
+      "Charged Cards",
+      "Specjalna thrown weapon. Karta zadaje force damage i wraca do puli amunicji po walce. Możesz używać jej z Battle Master maneuvers."
+    ],
+    [
+      "Kinetic Charge",
+      "Raz na turę po trafieniu kartą możesz zmienić jej damage na force i dodać +1d4 force."
+    ]
+  ],
+  "attacks": [
+    [
+      "Charged Card",
+      "+7",
+      "1d6+6 force",
+      "30/90 ft"
+    ],
+    [
+      "Bo Staff",
+      "+6",
+      "1d6+3 bludgeoning",
+      "melee"
+    ],
+    [
+      "Explosive Card",
+      "DEX DC 14",
+      "2d6 force",
+      "10-ft radius, 3/LR"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "Thrown Weapon Fighting: możesz dobyć broń thrown w ramach ataku i dostajesz +2 do jej damage.",
+  "maneuvers": [
+    "Precision Attack",
+    "Pushing Attack",
+    "Trip Attack"
+  ],
+  "tools": "Thieves' Tools, Playing Cards, Woodcarver's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Variant Human",
+  "team": "X-Men",
+  "gender": "Mężczyzna",
+  "isMutant": true,
+  "skillAliases": {
+    "Sleight of Hand": "Karty",
+    "Deception": "Blef",
+    "Acrobatics": "Parkour",
+    "Persuasion": "Urok osobisty",
+    "Stealth": "Złodziejstwo"
+  },
+  "originFeatures": [
+    {
+      "name": "Wyjątkowe predyspozycje",
+      "rulesName": "Ability Score Increase",
+      "description": "Bonusy pochodzenia do cech są już uwzględnione w wynikach cech widocznych na karcie. Nie wybierasz ich ponownie podczas gry."
+    },
+    {
+      "name": "Dodatkowe wyszkolenie",
+      "rulesName": "Extra Skill",
+      "description": "Otrzymujesz biegłość w umiejętności Perswazja / Urok osobisty. Proficiency bonus +3 jest już uwzględniony w jej wartości na karcie."
+    },
+    {
+      "name": "Wczesna specjalizacja: Sharpshooter",
+      "rulesName": "Bonus Feat",
+      "description": "Masz feat Sharpshooter. Ranged weapon attacks ignorują half i three-quarters cover, a long range nie daje Disadvantage. Przed ranged weapon attack możesz przyjąć -5 do attack roll; jeśli trafisz, dodajesz +10 do damage."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Thrown Weapon Fighting: możesz dobyć broń thrown w ramach ataku i dostajesz +2 do jej damage."
+    },
+    {
+      "name": "Zryw adrenaliny",
+      "rulesName": "Second Wind",
+      "description": "Bonus Action. Odzyskujesz 1d10 + 5 HP. Masz 1 użycie i odzyskujesz je po Short lub Long Rest."
+    },
+    {
+      "name": "Eksplozja tempa",
+      "rulesName": "Action Surge",
+      "description": "Raz na Short lub Long Rest możesz w swojej turze wykonać dodatkową Action. Nie daje dodatkowej Bonus Action ani Reaction."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Mobile",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Mobile. +10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Taktyczne manewry",
+      "rulesName": "Combat Superiority",
+      "description": "Masz 4 Superiority Dice d8. Wracają po Short lub Long Rest. Maneuver Save DC 14. Wybrane manewry: Precision Attack, Pushing Attack, Trip Attack."
+    },
+    {
+      "name": "Manewr: Precision Attack",
+      "rulesName": "Precision Attack",
+      "description": "Dodajesz Superiority Die do attack roll. Możesz zdecydować po rzucie, zanim poznasz ostateczny wynik."
+    },
+    {
+      "name": "Manewr: Pushing Attack",
+      "rulesName": "Pushing Attack",
+      "description": "Po trafieniu dodajesz Superiority Die do damage. Przy nieudanym STR Save możesz odepchnąć cel do 15 ft."
+    },
+    {
+      "name": "Manewr: Trip Attack",
+      "rulesName": "Trip Attack",
+      "description": "Po trafieniu wydajesz Superiority Die, dodajesz ją do damage. Cel Large lub mniejszy wykonuje STR Save; przy porażce pada Prone."
+    },
+    {
+      "name": "Profesjonalne wyszkolenie",
+      "rulesName": "Student of War",
+      "description": "Masz biegłość w Woodcarver's Tools. Biegłość jest już wpisana w sekcji narzędzi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Second Wind / zryw adrenaliny",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Bonus Action, odzyskuje 1d10+5 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Action Surge / eksplozja tempa",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Dodatkowa Action w swojej turze.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Superiority Dice / kości manewrów",
+      "max": 4,
+      "recharge": "Short Rest",
+      "description": "4 kości d8 do manewrów Battle Mastera.",
+      "kind": "resource",
+      "unit": "d8"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Sharpshooter",
+      "description": "Ranged weapon attacks ignorują half i three-quarters cover, a long range nie daje Disadvantage. Przed ranged weapon attack możesz przyjąć -5 do attack roll; jeśli trafisz, dodajesz +10 do damage."
+    },
+    {
+      "name": "Mobile",
+      "description": "+10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    }
+  ]
+}

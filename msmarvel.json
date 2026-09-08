@@ -1,0 +1,203 @@
+{
+  "id": "msmarvel",
+  "name": "Ms. Marvel",
+  "realName": "Kamala Khan",
+  "race": "Polimorficzna bohaterka",
+  "cls": "Monk",
+  "subclass": "Way of the Open Hand",
+  "background": "Far Traveler",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 16,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 14,
+    "CHA": 13
+  },
+  "ac": 15,
+  "speed": 40,
+  "saveProfs": [
+    "STR",
+    "DEX"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Insight",
+    "Perception",
+    "Persuasion",
+    "Stealth"
+  ],
+  "expertise": [],
+  "feats": [
+    "Mobile"
+  ],
+  "marvel": [
+    [
+      "Embiggen",
+      "Raz na Long Rest jako Bonus Action przez 1 minutę jej unarmed strikes mają reach 10 ft."
+    ],
+    [
+      "Hard Light Shape",
+      "Za 1 Ki jako Bonus Action możesz wykonać Dash albo Disengage; do końca tury podwajasz też dystans skoku. Te ruchy mogą być tworzone przez twarde światło i powiększane kończyny Kamali."
+    ]
+  ],
+  "attacks": [
+    [
+      "Embiggen Punch",
+      "+6",
+      "1d6+3 bludgeoning",
+      "reach 10 ft podczas Embiggen"
+    ],
+    [
+      "Unarmed Strike",
+      "+6",
+      "1d6+3 bludgeoning",
+      "melee"
+    ],
+    [
+      "Flurry of Blows",
+      "+6",
+      "2 × 1d6+3",
+      "Bonus Action, 1 Ki"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Plasmoid",
+  "team": "Champions",
+  "gender": "Kobieta",
+  "isMutant": false,
+  "skillAliases": {
+    "Acrobatics": "Elastyczny parkour",
+    "Perception": "Czujność bohaterki",
+    "Persuasion": "Fanowska energia",
+    "Insight": "Empatia"
+  },
+  "originFeatures": [
+    {
+      "name": "Elastyczna forma",
+      "rulesName": "Amorphous",
+      "description": "Możesz przecisnąć się przez otwór szerokości 1 cala, jeśli nie niesiesz przedmiotów, które fizycznie się przez niego nie zmieszczą. Masz też Advantage na testy potrzebne do rozpoczęcia albo ucieczki z Grapple."
+    },
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Zwiększona pojemność oddechowa",
+      "rulesName": "Hold Breath",
+      "description": "Możesz wstrzymać oddech przez 1 godzinę."
+    },
+    {
+      "name": "Odporne ciało",
+      "rulesName": "Natural Resilience",
+      "description": "Masz Advantage na saving throws przeciwko Poisoned oraz resistance na acid i poison damage."
+    },
+    {
+      "name": "Zmiana kształtu",
+      "rulesName": "Shape Self",
+      "description": "Jako Action zmieniasz kształt ciała, tworząc albo chowając kończyny. Jako Bonus Action możesz wysunąć pseudopod do manipulowania lekkim przedmiotem w 10 ft; pseudopod nie może atakować ani aktywować magicznych przedmiotów."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Styl walki wręcz",
+      "rulesName": "Martial Arts",
+      "description": "Możesz używać DEX zamiast STR do attack i damage rolls swoich unarmed strikes i monk weapons. Kość obrażeń Martial Arts na 5. poziomie to d6. Po Attack Action z unarmed strike lub monk weapon możesz wykonać jeden unarmed strike jako Bonus Action."
+    },
+    {
+      "name": "Punkty skupienia",
+      "rulesName": "Ki",
+      "description": "Masz 5 Ki Points. Wszystkie wracają po Short lub Long Rest."
+    },
+    {
+      "name": "Seria ciosów",
+      "rulesName": "Flurry of Blows",
+      "description": "Po Attack Action możesz wydać 1 Ki i jako Bonus Action wykonać dwa unarmed strikes."
+    },
+    {
+      "name": "Defensywna koncentracja",
+      "rulesName": "Patient Defense",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dodge."
+    },
+    {
+      "name": "Zryw mobilności",
+      "rulesName": "Step of the Wind",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dash albo Disengage. Do końca tury podwajasz też dystans skoku."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Unarmored Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz pancerza ani tarczy."
+    },
+    {
+      "name": "Przechwycenie pocisku",
+      "rulesName": "Deflect Missiles",
+      "description": "Reaction, gdy trafia cię ranged weapon attack. Zmniejszasz obrażenia o 1d10 + DEX modifier + 5. Jeśli zredukujesz damage do 0 i pocisk mieści się w jednej ręce, możesz wydać 1 Ki, aby natychmiast nim zaatakować w ramach tej samej Reaction."
+    },
+    {
+      "name": "Kontrolowany upadek",
+      "rulesName": "Slow Fall",
+      "description": "Reaction podczas spadania. Zmniejszasz fall damage o 25."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Mobile",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Mobile. +10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Ogłuszające trafienie",
+      "rulesName": "Stunning Strike",
+      "description": "Po trafieniu melee weapon attackiem możesz wydać 1 Ki. Cel wykonuje CON Save DC 13; przy porażce jest Stunned do końca twojej następnej tury."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Kontrola walki wręcz",
+      "rulesName": "Open Hand Technique",
+      "description": "Gdy trafisz jednym z ataków Flurry of Blows, wybierasz jeden efekt: cel wykonuje DEX Save albo pada Prone; wykonuje STR Save albo zostaje odepchnięty o 15 ft; albo nie może używać Reactions do końca twojej następnej tury."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Ki / punkty skupienia",
+      "max": 5,
+      "recharge": "Short Rest",
+      "description": "Wydawane na Flurry of Blows, Patient Defense, Step of the Wind i Stunning Strike.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Embiggen",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest jako Bonus Action przez 1 minutę jej unarmed strikes mają reach 10 ft.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Mobile",
+      "description": "+10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    }
+  ]
+}

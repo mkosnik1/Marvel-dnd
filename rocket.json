@@ -1,0 +1,256 @@
+{
+  "id": "rocket",
+  "name": "Rocket",
+  "realName": "Rocket Raccoon",
+  "race": "Genetycznie zmodyfikowana istota",
+  "cls": "Artificer",
+  "subclass": "Artillerist",
+  "background": "Criminal",
+  "alignment": "Chaotic Neutral",
+  "stats": {
+    "STR": 8,
+    "DEX": 16,
+    "CON": 13,
+    "INT": 17,
+    "WIS": 12,
+    "CHA": 10
+  },
+  "ac": 17,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "INT"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Arcana",
+    "Investigation",
+    "Stealth",
+    "Survival"
+  ],
+  "expertise": [],
+  "feats": [
+    "Gunner"
+  ],
+  "marvel": [
+    [
+      "Big Freaking Gun",
+      "Raz na Long Rest wybierasz punkt w 120 ft. Stworzenia w 10 ft robią DEX Save przeciwko Spell Save DC, otrzymując 4d6 fire przy porażce lub połowę przy sukcesie."
+    ]
+  ],
+  "attacks": [
+    [
+      "Arcane Rifle",
+      "+6",
+      "2d10+1d8 fire",
+      "120 ft"
+    ],
+    [
+      "Force Ballista",
+      "+6",
+      "2d8 force",
+      "120 ft"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Goblin",
+  "skillAliases": {
+    "Arcana": "Technologia",
+    "Investigation": "Inżynieria",
+    "Sleight of Hand": "Sabotaż",
+    "Intimidation": "Groźby",
+    "Survival": "Przetrwanie kosmiczne"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Wykorzystanie słabego punktu",
+      "rulesName": "Fury of the Small",
+      "description": "Gdy trafiasz stworzenie większe od ciebie i zadajesz mu obrażenia, możesz dodać +3 damage. Masz 3 użycia na Long Rest i możesz użyć tej cechy tylko raz na turę."
+    },
+    {
+      "name": "Taktyczne wycofanie",
+      "rulesName": "Nimble Escape",
+      "description": "W każdej swojej turze możesz użyć Bonus Action, aby wykonać Disengage albo Hide."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Improwizacja technologiczna",
+      "rulesName": "Magical Tinkering",
+      "description": "Dotykasz Tiny niemagicznego przedmiotu i nadajesz mu jeden prosty efekt: światło 5 ft, nagraną wiadomość do 6 sekund, zapach/dźwięk albo statyczny obraz/tekst. Możesz utrzymywać liczbę takich przedmiotów równą INT modifier."
+    },
+    {
+      "name": "Systemy i gadżety",
+      "rulesName": "Spellcasting",
+      "description": "Używasz INT. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 2× 2. poziomu. Możesz przygotować 5 zaklęć klasowych; zaklęcia podklasy przygotowane automatycznie nie liczą się do tego limitu."
+    },
+    {
+      "name": "Ulepszenia sprzętu — wybrany zestaw",
+      "rulesName": "Infuse Item",
+      "description": "Znasz 4 infusions: Enhanced Arcane Focus, Enhanced Defense, Homunculus Servant, Replicate Magic Item: Bag of Holding. Jednocześnie możesz utrzymywać 2; na tej karcie aktywne są: Enhanced Arcane Focus, Enhanced Defense."
+    },
+    {
+      "name": "Enhanced Arcane Focus — AKTYWNE",
+      "rulesName": "Infusion: Enhanced Arcane Focus",
+      "description": "Wybrany rod, staff albo wand daje +1 do spell attack rolls i pozwala ignorować half cover przy ranged spell attacks."
+    },
+    {
+      "name": "Enhanced Defense — AKTYWNE",
+      "rulesName": "Infusion: Enhanced Defense",
+      "description": "Na tej karcie nakładasz infusion na pancerz lub tarczę. Przedmiot otrzymuje +1 AC. Jeśli jest oznaczony jako aktywny, bonus jest już uwzględniony w AC postaci."
+    },
+    {
+      "name": "Homunculus Servant",
+      "rulesName": "Infusion: Homunculus Servant",
+      "description": "Tworzysz Tiny Construct przy użyciu klejnotu wartego co najmniej 100 gp. Działa zaraz po twojej turze. Bez polecenia wykonuje Dodge; jako Bonus Action możesz nakazać mu inną akcję. Force Strike używa twojego Spell Attack Bonus i zadaje 1d4+3 force."
+    },
+    {
+      "name": "Replicate Magic Item: Bag of Holding",
+      "rulesName": "Infusion: Replicate Magic Item: Bag of Holding",
+      "description": "Tworzysz Bag of Holding: mieści do 500 lb i 64 cubic ft zawartości, a sama zawsze waży 15 lb. Jej przebicie lub rozerwanie niszczy torbę i wyrzuca zawartość do Astral Plane."
+    },
+    {
+      "name": "Właściwe narzędzie",
+      "rulesName": "Right Tool for the Job",
+      "description": "Po 1 godzinie pracy z Tinker's Tools możesz stworzyć jeden zestaw Artisan's Tools. Poprzedni zestaw stworzony tą zdolnością znika, gdy tworzysz następny."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Gunner",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Gunner. Wybrany wzrost cechy: +1 DEX. Masz biegłość w firearms, ignorujesz właściwość loading broni palnej i nie masz Disadvantage na ranged attack tylko dlatego, że przeciwnik stoi w 5 ft od ciebie."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Specjalistyczne narzędzia",
+      "rulesName": "Tool Proficiency",
+      "description": "Masz biegłość w Woodcarver's Tools."
+    },
+    {
+      "name": "Uzbrojenie specjalne",
+      "rulesName": "Artillerist Spells",
+      "description": "Zawsze przygotowane: 1. poziom — Shield, Thunderwave; 2. poziom — Scorching Ray, Shatter. Nie liczą się do limitu przygotowanych zaklęć."
+    },
+    {
+      "name": "Moduł uzbrojenia",
+      "rulesName": "Eldritch Cannon",
+      "description": "Domyślny moduł tej karty: Force Ballista. Jako Action tworzysz Tiny lub Small cannon; ma AC 18 i 25 HP. Jedno stworzenie jest darmowe na Long Rest, kolejne wymaga spell slota. Aktywujesz cannon jako Bonus Action: Force Ballista — ranged spell attack do 120 ft, 2d8 force i push 5 ft; Flamethrower — 15-ft cone, DEX Save przeciwko twojemu Spell Save DC, 2d8 fire albo połowa przy sukcesie; Protector — ty i wybrane stworzenia w 10 ft otrzymujecie 1d8 + INT modifier Temporary HP."
+    },
+    {
+      "name": "Wzmacniacz broni",
+      "rulesName": "Arcane Firearm",
+      "description": "Wybrane urządzenie: Arcane Rifle. Gdy rzucasz przez nie zaklęcie Artificera posiadające damage roll, dodajesz 1d8 do jednego rzutu obrażeń tego zaklęcia."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Cure Wounds",
+      "flavorName": "Medkit / nanoboty",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Improwizowany medkit."
+    },
+    {
+      "name": "Shield",
+      "flavorName": "Pole energetyczne",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction, +5 AC."
+    },
+    {
+      "name": "Thunderwave",
+      "flavorName": "Repulsor Burst",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Fala uderzeniowa."
+    },
+    {
+      "name": "Scorching Ray",
+      "flavorName": "Wielostrzał energetyczny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Wielostrzał energetyczny."
+    },
+    {
+      "name": "Shatter",
+      "flavorName": "Ładunek soniczny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Eksplozja obszarowa."
+    },
+    {
+      "name": "Web",
+      "flavorName": "Pianka / sieć obezwładniająca",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Sieć/klej technologiczny."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Aktywne ulepszenia",
+      "max": 2,
+      "recharge": "Long Rest",
+      "description": "Możesz utrzymywać 2 aktywne infusions. Obecnie: Enhanced Arcane Focus, Enhanced Defense.",
+      "kind": "resource",
+      "unit": "aktywne"
+    },
+    {
+      "name": "Eldritch Cannon / moduł uzbrojenia",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe stworzenie działa; kolejne wymaga spell slota.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Fury of the Small / wykorzystanie słabego punktu",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Dodatkowy damage przeciwko większym celom.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Big Freaking Gun",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest wybierasz punkt w 120 ft. Stworzenia w 10 ft robią DEX Save przeciwko Spell Save DC, otrzymując 4d6 fire przy porażce lub połowę przy sukcesie.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Gunner",
+      "description": "Wybrany wzrost cechy: +1 DEX. Masz biegłość w firearms, ignorujesz właściwość loading broni palnej i nie masz Disadvantage na ranged attack tylko dlatego, że przeciwnik stoi w 5 ft od ciebie."
+    }
+  ]
+}

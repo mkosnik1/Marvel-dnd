@@ -1,0 +1,177 @@
+{
+  "id": "x23",
+  "name": "X-23",
+  "realName": "Laura Kinney",
+  "race": "Mutantka z czynnikiem regeneracyjnym",
+  "cls": "Barbarian",
+  "subclass": "Path of the Beast",
+  "background": "Soldier",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 16,
+    "DEX": 14,
+    "CON": 16,
+    "INT": 8,
+    "WIS": 12,
+    "CHA": 10
+  },
+  "ac": 15,
+  "speed": 40,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Athletics",
+    "Perception",
+    "Stealth"
+  ],
+  "expertise": [],
+  "feats": [
+    "Slasher"
+  ],
+  "marvel": [
+    [
+      "Adamantium Claws",
+      "Claws z Path of the Beast są adamantium. Liczą się jako magiczne i mogą zadawać slashing damage."
+    ],
+    [
+      "Healing Factor",
+      "Na początku tury, jeśli Laura ma co najmniej 1 HP i mniej niż połowę maksymalnych HP, odzyskuje 2 HP."
+    ]
+  ],
+  "attacks": [
+    [
+      "Adamantium Claw",
+      "+6",
+      "1d6+5 slashing",
+      "melee podczas Rage"
+    ],
+    [
+      "Claw Flurry",
+      "+6",
+      "3 × 1d6+5",
+      "przy odpowiednim użyciu Claws"
+    ],
+    [
+      "Unarmed Strike",
+      "+6",
+      "1d4+5 bludgeoning",
+      "melee"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Half-Orc",
+  "team": "X-Men",
+  "gender": "Kobieta",
+  "isMutant": true,
+  "skillAliases": {
+    "Survival": "Tropienie",
+    "Perception": "Wyostrzone zmysły",
+    "Stealth": "Infiltracja",
+    "Medicine": "Czynnik gojący"
+  },
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Drapieżna prezencja",
+      "rulesName": "Menacing",
+      "description": "Masz biegłość w Intimidation. Wartość na karcie już zawiera Proficiency Bonus."
+    },
+    {
+      "name": "Czynnik regeneracyjny",
+      "rulesName": "Relentless Endurance",
+      "description": "Raz na Long Rest, gdy spadasz do 0 HP, ale nie giniesz natychmiast, pozostajesz na 1 HP."
+    },
+    {
+      "name": "Brutalne trafienia",
+      "rulesName": "Savage Attacks",
+      "description": "Gdy trafisz critical hitem melee weapon attackiem, dodajesz jedną dodatkową kość obrażeń broni do critical damage."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Stan mocy",
+      "rulesName": "Rage",
+      "description": "Bonus Action. Masz 3 użycia na Long Rest. Podczas Rage masz Advantage na STR checks i STR saves, +2 damage do melee attacks opartych na STR oraz resistance na bludgeoning, piercing i slashing damage."
+    },
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Agresywny szturm",
+      "rulesName": "Reckless Attack",
+      "description": "Przy pierwszym melee attack opartym na STR w turze możesz zdecydować się na Reckless Attack. Do końca tury masz Advantage na swoje melee STR attacks, ale attack rolls przeciwko tobie mają Advantage do początku twojej następnej tury."
+    },
+    {
+      "name": "Instynkt zagrożenia",
+      "rulesName": "Danger Sense",
+      "description": "Masz Advantage na DEX Saves przeciwko widocznym efektom, takim jak pułapki i zaklęcia, jeśli nie jesteś Blinded, Deafened ani Incapacitated."
+    },
+    {
+      "name": "Specjalizacja mocy",
+      "rulesName": "Primal Path",
+      "description": "Twoja ścieżka to Path of the Beast. Podczas Rage możesz wybrać Bite, Claws albo Tail. Bite leczy w odpowiednich warunkach, Claws dają dodatkowy atak raz na turę, a Tail ma reach 10 ft i może zwiększyć AC przeciwko jednemu trafieniu."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Slasher",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Slasher. Wybrany wzrost cechy: +1 DEX. Raz na turę po zadaniu slashing damage zmniejszasz Speed celu o 10 ft do początku swojej następnej tury. Po critical hit cel ma Disadvantage na attack rolls do początku twojej następnej tury."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Fast Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz heavy armor."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Broń mutacyjna / naturalna",
+      "rulesName": "Form of the Beast",
+      "description": "Gdy wchodzisz w Rage, wybierasz jedną formę do końca Rage. Bite: 1d8 piercing; raz na turę po trafieniu odzyskujesz HP równe PB, jeśli masz mniej niż połowę HP. Claws: 1d6 slashing; raz na turę po ataku pazurami w Attack Action wykonujesz jeden dodatkowy atak pazurami. Tail: 1d8 piercing, reach 10 ft; gdy widoczny przeciwnik trafi cię atakiem w 10 ft, możesz Reaction rzucić d8 i dodać wynik do AC przeciwko temu atakowi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Rage / stan mocy",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Bonus Action. +2 damage do ataków STR, Advantage na STR checks/saves i resistance na B/P/S.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Czynnik regeneracyjny",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Relentless Endurance: po spadku do 0 HP zostajesz na 1 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Slasher",
+      "description": "Wybrany wzrost cechy: +1 DEX. Raz na turę po zadaniu slashing damage zmniejszasz Speed celu o 10 ft do początku swojej następnej tury. Po critical hit cel ma Disadvantage na attack rolls do początku twojej następnej tury."
+    }
+  ]
+}

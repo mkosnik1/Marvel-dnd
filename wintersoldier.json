@@ -1,0 +1,192 @@
+{
+  "id": "wintersoldier",
+  "name": "Winter Soldier",
+  "realName": "Bucky Barnes",
+  "race": "Cybernetycznie wzmocniony człowiek",
+  "cls": "Fighter",
+  "subclass": "Battle Master",
+  "background": "Soldier",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 13,
+    "DEX": 17,
+    "CON": 15,
+    "INT": 10,
+    "WIS": 12,
+    "CHA": 8
+  },
+  "ac": 17,
+  "speed": 30,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Investigation",
+    "Perception",
+    "Stealth",
+    "Survival"
+  ],
+  "expertise": [],
+  "feats": [
+    "Gunner",
+    "Sharpshooter"
+  ],
+  "marvel": [
+    [
+      "Cybernetic Arm",
+      "Unarmed strike metalową ręką zadaje 1d6 bludgeoning i liczy się jako magiczny. Advantage na Athletics Checks wykonywane do Grapple lub utrzymania chwytu."
+    ]
+  ],
+  "attacks": [
+    [
+      "Rifle",
+      "+8",
+      "1d10+3 piercing",
+      "ranged"
+    ],
+    [
+      "Sharpshooter Rifle",
+      "+3",
+      "1d10+13 piercing",
+      "ranged"
+    ],
+    [
+      "Cybernetic Arm",
+      "+4",
+      "1d6+1 bludgeoning",
+      "melee"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": "Archery: +2 do ranged weapon attack rolls.",
+  "maneuvers": [
+    "Precision Attack",
+    "Trip Attack",
+    "Menacing Attack"
+  ],
+  "tools": "Tinker's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Variant Human",
+  "skillAliases": {
+    "Investigation": "Wywiad",
+    "Stealth": "Infiltracja",
+    "Survival": "Operacje terenowe",
+    "Sleight of Hand": "Sabotaż",
+    "Perception": "Rozpoznanie"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wyjątkowe predyspozycje",
+      "rulesName": "Ability Score Increase",
+      "description": "Bonusy pochodzenia do cech są już uwzględnione w wynikach cech widocznych na karcie. Nie wybierasz ich ponownie podczas gry."
+    },
+    {
+      "name": "Dodatkowe wyszkolenie",
+      "rulesName": "Extra Skill",
+      "description": "Otrzymujesz biegłość w umiejętności Skradanie się / Infiltracja. Proficiency bonus +3 jest już uwzględniony w jej wartości na karcie."
+    },
+    {
+      "name": "Wczesna specjalizacja: Gunner",
+      "rulesName": "Bonus Feat",
+      "description": "Masz feat Gunner. Wybrany wzrost cechy: +1 DEX. Masz biegłość w firearms, ignorujesz właściwość loading broni palnej i nie masz Disadvantage na ranged attack tylko dlatego, że przeciwnik stoi w 5 ft od ciebie."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Archery: +2 do ranged weapon attack rolls."
+    },
+    {
+      "name": "Zryw adrenaliny",
+      "rulesName": "Second Wind",
+      "description": "Bonus Action. Odzyskujesz 1d10 + 5 HP. Masz 1 użycie i odzyskujesz je po Short lub Long Rest."
+    },
+    {
+      "name": "Eksplozja tempa",
+      "rulesName": "Action Surge",
+      "description": "Raz na Short lub Long Rest możesz w swojej turze wykonać dodatkową Action. Nie daje dodatkowej Bonus Action ani Reaction."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Sharpshooter",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Sharpshooter. Ranged weapon attacks ignorują half i three-quarters cover, a long range nie daje Disadvantage. Przed ranged weapon attack możesz przyjąć -5 do attack roll; jeśli trafisz, dodajesz +10 do damage."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Taktyczne manewry",
+      "rulesName": "Combat Superiority",
+      "description": "Masz 4 Superiority Dice d8. Wracają po Short lub Long Rest. Maneuver Save DC 14. Wybrane manewry: Precision Attack, Trip Attack, Menacing Attack."
+    },
+    {
+      "name": "Manewr: Precision Attack",
+      "rulesName": "Precision Attack",
+      "description": "Dodajesz Superiority Die do attack roll. Możesz zdecydować po rzucie, zanim poznasz ostateczny wynik."
+    },
+    {
+      "name": "Manewr: Trip Attack",
+      "rulesName": "Trip Attack",
+      "description": "Po trafieniu wydajesz Superiority Die, dodajesz ją do damage. Cel Large lub mniejszy wykonuje STR Save; przy porażce pada Prone."
+    },
+    {
+      "name": "Manewr: Menacing Attack",
+      "rulesName": "Menacing Attack",
+      "description": "Po trafieniu dodajesz Superiority Die do damage. Cel wykonuje WIS Save; przy porażce jest Frightened do końca twojej następnej tury."
+    },
+    {
+      "name": "Profesjonalne wyszkolenie",
+      "rulesName": "Student of War",
+      "description": "Masz biegłość w Tinker's Tools. Biegłość jest już wpisana w sekcji narzędzi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Second Wind / zryw adrenaliny",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Bonus Action, odzyskuje 1d10+5 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Action Surge / eksplozja tempa",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Dodatkowa Action w swojej turze.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Superiority Dice / kości manewrów",
+      "max": 4,
+      "recharge": "Short Rest",
+      "description": "4 kości d8 do manewrów Battle Mastera.",
+      "kind": "resource",
+      "unit": "d8"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Gunner",
+      "description": "Wybrany wzrost cechy: +1 DEX. Masz biegłość w firearms, ignorujesz właściwość loading broni palnej i nie masz Disadvantage na ranged attack tylko dlatego, że przeciwnik stoi w 5 ft od ciebie."
+    },
+    {
+      "name": "Sharpshooter",
+      "description": "Ranged weapon attacks ignorują half i three-quarters cover, a long range nie daje Disadvantage. Przed ranged weapon attack możesz przyjąć -5 do attack roll; jeśli trafisz, dodajesz +10 do damage."
+    }
+  ]
+}

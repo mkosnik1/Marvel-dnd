@@ -1,0 +1,202 @@
+{
+  "id": "cap",
+  "name": "Captain America",
+  "realName": "Steve Rogers",
+  "race": "Superżołnierz",
+  "cls": "Fighter",
+  "subclass": "Battle Master",
+  "background": "Soldier",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 16,
+    "DEX": 12,
+    "CON": 15,
+    "INT": 8,
+    "WIS": 10,
+    "CHA": 13
+  },
+  "ac": 18,
+  "speed": 30,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Acrobatics",
+    "Perception",
+    "Insight",
+    "Intimidation"
+  ],
+  "expertise": [],
+  "feats": [
+    "Shield Master",
+    "Inspiring Leader"
+  ],
+  "marvel": [
+    [
+      "Vibranium Shield",
+      "Magic weapon +1. Daje +2 AC. Jako broń zadaje 1d8 bludgeoning, ma thrown 30/60 i wraca do ręki po rzucie. Liczy się jako magiczna broń."
+    ],
+    [
+      "Super-Soldier Physiology",
+      "Unarmed Strike zadaje 1d6+STR bludgeoning. Advantage na Athletics związane z długotrwałym biegiem, pływaniem, skokami i wspinaczką."
+    ]
+  ],
+  "attacks": [
+    [
+      "Vibranium Shield",
+      "+7",
+      "1d8+6 bludgeoning",
+      "melee"
+    ],
+    [
+      "Shield, thrown",
+      "+7",
+      "1d8+6 bludgeoning",
+      "30/60 ft"
+    ],
+    [
+      "Unarmed Strike",
+      "+6",
+      "1d6+3 bludgeoning",
+      "melee"
+    ],
+    [
+      "Combat Knife",
+      "+6",
+      "1d4+3 piercing",
+      "20/60 ft"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": "Dueling: +2 damage przy walce jedną bronią jednoręczną.",
+  "maneuvers": [
+    "Trip Attack",
+    "Precision Attack",
+    "Bait and Switch"
+  ],
+  "tools": "Vehicles (land), Playing Cards, Cartographer's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Variant Human",
+  "skillAliases": {
+    "Athletics": "Sprawność bojowa",
+    "History": "Historia wojskowości",
+    "Investigation": "Taktyka",
+    "Survival": "Operacje terenowe",
+    "Persuasion": "Dowodzenie"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wyjątkowe predyspozycje",
+      "rulesName": "Ability Score Increase",
+      "description": "Bonusy pochodzenia do cech są już uwzględnione w wynikach cech widocznych na karcie. Nie wybierasz ich ponownie podczas gry."
+    },
+    {
+      "name": "Dodatkowe wyszkolenie",
+      "rulesName": "Extra Skill",
+      "description": "Otrzymujesz biegłość w umiejętności Akrobatyka / Parkour. Proficiency bonus +3 jest już uwzględniony w jej wartości na karcie."
+    },
+    {
+      "name": "Wczesna specjalizacja: Shield Master",
+      "rulesName": "Bonus Feat",
+      "description": "Masz feat Shield Master. Po wykonaniu Attack Action możesz użyć Bonus Action do Shove tarczą: przewrócić przeciwnika Prone albo odepchnąć go o 5 ft. Do DEX Save przeciwko efektowi celującemu tylko w ciebie dodajesz +2 z tarczy. Gdy zdasz DEX Save przeciwko efektowi zadającemu połowę obrażeń przy sukcesie, możesz użyć Reaction i otrzymać 0 obrażeń."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Dueling: +2 damage przy walce jedną bronią jednoręczną."
+    },
+    {
+      "name": "Zryw adrenaliny",
+      "rulesName": "Second Wind",
+      "description": "Bonus Action. Odzyskujesz 1d10 + 5 HP. Masz 1 użycie i odzyskujesz je po Short lub Long Rest."
+    },
+    {
+      "name": "Eksplozja tempa",
+      "rulesName": "Action Surge",
+      "description": "Raz na Short lub Long Rest możesz w swojej turze wykonać dodatkową Action. Nie daje dodatkowej Bonus Action ani Reaction."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Inspiring Leader",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Inspiring Leader. Po 10 minutach przemowy maksymalnie 6 przyjaznych stworzeń, które cię słyszą i rozumieją, otrzymuje po 6 Temporary HP. Każde z nich może ponownie skorzystać dopiero po Short lub Long Rest."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Taktyczne manewry",
+      "rulesName": "Combat Superiority",
+      "description": "Masz 4 Superiority Dice d8. Wracają po Short lub Long Rest. Maneuver Save DC 14. Wybrane manewry: Trip Attack, Precision Attack, Bait and Switch."
+    },
+    {
+      "name": "Manewr: Trip Attack",
+      "rulesName": "Trip Attack",
+      "description": "Po trafieniu wydajesz Superiority Die, dodajesz ją do damage. Cel Large lub mniejszy wykonuje STR Save; przy porażce pada Prone."
+    },
+    {
+      "name": "Manewr: Precision Attack",
+      "rulesName": "Precision Attack",
+      "description": "Dodajesz Superiority Die do attack roll. Możesz zdecydować po rzucie, zanim poznasz ostateczny wynik."
+    },
+    {
+      "name": "Manewr: Bait and Switch",
+      "rulesName": "Bait and Switch",
+      "description": "Wydajesz 5 ft ruchu i zamieniasz się miejscami z sojusznikiem w 5 ft bez Opportunity Attacks. Jedno z was dostaje bonus do AC równy Superiority Die do początku twojej następnej tury."
+    },
+    {
+      "name": "Profesjonalne wyszkolenie",
+      "rulesName": "Student of War",
+      "description": "Masz biegłość w Cartographer's Tools. Biegłość jest już wpisana w sekcji narzędzi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Second Wind / zryw adrenaliny",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Bonus Action, odzyskuje 1d10+5 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Action Surge / eksplozja tempa",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Dodatkowa Action w swojej turze.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Superiority Dice / kości manewrów",
+      "max": 4,
+      "recharge": "Short Rest",
+      "description": "4 kości d8 do manewrów Battle Mastera.",
+      "kind": "resource",
+      "unit": "d8"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Shield Master",
+      "description": "Po wykonaniu Attack Action możesz użyć Bonus Action do Shove tarczą: przewrócić przeciwnika Prone albo odepchnąć go o 5 ft. Do DEX Save przeciwko efektowi celującemu tylko w ciebie dodajesz +2 z tarczy. Gdy zdasz DEX Save przeciwko efektowi zadającemu połowę obrażeń przy sukcesie, możesz użyć Reaction i otrzymać 0 obrażeń."
+    },
+    {
+      "name": "Inspiring Leader",
+      "description": "Po 10 minutach przemowy maksymalnie 6 przyjaznych stworzeń, które cię słyszą i rozumieją, otrzymuje po 6 Temporary HP. Każde z nich może ponownie skorzystać dopiero po Short lub Long Rest."
+    }
+  ]
+}

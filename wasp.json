@@ -1,0 +1,268 @@
+{
+  "id": "wasp",
+  "name": "Wasp",
+  "realName": "Hope van Dyne",
+  "race": "Użytkowniczka cząstek Pyma",
+  "cls": "Artificer",
+  "subclass": "Artillerist",
+  "background": "Noble",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 15,
+    "CON": 13,
+    "INT": 17,
+    "WIS": 10,
+    "CHA": 12
+  },
+  "ac": 17,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "INT"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Arcana",
+    "Investigation",
+    "Perception"
+  ],
+  "expertise": [],
+  "feats": [
+    "Spell Sniper"
+  ],
+  "marvel": [
+    [
+      "Wasp Sting",
+      "Raz na turę, gdy zadajesz lightning damage, dodajesz dodatkowe lightning damage równe Proficiency Bonus."
+    ]
+  ],
+  "attacks": [
+    [
+      "Fire Bolt",
+      "+6",
+      "2d10+1d8 fire",
+      "przez Arcane Firearm"
+    ],
+    [
+      "Force Ballista",
+      "DC/attack wg Artificera",
+      "2d8 force",
+      "120 ft"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Fairy",
+  "skillAliases": {
+    "Arcana": "Technologia Pyma",
+    "Investigation": "Diagnostyka",
+    "Persuasion": "Biznes i negocjacje",
+    "Acrobatics": "Lot taktyczny"
+  },
+  "gender": "Kobieta",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Nietypowa natura mocy",
+      "rulesName": "Fey",
+      "description": "Dla efektów zależnych od typu stworzenia jesteś traktowany jako Fey, a nie Humanoid."
+    },
+    {
+      "name": "Wbudowany lot",
+      "rulesName": "Flight",
+      "description": "Masz flying speed równy walking speed, o ile nie nosisz medium ani heavy armor."
+    },
+    {
+      "name": "Mikrotechnologia i światło",
+      "rulesName": "Fairy Magic",
+      "description": "Znasz Druidcraft. Raz na Long Rest możesz rzucić Faerie Fire oraz Enlarge/Reduce bez slotu; możesz też używać własnych slotów."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Improwizacja technologiczna",
+      "rulesName": "Magical Tinkering",
+      "description": "Dotykasz Tiny niemagicznego przedmiotu i nadajesz mu jeden prosty efekt: światło 5 ft, nagraną wiadomość do 6 sekund, zapach/dźwięk albo statyczny obraz/tekst. Możesz utrzymywać liczbę takich przedmiotów równą INT modifier."
+    },
+    {
+      "name": "Systemy i gadżety",
+      "rulesName": "Spellcasting",
+      "description": "Używasz INT. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 2× 2. poziomu. Możesz przygotować 5 zaklęć klasowych; zaklęcia podklasy przygotowane automatycznie nie liczą się do tego limitu."
+    },
+    {
+      "name": "Ulepszenia sprzętu — wybrany zestaw",
+      "rulesName": "Infuse Item",
+      "description": "Znasz 4 infusions: Enhanced Arcane Focus, Enhanced Defense, Homunculus Servant, Replicate Magic Item: Bag of Holding. Jednocześnie możesz utrzymywać 2; na tej karcie aktywne są: Enhanced Arcane Focus, Enhanced Defense."
+    },
+    {
+      "name": "Enhanced Arcane Focus — AKTYWNE",
+      "rulesName": "Infusion: Enhanced Arcane Focus",
+      "description": "Wybrany rod, staff albo wand daje +1 do spell attack rolls i pozwala ignorować half cover przy ranged spell attacks."
+    },
+    {
+      "name": "Enhanced Defense — AKTYWNE",
+      "rulesName": "Infusion: Enhanced Defense",
+      "description": "Na tej karcie nakładasz infusion na pancerz lub tarczę. Przedmiot otrzymuje +1 AC. Jeśli jest oznaczony jako aktywny, bonus jest już uwzględniony w AC postaci."
+    },
+    {
+      "name": "Homunculus Servant",
+      "rulesName": "Infusion: Homunculus Servant",
+      "description": "Tworzysz Tiny Construct przy użyciu klejnotu wartego co najmniej 100 gp. Działa zaraz po twojej turze. Bez polecenia wykonuje Dodge; jako Bonus Action możesz nakazać mu inną akcję. Force Strike używa twojego Spell Attack Bonus i zadaje 1d4+3 force."
+    },
+    {
+      "name": "Replicate Magic Item: Bag of Holding",
+      "rulesName": "Infusion: Replicate Magic Item: Bag of Holding",
+      "description": "Tworzysz Bag of Holding: mieści do 500 lb i 64 cubic ft zawartości, a sama zawsze waży 15 lb. Jej przebicie lub rozerwanie niszczy torbę i wyrzuca zawartość do Astral Plane."
+    },
+    {
+      "name": "Właściwe narzędzie",
+      "rulesName": "Right Tool for the Job",
+      "description": "Po 1 godzinie pracy z Tinker's Tools możesz stworzyć jeden zestaw Artisan's Tools. Poprzedni zestaw stworzony tą zdolnością znika, gdy tworzysz następny."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Spell Sniper",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Spell Sniper. Znasz dodatkowy cantrip Fire Bolt. Zasięg zaklęć wymagających attack roll jest podwojony, a ich ataki ignorują half i three-quarters cover."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Specjalistyczne narzędzia",
+      "rulesName": "Tool Proficiency",
+      "description": "Masz biegłość w Woodcarver's Tools."
+    },
+    {
+      "name": "Uzbrojenie specjalne",
+      "rulesName": "Artillerist Spells",
+      "description": "Zawsze przygotowane: 1. poziom — Shield, Thunderwave; 2. poziom — Scorching Ray, Shatter. Nie liczą się do limitu przygotowanych zaklęć."
+    },
+    {
+      "name": "Moduł uzbrojenia",
+      "rulesName": "Eldritch Cannon",
+      "description": "Domyślny moduł tej karty: Force Ballista. Jako Action tworzysz Tiny lub Small cannon; ma AC 18 i 25 HP. Jedno stworzenie jest darmowe na Long Rest, kolejne wymaga spell slota. Aktywujesz cannon jako Bonus Action: Force Ballista — ranged spell attack do 120 ft, 2d8 force i push 5 ft; Flamethrower — 15-ft cone, DEX Save przeciwko twojemu Spell Save DC, 2d8 fire albo połowa przy sukcesie; Protector — ty i wybrane stworzenia w 10 ft otrzymujecie 1d8 + INT modifier Temporary HP."
+    },
+    {
+      "name": "Wzmacniacz broni",
+      "rulesName": "Arcane Firearm",
+      "description": "Wybrane urządzenie: emiter Wasp Sting. Gdy rzucasz przez nie zaklęcie Artificera posiadające damage roll, dodajesz 1d8 do jednego rzutu obrażeń tego zaklęcia."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Druidcraft",
+      "flavorName": null,
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Drobne magiczne efekty z Fairy Magic."
+    },
+    {
+      "name": "Faerie Fire",
+      "flavorName": "Target Lock",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Oznacza cele, dając Advantage na ataki po nieudanym DEX Save."
+    },
+    {
+      "name": "Shield",
+      "flavorName": "Pole energetyczne",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction, +5 AC."
+    },
+    {
+      "name": "Thunderwave",
+      "flavorName": "Repulsor Burst",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "2d8 thunder i odepchnięcie."
+    },
+    {
+      "name": "Enlarge/Reduce",
+      "flavorName": "Zmiana rozmiaru Pyma",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Zmiana rozmiaru, kluczowa dla Wasp."
+    },
+    {
+      "name": "Scorching Ray",
+      "flavorName": "Wielostrzał energetyczny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Trzy promienie po 2d6 fire."
+    },
+    {
+      "name": "Shatter",
+      "flavorName": "Ładunek soniczny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "3d8 thunder w obszarze."
+    },
+    {
+      "name": "Web",
+      "flavorName": "Pianka / sieć obezwładniająca",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Strefa ograniczająca ruch."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Aktywne ulepszenia",
+      "max": 2,
+      "recharge": "Long Rest",
+      "description": "Możesz utrzymywać 2 aktywne infusions. Obecnie: Enhanced Arcane Focus, Enhanced Defense.",
+      "kind": "resource",
+      "unit": "aktywne"
+    },
+    {
+      "name": "Eldritch Cannon / moduł uzbrojenia",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe stworzenie działa; kolejne wymaga spell slota.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Faerie Fire / Wasp Targeting",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Enlarge/Reduce / Cząstki Pyma",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Spell Sniper",
+      "description": "Znasz dodatkowy cantrip Fire Bolt. Zasięg zaklęć wymagających attack roll jest podwojony, a ich ataki ignorują half i three-quarters cover."
+    }
+  ]
+}

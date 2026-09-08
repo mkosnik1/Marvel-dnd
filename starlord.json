@@ -1,0 +1,261 @@
+{
+  "id": "starlord",
+  "name": "Star-Lord",
+  "realName": "Peter Quill",
+  "race": "Hybryda człowieka i istoty kosmicznej",
+  "cls": "Artificer",
+  "subclass": "Artillerist",
+  "background": "Far Traveler",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 16,
+    "CON": 12,
+    "INT": 17,
+    "WIS": 10,
+    "CHA": 13
+  },
+  "ac": 17,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "INT"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Arcana",
+    "Deception",
+    "Perception",
+    "Persuasion"
+  ],
+  "expertise": [],
+  "feats": [
+    "Gunner"
+  ],
+  "marvel": [
+    [
+      "Jet Boots",
+      "2 razy na Long Rest, Bonus Action, Flying Speed 30 ft przez 10 minut."
+    ]
+  ],
+  "attacks": [
+    [
+      "Arcane Blaster",
+      "+6",
+      "2d10+1d8 fire",
+      "120 ft"
+    ],
+    [
+      "Force Ballista",
+      "+6",
+      "2d8 force",
+      "120 ft"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Harengon",
+  "skillAliases": {
+    "Deception": "Blef",
+    "Persuasion": "Negocjacje",
+    "Sleight of Hand": "Szybkie ręce",
+    "Survival": "Nawigacja",
+    "Performance": "Showmaństwo"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Błyskawiczny refleks",
+      "rulesName": "Hare-Trigger",
+      "description": "Dodajesz +3 do Initiative oprócz modyfikatora DEX."
+    },
+    {
+      "name": "Wyostrzona obserwacja",
+      "rulesName": "Leporine Senses",
+      "description": "Masz biegłość w Perception. Premia jest już uwzględniona na karcie."
+    },
+    {
+      "name": "Awaryjny unik",
+      "rulesName": "Lucky Footwork",
+      "description": "Po nieudanym DEX Save możesz użyć Reaction i dodać d4 do wyniku, jeśli nie jesteś Prone i masz Speed większy od 0."
+    },
+    {
+      "name": "Zryw mobilności",
+      "rulesName": "Rabbit Hop",
+      "description": "Jako Bonus Action wykonujesz skok o 15 ft bez prowokowania Opportunity Attacks. Masz 3 użycia na Long Rest."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Improwizacja technologiczna",
+      "rulesName": "Magical Tinkering",
+      "description": "Dotykasz Tiny niemagicznego przedmiotu i nadajesz mu jeden prosty efekt: światło 5 ft, nagraną wiadomość do 6 sekund, zapach/dźwięk albo statyczny obraz/tekst. Możesz utrzymywać liczbę takich przedmiotów równą INT modifier."
+    },
+    {
+      "name": "Systemy i gadżety",
+      "rulesName": "Spellcasting",
+      "description": "Używasz INT. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 2× 2. poziomu. Możesz przygotować 5 zaklęć klasowych; zaklęcia podklasy przygotowane automatycznie nie liczą się do tego limitu."
+    },
+    {
+      "name": "Ulepszenia sprzętu — wybrany zestaw",
+      "rulesName": "Infuse Item",
+      "description": "Znasz 4 infusions: Enhanced Arcane Focus, Enhanced Defense, Homunculus Servant, Replicate Magic Item: Bag of Holding. Jednocześnie możesz utrzymywać 2; na tej karcie aktywne są: Enhanced Arcane Focus, Enhanced Defense."
+    },
+    {
+      "name": "Enhanced Arcane Focus — AKTYWNE",
+      "rulesName": "Infusion: Enhanced Arcane Focus",
+      "description": "Wybrany rod, staff albo wand daje +1 do spell attack rolls i pozwala ignorować half cover przy ranged spell attacks."
+    },
+    {
+      "name": "Enhanced Defense — AKTYWNE",
+      "rulesName": "Infusion: Enhanced Defense",
+      "description": "Na tej karcie nakładasz infusion na pancerz lub tarczę. Przedmiot otrzymuje +1 AC. Jeśli jest oznaczony jako aktywny, bonus jest już uwzględniony w AC postaci."
+    },
+    {
+      "name": "Homunculus Servant",
+      "rulesName": "Infusion: Homunculus Servant",
+      "description": "Tworzysz Tiny Construct przy użyciu klejnotu wartego co najmniej 100 gp. Działa zaraz po twojej turze. Bez polecenia wykonuje Dodge; jako Bonus Action możesz nakazać mu inną akcję. Force Strike używa twojego Spell Attack Bonus i zadaje 1d4+3 force."
+    },
+    {
+      "name": "Replicate Magic Item: Bag of Holding",
+      "rulesName": "Infusion: Replicate Magic Item: Bag of Holding",
+      "description": "Tworzysz Bag of Holding: mieści do 500 lb i 64 cubic ft zawartości, a sama zawsze waży 15 lb. Jej przebicie lub rozerwanie niszczy torbę i wyrzuca zawartość do Astral Plane."
+    },
+    {
+      "name": "Właściwe narzędzie",
+      "rulesName": "Right Tool for the Job",
+      "description": "Po 1 godzinie pracy z Tinker's Tools możesz stworzyć jeden zestaw Artisan's Tools. Poprzedni zestaw stworzony tą zdolnością znika, gdy tworzysz następny."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Gunner",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Gunner. Wybrany wzrost cechy: +1 DEX. Masz biegłość w firearms, ignorujesz właściwość loading broni palnej i nie masz Disadvantage na ranged attack tylko dlatego, że przeciwnik stoi w 5 ft od ciebie."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Specjalistyczne narzędzia",
+      "rulesName": "Tool Proficiency",
+      "description": "Masz biegłość w Woodcarver's Tools."
+    },
+    {
+      "name": "Uzbrojenie specjalne",
+      "rulesName": "Artillerist Spells",
+      "description": "Zawsze przygotowane: 1. poziom — Shield, Thunderwave; 2. poziom — Scorching Ray, Shatter. Nie liczą się do limitu przygotowanych zaklęć."
+    },
+    {
+      "name": "Moduł uzbrojenia",
+      "rulesName": "Eldritch Cannon",
+      "description": "Domyślny moduł tej karty: Force Ballista. Jako Action tworzysz Tiny lub Small cannon; ma AC 18 i 25 HP. Jedno stworzenie jest darmowe na Long Rest, kolejne wymaga spell slota. Aktywujesz cannon jako Bonus Action: Force Ballista — ranged spell attack do 120 ft, 2d8 force i push 5 ft; Flamethrower — 15-ft cone, DEX Save przeciwko twojemu Spell Save DC, 2d8 fire albo połowa przy sukcesie; Protector — ty i wybrane stworzenia w 10 ft otrzymujecie 1d8 + INT modifier Temporary HP."
+    },
+    {
+      "name": "Wzmacniacz broni",
+      "rulesName": "Arcane Firearm",
+      "description": "Wybrane urządzenie: Quad Blaster. Gdy rzucasz przez nie zaklęcie Artificera posiadające damage roll, dodajesz 1d8 do jednego rzutu obrażeń tego zaklęcia."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Cure Wounds",
+      "flavorName": "Medkit / nanoboty",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Technologiczny medkit."
+    },
+    {
+      "name": "Faerie Fire",
+      "flavorName": "Target Lock",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "System oznaczania celów."
+    },
+    {
+      "name": "Shield",
+      "flavorName": "Pole energetyczne",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction, +5 AC."
+    },
+    {
+      "name": "Thunderwave",
+      "flavorName": "Repulsor Burst",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "2d8 thunder i odepchnięcie."
+    },
+    {
+      "name": "Scorching Ray",
+      "flavorName": "Wielostrzał energetyczny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Trzy promienie po 2d6 fire."
+    },
+    {
+      "name": "Shatter",
+      "flavorName": "Ładunek soniczny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "3d8 thunder w obszarze."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Aktywne ulepszenia",
+      "max": 2,
+      "recharge": "Long Rest",
+      "description": "Możesz utrzymywać 2 aktywne infusions. Obecnie: Enhanced Arcane Focus, Enhanced Defense.",
+      "kind": "resource",
+      "unit": "aktywne"
+    },
+    {
+      "name": "Eldritch Cannon / moduł uzbrojenia",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe stworzenie działa; kolejne wymaga spell slota.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Zryw mobilności",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Jako Bonus Action wykonujesz zryw 15 ft bez prowokowania Opportunity Attacks. Masz 3 użycia na Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Jet Boots",
+      "max": 2,
+      "recharge": "Long Rest",
+      "description": "2 razy na Long Rest, Bonus Action, Flying Speed 30 ft przez 10 minut.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Gunner",
+      "description": "Wybrany wzrost cechy: +1 DEX. Masz biegłość w firearms, ignorujesz właściwość loading broni palnej i nie masz Disadvantage na ranged attack tylko dlatego, że przeciwnik stoi w 5 ft od ciebie."
+    }
+  ]
+}

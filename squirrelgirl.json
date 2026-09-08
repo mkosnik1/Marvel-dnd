@@ -1,0 +1,277 @@
+{
+  "id": "squirrelgirl",
+  "name": "Squirrel Girl",
+  "realName": "Doreen Green",
+  "race": "Wiewiórcza bohaterka",
+  "cls": "Druid",
+  "subclass": "Circle of the Land (Forest)",
+  "background": "Outlander",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 10,
+    "DEX": 14,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 16,
+    "CHA": 12
+  },
+  "ac": 14,
+  "speed": 30,
+  "saveProfs": [
+    "INT",
+    "WIS"
+  ],
+  "skillProfs": [
+    "Animal Handling",
+    "Nature",
+    "Perception",
+    "Persuasion",
+    "Survival"
+  ],
+  "expertise": [],
+  "feats": [
+    "Lucky"
+  ],
+  "marvel": [
+    [
+      "Squirrel Friends",
+      "Raz na Long Rest może wezwać wiewiórki: 1 minuta, Advantage na jeden Perception check albo Help dla jednego sojusznika na turę."
+    ],
+    [
+      "Tail Balance",
+      "Ma Advantage na testy utrzymania równowagi w scenach, w których ogon realnie pomaga, jeśli MG uzna to za zasadne."
+    ]
+  ],
+  "attacks": [
+    [
+      "Quarterstaff",
+      "+4",
+      "1d8+0 bludgeoning",
+      "versatile"
+    ],
+    [
+      "Thorn Whip",
+      "+6",
+      "2d6 piercing",
+      "30 ft"
+    ],
+    [
+      "Squirrel Swarm",
+      "STR DC 14",
+      "restrain / nuisance",
+      "1/LR"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Firbolg",
+  "team": "Great Lakes Avengers",
+  "gender": "Kobieta",
+  "isMutant": false,
+  "skillAliases": {
+    "Animal Handling": "Wiewiórcza sieć",
+    "Nature": "Ekologia miejska",
+    "Perception": "Czujność ogonów",
+    "Persuasion": "Optymizm"
+  },
+  "originFeatures": [
+    {
+      "name": "Nietypowe sztuczki",
+      "rulesName": "Firbolg Magic",
+      "description": "Raz na Short lub Long Rest możesz rzucić Detect Magic oraz Disguise Self bez spell slotu. Jeśli masz własne sloty, możesz również używać ich do tych zaklęć."
+    },
+    {
+      "name": "Nagłe zniknięcie",
+      "rulesName": "Hidden Step",
+      "description": "Jako Bonus Action stajesz się Invisible do początku swojej następnej tury. Efekt kończy się wcześniej, jeśli wykonasz attack roll, damage roll albo zmusisz kogoś do saving throw."
+    },
+    {
+      "name": "Nadludzka siła",
+      "rulesName": "Powerful Build",
+      "description": "Przy ustalaniu udźwigu oraz masy, którą możesz pchać, ciągnąć lub podnosić, liczysz się jako stworzenie o jeden rozmiar większe."
+    },
+    {
+      "name": "Więź z naturą",
+      "rulesName": "Speech of Beast and Leaf",
+      "description": "Możesz przekazywać proste idee bestiom i roślinom. One rozumieją sens komunikatu, choć nie zyskują zdolności normalnego mówienia."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Kod natury",
+      "rulesName": "Druidic",
+      "description": "Znasz tajny kod druidów. Możesz zostawiać ukryte wiadomości, które inny znający ten kod odczyta automatycznie; inni mogą zauważyć wiadomość testem Perception DC 15, ale bez magii jej nie rozszyfrują."
+    },
+    {
+      "name": "Kontrola natury",
+      "rulesName": "Spellcasting",
+      "description": "Używasz WIS. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 3× 2. poziomu, 2× 3. poziomu. Możesz przygotować 8 zaklęć klasowych; zaklęcia podklasy przygotowane automatycznie nie liczą się do tego limitu."
+    },
+    {
+      "name": "Squirrel Scout Form",
+      "rulesName": "Wild Shape",
+      "description": "Masz 2 użycia na Short lub Long Rest. Jako Action wybierasz jedną z poniższych form do 2 godzin. Ape: AC 12, 19 HP, Speed 30 ft, climb 30 ft; Multiattack — dwa Fist +5, każde 1d6+3 bludgeoning; Rock +5, 1d6+3 bludgeoning, range 25/50. Crocodile: AC 12, 19 HP, Speed 20 ft, swim 30 ft; Bite +4, 1d10+2 piercing, a trafiony cel Large lub mniejszy zostaje Grappled, escape DC 12. Giant Badger: AC 10, 13 HP, Speed 30 ft, burrow 10 ft; Multiattack — Bite +3, 1d6+1 piercing oraz Claws +3, 2d4+1 slashing. Gdy forma spadnie do 0 HP, wracasz do normalnej postaci; nadmiar obrażeń przechodzi na normalne HP."
+    },
+    {
+      "name": "Specjalizacja natury",
+      "rulesName": "Druid Circle",
+      "description": "Twój krąg to Circle of the Land (Forest). Masz dodatkowy Thorn Whip, Natural Recovery oraz zawsze przygotowane zaklęcia kręgu zapisane bezpośrednio w cechach podklasy."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Lucky",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Lucky. Masz 3 Luck Points na Long Rest. Możesz wydać 1 punkt, aby rzucić dodatkowym d20 przy swoim attack roll, ability check lub saving throw i wybrać wynik. Możesz też użyć punktu, gdy przeciwnik atakuje ciebie, i wybrać między jego wynikiem a dodatkowym d20."
+    },
+    {
+      "name": "Rozszerzone formy",
+      "rulesName": "Wild Shape Improvement",
+      "description": "Na 5. poziomie możesz przyjmować formy CR 1/2 lub niższego, również z swim speed. Formy z flying speed nie są jeszcze dostępne."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Dodatkowa technika",
+      "rulesName": "Bonus Cantrip",
+      "description": "Dodatkowy cantrip na tej karcie: Thorn Whip. Jest już wpisany w sekcji zaklęć i nie liczy się do normalnego limitu cantripów Druida."
+    },
+    {
+      "name": "Regeneracja energii",
+      "rulesName": "Natural Recovery",
+      "description": "Raz dziennie po Short Rest odzyskujesz zużyte spell slots o łącznym poziomie maksymalnie 3. Żaden odzyskany slot nie może być wyższy niż 5. poziom."
+    },
+    {
+      "name": "Zawsze przygotowane techniki natury",
+      "rulesName": "Circle Spells",
+      "description": "Zawsze przygotowane: 2. poziom — Barkskin, Spider Climb; 3. poziom — Conjure Animals, Plant Growth. Nie liczą się do limitu przygotowanych zaklęć."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 3,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    },
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Druidcraft",
+      "flavorName": "Kontrola drobnej flory",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Drobne efekty natury."
+    },
+    {
+      "name": "Thorn Whip",
+      "flavorName": "Pnącze",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "2d6 piercing i przyciągnięcie o 10 ft."
+    },
+    {
+      "name": "Entangle",
+      "flavorName": "Korzenie",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Rośliny tworzą strefę utrudniającą ruch i mogące unieruchamiać."
+    },
+    {
+      "name": "Goodberry",
+      "flavorName": "Regeneracyjne nasiona",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "10 jagód leczących po 1 HP."
+    },
+    {
+      "name": "Speak with Animals",
+      "flavorName": "Kontakt ze zwierzętami",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Rozmowa ze zwierzętami."
+    },
+    {
+      "name": "Barkskin",
+      "flavorName": "Wzmocniona kora",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "AC celu nie spada poniżej 16."
+    },
+    {
+      "name": "Spike Growth",
+      "flavorName": "Kolczaste pnącza",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Ukryte kolce raniące poruszające się cele."
+    },
+    {
+      "name": "Conjure Animals",
+      "flavorName": "Wezwanie zwierząt",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Przywołujesz zwierzęce posiłki — najczęściej wiewiórki, ptaki lub inne drobne stworzenia, zależnie od sceny. To lepiej oddaje styl Squirrel Girl niż rażenie piorunami."
+    },
+    {
+      "name": "Plant Growth",
+      "flavorName": "Nagły rozrost",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Bardzo spowalnia ruch w obszarze."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Wild Shape / alternatywna forma",
+      "max": 2,
+      "recharge": "Short/Long Rest",
+      "description": "Dwa użycia Wild Shape.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Natural Recovery / regeneracja energii",
+      "max": 3,
+      "recharge": "1× dziennie po Short Rest",
+      "description": "Odzyskujesz sloty o łącznym poziomie do 3.",
+      "kind": "resource",
+      "unit": "poziomy slotów"
+    },
+    {
+      "name": "Luck Points / szczęście",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Wydajesz punkt, aby wpłynąć na d20.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Squirrel Friends",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest może wezwać wiewiórki: 1 minuta, Advantage na jeden Perception check albo Help dla jednego sojusznika na turę.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Lucky",
+      "description": "Masz 3 Luck Points na Long Rest. Możesz wydać 1 punkt, aby rzucić dodatkowym d20 przy swoim attack roll, ability check lub saving throw i wybrać wynik. Możesz też użyć punktu, gdy przeciwnik atakuje ciebie, i wybrać między jego wynikiem a dodatkowym d20."
+    }
+  ]
+}

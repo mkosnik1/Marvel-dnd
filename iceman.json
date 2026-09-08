@@ -1,0 +1,257 @@
+{
+  "id": "iceman",
+  "name": "Iceman",
+  "realName": "Bobby Drake",
+  "race": "Mutant kriokinetyczny",
+  "cls": "Sorcerer",
+  "subclass": "Divine Soul",
+  "background": "Far Traveler",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 14,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 12,
+    "CHA": 16
+  },
+  "ac": 15,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Arcana",
+    "Acrobatics",
+    "Perception",
+    "Performance"
+  ],
+  "expertise": [],
+  "feats": [
+    "Elemental Adept (Cold)"
+  ],
+  "marvel": [
+    [
+      "Ice Form",
+      "Bonus Action, 2 użycia na Long Rest. Przez 1 minutę AC zwiększa się o 1 i możesz poruszać się po wodzie, zamrażając ją pod stopami."
+    ],
+    [
+      "Ice Slide",
+      "Gdy rzucasz Fly na siebie, możesz zamiast tego stworzyć lodową ślizgawkę. nadal korzystasz z Flying Speed zaklęcia."
+    ]
+  ],
+  "attacks": [
+    [
+      "Ray of Frost",
+      "+6",
+      "2d8 cold",
+      "60 ft"
+    ],
+    [
+      "Rime's Binding Ice",
+      "CON DC 14",
+      "3d8 cold",
+      "30-ft cone"
+    ],
+    [
+      "Snowball Swarm",
+      "DEX DC 14",
+      "3d6 cold",
+      "90 ft"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Goliath",
+  "team": "X-Men",
+  "gender": "Mężczyzna",
+  "isMutant": true,
+  "skillAliases": {
+    "Arcana": "Kriokinetyka",
+    "Acrobatics": "Lodowy ślizg",
+    "Nature": "Termodynamika",
+    "Performance": "Lodowe konstrukcje"
+  },
+  "originFeatures": [
+    {
+      "name": "Nadludzka budowa",
+      "rulesName": "Little Giant",
+      "description": "Przy ustalaniu udźwigu oraz masy, którą możesz pchać, ciągnąć lub podnosić, liczysz się jako stworzenie o jeden rozmiar większe."
+    },
+    {
+      "name": "Ekstremalna twardość",
+      "rulesName": "Stone's Endurance",
+      "description": "Gdy otrzymujesz obrażenia, możesz użyć Reaction i zmniejszyć je o 1d12 + 3. Masz 3 użycia; wszystkie wracają po Long Rest."
+    },
+    {
+      "name": "Odporność na skrajne warunki",
+      "rulesName": "Mountain Born",
+      "description": "Masz resistance na cold damage i naturalnie radzisz sobie na dużych wysokościach."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Moce wrodzone",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 3× 2. poziomu, 2× 3. poziomu."
+    },
+    {
+      "name": "Źródło mocy",
+      "rulesName": "Sorcerous Origin",
+      "description": "Wybrane źródło: Divine Soul."
+    },
+    {
+      "name": "Rezerwa mocy",
+      "rulesName": "Font of Magic",
+      "description": "Masz 5 Sorcery Points na Long Rest. Możesz wydawać je na Metamagic albo zamieniać na spell slots; możesz też poświęcać sloty, aby odzyskać Sorcery Points."
+    },
+    {
+      "name": "Kontrola mocy — wybrane techniki",
+      "rulesName": "Metamagic",
+      "description": "Masz dwie techniki Metamagii: Quickened Spell, Transmuted Spell. Obie korzystają z tej samej puli 5 Sorcery Points, która wraca po Long Rest."
+    },
+    {
+      "name": "Quickened Spell",
+      "rulesName": "Metamagic: Quickened Spell",
+      "description": "Koszt: 2 Sorcery Points. Zaklęcie o casting time 1 Action rzucasz jako Bonus Action."
+    },
+    {
+      "name": "Transmuted Spell",
+      "rulesName": "Metamagic: Transmuted Spell",
+      "description": "Koszt: 1 Sorcery Point. Gdy zaklęcie zadaje acid, cold, fire, lightning, poison albo thunder damage, możesz zmienić ten typ obrażeń na inny typ z tej samej listy."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Elemental Adept (Cold)",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Elemental Adept (Cold). Zaklęcia zadające cold damage ignorują resistance na cold. Gdy na kości obrażeń cold z zaklęcia wypadnie 1, traktujesz wynik jako 2."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Rozszerzony repertuar mocy",
+      "rulesName": "Divine Magic",
+      "description": "Na tej karcie nie wybrano obecnie żadnego zaklęcia z listy Clerica; wszystkie zapisane moce znajdują się w sekcji zaklęć."
+    },
+    {
+      "name": "Awaryjny zryw mocy",
+      "rulesName": "Favored by the Gods",
+      "description": "Raz na Short lub Long Rest, gdy nie zdasz saving throw albo spudłujesz attack roll, możesz dodać 2d4 do wyniku i potencjalnie zmienić porażkę w sukces."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 3,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    },
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Ray of Frost",
+      "flavorName": "Lodowy promień",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "2d8 cold i -10 ft Speed celu do początku twojej następnej tury."
+    },
+    {
+      "name": "Chromatic Orb (Cold)",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Ranged spell attack. 3d8 cold."
+    },
+    {
+      "name": "Ice Knife",
+      "flavorName": "Lodowy pocisk",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Ranged spell attack. Trafienie i eksplozja z cold damage."
+    },
+    {
+      "name": "Rime's Binding Ice",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "30-ft cone. CON Save. 3d8 cold i ograniczenie ruchu przy porażce."
+    },
+    {
+      "name": "Snilloc's Snowball Swarm",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "5-ft radius. DEX Save. 3d6 cold."
+    },
+    {
+      "name": "Fly",
+      "flavorName": "Ice Slide",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Action, Touch, Concentration do 10 minut. Cel otrzymuje Flying Speed 60 ft. Jeśli efekt kończy się w powietrzu, cel spada."
+    },
+    {
+      "name": "Sleet Storm",
+      "flavorName": "Lodowa burza",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Duży obszar lodu i deszczu, heavily obscured, trudny teren i ryzyko upadku."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Sorcery Points / rezerwa mocy",
+      "max": 5,
+      "recharge": "Long Rest",
+      "description": "Punkty do Metamagii i tworzenia spell slotów.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Metamagic",
+      "max": null,
+      "recharge": "",
+      "description": "Dostępne techniki: Quickened Spell, Transmuted Spell. Każde użycie wydaje punkty ze wspólnej puli 5 Sorcery Points.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Ekstremalna twardość",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Stone's Endurance: Reaction, redukcja 1d12 + Proficiency Bonus.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Ice Form",
+      "max": 2,
+      "recharge": "Long Rest",
+      "description": "Bonus Action, 2 użycia na Long Rest. Przez 1 minutę AC zwiększa się o 1 i możesz poruszać się po wodzie, zamrażając ją pod stopami.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Elemental Adept (Cold)",
+      "description": "Zaklęcia zadające cold damage ignorują resistance na cold. Gdy na kości obrażeń cold z zaklęcia wypadnie 1, traktujesz wynik jako 2."
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "id": "vision",
+  "name": "Vision",
+  "realName": "Vision",
+  "race": "Synthezoid",
+  "cls": "Sorcerer",
+  "subclass": "Divine Soul",
+  "background": "Sage",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 10,
+    "CON": 15,
+    "INT": 13,
+    "WIS": 12,
+    "CHA": 17
+  },
+  "ac": 15,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Arcana",
+    "Insight",
+    "Investigation",
+    "Perception"
+  ],
+  "expertise": [],
+  "feats": [
+    "War Caster"
+  ],
+  "marvel": [
+    [
+      "Density Control",
+      "Raz na Short Rest jako Reaction po trafieniu zyskujesz resistance na całe damage z tego ataku. 3 razy na Long Rest możesz przejść przez zajętą przestrzeń stworzenia bez dodatkowego kosztu."
+    ],
+    [
+      "Solar Gem Beam",
+      "Ranged spell attack +6, zasięg 120 ft. Trafienie zadaje 2d10 radiant damage. Promień wychodzi z klejnotu na czole Visiona."
+    ]
+  ],
+  "attacks": [
+    [
+      "Fire Bolt",
+      "+6",
+      "2d10 fire",
+      "120 ft"
+    ],
+    [
+      "Sacred Flame",
+      "DC 14",
+      "2d8 radiant",
+      "DEX Save"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "Calligrapher's Supplies",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Warforged",
+  "skillAliases": {
+    "Arcana": "Systemy syntetyczne",
+    "Investigation": "Analiza danych",
+    "History": "Bazy danych",
+    "Insight": "Analiza zachowań",
+    "Perception": "Skanowanie"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Fizjologia synthezoida",
+      "rulesName": "Constructed Resilience",
+      "description": "Masz Advantage na saving throws przeciwko Poisoned, resistance na poison damage i odporność na choroby. Nie potrzebujesz normalnego oddychania, jedzenia ani picia, a magia nie może uśpić cię wbrew twojej woli."
+    },
+    {
+      "name": "Czuwanie podczas odpoczynku",
+      "rulesName": "Sentry's Rest",
+      "description": "Podczas Long Rest pozostajesz nieruchomy przez co najmniej 6 godzin, ale nadal jesteś świadomy otoczenia i możesz widzieć oraz słyszeć normalnie."
+    },
+    {
+      "name": "Zintegrowana ochrona",
+      "rulesName": "Integrated Protection",
+      "description": "Masz stałe +1 AC. Założenie lub zdjęcie zintegrowanego pancerza wymaga 1 godziny, a świadomej postaci nie można go zdjąć wbrew jej woli."
+    },
+    {
+      "name": "Specjalistyczne wyszkolenie",
+      "rulesName": "Specialized Design",
+      "description": "Otrzymujesz biegłość w Śledztwo oraz w Calligrapher's Supplies. Obie biegłości są już wpisane na kartę."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Moce wrodzone",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 3× 2. poziomu, 2× 3. poziomu."
+    },
+    {
+      "name": "Źródło mocy",
+      "rulesName": "Sorcerous Origin",
+      "description": "Wybrane źródło: Divine Soul."
+    },
+    {
+      "name": "Rezerwa mocy",
+      "rulesName": "Font of Magic",
+      "description": "Masz 5 Sorcery Points na Long Rest. Możesz wydawać je na Metamagic albo zamieniać na spell slots; możesz też poświęcać sloty, aby odzyskać Sorcery Points."
+    },
+    {
+      "name": "Kontrola mocy — wybrane techniki",
+      "rulesName": "Metamagic",
+      "description": "Masz dwie techniki Metamagii: Quickened Spell, Subtle Spell. Obie korzystają z tej samej puli 5 Sorcery Points, która wraca po Long Rest."
+    },
+    {
+      "name": "Quickened Spell",
+      "rulesName": "Metamagic: Quickened Spell",
+      "description": "Koszt: 2 Sorcery Points. Zaklęcie o casting time 1 Action rzucasz jako Bonus Action."
+    },
+    {
+      "name": "Subtle Spell",
+      "rulesName": "Metamagic: Subtle Spell",
+      "description": "Koszt: 1 Sorcery Point. Rzucasz zaklęcie bez komponentów verbal i somatic. Komponent materialny nadal jest wymagany, jeśli zaklęcie go posiada."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: War Caster",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat War Caster. Masz Advantage na CON Saving Throws wykonywane, aby utrzymać Concentration. Możesz wykonywać komponenty somatyczne z zajętymi rękami. Gdy przeciwnik prowokuje Opportunity Attack, możesz użyć Reaction i rzucić na niego zaklęcie o casting time 1 Action, które celuje wyłącznie w tę istotę."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Rozszerzony repertuar mocy",
+      "rulesName": "Divine Magic",
+      "description": "Na tej karcie z listy Clerica wybrane są: Guidance, Sacred Flame, Cure Wounds, Guiding Bolt, Spiritual Weapon. Korzystają z CHA oraz tego samego Spell Save DC i Spell Attack Bonus co pozostałe moce Sorcerera."
+    },
+    {
+      "name": "Awaryjny zryw mocy",
+      "rulesName": "Favored by the Gods",
+      "description": "Raz na Short lub Long Rest, gdy nie zdasz saving throw albo spudłujesz attack roll, możesz dodać 2d4 do wyniku i potencjalnie zmienić porażkę w sukces."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 3,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    },
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Guidance",
+      "flavorName": null,
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Cel dodaje 1d4 do jednego ability check."
+    },
+    {
+      "name": "Sacred Flame",
+      "flavorName": null,
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Radiant damage, DEX Save."
+    },
+    {
+      "name": "Cure Wounds",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Leczenie z listy Clerica dzięki Divine Soul."
+    },
+    {
+      "name": "Guiding Bolt",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "4d6 radiant, kolejny atak przeciwko celowi z Advantage."
+    },
+    {
+      "name": "Shield",
+      "flavorName": "Bariera psioniczna",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction, +5 AC."
+    },
+    {
+      "name": "Spiritual Weapon",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Bonus Action, magiczna broń atakująca bez Concentration."
+    },
+    {
+      "name": "Counterspell",
+      "flavorName": "Zakłócenie mocy",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Reaction, przerywanie zaklęcia."
+    },
+    {
+      "name": "Fly",
+      "flavorName": "Lewitacja",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Flying Speed 60 ft, Concentration."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Sorcery Points / rezerwa mocy",
+      "max": 5,
+      "recharge": "Long Rest",
+      "description": "Punkty do Metamagii i tworzenia spell slotów.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Metamagic",
+      "max": null,
+      "recharge": "",
+      "description": "Dostępne techniki: Quickened Spell, Subtle Spell. Każde użycie wydaje punkty ze wspólnej puli 5 Sorcery Points.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Density Control",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Raz na Short Rest jako Reaction po trafieniu zyskujesz resistance na całe damage z tego ataku. 3 razy na Long Rest możesz przejść przez zajętą przestrzeń stworzenia bez dodatkowego kosztu.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Favored by the Gods",
+      "max": 1,
+      "recharge": "Short/Long Rest",
+      "description": "Raz na Short/Long Rest dodaj 2d4 do nieudanego attack roll albo save.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "War Caster",
+      "description": "Masz Advantage na CON Saving Throws wykonywane, aby utrzymać Concentration. Możesz wykonywać komponenty somatyczne z zajętymi rękami. Gdy przeciwnik prowokuje Opportunity Attack, możesz użyć Reaction i rzucić na niego zaklęcie o casting time 1 Action, które celuje wyłącznie w tę istotę."
+    }
+  ]
+}

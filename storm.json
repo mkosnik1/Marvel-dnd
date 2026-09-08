@@ -1,0 +1,263 @@
+{
+  "id": "storm",
+  "name": "Storm",
+  "realName": "Ororo Munroe",
+  "race": "Mutantka kontroli pogody",
+  "cls": "Sorcerer",
+  "subclass": "Aberrant Mind",
+  "background": "Noble",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 14,
+    "CON": 13,
+    "INT": 10,
+    "WIS": 12,
+    "CHA": 16
+  },
+  "ac": 15,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Arcana",
+    "Insight",
+    "Perception",
+    "Persuasion"
+  ],
+  "expertise": [],
+  "feats": [
+    "Elemental Adept (Lightning)"
+  ],
+  "marvel": [
+    [
+      "Weather Control",
+      "Raz na turę, gdy zadajesz lightning albo thunder damage zaklęciem, możesz przesunąć trafiony cel o 5 ft. Raz na Long Rest możesz rzucić Call Lightning bez zużywania spell slota."
+    ],
+    [
+      "Wind Rider",
+      "Gdy używasz lotu, masz Flying Speed 60 ft przez maksymalnie 10 minut i musisz utrzymywać Concentration. Lot przedstawia unoszenie się na kontrolowanych prądach powietrza."
+    ]
+  ],
+  "attacks": [
+    [
+      "Shocking Grasp",
+      "+6",
+      "2d8 lightning",
+      "melee spell"
+    ],
+    [
+      "Lightning Bolt",
+      "DEX DC 14",
+      "8d6 lightning",
+      "100-ft line"
+    ],
+    [
+      "Thunderwave",
+      "CON DC 14",
+      "2d8 thunder",
+      "15-ft cube"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Air Genasi",
+  "team": "X-Men",
+  "gender": "Kobieta",
+  "isMutant": true,
+  "skillAliases": {
+    "Arcana": "Meteorologia",
+    "Nature": "Klimatologia",
+    "Perception": "Wyczucie pogody",
+    "Persuasion": "Przywództwo"
+  },
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Nadzwyczajna wydolność",
+      "rulesName": "Unending Breath",
+      "description": "Możesz wstrzymywać oddech bez ograniczenia czasu, dopóki nie jesteś Incapacitated."
+    },
+    {
+      "name": "Odporność na energię",
+      "rulesName": "Lightning Resistance",
+      "description": "Otrzymujesz połowę lightning damage."
+    },
+    {
+      "name": "Kontrola energii i ruchu",
+      "rulesName": "Mingle with the Wind",
+      "description": "Znasz Shocking Grasp. Raz na Long Rest możesz rzucić Feather Fall bez slotu, a od 5. poziomu także Levitate. Jeśli masz własne sloty, możesz używać ich do ponownych rzutów tych zaklęć."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Moce wrodzone",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 3× 2. poziomu, 2× 3. poziomu."
+    },
+    {
+      "name": "Źródło mocy",
+      "rulesName": "Sorcerous Origin",
+      "description": "Wybrane źródło: Aberrant Mind."
+    },
+    {
+      "name": "Rezerwa mocy",
+      "rulesName": "Font of Magic",
+      "description": "Masz 5 Sorcery Points na Long Rest. Możesz wydawać je na Metamagic albo zamieniać na spell slots; możesz też poświęcać sloty, aby odzyskać Sorcery Points."
+    },
+    {
+      "name": "Kontrola mocy — wybrane techniki",
+      "rulesName": "Metamagic",
+      "description": "Masz dwie techniki Metamagii: Quickened Spell, Transmuted Spell. Obie korzystają z tej samej puli 5 Sorcery Points, która wraca po Long Rest."
+    },
+    {
+      "name": "Quickened Spell",
+      "rulesName": "Metamagic: Quickened Spell",
+      "description": "Koszt: 2 Sorcery Points. Zaklęcie o casting time 1 Action rzucasz jako Bonus Action."
+    },
+    {
+      "name": "Transmuted Spell",
+      "rulesName": "Metamagic: Transmuted Spell",
+      "description": "Koszt: 1 Sorcery Point. Gdy zaklęcie zadaje acid, cold, fire, lightning, poison albo thunder damage, możesz zmienić ten typ obrażeń na inny typ z tej samej listy."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Elemental Adept (Lightning)",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Elemental Adept (Lightning). Zaklęcia zadające lightning damage ignorują resistance na lightning. Gdy na kości obrażeń lightning z zaklęcia wypadnie 1, traktujesz wynik jako 2."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Moce psioniczne",
+      "rulesName": "Psionic Spells",
+      "description": "Masz dodatkowe zaklęcia podklasy Aberrant Mind. Są zawsze znane i nie liczą się do limitu Sorcerer Spells Known. Ich lista jest uwzględniona w sekcji zaklęć."
+    },
+    {
+      "name": "Łącze telepatyczne",
+      "rulesName": "Telepathic Speech",
+      "description": "Jako Bonus Action wybierasz widoczne stworzenie w 30 ft. Przez 5 minut możeszcie komunikować się telepatycznie, jeśli oboje znacie co najmniej jeden język. Połączenie działa na odległość do 3 mil."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 3,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    },
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Shocking Grasp",
+      "flavorName": null,
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Melee spell attack. 2d8 lightning, a trafiony cel nie może używać Reactions do początku swojej następnej tury."
+    },
+    {
+      "name": "Thunderwave",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "15-ft cube. CON Save. 2d8 thunder i odepchnięcie o 10 ft przy porażce."
+    },
+    {
+      "name": "Gust of Wind",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Silna linia wiatru utrudnia ruch i odpycha stworzenia."
+    },
+    {
+      "name": "Levitate",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Unosi stworzenie lub przedmiot do 20 ft nad ziemią. Concentration."
+    },
+    {
+      "name": "Fly",
+      "flavorName": null,
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Flying Speed 60 ft przez maksymalnie 10 minut. Concentration."
+    },
+    {
+      "name": "Lightning Bolt",
+      "flavorName": null,
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "100-ft line. DEX Save. 8d6 lightning przy porażce, połowa przy sukcesie."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Sorcery Points / rezerwa mocy",
+      "max": 5,
+      "recharge": "Long Rest",
+      "description": "Punkty do Metamagii i tworzenia spell slotów.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Metamagic",
+      "max": null,
+      "recharge": "",
+      "description": "Dostępne techniki: Quickened Spell, Transmuted Spell. Każde użycie wydaje punkty ze wspólnej puli 5 Sorcery Points.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Feather Fall",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Feather Fall bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Levitate",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Levitate bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Weather Control",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na turę, gdy zadajesz lightning albo thunder damage zaklęciem, możesz przesunąć trafiony cel o 5 ft. Raz na Long Rest możesz rzucić Call Lightning bez zużywania spell slota.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Elemental Adept (Lightning)",
+      "description": "Zaklęcia zadające lightning damage ignorują resistance na lightning. Gdy na kości obrażeń lightning z zaklęcia wypadnie 1, traktujesz wynik jako 2."
+    }
+  ]
+}

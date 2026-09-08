@@ -1,0 +1,174 @@
+{
+  "id": "colossus",
+  "name": "Colossus",
+  "realName": "Piotr Rasputin",
+  "race": "Mutant organicznej stali",
+  "cls": "Barbarian",
+  "subclass": "Path of the Giant",
+  "background": "Outlander",
+  "alignment": "Lawful Good",
+  "stats": {
+    "STR": 16,
+    "DEX": 12,
+    "CON": 16,
+    "INT": 8,
+    "WIS": 10,
+    "CHA": 13
+  },
+  "ac": 15,
+  "speed": 40,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Intimidation",
+    "Perception",
+    "Survival"
+  ],
+  "expertise": [],
+  "feats": [
+    "Tough"
+  ],
+  "marvel": [
+    [
+      "Organic Steel",
+      "Integrated Protection i Constructed Resilience reprezentują stalowe ciało. Gdy jesteś w Rage, twoje unarmed strikes liczą się jako magiczne."
+    ],
+    [
+      "Steel Fist",
+      "Unarmed Strike zadaje 1d8 bludgeoning. Podczas Rage dodajesz normalny bonus Rage damage."
+    ]
+  ],
+  "attacks": [
+    [
+      "Steel Fist",
+      "+6",
+      "1d8+5 bludgeoning",
+      "melee podczas Rage"
+    ],
+    [
+      "Improvised Throw",
+      "+6",
+      "1d8+5 bludgeoning",
+      "30/60 ft"
+    ],
+    [
+      "Grapple",
+      "+6 Athletics",
+      "Grappled",
+      "melee"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "Painter's Supplies",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Warforged",
+  "team": "X-Men",
+  "gender": "Mężczyzna",
+  "isMutant": true,
+  "skillAliases": {
+    "Athletics": "Stalowa siła",
+    "Intimidation": "Stalowa postura",
+    "Survival": "Odporność",
+    "Performance": "Sztuka"
+  },
+  "originFeatures": [
+    {
+      "name": "Organiczna stal",
+      "rulesName": "Constructed Resilience",
+      "description": "Masz Advantage na saving throws przeciwko Poisoned, resistance na poison damage i odporność na choroby. Możesz funkcjonować bez oddychania podczas typowej sceny lub walki dzięki wyjątkowej fizjologii tej postaci."
+    },
+    {
+      "name": "Czuwanie podczas odpoczynku",
+      "rulesName": "Sentry's Rest",
+      "description": "Podczas Long Rest pozostajesz nieruchomy przez co najmniej 6 godzin, ale nadal jesteś świadomy otoczenia i możesz widzieć oraz słyszeć normalnie."
+    },
+    {
+      "name": "Zintegrowana ochrona",
+      "rulesName": "Integrated Protection",
+      "description": "Masz stałe +1 AC. Założenie lub zdjęcie zintegrowanego pancerza wymaga 1 godziny, a świadomej postaci nie można go zdjąć wbrew jej woli."
+    },
+    {
+      "name": "Specjalistyczne wyszkolenie",
+      "rulesName": "Specialized Design",
+      "description": "Otrzymujesz biegłość w Percepcja oraz w Painter's Supplies. Obie biegłości są już wpisane na kartę."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Stan mocy",
+      "rulesName": "Rage",
+      "description": "Bonus Action. Masz 3 użycia na Long Rest. Podczas Rage masz Advantage na STR checks i STR saves, +2 damage do melee attacks opartych na STR oraz resistance na bludgeoning, piercing i slashing damage."
+    },
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Agresywny szturm",
+      "rulesName": "Reckless Attack",
+      "description": "Przy pierwszym melee attack opartym na STR w turze możesz zdecydować się na Reckless Attack. Do końca tury masz Advantage na swoje melee STR attacks, ale attack rolls przeciwko tobie mają Advantage do początku twojej następnej tury."
+    },
+    {
+      "name": "Instynkt zagrożenia",
+      "rulesName": "Danger Sense",
+      "description": "Masz Advantage na DEX Saves przeciwko widocznym efektom, takim jak pułapki i zaklęcia, jeśli nie jesteś Blinded, Deafened ani Incapacitated."
+    },
+    {
+      "name": "Specjalizacja mocy",
+      "rulesName": "Primal Path",
+      "description": "Twoja ścieżka to Path of the Giant. Podczas Rage możesz stać się Large, zwiększasz reach o 5 ft, a ranged attacks bronią thrown używające STR dodają bonus Rage damage."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Tough",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Tough. Maximum HP zwiększa się o 2 za każdy poziom postaci. Na 5. poziomie daje to +10 Maximum HP."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Fast Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz heavy armor."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Demonstracja siły",
+      "rulesName": "Giant Power",
+      "description": "Znasz język Giant. Znasz także Thaumaturgy: możesz na 1 minutę potroić głośność głosu, wywołać drobne drżenie ziemi, chwilową zmianę płomienia, zatrzasnąć lub otworzyć niezabezpieczone drzwi/okno albo stworzyć prosty złowieszczy znak."
+    },
+    {
+      "name": "Pełne uwolnienie mocy",
+      "rulesName": "Giant's Havoc",
+      "description": "Podczas Rage, jeśli masz miejsce, stajesz się Large. Twój reach zwiększa się o 5 ft. Gdy wykonujesz ranged attack bronią z właściwością thrown używając STR, dodajesz bonus Rage damage do obrażeń."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Rage / stan mocy",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Bonus Action. +2 damage do ataków STR, Advantage na STR checks/saves i resistance na B/P/S.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Tough",
+      "description": "Maximum HP zwiększa się o 2 za każdy poziom postaci. Na 5. poziomie daje to +10 Maximum HP."
+    }
+  ]
+}

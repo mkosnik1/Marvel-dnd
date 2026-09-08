@@ -1,0 +1,212 @@
+{
+  "id": "spiderman",
+  "name": "Spider-Man",
+  "realName": "Peter Parker",
+  "race": "Człowiek-pająk",
+  "cls": "Monk",
+  "subclass": "Way of the Open Hand",
+  "background": "Sage",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 17,
+    "CON": 13,
+    "INT": 12,
+    "WIS": 15,
+    "CHA": 10
+  },
+  "ac": 15,
+  "speed": 45,
+  "saveProfs": [
+    "STR",
+    "DEX"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Athletics",
+    "Perception",
+    "Stealth",
+    "Investigation"
+  ],
+  "expertise": [],
+  "feats": [
+    "Alert"
+  ],
+  "marvel": [
+    [
+      "Web Shooters",
+      "3 ładunki na Long Rest. 1 ładunek pozwala rzucić Web bez komponentów. Pajęczyny mogą też służyć jako lina do bujania i wspinania, jeśli jest punkt zaczepienia."
+    ],
+    [
+      "Spider-Sense",
+      "Masz +5 do Initiative z Alert. Gdy jesteś przytomny, nie możesz zostać zaskoczony. Niewidoczni napastnicy nie mają Advantage na ataki przeciwko tobie wyłącznie dlatego, że ich nie widzisz. Twoja Passive Perception i Perception checks reprezentują wyczuwanie zagrożeń."
+    ]
+  ],
+  "attacks": [
+    [
+      "Unarmed Strike",
+      "+6",
+      "1d6+3 bludgeoning",
+      "Martial Arts"
+    ],
+    [
+      "Quarterstaff",
+      "+6",
+      "1d8+3 bludgeoning",
+      "versatile"
+    ],
+    [
+      "Spider Bite",
+      "+4",
+      "1d4+1 piercing",
+      "natural weapon"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Dhampir",
+  "skillAliases": {
+    "Acrobatics": "Parkour",
+    "Arcana": "Technologia",
+    "Nature": "Biologia",
+    "Investigation": "Kryminalistyka",
+    "Perception": "Pajęczy zmysł"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Ekstremalna wydolność",
+      "rulesName": "Deathless Nature",
+      "description": "Możesz pozostawać bez oddechu przez dowolnie długi czas, dopóki nie jesteś Incapacitated. To efekt nadludzkiej wydolności podczas walki, wspinaczki i huśtania się."
+    },
+    {
+      "name": "Przyczepność do powierzchni",
+      "rulesName": "Spider Climb",
+      "description": "Masz climbing speed równy walking speed. Możesz poruszać się po pionowych powierzchniach i po suficie, pozostawiając ręce wolne."
+    },
+    {
+      "name": "Spider Bite / pajęcze uderzenie",
+      "rulesName": "Vampiric Bite",
+      "description": "Naturalny atak używa CON: +4 do trafienia i 1d4+1 piercing. Masz 3 wzmocnione użycia na Long Rest. Po trafieniu jednym z nich wybierasz: odzyskujesz HP równe zadanym obrażeniom albo dodajesz tę wartość jako bonus do następnego ability check lub attack roll."
+    },
+    {
+      "name": "Zachowane wyszkolenie",
+      "rulesName": "Ancestral Legacy",
+      "description": "Zachowujesz biegłość w: Akrobatyka, Percepcja. Są już uwzględnione na karcie."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Styl walki wręcz",
+      "rulesName": "Martial Arts",
+      "description": "Możesz używać DEX zamiast STR do attack i damage rolls swoich unarmed strikes i monk weapons. Kość obrażeń Martial Arts na 5. poziomie to d6. Po Attack Action z unarmed strike lub monk weapon możesz wykonać jeden unarmed strike jako Bonus Action."
+    },
+    {
+      "name": "Punkty skupienia",
+      "rulesName": "Ki",
+      "description": "Masz 5 Ki Points. Wszystkie wracają po Short lub Long Rest."
+    },
+    {
+      "name": "Seria ciosów",
+      "rulesName": "Flurry of Blows",
+      "description": "Po Attack Action możesz wydać 1 Ki i jako Bonus Action wykonać dwa unarmed strikes."
+    },
+    {
+      "name": "Defensywna koncentracja",
+      "rulesName": "Patient Defense",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dodge."
+    },
+    {
+      "name": "Zryw mobilności",
+      "rulesName": "Step of the Wind",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dash albo Disengage. Do końca tury podwajasz też dystans skoku."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Unarmored Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz pancerza ani tarczy."
+    },
+    {
+      "name": "Przechwycenie pocisku",
+      "rulesName": "Deflect Missiles",
+      "description": "Reaction, gdy trafia cię ranged weapon attack. Zmniejszasz obrażenia o 1d10 + DEX modifier + 5. Jeśli zredukujesz damage do 0 i pocisk mieści się w jednej ręce, możesz wydać 1 Ki, aby natychmiast nim zaatakować w ramach tej samej Reaction."
+    },
+    {
+      "name": "Kontrolowany upadek",
+      "rulesName": "Slow Fall",
+      "description": "Reaction podczas spadania. Zmniejszasz fall damage o 25."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Alert",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Alert. +5 do Initiative. Gdy jesteś przytomny, nie możesz zostać zaskoczony. Niewidoczny napastnik nie dostaje Advantage na attack roll przeciwko tobie tylko dlatego, że go nie widzisz."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Ogłuszające trafienie",
+      "rulesName": "Stunning Strike",
+      "description": "Po trafieniu melee weapon attackiem możesz wydać 1 Ki. Cel wykonuje CON Save DC 13; przy porażce jest Stunned do końca twojej następnej tury."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Kontrola walki wręcz",
+      "rulesName": "Open Hand Technique",
+      "description": "Gdy trafisz jednym z ataków Flurry of Blows, wybierasz jeden efekt: cel wykonuje DEX Save albo pada Prone; wykonuje STR Save albo zostaje odepchnięty o 15 ft; albo nie może używać Reactions do końca twojej następnej tury."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Ki / punkty skupienia",
+      "max": 5,
+      "recharge": "Short Rest",
+      "description": "Wydawane na Flurry of Blows, Patient Defense, Step of the Wind i Stunning Strike.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Wzmocnione pajęcze uderzenie",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "3 użycia na Long Rest. Po trafieniu naturalnym atakiem wybierasz leczenie równe zadanym obrażeniom albo taki sam bonus do następnego ability check lub attack roll.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Web Shooters",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "3 ładunki na Long Rest. 1 ładunek pozwala rzucić Web bez komponentów. Pajęczyny mogą też służyć jako lina do bujania i wspinania, jeśli jest punkt zaczepienia.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Alert",
+      "description": "+5 do Initiative. Gdy jesteś przytomny, nie możesz zostać zaskoczony. Niewidoczny napastnik nie dostaje Advantage na attack roll przeciwko tobie tylko dlatego, że go nie widzisz."
+    }
+  ]
+}

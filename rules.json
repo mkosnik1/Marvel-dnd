@@ -1,0 +1,194 @@
+{
+  "skillAbility": {
+    "Acrobatics": "DEX",
+    "Animal Handling": "WIS",
+    "Arcana": "INT",
+    "Athletics": "STR",
+    "Deception": "CHA",
+    "History": "INT",
+    "Insight": "WIS",
+    "Intimidation": "CHA",
+    "Investigation": "INT",
+    "Medicine": "WIS",
+    "Nature": "INT",
+    "Perception": "WIS",
+    "Performance": "CHA",
+    "Persuasion": "CHA",
+    "Religion": "INT",
+    "Sleight of Hand": "DEX",
+    "Stealth": "DEX",
+    "Survival": "WIS"
+  },
+  "backgroundDesc": {
+    "Soldier": "Military Rank. Twoje szkolenie i stopień dają rozpoznawalność oraz dostęp do pomocy wojskowej, jeśli fabuła na to pozwala.",
+    "Guild Artisan": "Guild Membership. Masz kontakty zawodowe i rozpoznawalność w swoim fachu.",
+    "Noble": "Position of Privilege. Osoby świadome twojej pozycji społecznej zwykle traktują cię z odpowiednim szacunkiem.",
+    "Sage": "Researcher. Jeśli nie znasz informacji, zwykle potrafisz ustalić, gdzie można jej szukać.",
+    "Criminal": "Criminal Contact. Masz wiarygodny kontakt ze środowiskiem przestępczym.",
+    "Haunted One": "Heart of Darkness. Zwykli ludzie często okazują ci pomoc, gdy widzą, że mierzysz się z czymś przerażającym.",
+    "Charlatan": "False Identity. Masz przygotowaną alternatywną tożsamość i narzędzia do jej podtrzymywania.",
+    "Hermit": "Discovery. W okresie odosobnienia odkryłeś istotną wiedzę lub sekret.",
+    "Far Traveler": "All Eyes on You. Twoje pochodzenie i zachowanie przyciągają uwagę miejscowych.",
+    "Outlander": "Wanderer. Dobrze pamiętasz mapy i teren oraz łatwiej znajdujesz pożywienie i wodę w dziczy.",
+    "Entertainer": "By Popular Demand. Zwykle możesz znaleźć miejsce do występu i uzyskać podstawowe zakwaterowanie za występ.",
+    "Investigator": "Watcher's Eye. Masz doświadczenie w obserwacji, dochodzeniu i kontaktach z lokalnymi służbami.",
+    "Mercenary Veteran": "Mercenary Life. Znasz struktury najemników i potrafisz znaleźć zlecenia lub kontakty w tym środowisku."
+  },
+  "classProfs": {
+    "Fighter": [
+      "Light, Medium, Heavy, Shields",
+      "Simple, Martial"
+    ],
+    "Artificer": [
+      "Light, Medium, Shields",
+      "Simple"
+    ],
+    "Paladin": [
+      "Light, Medium, Heavy, Shields",
+      "Simple, Martial"
+    ],
+    "Barbarian": [
+      "Light, Medium, Shields",
+      "Simple, Martial"
+    ],
+    "Monk": [
+      "Brak",
+      "Simple, Shortswords"
+    ],
+    "Rogue": [
+      "Light",
+      "Simple, Hand Crossbow, Longsword, Rapier, Shortsword"
+    ],
+    "Wizard": [
+      "Brak",
+      "Dagger, Dart, Sling, Quarterstaff, Light Crossbow"
+    ],
+    "Sorcerer": [
+      "Brak",
+      "Dagger, Dart, Sling, Quarterstaff, Light Crossbow"
+    ],
+    "Warlock": [
+      "Light",
+      "Simple"
+    ],
+    "Ranger": [
+      "Light, Medium, Shields",
+      "Simple, Martial"
+    ],
+    "Druid": [
+      "Light, Medium, Shields (bez metalu w klasycznej wersji)",
+      "Club, Dagger, Dart, Javelin, Mace, Quarterstaff, Scimitar, Sickle, Sling, Spear"
+    ]
+  },
+  "bgTools": {
+    "Soldier": "Gaming Set, Vehicles (land)",
+    "Guild Artisan": "Wybrany zestaw Artisan's Tools",
+    "Noble": "Gaming Set",
+    "Sage": "Brak narzędzi z backgroundu",
+    "Criminal": "Thieves' Tools, Gaming Set",
+    "Haunted One": "Brak stałego zestawu narzędzi; zależy od wariantu",
+    "Charlatan": "Disguise Kit, Forgery Kit",
+    "Hermit": "Herbalism Kit",
+    "Far Traveler": "Musical Instrument albo Gaming Set",
+    "Outlander": "Musical Instrument",
+    "Entertainer": "Disguise Kit, Musical Instrument",
+    "Investigator": "Zależne od wariantu Investigator/City Watch",
+    "Mercenary Veteran": "Gaming Set, Vehicles (land)"
+  },
+  "spellAbility": {
+    "Artificer": "INT",
+    "Paladin": "CHA",
+    "Wizard": "INT",
+    "Sorcerer": "CHA",
+    "Warlock": "CHA",
+    "Ranger": "WIS",
+    "Druid": "WIS"
+  },
+  "hitdie": {
+    "Fighter": 10,
+    "Artificer": 8,
+    "Paladin": 10,
+    "Barbarian": 12,
+    "Monk": 8,
+    "Rogue": 8,
+    "Wizard": 6,
+    "Sorcerer": 6,
+    "Warlock": 8,
+    "Ranger": 10,
+    "Druid": 8
+  },
+  "fixedPerLevel": {
+    "12": 7,
+    "10": 6,
+    "8": 5,
+    "6": 4
+  },
+  "skillPL": {
+    "Acrobatics": "Akrobatyka",
+    "Animal Handling": "Opieka nad zwierzętami",
+    "Arcana": "Arkana",
+    "Athletics": "Atletyka",
+    "Deception": "Oszustwo",
+    "History": "Historia",
+    "Insight": "Wnikliwość",
+    "Intimidation": "Zastraszanie",
+    "Investigation": "Śledztwo",
+    "Medicine": "Medycyna",
+    "Nature": "Przyroda",
+    "Perception": "Percepcja",
+    "Performance": "Występy",
+    "Persuasion": "Perswazja",
+    "Religion": "Religia",
+    "Sleight of Hand": "Zręczne dłonie",
+    "Stealth": "Skradanie się",
+    "Survival": "Przetrwanie"
+  },
+  "skillTooltips": {
+    "Acrobatics": "Utrzymanie równowagi w trudnej sytuacji, wykonanie akrobatycznej sztuczki.",
+    "Animal Handling": "Uspokojenie, tresura zwierzęcia lub skłonienie go do posłuszeństwa.",
+    "Arcana": "Wiedza o magii, przedmiotach magicznych, planach egzystencji.",
+    "Athletics": "Skok w dal, pływanie w trudnych warunkach, forsowanie przeszkód.",
+    "Deception": "Wiarygodne kłamstwo, przebranie, udawanie kogoś innego.",
+    "History": "Wiedza o wydarzeniach, postaciach i kulturach historycznych.",
+    "Insight": "Odczytywanie emocji, nastroju lub intencji rozmówcy.",
+    "Intimidation": "Groźby, wymuszanie posłuszeństwa, wzbudzanie strachu.",
+    "Investigation": "Analiza śladów, znajdowanie wskazówek, badanie działania czegoś.",
+    "Medicine": "Diagnozowanie chorób, sprawdzanie przyczyn śmierci.",
+    "Nature": "Wiedza o zwierzętach, roślinach, zjawiskach naturalnych.",
+    "Perception": "Zauważenie ukrytych rzeczy, nasłuchiwanie, wypatrywanie.",
+    "Performance": "Muzyka, taniec, aktorstwo, opowiadanie historii.",
+    "Persuasion": "Uczciwe przekonywanie, dyplomacja, negocjacje.",
+    "Religion": "Wiedza o bogach, rytuałach, symbolach religijnych.",
+    "Sleight of Hand": "Kradzież kieszonkowa, ukrywanie przedmiotów, sztuczki.",
+    "Stealth": "Ciche poruszanie się, ukrywanie się przed wzrokiem.",
+    "Survival": "Tropienie, orientacja w terenie, znajdowanie pożywienia."
+  },
+  "abilityPL": {
+    "STR": "Siła",
+    "DEX": "Zręczność",
+    "CON": "Kondycja",
+    "INT": "Inteligencja",
+    "WIS": "Mądrość",
+    "CHA": "Charyzma"
+  },
+  "skillAliasDefault": {
+    "Acrobatics": "Parkour",
+    "Animal Handling": "Praca ze zwierzętami",
+    "Arcana": "Anomalie",
+    "Athletics": "Sprawność",
+    "Deception": "Przykrywka",
+    "History": "Wiedza o świecie",
+    "Insight": "Profilowanie",
+    "Intimidation": "Presja",
+    "Investigation": "Analiza",
+    "Medicine": "Pierwsza pomoc",
+    "Nature": "Nauki przyrodnicze",
+    "Perception": "Czujność",
+    "Performance": "Prezentacja",
+    "Persuasion": "Negocjacje",
+    "Religion": "Kosmologia / okultyzm",
+    "Sleight of Hand": "Sabotaż manualny",
+    "Stealth": "Infiltracja",
+    "Survival": "Operacje terenowe"
+  }
+}

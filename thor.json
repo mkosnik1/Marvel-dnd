@@ -1,0 +1,309 @@
+{
+  "id": "thor",
+  "name": "Thor",
+  "realName": "Thor Odinson",
+  "race": "Asgardczyk",
+  "cls": "Paladin",
+  "subclass": "Oath of Glory",
+  "background": "Noble",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 18,
+    "DEX": 10,
+    "CON": 14,
+    "INT": 8,
+    "WIS": 12,
+    "CHA": 14
+  },
+  "ac": 17,
+  "speed": 35,
+  "saveProfs": [
+    "WIS",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Insight",
+    "Persuasion",
+    "Religion"
+  ],
+  "expertise": [],
+  "feats": [
+    "Crusher"
+  ],
+  "marvel": [
+    [
+      "Mjolnir",
+      "Magic warhammer +1. +8 to hit, 1d8+7 bludgeoning, thrown 30/90. Wraca po rzucie. Bonus Action przywołuje go z do 120 ft. Raz na turę damage można zmienić na lightning."
+    ]
+  ],
+  "attacks": [
+    [
+      "Mjolnir",
+      "+8",
+      "1d8+7 bludgeoning",
+      "melee"
+    ],
+    [
+      "Mjolnir, thrown",
+      "+8",
+      "1d8+7 bludgeoning",
+      "30/90 ft"
+    ],
+    [
+      "Shocking Grasp",
+      "+5",
+      "2d8 lightning",
+      "melee spell"
+    ],
+    [
+      "Guiding Bolt",
+      "+5",
+      "4d6 radiant",
+      "120 ft"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": "Dueling: +2 damage przy Mjolnirze używanym jedną ręką.",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Air Genasi",
+  "skillAliases": {
+    "Religion": "Wiedza asgardzka",
+    "Arcana": "Kosmologia",
+    "Athletics": "Asgardzka siła",
+    "Intimidation": "Boska prezencja"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Nadzwyczajna wydolność",
+      "rulesName": "Unending Breath",
+      "description": "Możesz wstrzymywać oddech bez ograniczenia czasu, dopóki nie jesteś Incapacitated."
+    },
+    {
+      "name": "Odporność na energię",
+      "rulesName": "Lightning Resistance",
+      "description": "Otrzymujesz połowę lightning damage."
+    },
+    {
+      "name": "Kontrola energii i ruchu",
+      "rulesName": "Mingle with the Wind",
+      "description": "Znasz Shocking Grasp. Raz na Long Rest możesz rzucić Feather Fall bez slotu, a od 5. poziomu także Levitate. Jeśli masz własne sloty, możesz używać ich do ponownych rzutów tych zaklęć."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Wyczucie nadnaturalnych zagrożeń",
+      "rulesName": "Divine Sense",
+      "description": "Action. Do końca następnej tury wiesz, gdzie w 60 ft znajdują się Celestials, Fiends i Undead, jeśli nie są za total cover; rozpoznajesz też miejsca consecrated/desecrated. Masz 3 użycia na Long Rest."
+    },
+    {
+      "name": "Rezerwa regeneracyjna",
+      "rulesName": "Lay on Hands",
+      "description": "Masz pulę 25 HP na Long Rest. Jako Action dotykasz stworzenia i leczysz je, wydając dowolną liczbę punktów z puli. Możesz zamiast tego wydać 5 punktów, aby usunąć jedną chorobę albo jedną truciznę."
+    },
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Dueling: +2 damage przy Mjolnirze używanym jedną ręką."
+    },
+    {
+      "name": "Moce i techniki",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 13, Spell Attack +5. Dostępne sloty: 4× 1. poziomu, 2× 2. poziomu. Możesz przygotować 4 zaklęć klasowych; zaklęcia podklasy przygotowane automatycznie nie liczą się do tego limitu."
+    },
+    {
+      "name": "Wzmocnione uderzenie",
+      "rulesName": "Divine Smite",
+      "description": "Po trafieniu melee weapon attackiem możesz wydać spell slot. Slot 1. poziomu dodaje 2d8 radiant damage, slot 2. poziomu 3d8; przeciwko Fiend lub Undead dodajesz jeszcze 1d8."
+    },
+    {
+      "name": "Nadzwyczajna odporność",
+      "rulesName": "Divine Health",
+      "description": "Jesteś odporny na choroby."
+    },
+    {
+      "name": "Kodeks bohatera",
+      "rulesName": "Sacred Oath",
+      "description": "Twoja przysięga to Oath of Glory. Na tym poziomie daje zawsze przygotowane Guiding Bolt, Heroism, Enhance Ability i Magic Weapon oraz dwie opcje wspólnego Channel Divinity: Peerless Athlete i Inspiring Smite."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Crusher",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Crusher. Wybrany wzrost cechy: +1 STR. Raz na turę po zadaniu bludgeoning damage możesz przesunąć trafiony cel o 5 ft, jeśli nie jest większy od ciebie o więcej niż jeden rozmiar. Po critical hit z bludgeoning damage ataki przeciwko temu celowi mają Advantage do początku twojej następnej tury."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Techniki przysięgi",
+      "rulesName": "Oath Spells",
+      "description": "1. poziom: Guiding Bolt, Heroism. 2. poziom: Enhance Ability, Magic Weapon. Wszystkie są zawsze przygotowane i nie liczą się do limitu przygotowanych zaklęć Paladina."
+    },
+    {
+      "name": "Nadludzka sprawność",
+      "rulesName": "Channel Divinity: Peerless Athlete",
+      "description": "Bonus Action. Przez 10 minut masz Advantage na Athletics i Acrobatics, możesz pchać, ciągnąć i podnosić dwa razy większy ciężar, a long jump i high jump zwiększają się o 10 ft."
+    },
+    {
+      "name": "Inspirujący zryw",
+      "rulesName": "Channel Divinity: Inspiring Smite",
+      "description": "Bezpośrednio po Divine Smite możesz jako Bonus Action rzucić 2d8 + 5 i rozdzielić tyle Temporary HP pomiędzy wybrane stworzenia w 30 ft, w tym siebie."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Shocking Grasp",
+      "flavorName": "Dotyk pioruna",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "2d8 lightning, Advantage przeciwko celowi w metalowej zbroi, trafiony cel traci Reactions."
+    },
+    {
+      "name": "Bless",
+      "flavorName": "Inspiracja Asgardu",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Do 3 celów dodaje 1d4 do attack rolls i Saving Throws."
+    },
+    {
+      "name": "Command",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Jednowyrazowe polecenie, WIS Save DC 13."
+    },
+    {
+      "name": "Cure Wounds",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Dotyk, 1d8+2 HP na 1. poziomie."
+    },
+    {
+      "name": "Feather Fall",
+      "flavorName": "Kontrola upadku",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction, do 5 spadających stworzeń w 60 ft unika typowego fall damage."
+    },
+    {
+      "name": "Guiding Bolt",
+      "flavorName": "Rzut Mjolnirem z energią",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "4d6 radiant; następny attack roll przeciwko celowi ma Advantage."
+    },
+    {
+      "name": "Heroism",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Odporność na Frightened i 2 Temporary HP na początku tur celu."
+    },
+    {
+      "name": "Thunderous Smite",
+      "flavorName": "Uderzenie Mjolnira",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "+2d6 thunder przy następnym melee hit; STR Save może odepchnąć 10 ft i przewrócić."
+    },
+    {
+      "name": "Enhance Ability",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Advantage na testy wybranej cechy i dodatkowy efekt."
+    },
+    {
+      "name": "Levitate",
+      "flavorName": "Uniesienie Mjolnirem",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Unosi cel do 20 ft, Concentration do 10 minut."
+    },
+    {
+      "name": "Magic Weapon",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "+1 do attack i damage dla niemagicznej broni."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Lay on Hands / rezerwa regeneracyjna",
+      "max": 25,
+      "recharge": "Long Rest",
+      "description": "Pula leczenia. Możesz wydawać dowolną liczbę punktów przy dotyku.",
+      "kind": "resource",
+      "unit": "HP"
+    },
+    {
+      "name": "Channel Divinity / zryw mocy",
+      "max": 1,
+      "recharge": "Short/Long Rest",
+      "description": "Wspólna pula dla opcji przysięgi.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Divine Sense / wyczucie zagrożeń",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Wykrywanie Celestials, Fiends i Undead w 60 ft.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Feather Fall",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Feather Fall bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Levitate",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Levitate bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Crusher",
+      "description": "Wybrany wzrost cechy: +1 STR. Raz na turę po zadaniu bludgeoning damage możesz przesunąć trafiony cel o 5 ft, jeśli nie jest większy od ciebie o więcej niż jeden rozmiar. Po critical hit z bludgeoning damage ataki przeciwko temu celowi mają Advantage do początku twojej następnej tury."
+    }
+  ]
+}

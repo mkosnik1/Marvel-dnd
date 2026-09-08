@@ -1,0 +1,193 @@
+{
+  "id": "nebula",
+  "name": "Nebula",
+  "realName": "Nebula",
+  "race": "Cybernetycznie zmodyfikowana istota",
+  "cls": "Fighter",
+  "subclass": "Battle Master",
+  "background": "Soldier",
+  "alignment": "Chaotic Neutral",
+  "stats": {
+    "STR": 10,
+    "DEX": 17,
+    "CON": 15,
+    "INT": 13,
+    "WIS": 12,
+    "CHA": 8
+  },
+  "ac": 17,
+  "speed": 30,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Athletics",
+    "Investigation",
+    "Perception",
+    "Stealth"
+  ],
+  "expertise": [],
+  "feats": [
+    "Tough"
+  ],
+  "marvel": [
+    [
+      "Cybernetic Body",
+      "Raz na Short Rest jako Reaction po otrzymaniu bludgeoning, piercing lub slashing damage redukujesz je o Proficiency Bonus + CON modifier."
+    ]
+  ],
+  "attacks": [
+    [
+      "Shock Baton",
+      "+6",
+      "1d8+3 bludgeoning",
+      "melee"
+    ],
+    [
+      "Blaster",
+      "+6",
+      "1d10+3 piercing",
+      "ranged"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": "Dueling: +2 damage przy jednej broni jednoręcznej.",
+  "maneuvers": [
+    "Precision Attack",
+    "Riposte",
+    "Disarming Attack"
+  ],
+  "tools": "Tinker's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Warforged",
+  "skillAliases": {
+    "Arcana": "Cybernetyka",
+    "Investigation": "Analiza systemów",
+    "Stealth": "Infiltracja",
+    "Intimidation": "Presja"
+  },
+  "gender": "Kobieta",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Cybernetyczna odporność",
+      "rulesName": "Constructed Resilience",
+      "description": "Masz Advantage na saving throws przeciwko Poisoned, resistance na poison damage i odporność na choroby. Możesz funkcjonować bez oddychania podczas typowej sceny lub walki dzięki wyjątkowej fizjologii tej postaci."
+    },
+    {
+      "name": "Czuwanie podczas odpoczynku",
+      "rulesName": "Sentry's Rest",
+      "description": "Podczas Long Rest pozostajesz nieruchomy przez co najmniej 6 godzin, ale nadal jesteś świadomy otoczenia i możesz widzieć oraz słyszeć normalnie."
+    },
+    {
+      "name": "Zintegrowana ochrona",
+      "rulesName": "Integrated Protection",
+      "description": "Masz stałe +1 AC. Założenie lub zdjęcie zintegrowanego pancerza wymaga 1 godziny, a świadomej postaci nie można go zdjąć wbrew jej woli."
+    },
+    {
+      "name": "Specjalistyczne wyszkolenie",
+      "rulesName": "Specialized Design",
+      "description": "Otrzymujesz biegłość w Skradanie się oraz w Tinker's Tools. Obie biegłości są już wpisane na kartę."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Dueling: +2 damage przy jednej broni jednoręcznej."
+    },
+    {
+      "name": "Zryw adrenaliny",
+      "rulesName": "Second Wind",
+      "description": "Bonus Action. Odzyskujesz 1d10 + 5 HP. Masz 1 użycie i odzyskujesz je po Short lub Long Rest."
+    },
+    {
+      "name": "Eksplozja tempa",
+      "rulesName": "Action Surge",
+      "description": "Raz na Short lub Long Rest możesz w swojej turze wykonać dodatkową Action. Nie daje dodatkowej Bonus Action ani Reaction."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Tough",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Tough. Maximum HP zwiększa się o 2 za każdy poziom postaci. Na 5. poziomie daje to +10 Maximum HP."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Taktyczne manewry",
+      "rulesName": "Combat Superiority",
+      "description": "Masz 4 Superiority Dice d8. Wracają po Short lub Long Rest. Maneuver Save DC 14. Wybrane manewry: Precision Attack, Riposte, Disarming Attack."
+    },
+    {
+      "name": "Manewr: Precision Attack",
+      "rulesName": "Precision Attack",
+      "description": "Dodajesz Superiority Die do attack roll. Możesz zdecydować po rzucie, zanim poznasz ostateczny wynik."
+    },
+    {
+      "name": "Manewr: Riposte",
+      "rulesName": "Riposte",
+      "description": "Gdy stworzenie spudłuje melee attack przeciwko tobie, Reaction i Superiority Die pozwalają wykonać melee attack; przy trafieniu dodajesz kość do damage."
+    },
+    {
+      "name": "Manewr: Disarming Attack",
+      "rulesName": "Disarming Attack",
+      "description": "Po trafieniu dodajesz Superiority Die do damage. Cel robi STR Save; przy porażce upuszcza trzymany przedmiot."
+    },
+    {
+      "name": "Profesjonalne wyszkolenie",
+      "rulesName": "Student of War",
+      "description": "Masz biegłość w Tinker's Tools. Biegłość jest już wpisana w sekcji narzędzi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Second Wind / zryw adrenaliny",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Bonus Action, odzyskuje 1d10+5 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Action Surge / eksplozja tempa",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Dodatkowa Action w swojej turze.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Superiority Dice / kości manewrów",
+      "max": 4,
+      "recharge": "Short Rest",
+      "description": "4 kości d8 do manewrów Battle Mastera.",
+      "kind": "resource",
+      "unit": "d8"
+    },
+    {
+      "name": "Cybernetic Body",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Raz na Short Rest jako Reaction po otrzymaniu bludgeoning, piercing lub slashing damage redukujesz je o Proficiency Bonus + CON modifier.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Tough",
+      "description": "Maximum HP zwiększa się o 2 za każdy poziom postaci. Na 5. poziomie daje to +10 Maximum HP."
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "id": "ghostrider",
+  "name": "Ghost Rider",
+  "realName": "Johnny Blaze",
+  "race": "Duch Zemsty",
+  "cls": "Paladin",
+  "subclass": "Oath of Vengeance",
+  "background": "Haunted One",
+  "alignment": "Lawful Neutral",
+  "stats": {
+    "STR": 17,
+    "DEX": 10,
+    "CON": 13,
+    "INT": 8,
+    "WIS": 12,
+    "CHA": 15
+  },
+  "ac": 17,
+  "speed": 30,
+  "saveProfs": [
+    "WIS",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Intimidation",
+    "Perception",
+    "Religion"
+  ],
+  "expertise": [],
+  "feats": [
+    "Mounted Combatant"
+  ],
+  "marvel": [
+    [
+      "Penance Stare",
+      "Raz na Long Rest wybierasz cel w 30 ft, który cię widzi. WIS Save przeciwko Spell Save DC; przy porażce 4d6 psychic i Frightened do końca twojej następnej tury."
+    ],
+    [
+      "Hellcycle",
+      "Po 10 minutach przywołujesz Hellcycle. Ma Speed 60 ft i służy jako wierny wierzchowiec; porusza się i wykonuje Dash, Disengage albo Dodge zgodnie z twoimi poleceniami. Gdy jesteście rozdzieleni, możesz odwołać go i ponownie przywołać po użyciu tej mocy."
+    ]
+  ],
+  "attacks": [
+    [
+      "Hellfire Chain",
+      "+6",
+      "1d8+3 slashing",
+      "reach 10 ft homebrew"
+    ],
+    [
+      "Unarmed Strike",
+      "+6",
+      "1+3 bludgeoning",
+      "melee"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": "Dueling: +2 damage przy jednej broni jednoręcznej.",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Fire Genasi",
+  "skillAliases": {
+    "Religion": "Okultyzm",
+    "Intimidation": "Groza",
+    "Insight": "Osąd winy",
+    "Arcana": "Piekielna magia"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Odporność termiczna",
+      "rulesName": "Fire Resistance",
+      "description": "Otrzymujesz połowę fire damage."
+    },
+    {
+      "name": "Kontrola energii cieplnej",
+      "rulesName": "Reach to the Blaze",
+      "description": "Znasz Produce Flame. Raz na Long Rest możesz rzucić Burning Hands, a od 5. poziomu również Flame Blade bez zużywania slotu; możesz też korzystać z własnych slotów."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Wyczucie nadnaturalnych zagrożeń",
+      "rulesName": "Divine Sense",
+      "description": "Action. Do końca następnej tury wiesz, gdzie w 60 ft znajdują się Celestials, Fiends i Undead, jeśli nie są za total cover; rozpoznajesz też miejsca consecrated/desecrated. Masz 3 użycia na Long Rest."
+    },
+    {
+      "name": "Rezerwa regeneracyjna",
+      "rulesName": "Lay on Hands",
+      "description": "Masz pulę 25 HP na Long Rest. Jako Action dotykasz stworzenia i leczysz je, wydając dowolną liczbę punktów z puli. Możesz zamiast tego wydać 5 punktów, aby usunąć jedną chorobę albo jedną truciznę."
+    },
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Dueling: +2 damage przy jednej broni jednoręcznej."
+    },
+    {
+      "name": "Moce i techniki",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 13, Spell Attack +5. Dostępne sloty: 4× 1. poziomu, 2× 2. poziomu. Możesz przygotować 4 zaklęć klasowych; zaklęcia podklasy przygotowane automatycznie nie liczą się do tego limitu."
+    },
+    {
+      "name": "Wzmocnione uderzenie",
+      "rulesName": "Divine Smite",
+      "description": "Po trafieniu melee weapon attackiem możesz wydać spell slot. Slot 1. poziomu dodaje 2d8 radiant damage, slot 2. poziomu 3d8; przeciwko Fiend lub Undead dodajesz jeszcze 1d8."
+    },
+    {
+      "name": "Nadzwyczajna odporność",
+      "rulesName": "Divine Health",
+      "description": "Jesteś odporny na choroby."
+    },
+    {
+      "name": "Kodeks bohatera",
+      "rulesName": "Sacred Oath",
+      "description": "Twoja przysięga to Oath of Vengeance. Na tym poziomie daje zawsze przygotowane Bane, Hunter's Mark, Hold Person i Misty Step oraz dwie opcje wspólnego Channel Divinity: Abjure Enemy i Vow of Enmity."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Mounted Combatant",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Mounted Combatant. Gdy jesteś na wierzchowcu, masz Advantage na melee attack przeciwko niejeżdżącemu stworzeniu mniejszemu od twojego wierzchowca. Możesz przekierować atak wymierzony w wierzchowca na siebie, a wierzchowiec lepiej unika efektów wymagających DEX Save."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Techniki przysięgi",
+      "rulesName": "Oath Spells",
+      "description": "1. poziom: Bane, Hunter's Mark. 2. poziom: Hold Person, Misty Step. Wszystkie są zawsze przygotowane i nie liczą się do limitu przygotowanych zaklęć Paladina."
+    },
+    {
+      "name": "Złamanie morale",
+      "rulesName": "Channel Divinity: Abjure Enemy",
+      "description": "Action. Jedno stworzenie w 60 ft, które widzisz, wykonuje WIS Save DC 13. Przy porażce jest Frightened przez 1 minutę i jego Speed wynosi 0; powtarza save na końcu tury po otrzymaniu obrażeń."
+    },
+    {
+      "name": "Namierzenie głównego celu",
+      "rulesName": "Channel Divinity: Vow of Enmity",
+      "description": "Bonus Action. Wybierasz stworzenie w 10 ft. Przez 1 minutę masz Advantage na attack rolls przeciwko niemu albo do czasu, gdy spadnie do 0 HP lub stanie się Unconscious."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Produce Flame",
+      "flavorName": "Kontrola płomienia",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Światło i ranged fire attack."
+    },
+    {
+      "name": "Bane",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Do 3 celów -1d4 do attacks i saves."
+    },
+    {
+      "name": "Burning Hands",
+      "flavorName": "Fala płomieni",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "15-ft cone, 3d6 fire."
+    },
+    {
+      "name": "Hunter's Mark",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "+1d6 damage do oznaczonego celu."
+    },
+    {
+      "name": "Searing Smite",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Dodatkowy fire damage i możliwość dalszego palenia."
+    },
+    {
+      "name": "Wrathful Smite",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Psychic damage i możliwe Frightened."
+    },
+    {
+      "name": "Find Steed",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Przywołuje wiernego wierzchowca, tutaj Hellcycle."
+    },
+    {
+      "name": "Flame Blade",
+      "flavorName": "Energetyczne ostrze",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Płonące ostrze, Concentration."
+    },
+    {
+      "name": "Hold Person",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Paralyzed humanoid."
+    },
+    {
+      "name": "Misty Step",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Bonus Action teleport 30 ft."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Lay on Hands / rezerwa regeneracyjna",
+      "max": 25,
+      "recharge": "Long Rest",
+      "description": "Pula leczenia. Możesz wydawać dowolną liczbę punktów przy dotyku.",
+      "kind": "resource",
+      "unit": "HP"
+    },
+    {
+      "name": "Channel Divinity / zryw mocy",
+      "max": 1,
+      "recharge": "Short/Long Rest",
+      "description": "Wspólna pula dla opcji przysięgi.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Divine Sense / wyczucie zagrożeń",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Wykrywanie Celestials, Fiends i Undead w 60 ft.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Burning Hands",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Burning Hands bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Flame Blade",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Flame Blade bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Penance Stare",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest wybierasz cel w 30 ft, który cię widzi. WIS Save przeciwko Spell Save DC; przy porażce 4d6 psychic i Frightened do końca twojej następnej tury.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Mounted Combatant",
+      "description": "Gdy jesteś na wierzchowcu, masz Advantage na melee attack przeciwko niejeżdżącemu stworzeniu mniejszemu od twojego wierzchowca. Możesz przekierować atak wymierzony w wierzchowca na siebie, a wierzchowiec lepiej unika efektów wymagających DEX Save."
+    }
+  ]
+}

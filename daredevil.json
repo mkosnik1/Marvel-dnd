@@ -1,0 +1,181 @@
+{
+  "id": "daredevil",
+  "name": "Daredevil",
+  "realName": "Matt Murdock",
+  "race": "Wzmocniony człowiek",
+  "cls": "Monk",
+  "subclass": "Way of the Open Hand",
+  "background": "Investigator",
+  "alignment": "Lawful Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 16,
+    "CON": 13,
+    "INT": 12,
+    "WIS": 16,
+    "CHA": 10
+  },
+  "ac": 16,
+  "speed": 50,
+  "saveProfs": [
+    "STR",
+    "DEX"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Athletics",
+    "Insight",
+    "Investigation",
+    "Perception"
+  ],
+  "expertise": [],
+  "feats": [
+    "Alert",
+    "Observant"
+  ],
+  "marvel": [
+    [
+      "Radar Sense",
+      "Masz Blindsight 30 ft: w tym zasięgu postrzegasz stworzenia i przeszkody bez używania wzroku, o ile nie jesteś Deafened. Poza 30 ft nie widzisz celów wymagających zwykłego wzroku."
+    ]
+  ],
+  "attacks": [
+    [
+      "Billy Club",
+      "+6",
+      "1d6+3 bludgeoning",
+      "monk weapon"
+    ],
+    [
+      "Unarmed Strike",
+      "+6",
+      "1d6+3 bludgeoning",
+      "Martial Arts"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Variant Human",
+  "skillAliases": {
+    "Perception": "Radar",
+    "Insight": "Przesłuchanie",
+    "Investigation": "Dochodzenie",
+    "Acrobatics": "Parkour",
+    "Stealth": "Infiltracja"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wyjątkowe predyspozycje",
+      "rulesName": "Ability Score Increase",
+      "description": "Bonusy pochodzenia do cech są już uwzględnione w wynikach cech widocznych na karcie. Nie wybierasz ich ponownie podczas gry."
+    },
+    {
+      "name": "Dodatkowe wyszkolenie",
+      "rulesName": "Extra Skill",
+      "description": "Otrzymujesz biegłość w umiejętności Percepcja / Radar. Proficiency bonus +3 jest już uwzględniony w jej wartości na karcie."
+    },
+    {
+      "name": "Wczesna specjalizacja: Alert",
+      "rulesName": "Bonus Feat",
+      "description": "Masz feat Alert. +5 do Initiative. Gdy jesteś przytomny, nie możesz zostać zaskoczony. Niewidoczny napastnik nie dostaje Advantage na attack roll przeciwko tobie tylko dlatego, że go nie widzisz."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Styl walki wręcz",
+      "rulesName": "Martial Arts",
+      "description": "Możesz używać DEX zamiast STR do attack i damage rolls swoich unarmed strikes i monk weapons. Kość obrażeń Martial Arts na 5. poziomie to d6. Po Attack Action z unarmed strike lub monk weapon możesz wykonać jeden unarmed strike jako Bonus Action."
+    },
+    {
+      "name": "Punkty skupienia",
+      "rulesName": "Ki",
+      "description": "Masz 5 Ki Points. Wszystkie wracają po Short lub Long Rest."
+    },
+    {
+      "name": "Seria ciosów",
+      "rulesName": "Flurry of Blows",
+      "description": "Po Attack Action możesz wydać 1 Ki i jako Bonus Action wykonać dwa unarmed strikes."
+    },
+    {
+      "name": "Defensywna koncentracja",
+      "rulesName": "Patient Defense",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dodge."
+    },
+    {
+      "name": "Zryw mobilności",
+      "rulesName": "Step of the Wind",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dash albo Disengage. Do końca tury podwajasz też dystans skoku."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Unarmored Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz pancerza ani tarczy."
+    },
+    {
+      "name": "Przechwycenie pocisku",
+      "rulesName": "Deflect Missiles",
+      "description": "Reaction, gdy trafia cię ranged weapon attack. Zmniejszasz obrażenia o 1d10 + DEX modifier + 5. Jeśli zredukujesz damage do 0 i pocisk mieści się w jednej ręce, możesz wydać 1 Ki, aby natychmiast nim zaatakować w ramach tej samej Reaction."
+    },
+    {
+      "name": "Kontrolowany upadek",
+      "rulesName": "Slow Fall",
+      "description": "Reaction podczas spadania. Zmniejszasz fall damage o 25."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Observant",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Observant. Wybrany wzrost cechy: +1 WIS. Masz +5 do Passive Perception i Passive Investigation. Jeśli widzisz usta mówiącej istoty i znasz jej język, potrafisz odczytać słowa z ruchu warg."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Ogłuszające trafienie",
+      "rulesName": "Stunning Strike",
+      "description": "Po trafieniu melee weapon attackiem możesz wydać 1 Ki. Cel wykonuje CON Save DC 14; przy porażce jest Stunned do końca twojej następnej tury."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Kontrola walki wręcz",
+      "rulesName": "Open Hand Technique",
+      "description": "Gdy trafisz jednym z ataków Flurry of Blows, wybierasz jeden efekt: cel wykonuje DEX Save albo pada Prone; wykonuje STR Save albo zostaje odepchnięty o 15 ft; albo nie może używać Reactions do końca twojej następnej tury."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Ki / punkty skupienia",
+      "max": 5,
+      "recharge": "Short Rest",
+      "description": "Wydawane na Flurry of Blows, Patient Defense, Step of the Wind i Stunning Strike.",
+      "kind": "resource",
+      "unit": "punkty"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Alert",
+      "description": "+5 do Initiative. Gdy jesteś przytomny, nie możesz zostać zaskoczony. Niewidoczny napastnik nie dostaje Advantage na attack roll przeciwko tobie tylko dlatego, że go nie widzisz."
+    },
+    {
+      "name": "Observant",
+      "description": "Wybrany wzrost cechy: +1 WIS. Masz +5 do Passive Perception i Passive Investigation. Jeśli widzisz usta mówiącej istoty i znasz jej język, potrafisz odczytać słowa z ruchu warg."
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "id": "deadpool",
+  "name": "Deadpool",
+  "realName": "Wade Wilson",
+  "race": "Regenerujący mutant",
+  "cls": "Fighter",
+  "subclass": "Battle Master",
+  "background": "Mercenary Veteran",
+  "alignment": "Chaotic Neutral",
+  "stats": {
+    "STR": 13,
+    "DEX": 17,
+    "CON": 15,
+    "INT": 8,
+    "WIS": 10,
+    "CHA": 12
+  },
+  "ac": 16,
+  "speed": 30,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Athletics",
+    "Deception",
+    "Intimidation",
+    "Perception"
+  ],
+  "expertise": [],
+  "feats": [
+    "Dual Wielder"
+  ],
+  "marvel": [
+    [
+      "Regeneration",
+      "Na początku swojej tury, jeśli masz co najmniej 1 HP, odzyskujesz 2 HP. Raz na Long Rest, gdy spadasz do 0 HP, możesz natychmiast wrócić na 1 HP."
+    ]
+  ],
+  "attacks": [
+    [
+      "Katana",
+      "+6",
+      "1d8+3 slashing",
+      "finesse"
+    ],
+    [
+      "Off-hand Katana",
+      "+6",
+      "1d8+3 slashing",
+      "Bonus Action"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": "Two-Weapon Fighting: dodajesz modyfikator cechy do obrażeń drugiej broni.",
+  "maneuvers": [
+    "Riposte",
+    "Precision Attack",
+    "Menacing Attack"
+  ],
+  "tools": "Tinker's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Reborn",
+  "skillAliases": {
+    "Acrobatics": "Akcja kaskaderska",
+    "Deception": "Improwizacja",
+    "Intimidation": "Chaos",
+    "Sleight of Hand": "Sztuczki z bronią"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Nietypowa fizjologia",
+      "rulesName": "Deathless Nature",
+      "description": "Nie musisz oddychać. Ta cecha reprezentuje nietypową fizjologię postaci i nie wymaga żadnej dodatkowej akcji."
+    },
+    {
+      "name": "Pamięć ciała",
+      "rulesName": "Knowledge from a Past Life",
+      "description": "Po wykonaniu ability check możesz dodać d6 do wyniku. Masz 3 użycia i odzyskujesz je po Long Rest."
+    },
+    {
+      "name": "Zachowane wyszkolenie",
+      "rulesName": "Ancestral Legacy",
+      "description": "Zachowujesz biegłość w: Akrobatyka, Percepcja. Są już uwzględnione na karcie."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Two-Weapon Fighting: dodajesz modyfikator cechy do obrażeń drugiej broni."
+    },
+    {
+      "name": "Zryw adrenaliny",
+      "rulesName": "Second Wind",
+      "description": "Bonus Action. Odzyskujesz 1d10 + 5 HP. Masz 1 użycie i odzyskujesz je po Short lub Long Rest."
+    },
+    {
+      "name": "Eksplozja tempa",
+      "rulesName": "Action Surge",
+      "description": "Raz na Short lub Long Rest możesz w swojej turze wykonać dodatkową Action. Nie daje dodatkowej Bonus Action ani Reaction."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Dual Wielder",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Dual Wielder. +1 AC, gdy trzymasz po jednej melee weapon w każdej ręce. Możesz walczyć dwiema broniami jednoręcznymi nawet bez właściwości light i dobyć lub schować dwie bronie naraz."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Taktyczne manewry",
+      "rulesName": "Combat Superiority",
+      "description": "Masz 4 Superiority Dice d8. Wracają po Short lub Long Rest. Maneuver Save DC 14. Wybrane manewry: Riposte, Precision Attack, Menacing Attack."
+    },
+    {
+      "name": "Manewr: Riposte",
+      "rulesName": "Riposte",
+      "description": "Gdy stworzenie spudłuje melee attack przeciwko tobie, Reaction i Superiority Die pozwalają wykonać melee attack; przy trafieniu dodajesz kość do damage."
+    },
+    {
+      "name": "Manewr: Precision Attack",
+      "rulesName": "Precision Attack",
+      "description": "Dodajesz Superiority Die do attack roll. Możesz zdecydować po rzucie, zanim poznasz ostateczny wynik."
+    },
+    {
+      "name": "Manewr: Menacing Attack",
+      "rulesName": "Menacing Attack",
+      "description": "Po trafieniu dodajesz Superiority Die do damage. Cel wykonuje WIS Save; przy porażce jest Frightened do końca twojej następnej tury."
+    },
+    {
+      "name": "Profesjonalne wyszkolenie",
+      "rulesName": "Student of War",
+      "description": "Masz biegłość w Tinker's Tools. Biegłość jest już wpisana w sekcji narzędzi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Second Wind / zryw adrenaliny",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Bonus Action, odzyskuje 1d10+5 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Action Surge / eksplozja tempa",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Dodatkowa Action w swojej turze.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Superiority Dice / kości manewrów",
+      "max": 4,
+      "recharge": "Short Rest",
+      "description": "4 kości d8 do manewrów Battle Mastera.",
+      "kind": "resource",
+      "unit": "d8"
+    },
+    {
+      "name": "Pamięć ciała",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Knowledge from a Past Life: d6 do ability check.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Regeneration",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Na początku swojej tury, jeśli masz co najmniej 1 HP, odzyskujesz 2 HP. Raz na Long Rest, gdy spadasz do 0 HP, możesz natychmiast wrócić na 1 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Dual Wielder",
+      "description": "+1 AC, gdy trzymasz po jednej melee weapon w każdej ręce. Możesz walczyć dwiema broniami jednoręcznymi nawet bez właściwości light i dobyć lub schować dwie bronie naraz."
+    }
+  ]
+}

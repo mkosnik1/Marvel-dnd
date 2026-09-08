@@ -1,0 +1,281 @@
+{
+  "id": "wanda",
+  "name": "Scarlet Witch",
+  "realName": "Wanda Maximoff",
+  "race": "Mutantka magii chaosu",
+  "cls": "Sorcerer",
+  "subclass": "Aberrant Mind",
+  "background": "Haunted One",
+  "alignment": "Chaotic Neutral",
+  "stats": {
+    "STR": 8,
+    "DEX": 12,
+    "CON": 15,
+    "INT": 10,
+    "WIS": 13,
+    "CHA": 18
+  },
+  "ac": 11,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Arcana",
+    "Deception",
+    "Insight",
+    "Intimidation"
+  ],
+  "expertise": [],
+  "feats": [
+    "Telekinetic"
+  ],
+  "marvel": [
+    [
+      "Chaos Magic",
+      "Raz na Long Rest, gdy stworzenie zda saving throw przeciwko twojemu zaklęciu, możesz zmusić je do ponownego rzutu i użycia nowego wyniku."
+    ]
+  ],
+  "attacks": [
+    [
+      "Fire Bolt",
+      "+7",
+      "2d10 fire",
+      "120 ft"
+    ],
+    [
+      "Mind Sliver",
+      "DC 15",
+      "2d6 psychic",
+      "INT Save"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Hexblood",
+  "skillAliases": {
+    "Arcana": "Magia chaosu",
+    "Religion": "Okultyzm",
+    "Insight": "Empatia",
+    "Investigation": "Analiza anomalii"
+  },
+  "gender": "Kobieta",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Nietypowa natura mocy",
+      "rulesName": "Fey",
+      "description": "Dla efektów zależnych od typu stworzenia jesteś traktowany jako Fey, a nie Humanoid."
+    },
+    {
+      "name": "Kotwica mocy",
+      "rulesName": "Eerie Token",
+      "description": "Jako Bonus Action tworzysz mały token z fragmentu własnej energii. Dopóki ktoś go posiada i jest w promieniu 10 mil, jako Action możesz wysłać mu telepatyczną wiadomość do 25 słów. Albo jako Action możesz przez maksymalnie 1 minutę widzieć i słyszeć z miejsca tokenu; w tym czasie jesteś Blinded i Deafened względem własnego otoczenia. Po takim zdalnym postrzeganiu token zostaje zniszczony."
+    },
+    {
+      "name": "Magia chaosu",
+      "rulesName": "Hex Magic",
+      "description": "Raz na Long Rest możesz rzucić Hex i Disguise Self bez spell slotu. Jeśli masz odpowiednie sloty, możesz również rzucać te zaklęcia normalnie."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Moce wrodzone",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 15, Spell Attack +7. Dostępne sloty: 4× 1. poziomu, 3× 2. poziomu, 2× 3. poziomu."
+    },
+    {
+      "name": "Źródło mocy",
+      "rulesName": "Sorcerous Origin",
+      "description": "Wybrane źródło: Aberrant Mind."
+    },
+    {
+      "name": "Rezerwa mocy",
+      "rulesName": "Font of Magic",
+      "description": "Masz 5 Sorcery Points na Long Rest. Możesz wydawać je na Metamagic albo zamieniać na spell slots; możesz też poświęcać sloty, aby odzyskać Sorcery Points."
+    },
+    {
+      "name": "Kontrola mocy — wybrane techniki",
+      "rulesName": "Metamagic",
+      "description": "Masz dwie techniki Metamagii: Subtle Spell, Twinned Spell. Obie korzystają z tej samej puli 5 Sorcery Points, która wraca po Long Rest."
+    },
+    {
+      "name": "Subtle Spell",
+      "rulesName": "Metamagic: Subtle Spell",
+      "description": "Koszt: 1 Sorcery Point. Rzucasz zaklęcie bez komponentów verbal i somatic. Komponent materialny nadal jest wymagany, jeśli zaklęcie go posiada."
+    },
+    {
+      "name": "Twinned Spell",
+      "rulesName": "Metamagic: Twinned Spell",
+      "description": "Gdy rzucasz zaklęcie, które może celować tylko w jedną istotę i nie ma zasięgu Self, możesz objąć nim drugi kwalifikujący się cel w zasięgu. Koszt wynosi liczbę Sorcery Points równą poziomowi zaklęcia, minimum 1 dla cantripu."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Telekinetic",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Telekinetic. Wybrany wzrost cechy: +1 CHA. Mage Hand ma zwiększony zasięg i może być niewidzialna. Jako Bonus Action wybierasz stworzenie w 30 ft; musi zdać STR Save DC 15, inaczej przesuwasz je o 5 ft w stronę od siebie albo do siebie."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Moce psioniczne",
+      "rulesName": "Psionic Spells",
+      "description": "Masz dodatkowe zaklęcia podklasy Aberrant Mind. Są zawsze znane i nie liczą się do limitu Sorcerer Spells Known. Ich lista jest uwzględniona w sekcji zaklęć."
+    },
+    {
+      "name": "Łącze telepatyczne",
+      "rulesName": "Telepathic Speech",
+      "description": "Jako Bonus Action wybierasz widoczne stworzenie w 30 ft. Przez 5 minut możeszcie komunikować się telepatycznie, jeśli oboje znacie co najmniej jeden język. Połączenie działa na odległość do 4 mil."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 3,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    },
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Mage Hand",
+      "flavorName": "Telekineza",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Telekinetyczna dłoń."
+    },
+    {
+      "name": "Mind Sliver",
+      "flavorName": "Psychiczna igła",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "INT Save, 2d6 psychic i -1d4 do następnego saving throw celu."
+    },
+    {
+      "name": "Chaos Bolt",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Ranged spell attack, zmienny typ obrażeń."
+    },
+    {
+      "name": "Shield",
+      "flavorName": "Bariera psioniczna",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction, +5 AC do początku następnej tury."
+    },
+    {
+      "name": "Detect Thoughts",
+      "flavorName": "Skan mentalny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Czytanie powierzchownych myśli, Concentration."
+    },
+    {
+      "name": "Hold Person",
+      "flavorName": "Psychiczna blokada",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Paralyzed na humanoidzie, WIS Save."
+    },
+    {
+      "name": "Suggestion",
+      "flavorName": "Wpływ mentalny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Magiczna sugestia, WIS Save."
+    },
+    {
+      "name": "Tasha's Mind Whip",
+      "flavorName": "Uderzenie mentalne",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Psychic damage i ograniczenie akcji celu."
+    },
+    {
+      "name": "Counterspell",
+      "flavorName": "Zakłócenie mocy",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Reaction, przerwanie zaklęcia."
+    },
+    {
+      "name": "Fly",
+      "flavorName": "Lewitacja",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Flying Speed 60 ft, Concentration."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Sorcery Points / rezerwa mocy",
+      "max": 5,
+      "recharge": "Long Rest",
+      "description": "Punkty do Metamagii i tworzenia spell slotów.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Metamagic",
+      "max": null,
+      "recharge": "",
+      "description": "Dostępne techniki: Subtle Spell, Twinned Spell. Każde użycie wydaje punkty ze wspólnej puli 5 Sorcery Points.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Hex / magia chaosu",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Disguise Self / magia chaosu",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Chaos Magic",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest, gdy stworzenie zda saving throw przeciwko twojemu zaklęciu, możesz zmusić je do ponownego rzutu i użycia nowego wyniku.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Telekinetic",
+      "description": "Wybrany wzrost cechy: +1 CHA. Mage Hand ma zwiększony zasięg i może być niewidzialna. Jako Bonus Action wybierasz stworzenie w 30 ft; musi zdać STR Save DC 15, inaczej przesuwasz je o 5 ft w stronę od siebie albo do siebie."
+    }
+  ]
+}

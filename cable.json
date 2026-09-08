@@ -1,0 +1,221 @@
+{
+  "id": "cable",
+  "name": "Cable",
+  "realName": "Nathan Summers",
+  "race": "Mutant telepatyczny / techno-organiczny",
+  "cls": "Fighter",
+  "subclass": "Battle Master",
+  "background": "Soldier",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 10,
+    "DEX": 14,
+    "CON": 16,
+    "INT": 14,
+    "WIS": 12,
+    "CHA": 8
+  },
+  "ac": 17,
+  "speed": 30,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Investigation",
+    "Perception",
+    "Survival"
+  ],
+  "expertise": [],
+  "feats": [
+    "Telekinetic"
+  ],
+  "marvel": [
+    [
+      "Techno-Organic Body",
+      "Resistance na psychic z Githyanki pozostaje bez zmian. Raz na Long Rest możesz jako Reaction zmniejszyć poison, necrotic albo psychic damage o 1d10+3."
+    ],
+    [
+      "Telekinetic Field",
+      "Feat Telekinetic jest psioniczną mocą Cable'a. Raz na Short Rest możesz użyć go na Large creature bez zmiany pozostałych zasad."
+    ]
+  ],
+  "attacks": [
+    [
+      "Heavy Rifle",
+      "+7",
+      "1d10+2 piercing",
+      "100/400 ft"
+    ],
+    [
+      "Sidearm",
+      "+7",
+      "1d8+2 piercing",
+      "60/180 ft"
+    ],
+    [
+      "Telekinetic Shove",
+      "STR DC 13",
+      "push 5 ft",
+      "Bonus Action"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "Archery: +2 do attack rolls ranged weapon.",
+  "maneuvers": [
+    "Precision Attack",
+    "Menacing Attack",
+    "Pushing Attack"
+  ],
+  "tools": "Tinker's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Githyanki",
+  "team": "X-Force",
+  "gender": "Mężczyzna",
+  "isMutant": true,
+  "skillAliases": {
+    "Arcana": "Psionika i technologia",
+    "Investigation": "Taktyka przyszłości",
+    "Perception": "Skan bojowy",
+    "Survival": "Operacje specjalne"
+  },
+  "originFeatures": [
+    {
+      "name": "Adaptacyjne wyszkolenie",
+      "rulesName": "Astral Knowledge",
+      "description": "Po każdym Long Rest wybierasz jedną umiejętność albo narzędzie. Do następnego Long Rest masz w niej proficiency. Wybór możesz zmieniać każdego dnia."
+    },
+    {
+      "name": "Odporność mentalna",
+      "rulesName": "Psychic Resilience",
+      "description": "Otrzymujesz połowę psychic damage."
+    },
+    {
+      "name": "Moce psioniczne",
+      "rulesName": "Githyanki Psionics",
+      "description": "Znasz Mage Hand. Raz na Long Rest możesz bez slotu rzucić Jump i Misty Step; możesz również rzucać je własnymi slotami, jeśli je posiadasz."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Archery: +2 do attack rolls ranged weapon."
+    },
+    {
+      "name": "Zryw adrenaliny",
+      "rulesName": "Second Wind",
+      "description": "Bonus Action. Odzyskujesz 1d10 + 5 HP. Masz 1 użycie i odzyskujesz je po Short lub Long Rest."
+    },
+    {
+      "name": "Eksplozja tempa",
+      "rulesName": "Action Surge",
+      "description": "Raz na Short lub Long Rest możesz w swojej turze wykonać dodatkową Action. Nie daje dodatkowej Bonus Action ani Reaction."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Telekinetic",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Telekinetic. Wybrany wzrost cechy: +1 INT. Mage Hand ma zwiększony zasięg i może być niewidzialna. Jako Bonus Action wybierasz stworzenie w 30 ft; musi zdać STR Save DC 13, inaczej przesuwasz je o 5 ft w stronę od siebie albo do siebie."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Taktyczne manewry",
+      "rulesName": "Combat Superiority",
+      "description": "Masz 4 Superiority Dice d8. Wracają po Short lub Long Rest. Maneuver Save DC 13. Wybrane manewry: Precision Attack, Menacing Attack, Pushing Attack."
+    },
+    {
+      "name": "Manewr: Precision Attack",
+      "rulesName": "Precision Attack",
+      "description": "Dodajesz Superiority Die do attack roll. Możesz zdecydować po rzucie, zanim poznasz ostateczny wynik."
+    },
+    {
+      "name": "Manewr: Menacing Attack",
+      "rulesName": "Menacing Attack",
+      "description": "Po trafieniu dodajesz Superiority Die do damage. Cel wykonuje WIS Save; przy porażce jest Frightened do końca twojej następnej tury."
+    },
+    {
+      "name": "Manewr: Pushing Attack",
+      "rulesName": "Pushing Attack",
+      "description": "Po trafieniu dodajesz Superiority Die do damage. Przy nieudanym STR Save możesz odepchnąć cel do 15 ft."
+    },
+    {
+      "name": "Profesjonalne wyszkolenie",
+      "rulesName": "Student of War",
+      "description": "Masz biegłość w Tinker's Tools. Biegłość jest już wpisana w sekcji narzędzi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Second Wind / zryw adrenaliny",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Bonus Action, odzyskuje 1d10+5 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Action Surge / eksplozja tempa",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Dodatkowa Action w swojej turze.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Superiority Dice / kości manewrów",
+      "max": 4,
+      "recharge": "Short Rest",
+      "description": "4 kości d8 do manewrów Battle Mastera.",
+      "kind": "resource",
+      "unit": "d8"
+    },
+    {
+      "name": "Jump",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Jump bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Misty Step",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Misty Step bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Techno-Organic Body",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Resistance na psychic z Githyanki pozostaje bez zmian. Raz na Long Rest możesz jako Reaction zmniejszyć poison, necrotic albo psychic damage o 1d10+3.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Telekinetic Field",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Feat Telekinetic jest psioniczną mocą Cable'a. Raz na Short Rest możesz użyć go na Large creature bez zmiany pozostałych zasad.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Telekinetic",
+      "description": "Wybrany wzrost cechy: +1 INT. Mage Hand ma zwiększony zasięg i może być niewidzialna. Jako Bonus Action wybierasz stworzenie w 30 ft; musi zdać STR Save DC 13, inaczej przesuwasz je o 5 ft w stronę od siebie albo do siebie."
+    }
+  ]
+}

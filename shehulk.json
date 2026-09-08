@@ -1,0 +1,186 @@
+{
+  "id": "shehulk",
+  "name": "She-Hulk",
+  "realName": "Jennifer Walters",
+  "race": "Gamma prawniczka",
+  "cls": "Barbarian",
+  "subclass": "Path of the Giant",
+  "background": "Investigator",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 18,
+    "DEX": 12,
+    "CON": 15,
+    "INT": 10,
+    "WIS": 12,
+    "CHA": 13
+  },
+  "ac": 14,
+  "speed": 40,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Insight",
+    "Intimidation",
+    "Investigation",
+    "Persuasion"
+  ],
+  "expertise": [],
+  "feats": [
+    "Crusher"
+  ],
+  "marvel": [
+    [
+      "Gamma Form",
+      "Jako Bonus Action wchodzisz w Gamma Form na maksymalnie 1 minutę. Masz 3 użycia na Long Rest. W tej formie masz Advantage na STR checks i STR saves, +2 damage do melee attacks używających STR oraz resistance na bludgeoning, piercing i slashing."
+    ],
+    [
+      "Courtroom Confidence",
+      "Wysoka CHA i Investigation wspierają wersję Jennifer poza walką."
+    ]
+  ],
+  "attacks": [
+    [
+      "Gamma Punch",
+      "+7",
+      "1d8+6 bludgeoning",
+      "melee podczas Rage"
+    ],
+    [
+      "Improvised Weapon",
+      "+7",
+      "1d6+6 bludgeoning",
+      "melee"
+    ],
+    [
+      "Grapple",
+      "+7 Athletics",
+      "Grappled",
+      "melee"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Goliath",
+  "team": "Avengers",
+  "gender": "Kobieta",
+  "isMutant": false,
+  "skillAliases": {
+    "Investigation": "Prawo",
+    "Persuasion": "Adwokatura",
+    "Intimidation": "Presja sądowa",
+    "Athletics": "Siła gamma"
+  },
+  "originFeatures": [
+    {
+      "name": "Nadludzka budowa",
+      "rulesName": "Little Giant",
+      "description": "Przy ustalaniu udźwigu oraz masy, którą możesz pchać, ciągnąć lub podnosić, liczysz się jako stworzenie o jeden rozmiar większe."
+    },
+    {
+      "name": "Ekstremalna twardość",
+      "rulesName": "Stone's Endurance",
+      "description": "Gdy otrzymujesz obrażenia, możesz użyć Reaction i zmniejszyć je o 1d12 + 3. Masz 3 użycia; wszystkie wracają po Long Rest."
+    },
+    {
+      "name": "Odporność na skrajne warunki",
+      "rulesName": "Mountain Born",
+      "description": "Masz resistance na cold damage i naturalnie radzisz sobie na dużych wysokościach."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Stan mocy",
+      "rulesName": "Rage",
+      "description": "Bonus Action. Masz 3 użycia na Long Rest. Podczas Rage masz Advantage na STR checks i STR saves, +2 damage do melee attacks opartych na STR oraz resistance na bludgeoning, piercing i slashing damage."
+    },
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Agresywny szturm",
+      "rulesName": "Reckless Attack",
+      "description": "Przy pierwszym melee attack opartym na STR w turze możesz zdecydować się na Reckless Attack. Do końca tury masz Advantage na swoje melee STR attacks, ale attack rolls przeciwko tobie mają Advantage do początku twojej następnej tury."
+    },
+    {
+      "name": "Instynkt zagrożenia",
+      "rulesName": "Danger Sense",
+      "description": "Masz Advantage na DEX Saves przeciwko widocznym efektom, takim jak pułapki i zaklęcia, jeśli nie jesteś Blinded, Deafened ani Incapacitated."
+    },
+    {
+      "name": "Specjalizacja mocy",
+      "rulesName": "Primal Path",
+      "description": "Twoja ścieżka to Path of the Giant. Podczas Rage możesz stać się Large, zwiększasz reach o 5 ft, a ranged attacks bronią thrown używające STR dodają bonus Rage damage."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Crusher",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Crusher. Wybrany wzrost cechy: +1 STR. Raz na turę po zadaniu bludgeoning damage możesz przesunąć trafiony cel o 5 ft, jeśli nie jest większy od ciebie o więcej niż jeden rozmiar. Po critical hit z bludgeoning damage ataki przeciwko temu celowi mają Advantage do początku twojej następnej tury."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Fast Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz heavy armor."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Demonstracja siły",
+      "rulesName": "Giant Power",
+      "description": "Znasz język Giant. Znasz także Thaumaturgy: możesz na 1 minutę potroić głośność głosu, wywołać drobne drżenie ziemi, chwilową zmianę płomienia, zatrzasnąć lub otworzyć niezabezpieczone drzwi/okno albo stworzyć prosty złowieszczy znak."
+    },
+    {
+      "name": "Pełne uwolnienie mocy",
+      "rulesName": "Giant's Havoc",
+      "description": "Podczas Rage, jeśli masz miejsce, stajesz się Large. Twój reach zwiększa się o 5 ft. Gdy wykonujesz ranged attack bronią z właściwością thrown używając STR, dodajesz bonus Rage damage do obrażeń."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Rage / stan mocy",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Bonus Action. +2 damage do ataków STR, Advantage na STR checks/saves i resistance na B/P/S.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Ekstremalna twardość",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Stone's Endurance: Reaction, redukcja 1d12 + Proficiency Bonus.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Rage",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "3 użycia na Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Crusher",
+      "description": "Wybrany wzrost cechy: +1 STR. Raz na turę po zadaniu bludgeoning damage możesz przesunąć trafiony cel o 5 ft, jeśli nie jest większy od ciebie o więcej niż jeden rozmiar. Po critical hit z bludgeoning damage ataki przeciwko temu celowi mają Advantage do początku twojej następnej tury."
+    }
+  ]
+}

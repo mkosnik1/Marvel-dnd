@@ -1,0 +1,197 @@
+{
+  "id": "domino",
+  "name": "Domino",
+  "realName": "Neena Thurman",
+  "race": "Mutantka kontroli prawdopodobieństwa",
+  "cls": "Rogue",
+  "subclass": "Assassin",
+  "background": "Mercenary Veteran",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 16,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 13,
+    "CHA": 12
+  },
+  "ac": 15,
+  "speed": 30,
+  "saveProfs": [
+    "DEX",
+    "INT"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Perception",
+    "Stealth",
+    "Investigation",
+    "Sleight of Hand"
+  ],
+  "expertise": [
+    "Stealth",
+    "Perception"
+  ],
+  "feats": [
+    "Lucky",
+    "Alert"
+  ],
+  "marvel": [
+    [
+      "Probability Field",
+      "Gdy używasz Luck Point z featu Lucky, możesz opisać zmianę wyniku jako nieprawdopodobny zbieg okoliczności wywołany mocą mutantki."
+    ],
+    [
+      "Impossible Shot",
+      "Raz na Short Rest możesz zignorować half cover i three-quarters cover przy jednym ranged attack oraz nie masz Disadvantage za long range."
+    ]
+  ],
+  "attacks": [
+    [
+      "Pistol",
+      "+6",
+      "1d10+3 piercing + Sneak Attack 3d6",
+      "60/180 ft"
+    ],
+    [
+      "Combat Knife",
+      "+6",
+      "1d4+3 piercing + Sneak Attack 3d6",
+      "melee"
+    ],
+    [
+      "Unarmed Strike",
+      "+3",
+      "1 bludgeoning",
+      "melee"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Variant Human",
+  "team": "X-Force",
+  "gender": "Kobieta",
+  "isMutant": true,
+  "skillAliases": {
+    "Perception": "Przeczucie",
+    "Acrobatics": "Szczęśliwy unik",
+    "Investigation": "Ocena ryzyka",
+    "Sleight of Hand": "Broń i gadżety"
+  },
+  "originFeatures": [
+    {
+      "name": "Wyjątkowe predyspozycje",
+      "rulesName": "Ability Score Increase",
+      "description": "Bonusy pochodzenia do cech są już uwzględnione w wynikach cech widocznych na karcie. Nie wybierasz ich ponownie podczas gry."
+    },
+    {
+      "name": "Dodatkowe wyszkolenie",
+      "rulesName": "Extra Skill",
+      "description": "Otrzymujesz biegłość w umiejętności Zręczne dłonie / Broń i gadżety. Proficiency bonus +3 jest już uwzględniony w jej wartości na karcie."
+    },
+    {
+      "name": "Wczesna specjalizacja: Lucky",
+      "rulesName": "Bonus Feat",
+      "description": "Masz feat Lucky. Masz 3 Luck Points na Long Rest. Możesz wydać 1 punkt, aby rzucić dodatkowym d20 przy swoim attack roll, ability check lub saving throw i wybrać wynik. Możesz też użyć punktu, gdy przeciwnik atakuje ciebie, i wybrać między jego wynikiem a dodatkowym d20."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Ekspertyza",
+      "rulesName": "Expertise",
+      "description": "Podwajasz Proficiency Bonus w: Skradanie się, Percepcja. Premie na karcie są już policzone z podwójnym Proficiency Bonus."
+    },
+    {
+      "name": "Precyzyjne trafienie",
+      "rulesName": "Sneak Attack",
+      "description": "Raz na turę dodajesz 3d6 damage do trafienia finesse lub ranged weapon, jeśli masz Advantage albo przy celu stoi jego przeciwnik w 5 ft i nie masz Disadvantage."
+    },
+    {
+      "name": "Kod operacyjny",
+      "rulesName": "Thieves' Cant",
+      "description": "Znasz tajny kod przestępczego półświatka. Możesz przekazywać ukryte znaczenie w normalnej rozmowie; przekazanie takiej wiadomości trwa około cztery razy dłużej niż zwykłe zdanie."
+    },
+    {
+      "name": "Szybka akcja",
+      "rulesName": "Cunning Action",
+      "description": "W każdej turze możesz jako Bonus Action wykonać Dash, Disengage albo Hide."
+    },
+    {
+      "name": "Specjalizacja operacyjna",
+      "rulesName": "Roguish Archetype",
+      "description": "Wybrana podklasa: Assassin."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Alert",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Alert. +5 do Initiative. Gdy jesteś przytomny, nie możesz zostać zaskoczony. Niewidoczny napastnik nie dostaje Advantage na attack roll przeciwko tobie tylko dlatego, że go nie widzisz."
+    },
+    {
+      "name": "Instynktowny unik",
+      "rulesName": "Uncanny Dodge",
+      "description": "Reaction po trafieniu przez napastnika, którego widzisz. Zmniejszasz obrażenia z tego jednego ataku o połowę."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Szkolenie operacyjne",
+      "rulesName": "Bonus Proficiencies",
+      "description": "Masz biegłość w Disguise Kit i Poisoner's Kit. Oba zestawy są częścią twojego szkolenia operacyjnego."
+    },
+    {
+      "name": "Zabójcza przewaga",
+      "rulesName": "Assassinate",
+      "description": "Masz Advantage na attack rolls przeciwko stworzeniu, które jeszcze nie wykonało swojej tury w tej walce. Każde trafienie przeciwko zaskoczonemu stworzeniu jest critical hitem."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Sneak Attack / precyzyjne trafienie",
+      "max": null,
+      "recharge": "1× na turę",
+      "description": "Dodatkowe 3d6 damage przy spełnieniu warunków.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Uncanny Dodge / instynktowny unik",
+      "max": null,
+      "recharge": "Reaction",
+      "description": "Po trafieniu przez widocznego przeciwnika zmniejszasz damage z ataku o połowę.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Luck Points / szczęście",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Wydajesz punkt, aby wpłynąć na d20.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Impossible Shot",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Raz na Short Rest możesz zignorować half cover i three-quarters cover przy jednym ranged attack oraz nie masz Disadvantage za long range.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Lucky",
+      "description": "Masz 3 Luck Points na Long Rest. Możesz wydać 1 punkt, aby rzucić dodatkowym d20 przy swoim attack roll, ability check lub saving throw i wybrać wynik. Możesz też użyć punktu, gdy przeciwnik atakuje ciebie, i wybrać między jego wynikiem a dodatkowym d20."
+    },
+    {
+      "name": "Alert",
+      "description": "+5 do Initiative. Gdy jesteś przytomny, nie możesz zostać zaskoczony. Niewidoczny napastnik nie dostaje Advantage na attack roll przeciwko tobie tylko dlatego, że go nie widzisz."
+    }
+  ]
+}

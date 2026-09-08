@@ -1,0 +1,195 @@
+{
+  "id": "cyclops",
+  "name": "Cyclops",
+  "realName": "Scott Summers",
+  "race": "Mutant optycznych wyładowań",
+  "cls": "Fighter",
+  "subclass": "Battle Master",
+  "background": "Soldier",
+  "alignment": "Lawful Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 16,
+    "CON": 14,
+    "INT": 12,
+    "WIS": 10,
+    "CHA": 14
+  },
+  "ac": 17,
+  "speed": 30,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Insight",
+    "Perception",
+    "Persuasion",
+    "Investigation"
+  ],
+  "expertise": [],
+  "feats": [
+    "Sharpshooter",
+    "Inspiring Leader"
+  ],
+  "marvel": [
+    [
+      "Optic Blast",
+      "Specjalna ranged weapon. Zadaje force damage, range 120/300. Może być używana z Extra Attack i Fighting Style: Archery."
+    ],
+    [
+      "Ricochet Beam",
+      "Raz na turę po trafieniu Optic Blast możesz wydać Superiority Die i wybrać drugi cel w 15 ft od pierwszego. Jeśli ten sam attack roll trafi jego AC, drugi cel otrzymuje obrażenia równe wynikowi Superiority Die +3."
+    ]
+  ],
+  "attacks": [
+    [
+      "Optic Blast",
+      "+8",
+      "2d8+3 force",
+      "120/300 ft"
+    ],
+    [
+      "Wide Beam",
+      "DEX DC 14",
+      "2d8 force",
+      "30-ft line, 1/LR"
+    ],
+    [
+      "Unarmed Strike",
+      "+2",
+      "1 bludgeoning",
+      "melee"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "Archery: +2 do attack rolls ranged weapon.",
+  "maneuvers": [
+    "Precision Attack",
+    "Pushing Attack",
+    "Commander's Strike"
+  ],
+  "tools": "Cartographer's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Variant Human",
+  "team": "X-Men",
+  "gender": "Mężczyzna",
+  "isMutant": true,
+  "skillAliases": {
+    "Perception": "Celowanie",
+    "Investigation": "Taktyka",
+    "Persuasion": "Dowodzenie",
+    "History": "Historia X-Men"
+  },
+  "originFeatures": [
+    {
+      "name": "Wyjątkowe predyspozycje",
+      "rulesName": "Ability Score Increase",
+      "description": "Bonusy pochodzenia do cech są już uwzględnione w wynikach cech widocznych na karcie. Nie wybierasz ich ponownie podczas gry."
+    },
+    {
+      "name": "Dodatkowe wyszkolenie",
+      "rulesName": "Extra Skill",
+      "description": "Otrzymujesz biegłość w umiejętności Śledztwo / Taktyka. Proficiency bonus +3 jest już uwzględniony w jej wartości na karcie."
+    },
+    {
+      "name": "Wczesna specjalizacja: Sharpshooter",
+      "rulesName": "Bonus Feat",
+      "description": "Masz feat Sharpshooter. Ranged weapon attacks ignorują half i three-quarters cover, a long range nie daje Disadvantage. Przed ranged weapon attack możesz przyjąć -5 do attack roll; jeśli trafisz, dodajesz +10 do damage."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Archery: +2 do attack rolls ranged weapon."
+    },
+    {
+      "name": "Zryw adrenaliny",
+      "rulesName": "Second Wind",
+      "description": "Bonus Action. Odzyskujesz 1d10 + 5 HP. Masz 1 użycie i odzyskujesz je po Short lub Long Rest."
+    },
+    {
+      "name": "Eksplozja tempa",
+      "rulesName": "Action Surge",
+      "description": "Raz na Short lub Long Rest możesz w swojej turze wykonać dodatkową Action. Nie daje dodatkowej Bonus Action ani Reaction."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Inspiring Leader",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Inspiring Leader. Po 10 minutach przemowy maksymalnie 6 przyjaznych stworzeń, które cię słyszą i rozumieją, otrzymuje po 7 Temporary HP. Każde z nich może ponownie skorzystać dopiero po Short lub Long Rest."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Taktyczne manewry",
+      "rulesName": "Combat Superiority",
+      "description": "Masz 4 Superiority Dice d8. Wracają po Short lub Long Rest. Maneuver Save DC 14. Wybrane manewry: Precision Attack, Pushing Attack, Commander's Strike."
+    },
+    {
+      "name": "Manewr: Precision Attack",
+      "rulesName": "Precision Attack",
+      "description": "Dodajesz Superiority Die do attack roll. Możesz zdecydować po rzucie, zanim poznasz ostateczny wynik."
+    },
+    {
+      "name": "Manewr: Pushing Attack",
+      "rulesName": "Pushing Attack",
+      "description": "Po trafieniu dodajesz Superiority Die do damage. Przy nieudanym STR Save możesz odepchnąć cel do 15 ft."
+    },
+    {
+      "name": "Manewr: Commander's Strike",
+      "rulesName": "Commander's Strike",
+      "description": "Gdy wykonujesz Attack Action, rezygnujesz z jednego własnego ataku i używasz Bonus Action, aby wybrać sojusznika, który cię widzi lub słyszy. Sojusznik może natychmiast użyć Reaction, aby wykonać jeden weapon attack i dodaje Superiority Die do damage przy trafieniu."
+    },
+    {
+      "name": "Profesjonalne wyszkolenie",
+      "rulesName": "Student of War",
+      "description": "Masz biegłość w Cartographer's Tools. Biegłość jest już wpisana w sekcji narzędzi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Second Wind / zryw adrenaliny",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Bonus Action, odzyskuje 1d10+5 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Action Surge / eksplozja tempa",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Dodatkowa Action w swojej turze.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Superiority Dice / kości manewrów",
+      "max": 4,
+      "recharge": "Short Rest",
+      "description": "4 kości d8 do manewrów Battle Mastera.",
+      "kind": "resource",
+      "unit": "d8"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Sharpshooter",
+      "description": "Ranged weapon attacks ignorują half i three-quarters cover, a long range nie daje Disadvantage. Przed ranged weapon attack możesz przyjąć -5 do attack roll; jeśli trafisz, dodajesz +10 do damage."
+    },
+    {
+      "name": "Inspiring Leader",
+      "description": "Po 10 minutach przemowy maksymalnie 6 przyjaznych stworzeń, które cię słyszą i rozumieją, otrzymuje po 7 Temporary HP. Każde z nich może ponownie skorzystać dopiero po Short lub Long Rest."
+    }
+  ]
+}

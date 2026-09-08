@@ -1,0 +1,264 @@
+{
+  "id": "moonknight",
+  "name": "Moon Knight",
+  "realName": "Marc Spector",
+  "race": "Awatar Khonshu",
+  "cls": "Paladin",
+  "subclass": "Oath of Vengeance",
+  "background": "Haunted One",
+  "alignment": "Chaotic Neutral",
+  "stats": {
+    "STR": 17,
+    "DEX": 10,
+    "CON": 13,
+    "INT": 8,
+    "WIS": 12,
+    "CHA": 15
+  },
+  "ac": 17,
+  "speed": 30,
+  "saveProfs": [
+    "WIS",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Insight",
+    "Intimidation",
+    "Religion"
+  ],
+  "expertise": [],
+  "feats": [
+    "Tough"
+  ],
+  "marvel": [
+    [
+      "Fist of Khonshu",
+      "Raz na Long Rest, gdy spadasz do 0 HP, możesz zamiast tego zostać na 1 HP. W bezpośrednim świetle księżyca pierwszy damage roll w każdej turze dostaje +Proficiency Bonus."
+    ]
+  ],
+  "attacks": [
+    [
+      "Crescent Blade",
+      "+6",
+      "1d8+3 slashing",
+      "melee"
+    ],
+    [
+      "Crescent Dart",
+      "+6",
+      "1d6+3 piercing",
+      "30/90"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": "Dueling: +2 damage przy jednej broni jednoręcznej.",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Reborn",
+  "skillAliases": {
+    "Religion": "Egiptologia",
+    "Investigation": "Śledztwo detektywistyczne",
+    "Intimidation": "Presja",
+    "Perception": "Czujność"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Nietypowa fizjologia",
+      "rulesName": "Deathless Nature",
+      "description": "Nie musisz oddychać. Ta cecha reprezentuje nietypową fizjologię postaci i nie wymaga żadnej dodatkowej akcji."
+    },
+    {
+      "name": "Pamięć ciała",
+      "rulesName": "Knowledge from a Past Life",
+      "description": "Po wykonaniu ability check możesz dodać d6 do wyniku. Masz 3 użycia i odzyskujesz je po Long Rest."
+    },
+    {
+      "name": "Zachowane wyszkolenie",
+      "rulesName": "Ancestral Legacy",
+      "description": "Zachowujesz biegłość w: Atletyka, Wnikliwość. Są już uwzględnione na karcie."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Wyczucie nadnaturalnych zagrożeń",
+      "rulesName": "Divine Sense",
+      "description": "Action. Do końca następnej tury wiesz, gdzie w 60 ft znajdują się Celestials, Fiends i Undead, jeśli nie są za total cover; rozpoznajesz też miejsca consecrated/desecrated. Masz 3 użycia na Long Rest."
+    },
+    {
+      "name": "Rezerwa regeneracyjna",
+      "rulesName": "Lay on Hands",
+      "description": "Masz pulę 25 HP na Long Rest. Jako Action dotykasz stworzenia i leczysz je, wydając dowolną liczbę punktów z puli. Możesz zamiast tego wydać 5 punktów, aby usunąć jedną chorobę albo jedną truciznę."
+    },
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Dueling: +2 damage przy jednej broni jednoręcznej."
+    },
+    {
+      "name": "Moce i techniki",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 13, Spell Attack +5. Dostępne sloty: 4× 1. poziomu, 2× 2. poziomu. Możesz przygotować 4 zaklęć klasowych; zaklęcia podklasy przygotowane automatycznie nie liczą się do tego limitu."
+    },
+    {
+      "name": "Wzmocnione uderzenie",
+      "rulesName": "Divine Smite",
+      "description": "Po trafieniu melee weapon attackiem możesz wydać spell slot. Slot 1. poziomu dodaje 2d8 radiant damage, slot 2. poziomu 3d8; przeciwko Fiend lub Undead dodajesz jeszcze 1d8."
+    },
+    {
+      "name": "Nadzwyczajna odporność",
+      "rulesName": "Divine Health",
+      "description": "Jesteś odporny na choroby."
+    },
+    {
+      "name": "Kodeks bohatera",
+      "rulesName": "Sacred Oath",
+      "description": "Twoja przysięga to Oath of Vengeance. Na tym poziomie daje zawsze przygotowane Bane, Hunter's Mark, Hold Person i Misty Step oraz dwie opcje wspólnego Channel Divinity: Abjure Enemy i Vow of Enmity."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Tough",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Tough. Maximum HP zwiększa się o 2 za każdy poziom postaci. Na 5. poziomie daje to +10 Maximum HP."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Techniki przysięgi",
+      "rulesName": "Oath Spells",
+      "description": "1. poziom: Bane, Hunter's Mark. 2. poziom: Hold Person, Misty Step. Wszystkie są zawsze przygotowane i nie liczą się do limitu przygotowanych zaklęć Paladina."
+    },
+    {
+      "name": "Złamanie morale",
+      "rulesName": "Channel Divinity: Abjure Enemy",
+      "description": "Action. Jedno stworzenie w 60 ft, które widzisz, wykonuje WIS Save DC 13. Przy porażce jest Frightened przez 1 minutę i jego Speed wynosi 0; powtarza save na końcu tury po otrzymaniu obrażeń."
+    },
+    {
+      "name": "Namierzenie głównego celu",
+      "rulesName": "Channel Divinity: Vow of Enmity",
+      "description": "Bonus Action. Wybierasz stworzenie w 10 ft. Przez 1 minutę masz Advantage na attack rolls przeciwko niemu albo do czasu, gdy spadnie do 0 HP lub stanie się Unconscious."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Bane",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Do 3 celów odejmuje 1d4 od attack rolls i Saving Throws, CHA Save."
+    },
+    {
+      "name": "Bless",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Do 3 celów +1d4 do attack rolls i saves."
+    },
+    {
+      "name": "Hunter's Mark",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Bonus Action, +1d6 damage do oznaczonego celu, Concentration."
+    },
+    {
+      "name": "Shield of Faith",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "+2 AC dla celu, Concentration."
+    },
+    {
+      "name": "Wrathful Smite",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Dodatkowy psychic damage i możliwe Frightened."
+    },
+    {
+      "name": "Hold Person",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Paralyzed humanoid, WIS Save."
+    },
+    {
+      "name": "Misty Step",
+      "flavorName": null,
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Bonus Action teleport 30 ft."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Lay on Hands / rezerwa regeneracyjna",
+      "max": 25,
+      "recharge": "Long Rest",
+      "description": "Pula leczenia. Możesz wydawać dowolną liczbę punktów przy dotyku.",
+      "kind": "resource",
+      "unit": "HP"
+    },
+    {
+      "name": "Channel Divinity / zryw mocy",
+      "max": 1,
+      "recharge": "Short/Long Rest",
+      "description": "Wspólna pula dla opcji przysięgi.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Divine Sense / wyczucie zagrożeń",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Wykrywanie Celestials, Fiends i Undead w 60 ft.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Pamięć ciała",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Knowledge from a Past Life: d6 do ability check.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Fist of Khonshu",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest, gdy spadasz do 0 HP, możesz zamiast tego zostać na 1 HP. W bezpośrednim świetle księżyca pierwszy damage roll w każdej turze dostaje +Proficiency Bonus.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Tough",
+      "description": "Maximum HP zwiększa się o 2 za każdy poziom postaci. Na 5. poziomie daje to +10 Maximum HP."
+    }
+  ]
+}

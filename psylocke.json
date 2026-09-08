@@ -1,0 +1,223 @@
+{
+  "id": "psylocke",
+  "name": "Psylocke",
+  "realName": "Kwannon",
+  "race": "Mutantka psioniczna",
+  "cls": "Monk",
+  "subclass": "Way of the Kensei",
+  "background": "Haunted One",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 10,
+    "DEX": 16,
+    "CON": 13,
+    "INT": 12,
+    "WIS": 14,
+    "CHA": 8
+  },
+  "ac": 15,
+  "speed": 40,
+  "saveProfs": [
+    "STR",
+    "DEX"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Insight",
+    "Perception",
+    "Stealth"
+  ],
+  "expertise": [],
+  "feats": [
+    "Telekinetic"
+  ],
+  "marvel": [
+    [
+      "Psychic Blade",
+      "Psychic Blade: melee attack +6, 1d8+3 psychic. Broń liczy się jako magiczna, jest Kensei Weapon i może korzystać z Extra Attack, Agile Parry oraz pozostałych cech Monka."
+    ],
+    [
+      "Psychic Focus",
+      "Raz na Short Rest, gdy oblejesz WIS, INT albo CHA saving throw, możesz dodać 1d6 do wyniku."
+    ]
+  ],
+  "attacks": [
+    [
+      "Psychic Blade",
+      "+6",
+      "1d8+3 psychic",
+      "melee"
+    ],
+    [
+      "Unarmed Strike",
+      "+6",
+      "1d6+3 bludgeoning",
+      "melee"
+    ],
+    [
+      "Kensei Shot",
+      "+6",
+      "1d6+3 + 1d4",
+      "ranged"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Githyanki",
+  "team": "X-Men",
+  "gender": "Kobieta",
+  "isMutant": true,
+  "skillAliases": {
+    "Arcana": "Psionika",
+    "Insight": "Telepatia",
+    "Stealth": "Ninja",
+    "Acrobatics": "Sztuki walki"
+  },
+  "originFeatures": [
+    {
+      "name": "Adaptacyjne wyszkolenie",
+      "rulesName": "Astral Knowledge",
+      "description": "Po każdym Long Rest wybierasz jedną umiejętność albo narzędzie. Do następnego Long Rest masz w niej proficiency. Wybór możesz zmieniać każdego dnia."
+    },
+    {
+      "name": "Odporność mentalna",
+      "rulesName": "Psychic Resilience",
+      "description": "Otrzymujesz połowę psychic damage."
+    },
+    {
+      "name": "Moce psioniczne",
+      "rulesName": "Githyanki Psionics",
+      "description": "Znasz Mage Hand. Raz na Long Rest możesz bez slotu rzucić Jump i Misty Step; możesz również rzucać je własnymi slotami, jeśli je posiadasz."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Styl walki wręcz",
+      "rulesName": "Martial Arts",
+      "description": "Możesz używać DEX zamiast STR do attack i damage rolls swoich unarmed strikes i monk weapons. Kość obrażeń Martial Arts na 5. poziomie to d6. Po Attack Action z unarmed strike lub monk weapon możesz wykonać jeden unarmed strike jako Bonus Action."
+    },
+    {
+      "name": "Punkty skupienia",
+      "rulesName": "Ki",
+      "description": "Masz 5 Ki Points. Wszystkie wracają po Short lub Long Rest."
+    },
+    {
+      "name": "Seria ciosów",
+      "rulesName": "Flurry of Blows",
+      "description": "Po Attack Action możesz wydać 1 Ki i jako Bonus Action wykonać dwa unarmed strikes."
+    },
+    {
+      "name": "Defensywna koncentracja",
+      "rulesName": "Patient Defense",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dodge."
+    },
+    {
+      "name": "Zryw mobilności",
+      "rulesName": "Step of the Wind",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dash albo Disengage. Do końca tury podwajasz też dystans skoku."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Unarmored Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz pancerza ani tarczy."
+    },
+    {
+      "name": "Przechwycenie pocisku",
+      "rulesName": "Deflect Missiles",
+      "description": "Reaction, gdy trafia cię ranged weapon attack. Zmniejszasz obrażenia o 1d10 + DEX modifier + 5. Jeśli zredukujesz damage do 0 i pocisk mieści się w jednej ręce, możesz wydać 1 Ki, aby natychmiast nim zaatakować w ramach tej samej Reaction."
+    },
+    {
+      "name": "Kontrolowany upadek",
+      "rulesName": "Slow Fall",
+      "description": "Reaction podczas spadania. Zmniejszasz fall damage o 25."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Telekinetic",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Telekinetic. Wybrany wzrost cechy: +1 WIS. Mage Hand ma zwiększony zasięg i może być niewidzialna. Jako Bonus Action wybierasz stworzenie w 30 ft; musi zdać STR Save DC 13, inaczej przesuwasz je o 5 ft w stronę od siebie albo do siebie."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Ogłuszające trafienie",
+      "rulesName": "Stunning Strike",
+      "description": "Po trafieniu melee weapon attackiem możesz wydać 1 Ki. Cel wykonuje CON Save DC 13; przy porażce jest Stunned do końca twojej następnej tury."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Broń sygnaturowa",
+      "rulesName": "Kensei Weapons",
+      "description": "Wybrane Kensei Weapons: Longsword / Psychic Blade, Shortbow. Możesz używać ich jako monk weapons i stosować z nimi zdolności Kensei."
+    },
+    {
+      "name": "Aktywna obrona",
+      "rulesName": "Agile Parry",
+      "description": "Jeśli w swojej Attack Action wykonasz co najmniej jeden unarmed strike, trzymając melee Kensei Weapon, otrzymujesz +2 AC do początku swojej następnej tury, o ile broń pozostaje w dłoni."
+    },
+    {
+      "name": "Precyzyjny strzał",
+      "rulesName": "Kensei's Shot",
+      "description": "Jako Bonus Action do końca tury każdy trafiony ranged attack Kensei Weapon zadaje dodatkowe 1d4 damage tego samego typu co broń."
+    },
+    {
+      "name": "Dyscyplina",
+      "rulesName": "Way of the Brush",
+      "description": "Masz biegłość w Calligrapher's Supplies. Ta biegłość reprezentuje dyscyplinę i precyzję treningu."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Ki / punkty skupienia",
+      "max": 5,
+      "recharge": "Short Rest",
+      "description": "Wydawane na Flurry of Blows, Patient Defense, Step of the Wind i Stunning Strike.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Jump",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Jump bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Misty Step",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Misty Step bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Psychic Focus",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Raz na Short Rest, gdy oblejesz WIS, INT albo CHA saving throw, możesz dodać 1d6 do wyniku.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Telekinetic",
+      "description": "Wybrany wzrost cechy: +1 WIS. Mage Hand ma zwiększony zasięg i może być niewidzialna. Jako Bonus Action wybierasz stworzenie w 30 ft; musi zdać STR Save DC 13, inaczej przesuwasz je o 5 ft w stronę od siebie albo do siebie."
+    }
+  ]
+}

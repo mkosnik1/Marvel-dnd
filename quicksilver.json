@@ -1,0 +1,205 @@
+{
+  "id": "quicksilver",
+  "name": "Quicksilver",
+  "realName": "Pietro Maximoff",
+  "race": "Mutant superszybkości",
+  "cls": "Monk",
+  "subclass": "Way of the Open Hand",
+  "background": "Far Traveler",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 18,
+    "CON": 13,
+    "INT": 10,
+    "WIS": 14,
+    "CHA": 10
+  },
+  "ac": 16,
+  "speed": 45,
+  "saveProfs": [
+    "STR",
+    "DEX"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Athletics",
+    "Perception",
+    "Stealth"
+  ],
+  "expertise": [],
+  "feats": [
+    "Mobile"
+  ],
+  "marvel": [
+    [
+      "Super Speed",
+      "Walking Speed 45 ft. Dodajesz +3 do Initiative oprócz DEX. Jako Bonus Action 3 razy na Long Rest możesz wykonać zryw 15 ft bez prowokowania Opportunity Attacks. Monkowy Step of the Wind za 1 Ki pozwala dodatkowo Dash albo Disengage jako Bonus Action."
+    ],
+    [
+      "Speed Barrage",
+      "Raz na Short Rest po użyciu Flurry of Blows może wykonać dodatkowy jeden unarmed strike jako część tej samej Bonus Action."
+    ]
+  ],
+  "attacks": [
+    [
+      "Unarmed Strike",
+      "+7",
+      "1d6+4 bludgeoning",
+      "melee"
+    ],
+    [
+      "Flurry of Blows",
+      "+7",
+      "2 × 1d6+4",
+      "Bonus Action, 1 Ki"
+    ],
+    [
+      "Speed Barrage",
+      "+7",
+      "+1 dodatkowy 1d6+4",
+      "1/Short Rest po Flurry"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Harengon",
+  "team": "Avengers / X-Factor",
+  "gender": "Mężczyzna",
+  "isMutant": true,
+  "skillAliases": {
+    "Acrobatics": "Superszybkość",
+    "Athletics": "Sprint",
+    "Perception": "Błyskawiczna obserwacja",
+    "Stealth": "Rozmycie ruchu"
+  },
+  "originFeatures": [
+    {
+      "name": "Błyskawiczny refleks",
+      "rulesName": "Hare-Trigger",
+      "description": "Dodajesz +3 do Initiative oprócz modyfikatora DEX."
+    },
+    {
+      "name": "Wyostrzona obserwacja",
+      "rulesName": "Leporine Senses",
+      "description": "Masz biegłość w Perception. Premia jest już uwzględniona na karcie."
+    },
+    {
+      "name": "Awaryjny unik",
+      "rulesName": "Lucky Footwork",
+      "description": "Po nieudanym DEX Save możesz użyć Reaction i dodać d4 do wyniku, jeśli nie jesteś Prone i masz Speed większy od 0."
+    },
+    {
+      "name": "Zryw mobilności",
+      "rulesName": "Rabbit Hop",
+      "description": "Jako Bonus Action wykonujesz skok o 15 ft bez prowokowania Opportunity Attacks. Masz 3 użycia na Long Rest."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Styl walki wręcz",
+      "rulesName": "Martial Arts",
+      "description": "Możesz używać DEX zamiast STR do attack i damage rolls swoich unarmed strikes i monk weapons. Kość obrażeń Martial Arts na 5. poziomie to d6. Po Attack Action z unarmed strike lub monk weapon możesz wykonać jeden unarmed strike jako Bonus Action."
+    },
+    {
+      "name": "Punkty skupienia",
+      "rulesName": "Ki",
+      "description": "Masz 5 Ki Points. Wszystkie wracają po Short lub Long Rest."
+    },
+    {
+      "name": "Seria ciosów",
+      "rulesName": "Flurry of Blows",
+      "description": "Po Attack Action możesz wydać 1 Ki i jako Bonus Action wykonać dwa unarmed strikes."
+    },
+    {
+      "name": "Defensywna koncentracja",
+      "rulesName": "Patient Defense",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dodge."
+    },
+    {
+      "name": "Zryw mobilności",
+      "rulesName": "Step of the Wind",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dash albo Disengage. Do końca tury podwajasz też dystans skoku."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Unarmored Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz pancerza ani tarczy."
+    },
+    {
+      "name": "Przechwycenie pocisku",
+      "rulesName": "Deflect Missiles",
+      "description": "Reaction, gdy trafia cię ranged weapon attack. Zmniejszasz obrażenia o 1d10 + DEX modifier + 5. Jeśli zredukujesz damage do 0 i pocisk mieści się w jednej ręce, możesz wydać 1 Ki, aby natychmiast nim zaatakować w ramach tej samej Reaction."
+    },
+    {
+      "name": "Kontrolowany upadek",
+      "rulesName": "Slow Fall",
+      "description": "Reaction podczas spadania. Zmniejszasz fall damage o 25."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Mobile",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Mobile. +10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Ogłuszające trafienie",
+      "rulesName": "Stunning Strike",
+      "description": "Po trafieniu melee weapon attackiem możesz wydać 1 Ki. Cel wykonuje CON Save DC 13; przy porażce jest Stunned do końca twojej następnej tury."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Kontrola walki wręcz",
+      "rulesName": "Open Hand Technique",
+      "description": "Gdy trafisz jednym z ataków Flurry of Blows, wybierasz jeden efekt: cel wykonuje DEX Save albo pada Prone; wykonuje STR Save albo zostaje odepchnięty o 15 ft; albo nie może używać Reactions do końca twojej następnej tury."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Ki / punkty skupienia",
+      "max": 5,
+      "recharge": "Short Rest",
+      "description": "Wydawane na Flurry of Blows, Patient Defense, Step of the Wind i Stunning Strike.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Zryw mobilności",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Jako Bonus Action wykonujesz błyskawiczny ruch 15 ft bez prowokowania Opportunity Attacks. Masz 3 użycia na Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Speed Barrage",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Raz na Short Rest po użyciu Flurry of Blows może wykonać dodatkowy jeden unarmed strike jako część tej samej Bonus Action.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Mobile",
+      "description": "+10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    }
+  ]
+}

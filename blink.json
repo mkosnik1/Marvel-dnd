@@ -1,0 +1,276 @@
+{
+  "id": "blink",
+  "name": "Blink",
+  "realName": "Clarice Ferguson",
+  "race": "Mutantka portalowa",
+  "cls": "Sorcerer",
+  "subclass": "Divine Soul",
+  "background": "Far Traveler",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 14,
+    "CON": 14,
+    "INT": 10,
+    "WIS": 12,
+    "CHA": 16
+  },
+  "ac": 15,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Arcana",
+    "Perception",
+    "Stealth"
+  ],
+  "expertise": [],
+  "feats": [
+    "Fey Touched"
+  ],
+  "marvel": [
+    [
+      "Portal Javelin",
+      "Po trafieniu specjalnym atakiem portalowym możesz zamiast zadawać obrażenia teleportować willing cel o 15 ft na wolne pole, które widzisz."
+    ],
+    [
+      "Group Portal",
+      "Raz na Long Rest jako Action otwierasz portal między dwoma punktami widocznymi w zasięgu 60 ft. Do początku twojej następnej tury sojusznicy mogą przechodzić przez niego, zużywając normalny ruch."
+    ]
+  ],
+  "attacks": [
+    [
+      "Portal Shard",
+      "+6",
+      "2d8 force",
+      "90 ft"
+    ],
+    [
+      "Misty Step",
+      "—",
+      "teleport 30 ft",
+      "Bonus Action"
+    ],
+    [
+      "Thunder Step",
+      "CON DC 14",
+      "3d10 thunder",
+      "teleport 90 ft"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Shadar-kai",
+  "team": "Exiles / X-Men",
+  "gender": "Kobieta",
+  "isMutant": true,
+  "skillAliases": {
+    "Arcana": "Geometria portali",
+    "Acrobatics": "Skoki portalowe",
+    "Perception": "Punkty wyjścia",
+    "Investigation": "Topologia"
+  },
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Odporność na wyniszczającą energię",
+      "rulesName": "Necrotic Resistance",
+      "description": "Otrzymujesz połowę necrotic damage."
+    },
+    {
+      "name": "Teleportacja bojowa",
+      "rulesName": "Blessing of the Raven Queen",
+      "description": "Jako Bonus Action teleportujesz się do 30 ft na wolne pole, które widzisz. Masz 3 użycia na Long Rest. Po teleportacji do początku następnej tury masz resistance na wszystkie obrażenia."
+    },
+    {
+      "name": "Wyostrzone zmysły",
+      "rulesName": "Keen Senses",
+      "description": "Masz biegłość w Perception. Premia jest już uwzględniona na karcie."
+    },
+    {
+      "name": "Kontrolowany odpoczynek",
+      "rulesName": "Trance",
+      "description": "Nie musisz spać. 4 godziny świadomej medytacji wystarczają, aby ukończyć Long Rest."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Moce wrodzone",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 3× 2. poziomu, 2× 3. poziomu."
+    },
+    {
+      "name": "Źródło mocy",
+      "rulesName": "Sorcerous Origin",
+      "description": "Wybrane źródło: Divine Soul."
+    },
+    {
+      "name": "Rezerwa mocy",
+      "rulesName": "Font of Magic",
+      "description": "Masz 5 Sorcery Points na Long Rest. Możesz wydawać je na Metamagic albo zamieniać na spell slots; możesz też poświęcać sloty, aby odzyskać Sorcery Points."
+    },
+    {
+      "name": "Kontrola mocy — wybrane techniki",
+      "rulesName": "Metamagic",
+      "description": "Masz dwie techniki Metamagii: Distant Spell, Quickened Spell. Obie korzystają z tej samej puli 5 Sorcery Points, która wraca po Long Rest."
+    },
+    {
+      "name": "Distant Spell",
+      "rulesName": "Metamagic: Distant Spell",
+      "description": "Koszt: 1 Sorcery Point. Jeśli zaklęcie ma zasięg co najmniej 5 ft, podwajasz go. Jeśli ma zasięg Touch, otrzymuje zasięg 30 ft."
+    },
+    {
+      "name": "Quickened Spell",
+      "rulesName": "Metamagic: Quickened Spell",
+      "description": "Koszt: 2 Sorcery Points. Zaklęcie o casting time 1 Action rzucasz jako Bonus Action."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Fey Touched",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Fey Touched. Wybrany wzrost cechy: +1 CHA. Znasz Misty Step oraz Bless. Każde z tych zaklęć możesz rzucić raz na Long Rest bez zużywania spell slota, a później także swoimi normalnymi slotami."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Rozszerzony repertuar mocy",
+      "rulesName": "Divine Magic",
+      "description": "Na tej karcie z listy Clerica wybrane są: Guiding Bolt. Korzystają z CHA oraz tego samego Spell Save DC i Spell Attack Bonus co pozostałe moce Sorcerera."
+    },
+    {
+      "name": "Awaryjny zryw mocy",
+      "rulesName": "Favored by the Gods",
+      "description": "Raz na Short lub Long Rest, gdy nie zdasz saving throw albo spudłujesz attack roll, możesz dodać 2d4 do wyniku i potencjalnie zmienić porażkę w sukces."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 3,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    },
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Mage Hand",
+      "flavorName": null,
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Manipulacja na odległość."
+    },
+    {
+      "name": "Guiding Bolt",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "4d6 radiant i Advantage na następny atak."
+    },
+    {
+      "name": "Shield",
+      "flavorName": null,
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction. +5 AC."
+    },
+    {
+      "name": "Misty Step",
+      "flavorName": "Portal",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Bonus Action. Teleport 30 ft."
+    },
+    {
+      "name": "Vortex Warp",
+      "flavorName": "Przerzut portalem",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "CON Save dla niechętnego celu. Teleportujesz stworzenie do innego wolnego miejsca."
+    },
+    {
+      "name": "Thunder Step",
+      "flavorName": "Skok portalowy",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Teleport 90 ft i 3d10 thunder wokół miejsca startowego."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Sorcery Points / rezerwa mocy",
+      "max": 5,
+      "recharge": "Long Rest",
+      "description": "Punkty do Metamagii i tworzenia spell slotów.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Metamagic",
+      "max": null,
+      "recharge": "",
+      "description": "Dostępne techniki: Distant Spell, Quickened Spell. Każde użycie wydaje punkty ze wspólnej puli 5 Sorcery Points.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Teleportacja bojowa",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Blessing of the Raven Queen: teleport 30 ft.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Misty Step z Fey Touched",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie bez slotu.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Zaklęcie 1. poziomu z Fey Touched",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie bez slotu.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Group Portal",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest jako Action otwierasz portal między dwoma punktami widocznymi w zasięgu 60 ft. Do początku twojej następnej tury sojusznicy mogą przechodzić przez niego, zużywając normalny ruch.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Fey Touched",
+      "description": "Wybrany wzrost cechy: +1 CHA. Znasz Misty Step oraz Bless. Każde z tych zaklęć możesz rzucić raz na Long Rest bez zużywania spell slota, a później także swoimi normalnymi slotami."
+    }
+  ]
+}

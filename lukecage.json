@@ -1,0 +1,197 @@
+{
+  "id": "lukecage",
+  "name": "Luke Cage",
+  "realName": "Luke Cage",
+  "race": "Niezniszczalny obrońca ulicy",
+  "cls": "Fighter",
+  "subclass": "Battle Master",
+  "background": "Criminal",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 18,
+    "DEX": 10,
+    "CON": 15,
+    "INT": 8,
+    "WIS": 12,
+    "CHA": 10
+  },
+  "ac": 15,
+  "speed": 30,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Insight",
+    "Intimidation",
+    "Perception"
+  ],
+  "expertise": [],
+  "feats": [
+    "Tough"
+  ],
+  "marvel": [
+    [
+      "Bulletproof Skin",
+      "Stone's Endurance reprezentuje kuloodporną skórę Luke’a."
+    ],
+    [
+      "Street Brawler",
+      "Unarmed Strike zadaje 1d8+4 bludgeoning dzięki Unarmed Fighting style."
+    ]
+  ],
+  "attacks": [
+    [
+      "Unarmed Strike",
+      "+7",
+      "1d8+4 bludgeoning",
+      "melee"
+    ],
+    [
+      "Grapple",
+      "+7 Athletics",
+      "Grappled",
+      "melee"
+    ],
+    [
+      "Improvised Weapon",
+      "+7",
+      "1d4+4 bludgeoning",
+      "melee"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": "Unarmed Fighting: unarmed strikes zadają d6 lub d8 i wzmacniają grappling.",
+  "maneuvers": [
+    "Grappling Strike",
+    "Menacing Attack",
+    "Trip Attack"
+  ],
+  "tools": "Mason's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Goliath",
+  "team": "Defenders",
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "skillAliases": {
+    "Athletics": "Siła uliczna",
+    "Intimidation": "Twardy facet",
+    "Insight": "Czytanie ludzi",
+    "Perception": "Czujność dzielnicy"
+  },
+  "originFeatures": [
+    {
+      "name": "Nadludzka budowa",
+      "rulesName": "Little Giant",
+      "description": "Przy ustalaniu udźwigu oraz masy, którą możesz pchać, ciągnąć lub podnosić, liczysz się jako stworzenie o jeden rozmiar większe."
+    },
+    {
+      "name": "Ekstremalna twardość",
+      "rulesName": "Stone's Endurance",
+      "description": "Gdy otrzymujesz obrażenia, możesz użyć Reaction i zmniejszyć je o 1d12 + 3. Masz 3 użycia; wszystkie wracają po Long Rest."
+    },
+    {
+      "name": "Odporność na skrajne warunki",
+      "rulesName": "Mountain Born",
+      "description": "Masz resistance na cold damage i naturalnie radzisz sobie na dużych wysokościach."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Unarmed Fighting: unarmed strikes zadają d6 lub d8 i wzmacniają grappling."
+    },
+    {
+      "name": "Zryw adrenaliny",
+      "rulesName": "Second Wind",
+      "description": "Bonus Action. Odzyskujesz 1d10 + 5 HP. Masz 1 użycie i odzyskujesz je po Short lub Long Rest."
+    },
+    {
+      "name": "Eksplozja tempa",
+      "rulesName": "Action Surge",
+      "description": "Raz na Short lub Long Rest możesz w swojej turze wykonać dodatkową Action. Nie daje dodatkowej Bonus Action ani Reaction."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Tough",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Tough. Maximum HP zwiększa się o 2 za każdy poziom postaci. Na 5. poziomie daje to +10 Maximum HP."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Taktyczne manewry",
+      "rulesName": "Combat Superiority",
+      "description": "Masz 4 Superiority Dice d8. Wracają po Short lub Long Rest. Maneuver Save DC 15. Wybrane manewry: Grappling Strike, Menacing Attack, Trip Attack."
+    },
+    {
+      "name": "Manewr: Grappling Strike",
+      "rulesName": "Grappling Strike",
+      "description": "Po trafieniu melee attack możesz wydać Superiority Die i jako Bonus Action spróbować Grapple, dodając wynik kości do Athletics check."
+    },
+    {
+      "name": "Manewr: Menacing Attack",
+      "rulesName": "Menacing Attack",
+      "description": "Po trafieniu dodajesz Superiority Die do damage. Cel wykonuje WIS Save; przy porażce jest Frightened do końca twojej następnej tury."
+    },
+    {
+      "name": "Manewr: Trip Attack",
+      "rulesName": "Trip Attack",
+      "description": "Po trafieniu wydajesz Superiority Die, dodajesz ją do damage. Cel Large lub mniejszy wykonuje STR Save; przy porażce pada Prone."
+    },
+    {
+      "name": "Profesjonalne wyszkolenie",
+      "rulesName": "Student of War",
+      "description": "Masz biegłość w Mason's Tools. Biegłość jest już wpisana w sekcji narzędzi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Second Wind / zryw adrenaliny",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Bonus Action, odzyskuje 1d10+5 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Action Surge / eksplozja tempa",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Dodatkowa Action w swojej turze.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Superiority Dice / kości manewrów",
+      "max": 4,
+      "recharge": "Short Rest",
+      "description": "4 kości d8 do manewrów Battle Mastera.",
+      "kind": "resource",
+      "unit": "d8"
+    },
+    {
+      "name": "Ekstremalna twardość",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Stone's Endurance: Reaction, redukcja 1d12 + Proficiency Bonus.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Tough",
+      "description": "Maximum HP zwiększa się o 2 za każdy poziom postaci. Na 5. poziomie daje to +10 Maximum HP."
+    }
+  ]
+}

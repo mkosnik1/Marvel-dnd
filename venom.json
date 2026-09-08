@@ -1,0 +1,179 @@
+{
+  "id": "venom",
+  "name": "Venom",
+  "realName": "Eddie Brock",
+  "race": "Nosiciel symbionta",
+  "cls": "Barbarian",
+  "subclass": "Path of the Beast",
+  "background": "Haunted One",
+  "alignment": "Chaotic Neutral",
+  "stats": {
+    "STR": 17,
+    "DEX": 13,
+    "CON": 15,
+    "INT": 8,
+    "WIS": 12,
+    "CHA": 10
+  },
+  "ac": 14,
+  "speed": 40,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Athletics",
+    "Intimidation",
+    "Perception",
+    "Stealth"
+  ],
+  "expertise": [],
+  "feats": [
+    "Grappler"
+  ],
+  "marvel": [
+    [
+      "Symbiote",
+      "Masz Advantage na Athletics checks wykonywane do Grapple. Gdy masz cel Grappled, raz na turę możesz jako Bonus Action wykonać Bite: +6 do trafienia, 1d8+5 piercing podczas Rage."
+    ]
+  ],
+  "attacks": [
+    [
+      "Symbiote Claws",
+      "+6",
+      "1d6+5 slashing",
+      "w Rage"
+    ],
+    [
+      "Bite",
+      "+6",
+      "1d8+5 piercing",
+      "w Rage"
+    ],
+    [
+      "Tail",
+      "+6",
+      "1d8+5 piercing",
+      "reach"
+    ]
+  ],
+  "group": "Małe ziemniaczki",
+  "fighting": null,
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Plasmoid",
+  "skillAliases": {
+    "Perception": "Zmysły symbionta",
+    "Stealth": "Kamuflaż",
+    "Intimidation": "Groza",
+    "Athletics": "Biomasa",
+    "Survival": "Instynkt"
+  },
+  "gender": "Mężczyzna",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Elastyczna forma",
+      "rulesName": "Amorphous",
+      "description": "Możesz przecisnąć się przez otwór szerokości 1 cala, jeśli nie niesiesz przedmiotów, które fizycznie się przez niego nie zmieszczą. Masz też Advantage na testy potrzebne do rozpoczęcia albo ucieczki z Grapple."
+    },
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Zwiększona pojemność oddechowa",
+      "rulesName": "Hold Breath",
+      "description": "Możesz wstrzymać oddech przez 1 godzinę."
+    },
+    {
+      "name": "Odporne ciało",
+      "rulesName": "Natural Resilience",
+      "description": "Masz Advantage na saving throws przeciwko Poisoned oraz resistance na acid i poison damage."
+    },
+    {
+      "name": "Zmiana kształtu",
+      "rulesName": "Shape Self",
+      "description": "Jako Action zmieniasz kształt ciała, tworząc albo chowając kończyny. Jako Bonus Action możesz wysunąć pseudopod do manipulowania lekkim przedmiotem w 10 ft; pseudopod nie może atakować ani aktywować magicznych przedmiotów."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Stan mocy",
+      "rulesName": "Rage",
+      "description": "Bonus Action. Masz 3 użycia na Long Rest. Podczas Rage masz Advantage na STR checks i STR saves, +2 damage do melee attacks opartych na STR oraz resistance na bludgeoning, piercing i slashing damage."
+    },
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Agresywny szturm",
+      "rulesName": "Reckless Attack",
+      "description": "Przy pierwszym melee attack opartym na STR w turze możesz zdecydować się na Reckless Attack. Do końca tury masz Advantage na swoje melee STR attacks, ale attack rolls przeciwko tobie mają Advantage do początku twojej następnej tury."
+    },
+    {
+      "name": "Instynkt zagrożenia",
+      "rulesName": "Danger Sense",
+      "description": "Masz Advantage na DEX Saves przeciwko widocznym efektom, takim jak pułapki i zaklęcia, jeśli nie jesteś Blinded, Deafened ani Incapacitated."
+    },
+    {
+      "name": "Specjalizacja mocy",
+      "rulesName": "Primal Path",
+      "description": "Twoja ścieżka to Path of the Beast. Podczas Rage możesz wybrać Bite, Claws albo Tail. Bite leczy w odpowiednich warunkach, Claws dają dodatkowy atak raz na turę, a Tail ma reach 10 ft i może zwiększyć AC przeciwko jednemu trafieniu."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Grappler",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Grappler. Masz Advantage na attack rolls przeciwko stworzeniu, które Grapple’ujesz. Możesz użyć Action i wykonać kolejny grapple check przeciwko temu celowi; jeśli wygrasz, ty i cel jesteście Restrained aż do zakończenia Grapple."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Fast Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz heavy armor."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Broń mutacyjna / naturalna",
+      "rulesName": "Form of the Beast",
+      "description": "Gdy wchodzisz w Rage, wybierasz jedną formę do końca Rage. Bite: 1d8 piercing; raz na turę po trafieniu odzyskujesz HP równe PB, jeśli masz mniej niż połowę HP. Claws: 1d6 slashing; raz na turę po ataku pazurami w Attack Action wykonujesz jeden dodatkowy atak pazurami. Tail: 1d8 piercing, reach 10 ft; gdy widoczny przeciwnik trafi cię atakiem w 10 ft, możesz Reaction rzucić d8 i dodać wynik do AC przeciwko temu atakowi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Rage / stan mocy",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Bonus Action. +2 damage do ataków STR, Advantage na STR checks/saves i resistance na B/P/S.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Rage",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "3 użycia na Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Grappler",
+      "description": "Masz Advantage na attack rolls przeciwko stworzeniu, które Grapple’ujesz. Możesz użyć Action i wykonać kolejny grapple check przeciwko temu celowi; jeśli wygrasz, ty i cel jesteście Restrained aż do zakończenia Grapple."
+    }
+  ]
+}

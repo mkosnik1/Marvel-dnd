@@ -1,0 +1,240 @@
+{
+  "id": "americachavez",
+  "name": "America Chavez",
+  "realName": "America Chavez",
+  "race": "Bohaterka międzywymiarowa",
+  "cls": "Monk",
+  "subclass": "Way of the Open Hand",
+  "background": "Far Traveler",
+  "alignment": "Chaotic Good",
+  "stats": {
+    "STR": 14,
+    "DEX": 16,
+    "CON": 14,
+    "INT": 8,
+    "WIS": 14,
+    "CHA": 10
+  },
+  "ac": 15,
+  "speed": 40,
+  "saveProfs": [
+    "STR",
+    "DEX"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Athletics",
+    "Perception",
+    "Insight"
+  ],
+  "expertise": [],
+  "feats": [
+    "Fey Touched"
+  ],
+  "marvel": [
+    [
+      "Star Portal",
+      "Misty Step pozwala jako Bonus Action teleportować się na wolne pole do 30 ft, które widzisz. Raz na Long Rest możesz podczas tego teleportu zabrać jednego willing sojusznika stojącego w 5 ft; pojawia się na wolnym polu obok ciebie."
+    ],
+    [
+      "Dimensional Punch",
+      "Raz na Short Rest po trafieniu unarmed strike może dodać 2d6 force."
+    ]
+  ],
+  "attacks": [
+    [
+      "Unarmed Strike",
+      "+6",
+      "1d6+3 bludgeoning",
+      "melee"
+    ],
+    [
+      "Star Punch",
+      "+6",
+      "1d6+3 bludgeoning + 2d6 force",
+      "1/Short Rest"
+    ],
+    [
+      "Flurry of Blows",
+      "+6",
+      "2 × 1d6+3",
+      "Bonus Action, 1 Ki"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Githyanki",
+  "team": "Young Avengers",
+  "gender": "Kobieta",
+  "isMutant": false,
+  "skillAliases": {
+    "Acrobatics": "Skoki wymiarowe",
+    "Athletics": "Siła bojowa",
+    "Perception": "Orientacja portalowa",
+    "Insight": "Instynkt"
+  },
+  "originFeatures": [
+    {
+      "name": "Adaptacyjne wyszkolenie",
+      "rulesName": "Astral Knowledge",
+      "description": "Po każdym Long Rest wybierasz jedną umiejętność albo narzędzie. Do następnego Long Rest masz w niej proficiency. Wybór możesz zmieniać każdego dnia."
+    },
+    {
+      "name": "Odporność mentalna",
+      "rulesName": "Psychic Resilience",
+      "description": "Otrzymujesz połowę psychic damage."
+    },
+    {
+      "name": "Moce psioniczne",
+      "rulesName": "Githyanki Psionics",
+      "description": "Znasz Mage Hand. Raz na Long Rest możesz bez slotu rzucić Jump i Misty Step; możesz również rzucać je własnymi slotami, jeśli je posiadasz."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Naturalna obrona",
+      "rulesName": "Unarmored Defense",
+      "description": "Gdy nie nosisz pancerza, twoje AC wynosi 10 + DEX modifier + CON modifier. Możesz nadal używać tarczy."
+    },
+    {
+      "name": "Styl walki wręcz",
+      "rulesName": "Martial Arts",
+      "description": "Możesz używać DEX zamiast STR do attack i damage rolls swoich unarmed strikes i monk weapons. Kość obrażeń Martial Arts na 5. poziomie to d6. Po Attack Action z unarmed strike lub monk weapon możesz wykonać jeden unarmed strike jako Bonus Action."
+    },
+    {
+      "name": "Punkty skupienia",
+      "rulesName": "Ki",
+      "description": "Masz 5 Ki Points. Wszystkie wracają po Short lub Long Rest."
+    },
+    {
+      "name": "Seria ciosów",
+      "rulesName": "Flurry of Blows",
+      "description": "Po Attack Action możesz wydać 1 Ki i jako Bonus Action wykonać dwa unarmed strikes."
+    },
+    {
+      "name": "Defensywna koncentracja",
+      "rulesName": "Patient Defense",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dodge."
+    },
+    {
+      "name": "Zryw mobilności",
+      "rulesName": "Step of the Wind",
+      "description": "Wydajesz 1 Ki i jako Bonus Action wykonujesz Dash albo Disengage. Do końca tury podwajasz też dystans skoku."
+    },
+    {
+      "name": "Nadludzka mobilność",
+      "rulesName": "Unarmored Movement",
+      "description": "+10 ft walking speed, jeśli nie nosisz pancerza ani tarczy."
+    },
+    {
+      "name": "Przechwycenie pocisku",
+      "rulesName": "Deflect Missiles",
+      "description": "Reaction, gdy trafia cię ranged weapon attack. Zmniejszasz obrażenia o 1d10 + DEX modifier + 5. Jeśli zredukujesz damage do 0 i pocisk mieści się w jednej ręce, możesz wydać 1 Ki, aby natychmiast nim zaatakować w ramach tej samej Reaction."
+    },
+    {
+      "name": "Kontrolowany upadek",
+      "rulesName": "Slow Fall",
+      "description": "Reaction podczas spadania. Zmniejszasz fall damage o 25."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Fey Touched",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Fey Touched. Wybrany wzrost cechy: +1 WIS. Znasz Misty Step oraz Bless. Każde z tych zaklęć możesz rzucić raz na Long Rest bez zużywania spell slota, a później także swoimi normalnymi slotami."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    },
+    {
+      "name": "Ogłuszające trafienie",
+      "rulesName": "Stunning Strike",
+      "description": "Po trafieniu melee weapon attackiem możesz wydać 1 Ki. Cel wykonuje CON Save DC 13; przy porażce jest Stunned do końca twojej następnej tury."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Kontrola walki wręcz",
+      "rulesName": "Open Hand Technique",
+      "description": "Gdy trafisz jednym z ataków Flurry of Blows, wybierasz jeden efekt: cel wykonuje DEX Save albo pada Prone; wykonuje STR Save albo zostaje odepchnięty o 15 ft; albo nie może używać Reactions do końca twojej następnej tury."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Ki / punkty skupienia",
+      "max": 5,
+      "recharge": "Short Rest",
+      "description": "Wydawane na Flurry of Blows, Patient Defense, Step of the Wind i Stunning Strike.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Jump",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Jump bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Misty Step",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Misty Step bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Misty Step z Fey Touched",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie bez slotu.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Zaklęcie 1. poziomu z Fey Touched",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Jedno darmowe użycie bez slotu.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Star Portal",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest, gdy używasz Misty Step jako Bonus Action, możesz zabrać jednego willing sojusznika stojącego w 5 ft. Oboje pojawiacie się na wolnych polach do 30 ft, które widzisz.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Dimensional Punch",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Raz na Short Rest po trafieniu unarmed strike może dodać 2d6 force.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Fey Touched",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Misty Step raz na Long Rest bez slotu.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Fey Touched",
+      "description": "Wybrany wzrost cechy: +1 WIS. Znasz Misty Step oraz Bless. Każde z tych zaklęć możesz rzucić raz na Long Rest bez zużywania spell slota, a później także swoimi normalnymi slotami."
+    }
+  ]
+}

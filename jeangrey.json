@@ -1,0 +1,287 @@
+{
+  "id": "jeangrey",
+  "name": "Jean Grey",
+  "realName": "Jean Grey",
+  "race": "Mutantka telepatii i telekinezy",
+  "cls": "Sorcerer",
+  "subclass": "Aberrant Mind",
+  "background": "Sage",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 8,
+    "DEX": 12,
+    "CON": 14,
+    "INT": 13,
+    "WIS": 14,
+    "CHA": 16
+  },
+  "ac": 14,
+  "speed": 30,
+  "saveProfs": [
+    "CON",
+    "CHA"
+  ],
+  "skillProfs": [
+    "Arcana",
+    "Insight",
+    "Investigation",
+    "Persuasion"
+  ],
+  "expertise": [],
+  "feats": [
+    "Telekinetic"
+  ],
+  "marvel": [
+    [
+      "Telekinesis",
+      "Niewidzialną telekinetyczną dłonią możesz na 30 ft podnosić i przesuwać przedmioty do 10 lb, otwierać niezabezpieczone drzwi i pojemniki oraz manipulować przedmiotami. Raz na Long Rest jako Action możesz wybrać stworzenie Large lub mniejsze w 60 ft; po nieudanym STR Save DC 14 przesuwasz je do 20 ft w wybranym kierunku."
+    ],
+    [
+      "Psychic Shield",
+      "Reaction, raz na Short Rest. Gdy ty albo sojusznik w 30 ft otrzymuje psychic damage, zmniejsz go o 1d10+3."
+    ]
+  ],
+  "attacks": [
+    [
+      "Mind Sliver",
+      "INT DC 14",
+      "2d6 psychic",
+      "60 ft"
+    ],
+    [
+      "Tasha's Mind Whip",
+      "INT DC 14",
+      "3d6 psychic",
+      "90 ft"
+    ],
+    [
+      "Psychic Burst",
+      "WIS DC 14",
+      "3d8 psychic",
+      "20-ft radius, 1/LR"
+    ]
+  ],
+  "group": "Mutanci",
+  "fighting": "",
+  "maneuvers": [],
+  "tools": "",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Githzerai",
+  "team": "X-Men",
+  "gender": "Kobieta",
+  "isMutant": true,
+  "skillAliases": {
+    "Arcana": "Psionika",
+    "Insight": "Telepatia",
+    "Investigation": "Skan psychiczny",
+    "Persuasion": "Wpływ mentalny"
+  },
+  "originFeatures": [
+    {
+      "name": "Dyscyplina umysłu",
+      "rulesName": "Mental Discipline",
+      "description": "Masz Advantage na saving throws przeciwko Charmed i Frightened."
+    },
+    {
+      "name": "Odporność mentalna",
+      "rulesName": "Psychic Resilience",
+      "description": "Otrzymujesz połowę psychic damage."
+    },
+    {
+      "name": "Moce mentalne",
+      "rulesName": "Githzerai Psionics",
+      "description": "Znasz Mage Hand. Raz na Long Rest możesz bez slotu użyć Shield oraz Detect Thoughts; możesz również rzucać je własnymi slotami, jeśli je posiadasz."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Moce wrodzone",
+      "rulesName": "Spellcasting",
+      "description": "Używasz CHA. Spell Save DC 14, Spell Attack +6. Dostępne sloty: 4× 1. poziomu, 3× 2. poziomu, 2× 3. poziomu."
+    },
+    {
+      "name": "Źródło mocy",
+      "rulesName": "Sorcerous Origin",
+      "description": "Wybrane źródło: Aberrant Mind."
+    },
+    {
+      "name": "Rezerwa mocy",
+      "rulesName": "Font of Magic",
+      "description": "Masz 5 Sorcery Points na Long Rest. Możesz wydawać je na Metamagic albo zamieniać na spell slots; możesz też poświęcać sloty, aby odzyskać Sorcery Points."
+    },
+    {
+      "name": "Kontrola mocy — wybrane techniki",
+      "rulesName": "Metamagic",
+      "description": "Masz dwie techniki Metamagii: Subtle Spell, Twinned Spell. Obie korzystają z tej samej puli 5 Sorcery Points, która wraca po Long Rest."
+    },
+    {
+      "name": "Subtle Spell",
+      "rulesName": "Metamagic: Subtle Spell",
+      "description": "Koszt: 1 Sorcery Point. Rzucasz zaklęcie bez komponentów verbal i somatic. Komponent materialny nadal jest wymagany, jeśli zaklęcie go posiada."
+    },
+    {
+      "name": "Twinned Spell",
+      "rulesName": "Metamagic: Twinned Spell",
+      "description": "Gdy rzucasz zaklęcie, które może celować tylko w jedną istotę i nie ma zasięgu Self, możesz objąć nim drugi kwalifikujący się cel w zasięgu. Koszt wynosi liczbę Sorcery Points równą poziomowi zaklęcia, minimum 1 dla cantripu."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Telekinetic",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Telekinetic. Wybrany wzrost cechy: +1 CHA. Mage Hand ma zwiększony zasięg i może być niewidzialna. Jako Bonus Action wybierasz stworzenie w 30 ft; musi zdać STR Save DC 14, inaczej przesuwasz je o 5 ft w stronę od siebie albo do siebie."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Moce psioniczne",
+      "rulesName": "Psionic Spells",
+      "description": "Masz dodatkowe zaklęcia podklasy Aberrant Mind. Są zawsze znane i nie liczą się do limitu Sorcerer Spells Known. Ich lista jest uwzględniona w sekcji zaklęć."
+    },
+    {
+      "name": "Łącze telepatyczne",
+      "rulesName": "Telepathic Speech",
+      "description": "Jako Bonus Action wybierasz widoczne stworzenie w 30 ft. Przez 5 minut możeszcie komunikować się telepatycznie, jeśli oboje znacie co najmniej jeden język. Połączenie działa na odległość do 3 mil."
+    }
+  ],
+  "spellSlotsDetailed": [
+    {
+      "level": 1,
+      "max": 4,
+      "recharge": "Long Rest",
+      "name": "Sloty 1. poziomu"
+    },
+    {
+      "level": 2,
+      "max": 3,
+      "recharge": "Long Rest",
+      "name": "Sloty 2. poziomu"
+    },
+    {
+      "level": 3,
+      "max": 2,
+      "recharge": "Long Rest",
+      "name": "Sloty 3. poziomu"
+    }
+  ],
+  "spellsDetailed": [
+    {
+      "name": "Mage Hand",
+      "flavorName": "Telekineza",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "Action, zasięg 30 ft, czas 1 minuta. Tworzysz niewidzialną telekinetyczną dłoń, która może manipulować przedmiotami, otwierać niezabezpieczone drzwi lub pojemniki i przenosić do 10 lb. Nie może atakować ani aktywować magicznych przedmiotów."
+    },
+    {
+      "name": "Mind Sliver",
+      "flavorName": "Psychiczna igła",
+      "level": 0,
+      "levelLabel": "Cantrip",
+      "description": "INT Save. 2d6 psychic i -1d4 do następnego saving throw celu przed końcem twojej następnej tury."
+    },
+    {
+      "name": "Shield",
+      "flavorName": "Bariera psioniczna",
+      "level": 1,
+      "levelLabel": "1. poziom",
+      "description": "Reaction. +5 AC do początku następnej tury."
+    },
+    {
+      "name": "Detect Thoughts",
+      "flavorName": "Skan mentalny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "Czytasz powierzchowne myśli, a przy dalszym badaniu cel wykonuje WIS Save."
+    },
+    {
+      "name": "Hold Person",
+      "flavorName": "Psychiczna blokada",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "WIS Save. Humanoid może zostać Paralyzed. Concentration."
+    },
+    {
+      "name": "Suggestion",
+      "flavorName": "Wpływ mentalny",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "WIS Save. Sugestia wpływa na zachowanie celu przez maksymalnie 8 godzin."
+    },
+    {
+      "name": "Tasha's Mind Whip",
+      "flavorName": "Uderzenie mentalne",
+      "level": 2,
+      "levelLabel": "2. poziom",
+      "description": "INT Save. 3d6 psychic i ograniczenie Action/Bonus Action/Reaction."
+    },
+    {
+      "name": "Counterspell",
+      "flavorName": "Zakłócenie mocy",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Reaction. Próbujesz przerwać rzucane zaklęcie."
+    },
+    {
+      "name": "Fly",
+      "flavorName": "Lewitacja",
+      "level": 3,
+      "levelLabel": "3. poziom",
+      "description": "Flying Speed 60 ft. Concentration."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Sorcery Points / rezerwa mocy",
+      "max": 5,
+      "recharge": "Long Rest",
+      "description": "Punkty do Metamagii i tworzenia spell slotów.",
+      "kind": "resource",
+      "unit": "punkty"
+    },
+    {
+      "name": "Metamagic",
+      "max": null,
+      "recharge": "",
+      "description": "Dostępne techniki: Subtle Spell, Twinned Spell. Każde użycie wydaje punkty ze wspólnej puli 5 Sorcery Points.",
+      "kind": "info",
+      "unit": ""
+    },
+    {
+      "name": "Shield",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Shield bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Detect Thoughts",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Masz 1 darmowe użycie Detect Thoughts bez zużywania spell slota. Użycie wraca po Long Rest.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Telekinesis",
+      "max": 1,
+      "recharge": "Long Rest",
+      "description": "Raz na Long Rest jako Action wybierasz stworzenie Large lub mniejsze w 60 ft. Po nieudanym STR Save DC 14 przesuwasz je do 20 ft w wybranym kierunku.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Psychic Shield",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Reaction, raz na Short Rest. Gdy ty albo sojusznik w 30 ft otrzymuje psychic damage, zmniejsz go o 1d10+3.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Telekinetic",
+      "description": "Wybrany wzrost cechy: +1 CHA. Mage Hand ma zwiększony zasięg i może być niewidzialna. Jako Bonus Action wybierasz stworzenie w 30 ft; musi zdać STR Save DC 14, inaczej przesuwasz je o 5 ft w stronę od siebie albo do siebie."
+    }
+  ]
+}

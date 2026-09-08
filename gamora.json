@@ -1,0 +1,198 @@
+{
+  "id": "gamora",
+  "name": "Gamora",
+  "realName": "Gamora",
+  "race": "Zehoberei",
+  "cls": "Fighter",
+  "subclass": "Battle Master",
+  "background": "Soldier",
+  "alignment": "Neutral Good",
+  "stats": {
+    "STR": 13,
+    "DEX": 17,
+    "CON": 15,
+    "INT": 8,
+    "WIS": 12,
+    "CHA": 10
+  },
+  "ac": 17,
+  "speed": 40,
+  "saveProfs": [
+    "STR",
+    "CON"
+  ],
+  "skillProfs": [
+    "Acrobatics",
+    "Athletics",
+    "Perception",
+    "Stealth",
+    "Survival"
+  ],
+  "expertise": [],
+  "feats": [
+    "Mobile"
+  ],
+  "marvel": [
+    [
+      "Godslayer",
+      "Jednoręczny miecz +1. Liczy się jako magiczna broń. Raz na turę przy trafieniu może zadać dodatkowe 1d4 force przeciwko stworzeniu większemu od Gamory."
+    ]
+  ],
+  "attacks": [
+    [
+      "Godslayer",
+      "+7",
+      "1d8+6 slashing",
+      "melee"
+    ],
+    [
+      "Dagger",
+      "+6",
+      "1d4+3 piercing",
+      "20/60"
+    ]
+  ],
+  "group": "Duże ziemniaczki",
+  "fighting": "Dueling: +2 damage przy jednej broni jednoręcznej.",
+  "maneuvers": [
+    "Riposte",
+    "Precision Attack",
+    "Trip Attack"
+  ],
+  "tools": "Smith's Tools",
+  "languages": "English",
+  "source": "D&D 5e 2014 + dodatki",
+  "raceRules": "Shadar-kai",
+  "skillAliases": {
+    "Acrobatics": "Mobilność bojowa",
+    "Stealth": "Infiltracja",
+    "Survival": "Tropienie",
+    "Intimidation": "Presja"
+  },
+  "gender": "Kobieta",
+  "isMutant": false,
+  "team": "",
+  "originFeatures": [
+    {
+      "name": "Wzmocnione widzenie",
+      "rulesName": "Darkvision",
+      "description": "Widzisz w ciemności do 60 ft. W darkness widzisz tak jak w dim light i nie rozróżniasz kolorów."
+    },
+    {
+      "name": "Odporność na wyniszczającą energię",
+      "rulesName": "Necrotic Resistance",
+      "description": "Otrzymujesz połowę necrotic damage."
+    },
+    {
+      "name": "Teleportacja bojowa",
+      "rulesName": "Blessing of the Raven Queen",
+      "description": "Jako Bonus Action teleportujesz się do 30 ft na wolne pole, które widzisz. Masz 3 użycia na Long Rest. Po teleportacji do początku następnej tury masz resistance na wszystkie obrażenia."
+    },
+    {
+      "name": "Wyostrzone zmysły",
+      "rulesName": "Keen Senses",
+      "description": "Masz biegłość w Perception. Premia jest już uwzględniona na karcie."
+    },
+    {
+      "name": "Kontrolowany odpoczynek",
+      "rulesName": "Trance",
+      "description": "Nie musisz spać. 4 godziny świadomej medytacji wystarczają, aby ukończyć Long Rest."
+    }
+  ],
+  "classFeaturesDetailed": [
+    {
+      "name": "Specjalizacja bojowa",
+      "rulesName": "Fighting Style",
+      "description": "Dueling: +2 damage przy jednej broni jednoręcznej."
+    },
+    {
+      "name": "Zryw adrenaliny",
+      "rulesName": "Second Wind",
+      "description": "Bonus Action. Odzyskujesz 1d10 + 5 HP. Masz 1 użycie i odzyskujesz je po Short lub Long Rest."
+    },
+    {
+      "name": "Eksplozja tempa",
+      "rulesName": "Action Surge",
+      "description": "Raz na Short lub Long Rest możesz w swojej turze wykonać dodatkową Action. Nie daje dodatkowej Bonus Action ani Reaction."
+    },
+    {
+      "name": "Rozwój na 4. poziomie: Mobile",
+      "rulesName": "Ability Score Improvement",
+      "description": "Na 4. poziomie masz feat Mobile. +10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    },
+    {
+      "name": "Szybka seria",
+      "rulesName": "Extra Attack",
+      "description": "Gdy wykonujesz Attack Action, wykonujesz dwa ataki zamiast jednego."
+    }
+  ],
+  "subclassFeaturesDetailed": [
+    {
+      "name": "Taktyczne manewry",
+      "rulesName": "Combat Superiority",
+      "description": "Masz 4 Superiority Dice d8. Wracają po Short lub Long Rest. Maneuver Save DC 14. Wybrane manewry: Riposte, Precision Attack, Trip Attack."
+    },
+    {
+      "name": "Manewr: Riposte",
+      "rulesName": "Riposte",
+      "description": "Gdy stworzenie spudłuje melee attack przeciwko tobie, Reaction i Superiority Die pozwalają wykonać melee attack; przy trafieniu dodajesz kość do damage."
+    },
+    {
+      "name": "Manewr: Precision Attack",
+      "rulesName": "Precision Attack",
+      "description": "Dodajesz Superiority Die do attack roll. Możesz zdecydować po rzucie, zanim poznasz ostateczny wynik."
+    },
+    {
+      "name": "Manewr: Trip Attack",
+      "rulesName": "Trip Attack",
+      "description": "Po trafieniu wydajesz Superiority Die, dodajesz ją do damage. Cel Large lub mniejszy wykonuje STR Save; przy porażce pada Prone."
+    },
+    {
+      "name": "Profesjonalne wyszkolenie",
+      "rulesName": "Student of War",
+      "description": "Masz biegłość w Smith's Tools. Biegłość jest już wpisana w sekcji narzędzi."
+    }
+  ],
+  "spellSlotsDetailed": [],
+  "spellsDetailed": [],
+  "resources": [
+    {
+      "name": "Second Wind / zryw adrenaliny",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Bonus Action, odzyskuje 1d10+5 HP.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Action Surge / eksplozja tempa",
+      "max": 1,
+      "recharge": "Short Rest",
+      "description": "Dodatkowa Action w swojej turze.",
+      "kind": "resource",
+      "unit": "użycia"
+    },
+    {
+      "name": "Superiority Dice / kości manewrów",
+      "max": 4,
+      "recharge": "Short Rest",
+      "description": "4 kości d8 do manewrów Battle Mastera.",
+      "kind": "resource",
+      "unit": "d8"
+    },
+    {
+      "name": "Teleportacja bojowa",
+      "max": 3,
+      "recharge": "Long Rest",
+      "description": "Blessing of the Raven Queen: teleport 30 ft.",
+      "kind": "resource",
+      "unit": "użycia"
+    }
+  ],
+  "featDetails": [
+    {
+      "name": "Mobile",
+      "description": "+10 ft Speed. Po Dash difficult terrain nie kosztuje dodatkowego ruchu w tej turze. Gdy wykonasz melee attack przeciwko stworzeniu, przez resztę tury nie prowokujesz od niego Opportunity Attack, niezależnie od trafienia."
+    }
+  ]
+}

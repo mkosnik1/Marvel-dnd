@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "character.schema.json",
+  "title": "Marvel D&D Character",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "realName",
+    "race",
+    "raceRules",
+    "cls",
+    "subclass",
+    "background",
+    "alignment",
+    "stats",
+    "ac",
+    "speed",
+    "saveProfs",
+    "skillProfs",
+    "expertise",
+    "feats",
+    "attacks",
+    "group",
+    "skillAliases",
+    "originFeatures",
+    "classFeaturesDetailed",
+    "subclassFeaturesDetailed",
+    "spellSlotsDetailed",
+    "spellsDetailed",
+    "resources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string"
+    },
+    "realName": {
+      "type": "string"
+    },
+    "race": {
+      "type": "string"
+    },
+    "raceRules": {
+      "type": "string"
+    },
+    "cls": {
+      "type": "string"
+    },
+    "subclass": {
+      "type": "string"
+    },
+    "background": {
+      "type": "string"
+    },
+    "alignment": {
+      "type": "string"
+    },
+    "ac": {
+      "type": "number"
+    },
+    "speed": {
+      "type": "number"
+    },
+    "stats": {
+      "type": "object",
+      "required": [
+        "STR",
+        "DEX",
+        "CON",
+        "INT",
+        "WIS",
+        "CHA"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "STR": {
+          "type": "number"
+        },
+        "DEX": {
+          "type": "number"
+        },
+        "CON": {
+          "type": "number"
+        },
+        "INT": {
+          "type": "number"
+        },
+        "WIS": {
+          "type": "number"
+        },
+        "CHA": {
+          "type": "number"
+        }
+      }
+    },
+    "saveProfs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "skillProfs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expertise": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "feats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attacks": {
+      "type": "array"
+    },
+    "spellsDetailed": {
+      "type": "array"
+    },
+    "spellSlotsDetailed": {
+      "type": "array"
+    },
+    "resources": {
+      "type": "array"
+    },
+    "originFeatures": {
+      "type": "array"
+    },
+    "classFeaturesDetailed": {
+      "type": "array"
+    },
+    "subclassFeaturesDetailed": {
+      "type": "array"
+    },
+    "skillAliases": {
+      "type": "object"
+    },
+    "group": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
