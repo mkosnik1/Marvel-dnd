@@ -20,80 +20,47 @@
     "Survival": "WIS"
   },
   "backgroundDesc": {
-    "Soldier": "Military Rank. Twoje szkolenie i stopień dają rozpoznawalność oraz dostęp do pomocy wojskowej, jeśli fabuła na to pozwala.",
-    "Guild Artisan": "Guild Membership. Masz kontakty zawodowe i rozpoznawalność w swoim fachu.",
-    "Noble": "Position of Privilege. Osoby świadome twojej pozycji społecznej zwykle traktują cię z odpowiednim szacunkiem.",
-    "Sage": "Researcher. Jeśli nie znasz informacji, zwykle potrafisz ustalić, gdzie można jej szukać.",
-    "Criminal": "Criminal Contact. Masz wiarygodny kontakt ze środowiskiem przestępczym.",
-    "Haunted One": "Heart of Darkness. Zwykli ludzie często okazują ci pomoc, gdy widzą, że mierzysz się z czymś przerażającym.",
-    "Charlatan": "False Identity. Masz przygotowaną alternatywną tożsamość i narzędzia do jej podtrzymywania.",
-    "Hermit": "Discovery. W okresie odosobnienia odkryłeś istotną wiedzę lub sekret.",
-    "Far Traveler": "All Eyes on You. Twoje pochodzenie i zachowanie przyciągają uwagę miejscowych.",
-    "Outlander": "Wanderer. Dobrze pamiętasz mapy i teren oraz łatwiej znajdujesz pożywienie i wodę w dziczy.",
-    "Entertainer": "By Popular Demand. Zwykle możesz znaleźć miejsce do występu i uzyskać podstawowe zakwaterowanie za występ.",
-    "Investigator": "Watcher's Eye. Masz doświadczenie w obserwacji, dochodzeniu i kontaktach z lokalnymi służbami.",
-    "Mercenary Veteran": "Mercenary Life. Znasz struktury najemników i potrafisz znaleźć zlecenia lub kontakty w tym środowisku."
+    "Soldier": "Twoje szkolenie i stopień wojskowy dają ci rozpoznawalność wśród żołnierzy oraz dostęp do pomocy wojskowej, jeśli sytuacja fabularna na to pozwala.",
+    "Guild Artisan": "Masz kontakty zawodowe i rozpoznawalność w swojej specjalizacji.",
+    "Noble": "Osoby świadome twojej pozycji społecznej zwykle traktują cię z odpowiednim szacunkiem.",
+    "Sage": "Jeśli nie znasz informacji, zwykle potrafisz ustalić, gdzie lub u kogo można jej szukać.",
+    "Criminal": "Masz wiarygodny kontakt ze środowiskiem przestępczym i potrafisz przekazywać przez nie informacje.",
+    "Haunted One": "Zwykli ludzie często okazują ci pomoc, gdy widzą, że mierzysz się z czymś przerażającym lub nadnaturalnym.",
+    "Charlatan": "Masz przygotowaną alternatywną tożsamość oraz środki potrzebne do jej podtrzymywania.",
+    "Hermit": "W okresie odosobnienia odkryłeś istotną wiedzę, sekret albo prawdę ważną dla swojej historii.",
+    "Far Traveler": "Twoje pochodzenie i zachowanie przyciągają uwagę miejscowych, co może ułatwiać zdobywanie zainteresowania i dostępu do ludzi.",
+    "Outlander": "Dobrze pamiętasz mapy i teren. W odpowiednim środowisku potrafisz także zdobywać podstawowe pożywienie i wodę dla grupy.",
+    "Entertainer": "Zwykle możesz znaleźć miejsce do występu i otrzymać podstawowe zakwaterowanie lub wyżywienie w zamian za występ.",
+    "Investigator": "Masz doświadczenie w obserwacji, prowadzeniu dochodzeń i kontaktach z lokalnymi służbami.",
+    "Mercenary Veteran": "Znasz struktury najemników i potrafisz znaleźć zlecenia, informacje oraz kontakty w tym środowisku."
   },
   "classProfs": {
-    "Fighter": [
-      "Light, Medium, Heavy, Shields",
-      "Simple, Martial"
-    ],
-    "Artificer": [
-      "Light, Medium, Shields",
-      "Simple"
-    ],
-    "Paladin": [
-      "Light, Medium, Heavy, Shields",
-      "Simple, Martial"
-    ],
-    "Barbarian": [
-      "Light, Medium, Shields",
-      "Simple, Martial"
-    ],
-    "Monk": [
-      "Brak",
-      "Simple, Shortswords"
-    ],
-    "Rogue": [
-      "Light",
-      "Simple, Hand Crossbow, Longsword, Rapier, Shortsword"
-    ],
-    "Wizard": [
-      "Brak",
-      "Dagger, Dart, Sling, Quarterstaff, Light Crossbow"
-    ],
-    "Sorcerer": [
-      "Brak",
-      "Dagger, Dart, Sling, Quarterstaff, Light Crossbow"
-    ],
-    "Warlock": [
-      "Light",
-      "Simple"
-    ],
-    "Ranger": [
-      "Light, Medium, Shields",
-      "Simple, Martial"
-    ],
-    "Druid": [
-      "Light, Medium, Shields (bez metalu w klasycznej wersji)",
-      "Club, Dagger, Dart, Javelin, Mace, Quarterstaff, Scimitar, Sickle, Sling, Spear"
-    ]
+    "Fighter": ["lekki, średni i ciężki pancerz oraz tarcze", "broń prosta i wojskowa"],
+    "Artificer": ["lekki i średni pancerz oraz tarcze", "broń prosta"],
+    "Paladin": ["lekki, średni i ciężki pancerz oraz tarcze", "broń prosta i wojskowa"],
+    "Barbarian": ["lekki i średni pancerz oraz tarcze", "broń prosta i wojskowa"],
+    "Monk": ["brak", "broń prosta i krótkie miecze"],
+    "Rogue": ["lekki pancerz", "broń prosta, kusza ręczna, długi miecz, rapier i krótki miecz"],
+    "Wizard": ["brak", "sztylet, rzutka, proca, kij i lekka kusza"],
+    "Sorcerer": ["brak", "sztylet, rzutka, proca, kij i lekka kusza"],
+    "Warlock": ["lekki pancerz", "broń prosta"],
+    "Ranger": ["lekki i średni pancerz oraz tarcze", "broń prosta i wojskowa"],
+    "Druid": ["lekki i średni pancerz oraz tarcze", "pałka, sztylet, rzutka, oszczep, buława, kij, sejmitar, sierp, proca i włócznia"]
   },
   "bgTools": {
-    "Soldier": "Gaming Set, Vehicles (land)",
-    "Guild Artisan": "Wybrany zestaw Artisan's Tools",
-    "Noble": "Gaming Set",
-    "Sage": "Brak narzędzi z backgroundu",
-    "Criminal": "Thieves' Tools, Gaming Set",
-    "Haunted One": "Brak stałego zestawu narzędzi; zależy od wariantu",
-    "Charlatan": "Disguise Kit, Forgery Kit",
-    "Hermit": "Herbalism Kit",
-    "Far Traveler": "Musical Instrument albo Gaming Set",
-    "Outlander": "Musical Instrument",
-    "Entertainer": "Disguise Kit, Musical Instrument",
-    "Investigator": "Zależne od wariantu Investigator/City Watch",
-    "Mercenary Veteran": "Gaming Set, Vehicles (land)"
+    "Soldier": "zestaw do gry, pojazdy lądowe",
+    "Guild Artisan": "wybrany zestaw narzędzi rzemieślniczych",
+    "Noble": "zestaw do gry",
+    "Sage": "brak dodatkowych narzędzi",
+    "Criminal": "narzędzia złodziejskie, zestaw do gry",
+    "Haunted One": "brak stałego zestawu narzędzi, zależy od historii postaci",
+    "Charlatan": "zestaw do charakteryzacji, zestaw fałszerski",
+    "Hermit": "zestaw zielarski",
+    "Far Traveler": "instrument muzyczny albo zestaw do gry",
+    "Outlander": "instrument muzyczny",
+    "Entertainer": "zestaw do charakteryzacji, instrument muzyczny",
+    "Investigator": "zależne od wariantu przeszłości",
+    "Mercenary Veteran": "zestaw do gry, pojazdy lądowe"
   },
   "spellAbility": {
     "Artificer": "INT",
@@ -117,16 +84,11 @@
     "Ranger": 10,
     "Druid": 8
   },
-  "fixedPerLevel": {
-    "12": 7,
-    "10": 6,
-    "8": 5,
-    "6": 4
-  },
+  "fixedPerLevel": {"12": 7, "10": 6, "8": 5, "6": 4},
   "skillPL": {
     "Acrobatics": "Akrobatyka",
-    "Animal Handling": "Opieka Zwierząt",
-    "Arcana": "Wiedza Tajemna",
+    "Animal Handling": "Opieka nad zwierzętami",
+    "Arcana": "Wiedza tajemna",
     "Athletics": "Atletyka",
     "Deception": "Oszustwo",
     "History": "Historia",
@@ -139,29 +101,29 @@
     "Performance": "Występy",
     "Persuasion": "Perswazja",
     "Religion": "Religia",
-    "Sleight of Hand": "Zwinne Dłonie",
+    "Sleight of Hand": "Zwinne dłonie",
     "Stealth": "Skradanie się",
-    "Survival": "Sztuka Przetrwania"
+    "Survival": "Sztuka przetrwania"
   },
   "skillTooltips": {
-    "Acrobatics": "Utrzymanie równowagi w trudnej sytuacji, wykonanie akrobatycznej sztuczki.",
-    "Animal Handling": "Uspokojenie, tresura zwierzęcia lub skłonienie go do posłuszeństwa.",
-    "Arcana": "Wiedza o magii, przedmiotach magicznych, planach egzystencji.",
-    "Athletics": "Skok w dal, pływanie w trudnych warunkach, forsowanie przeszkód.",
-    "Deception": "Wiarygodne kłamstwo, przebranie, udawanie kogoś innego.",
-    "History": "Wiedza o wydarzeniach, postaciach i kulturach historycznych.",
-    "Insight": "Odczytywanie emocji, nastroju lub intencji rozmówcy.",
-    "Intimidation": "Groźby, wymuszanie posłuszeństwa, wzbudzanie strachu.",
-    "Investigation": "Analiza śladów, znajdowanie wskazówek, badanie działania czegoś.",
-    "Medicine": "Diagnozowanie chorób, sprawdzanie przyczyn śmierci.",
-    "Nature": "Wiedza o zwierzętach, roślinach, zjawiskach naturalnych.",
-    "Perception": "Zauważenie ukrytych rzeczy, nasłuchiwanie, wypatrywanie.",
-    "Performance": "Muzyka, taniec, aktorstwo, opowiadanie historii.",
-    "Persuasion": "Uczciwe przekonywanie, dyplomacja, negocjacje.",
-    "Religion": "Wiedza o bogach, rytuałach, symbolach religijnych.",
-    "Sleight of Hand": "Kradzież kieszonkowa, ukrywanie przedmiotów, sztuczki.",
-    "Stealth": "Ciche poruszanie się, ukrywanie się przed wzrokiem.",
-    "Survival": "Tropienie, orientacja w terenie, znajdowanie pożywienia."
+    "Acrobatics": "Używasz tej umiejętności, gdy liczy się równowaga, precyzja ruchu i kontrola nad ciałem. Obejmuje przechodzenie po wąskich powierzchniach, utrzymanie się na nogach na śliskim lub ruchomym podłożu, wykonywanie przewrotów, salt i podobnych manewrów. Nie służy do skoków na odległość, wspinaczki ani pływania, te działania zwykle wykorzystują Sprawność.",
+    "Animal Handling": "Używasz tej umiejętności do odczytywania zachowania zwierząt i wpływania na nie. Możesz uspokoić spłoszone zwierzę, rozpoznać czy jest agresywne lub przestraszone, bezpiecznie nim pokierować albo utrzymać kontrolę nad wierzchowcem w trudnej sytuacji. Nie pozwala automatycznie wydawać złożonych poleceń dzikim zwierzętom.",
+    "Arcana": "Używasz tej umiejętności do rozpoznawania i analizowania magii, nadnaturalnych energii, wymiarów, artefaktów, rytuałów i anomalii. Test może pozwolić ustalić rodzaj efektu, źródło energii, możliwy sposób działania przedmiotu lub naturę portalu. Sam test wiedzy nie rozprasza ani nie blokuje działającej magii.",
+    "Athletics": "Używasz tej umiejętności do działań wymagających siły i sprawności fizycznej. Obejmuje wspinaczkę, pływanie w trudnych warunkach, dalekie lub wysokie skoki, wyważanie, przepychanie, przeciąganie oraz chwytanie przeciwnika, jeśli dana zasada tego wymaga. Nie zastępuje Akrobatyki przy utrzymywaniu równowagi.",
+    "Deception": "Używasz tej umiejętności, gdy świadomie wprowadzasz kogoś w błąd. Obejmuje kłamstwo, blef, udawanie innej osoby, ukrywanie prawdziwych zamiarów i podtrzymywanie fałszywej historii. Test nie zmusza rozmówcy do uwierzenia w coś całkowicie sprzecznego z oczywistymi faktami.",
+    "History": "Używasz tej umiejętności do przypominania sobie wiedzy o wydarzeniach, organizacjach, państwach, wojnach, bohaterach, technologiach, kulturach i ważnych postaciach. W nowoczesnym świecie może obejmować również wiedzę polityczną, wojskową i społeczną. Test pozwala przypomnieć sobie wiedzę, a nie zdobyć informacje, do których postać nigdy nie miała dostępu.",
+    "Insight": "Używasz tej umiejętności do odczytywania zachowania innych osób. Możesz ocenić emocje, napięcie, szczerość, ukryte zamiary, motywacje albo zauważyć, że ktoś zachowuje się nietypowo. Test nie działa jak wykrywacz kłamstw i zwykle nie ujawnia dokładnej treści myśli rozmówcy.",
+    "Intimidation": "Używasz tej umiejętności, gdy próbujesz wymusić zachowanie przez strach, groźbę, demonstrację siły lub przewagi. Możesz skłonić kogoś do wycofania się, ujawnienia informacji albo chwilowego podporządkowania. Sukces nie oznacza trwałej lojalności i może pogorszyć nastawienie celu wobec ciebie.",
+    "Investigation": "Używasz tej umiejętności do logicznej analizy informacji i śladów. Możesz przeszukać miejsce pod kątem wskazówek, odtworzyć przebieg wydarzeń, znaleźć ukryty mechanizm, zauważyć niespójność, połączyć fakty albo przeanalizować urządzenie. Percepcja służy głównie do zauważenia czegoś, a Analiza do zrozumienia, co zauważona rzecz oznacza.",
+    "Medicine": "Używasz tej umiejętności do oceny stanu zdrowia i podstawowej pomocy medycznej. Możesz rozpoznać objawy choroby, ustalić prawdopodobną przyczynę śmierci, ocenić obrażenia albo ustabilizować umierającą osobę zgodnie z zasadami gry. Sam test zwykle nie przywraca punktów wytrzymałości bez odpowiedniej zdolności lub wyposażenia.",
+    "Nature": "Używasz tej umiejętności do wiedzy o biologii, środowisku i zjawiskach naturalnych. Obejmuje zwierzęta, rośliny, pogodę, ekosystemy, toksyny pochodzenia naturalnego oraz podstawowe procesy przyrodnicze. W kampanii Marvela może również obejmować nauki przyrodnicze, jeśli pasuje to do wiedzy postaci.",
+    "Perception": "Używasz tej umiejętności, gdy próbujesz coś zauważyć zmysłami. Obejmuje wypatrywanie ukrytych osób i przedmiotów, nasłuchiwanie odgłosów, wychwytywanie zapachów, zauważanie ruchu oraz dostrzeganie natychmiastowych zagrożeń. Test mówi, czy coś zauważyłeś, ale nie musi wyjaśniać, czym dokładnie jest znaleziona rzecz.",
+    "Performance": "Używasz tej umiejętności do świadomego występu przed publicznością. Obejmuje aktorstwo, muzykę, taniec, przemowę sceniczną, opowiadanie historii i inne formy prezentacji artystycznej. Nie służy do przekonywania rozmówcy do konkretnej decyzji, do tego zwykle używasz Negocjacji.",
+    "Persuasion": "Używasz tej umiejętności do uczciwego wpływania na innych przez argumenty, dyplomację i negocjacje. Możesz przekonać kogoś do współpracy, uzyskać zgodę, wynegocjować warunki albo poprawić nastawienie rozmówcy. Sukces nie oznacza kontroli umysłu i nie zmusza postaci do działań całkowicie sprzecznych z jej interesem lub charakterem.",
+    "Religion": "Używasz tej umiejętności do wiedzy o religiach, kultach, demonach, bogach, rytuałach, symbolach, zaświatach i kosmologii. W świecie Marvela może obejmować również wiedzę o piekielnych wymiarach, bytach mistycznych oraz okultyzmie. Test wiedzy sam w sobie nie odprawia rytuału i nie daje magicznej ochrony.",
+    "Sleight of Hand": "Używasz tej umiejętności do precyzyjnych i dyskretnych manipulacji rękami. Obejmuje kradzież kieszonkową, ukrywanie małego przedmiotu, podmianę rzeczy, szybkie manipulowanie drobnym mechanizmem oraz wykonywanie sztuczek manualnych. Nie zastępuje specjalistycznych narzędzi, jeśli dana czynność ich wymaga.",
+    "Stealth": "Używasz tej umiejętności, gdy próbujesz pozostać niezauważony. Obejmuje ciche poruszanie się, chowanie za osłoną, wykorzystywanie ciemności, omijanie patroli i infiltrację. Zwykle test jest porównywany z pasywną Czujnością obserwatorów albo ich aktywnym testem Czujności.",
+    "Survival": "Używasz tej umiejętności do działania w terenie. Obejmuje tropienie, orientację, wybór bezpiecznej drogi, przewidywanie pogody, znajdowanie pożywienia i wody oraz rozpoznawanie śladów przejścia stworzeń. Nie zastępuje specjalistycznej wiedzy naukowej o organizmach ani analizy laboratoryjnej."
   },
   "abilityPL": {
     "STR": "Siła",
@@ -186,7 +148,7 @@
     "Perception": "Czujność",
     "Performance": "Prezentacja",
     "Persuasion": "Negocjacje",
-    "Religion": "Kosmologia / okultyzm",
+    "Religion": "Kosmologia i okultyzm",
     "Sleight of Hand": "Sabotaż manualny",
     "Stealth": "Infiltracja",
     "Survival": "Operacje terenowe"
