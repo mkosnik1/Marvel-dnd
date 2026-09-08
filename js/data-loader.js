@@ -1,3 +1,5 @@
+import { normalizeCharacter } from "./normalize-character.js";
+
 export async function loadJson(path) {
   const response = await fetch(path, { cache: "no-cache" });
   if (!response.ok) throw new Error(`Nie udało się wczytać ${path}: HTTP ${response.status}`);
@@ -14,7 +16,8 @@ export async function loadCharacterRegistry() {
 }
 
 export async function loadCharacter(id) {
-  return loadJson(`data/characters/${encodeURIComponent(id)}.json`);
+  const character = await loadJson(`data/characters/${encodeURIComponent(id)}.json`);
+  return normalizeCharacter(character);
 }
 
 export async function loadAllCharacters(ids) {
