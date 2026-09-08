@@ -125,12 +125,12 @@
   },
   "skillPL": {
     "Acrobatics": "Akrobatyka",
-    "Animal Handling": "Opieka nad zwierzętami",
-    "Arcana": "Arkana",
+    "Animal Handling": "Opieka Zwierząt",
+    "Arcana": "Wiedza Tajemna",
     "Athletics": "Atletyka",
     "Deception": "Oszustwo",
     "History": "Historia",
-    "Insight": "Wnikliwość",
+    "Insight": "Intuicja",
     "Intimidation": "Zastraszanie",
     "Investigation": "Śledztwo",
     "Medicine": "Medycyna",
@@ -139,9 +139,9 @@
     "Performance": "Występy",
     "Persuasion": "Perswazja",
     "Religion": "Religia",
-    "Sleight of Hand": "Zręczne dłonie",
+    "Sleight of Hand": "Zwinne Dłonie",
     "Stealth": "Skradanie się",
-    "Survival": "Przetrwanie"
+    "Survival": "Sztuka Przetrwania"
   },
   "skillTooltips": {
     "Acrobatics": "Utrzymanie równowagi w trudnej sytuacji, wykonanie akrobatycznej sztuczki.",
