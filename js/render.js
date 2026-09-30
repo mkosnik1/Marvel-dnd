@@ -236,7 +236,7 @@ function attackList(character){
   return character.attacks.map(a => {
     const spell = canonicalSpell(a[0]);
     const name = spell?.name || translateGameText(a[0]);
-    const attackBonus = String(a[1] || "").match(/^\s*([+-]?\d+)/)?.[1];
+    const attackBonus = String(a[1] || "").match(/(?:premia do trafienia\s*:\s*)?([+-]\d+)/i)?.[1];
     const attackModifier = attackBonus === undefined ? null : Number(attackBonus);
     const damageDice = String(a[2] || "").match(/\d+[dk]\d+(?:\s*[+-]\s*\d+)?/i)?.[0]?.replace(/k/i,"d");
     const attackRoll = attackModifier === null ? "" : `<button data-roll="1d20${attackModifier >= 0 ? "+" : ""}${attackModifier}" data-roll-label="${escapeAttr(name)}: rzut ataku">Rzut ataku</button>`;

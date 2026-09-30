@@ -26,7 +26,12 @@ const categories = {
 };
 
 function showError(error){
-  heroEl.innerHTML = `<div class="loading error"><strong>Nie udało się wczytać danych.</strong><br><br>${error.message}<br><br>Jeżeli otworzyłeś index.html bezpośrednio z dysku, uruchom start-server.bat albo serwer HTTP. Przeglądarki zwykle blokują pobieranie lokalnych plików JSON dla adresów file://.</div>`;
+  const localFileHint = location.protocol === "file:"
+    ? "Uruchom start-server.bat albo serwer HTTP — przeglądarki blokują pobieranie plików JSON dla adresów file://."
+    : "Sprawdź połączenie z internetem i spróbuj ponownie.";
+  heroEl.innerHTML = `<div class="loading error"><strong>Nie udało się wczytać danych.</strong><br><br><span id="loadErrorDetail"></span><br><br>${localFileHint}<br><br><button id="retryLoadBtn" type="button">Spróbuj ponownie</button></div>`;
+  document.getElementById("loadErrorDetail").textContent = error?.message || "Nieznany błąd.";
+  document.getElementById("retryLoadBtn").addEventListener("click", () => location.reload());
   contentEl.innerHTML = "";
 }
 
