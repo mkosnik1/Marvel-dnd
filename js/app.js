@@ -4,7 +4,7 @@ import { loadRules, loadCharacterRegistry, loadAllCharacters } from "./data-load
 import { resetCharacterCounters } from "./state.js";
 import { renderCharacter, restCharacter } from "./render.js";
 import { cleanupRenderedCard } from "./post-render-cleanup.js";
-import { initDiceRoller } from "./dice.js?v=3d-4";
+import { initDiceRoller } from "./dice.js?v=css-1";
 
 const heroEl = document.getElementById("hero");
 const contentEl = document.getElementById("content");
