@@ -127,9 +127,9 @@ Liczniki HP/slotów/zasobów używają `localStorage`, więc są zapisywane w ko
 
 ## Tryb gry
 
-Widok **Walka** zbiera aktualne PW, tymczasowe PW, KP, inicjatywę, ataki, moce i zasoby. Zmiany PW oraz użycia zasobów są zapisywane w historii wraz z datą i godziną. Krótki i długi odpoczynek odnawiają właściwe pule automatycznie.
+Widok **Walka** zbiera aktualne PW, tymczasowe PW, KP, inicjatywę, ataki, moce i zasoby. Zasób lub komórkę mocy zużywasz bezpośrednio przyciskiem **Użyj**. Zmiany PW oraz użycia zasobów są zapisywane w historii wraz z datą i godziną. Krótki i długi odpoczynek odnawiają właściwe pule automatycznie.
 
-Przy testach cech, inicjatywie oraz atakach aplikacja podpowiada właściwą kość i modyfikator. Gracz może wykonać rzut własnymi kośćmi albo uruchomić animowany rzut wirtualny. Przycisk **Kości** pozwala też przygotować dowolny rzut.
+Przy testach cech i umiejętności, rzutach obronnych, inicjatywie, atakach, mocach oraz zdolnościach aplikacja podpowiada właściwą kość i modyfikator. Gracz może wykonać rzut własnymi kośćmi albo uruchomić animowany rzut wirtualny. Przycisk **Kości** pozwala też przygotować dowolny rzut.
 
 ## Uwaga prawna
 

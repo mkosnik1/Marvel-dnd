@@ -64,7 +64,7 @@ export function initDiceRoller() {
   document.addEventListener("click", event => {
     const trigger = event.target.closest("[data-roll]");
     if (trigger) prepare(trigger.dataset.roll, trigger.dataset.rollLabel || "Rzut kością");
-  });
+  }, true);
   manual.addEventListener("click", showManual);
   virtual.addEventListener("click", rollVirtual);
   document.getElementById("customDiceBtn").addEventListener("click", () => {
