@@ -7,10 +7,36 @@ import { enrichResourceDetails } from "./resource-details.js";
 import { finalCardAudit } from "./final-card-audit.js";
 import { resolveFinalCardExceptions } from "./final-card-exceptions.js";
 
+const LOAD_RETRIES = 2;
+const CHARACTER_LOAD_CONCURRENCY = 6;
+
+function pause(milliseconds) {
+  return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
 export async function loadJson(path) {
-  const response = await fetch(path, { cache: "no-cache" });
-  if (!response.ok) throw new Error(`Nie udało się wczytać ${path}: HTTP ${response.status}`);
-  return response.json();
+  let lastError;
+
+  for (let attempt = 0; attempt <= LOAD_RETRIES; attempt += 1) {
+    try {
+      const response = await fetch(path, { cache: "no-store" });
+      if (!response.ok) {
+        const error = new Error(`Nie udało się wczytać ${path}: HTTP ${response.status}`);
+        // Brakujący plik nie pojawi się po ponowieniu żądania.
+        if (response.status >= 400 && response.status < 500) throw error;
+        lastError = error;
+      } else {
+        return await response.json();
+      }
+    } catch (error) {
+      lastError = error;
+      if (/HTTP 4\d\d/.test(String(error?.message))) throw error;
+    }
+
+    if (attempt < LOAD_RETRIES) await pause(250 * (attempt + 1));
+  }
+
+  throw new Error(`Nie udało się wczytać ${path}. ${lastError?.message || "Błąd połączenia."}`);
 }
 
 export async function loadRules() {
@@ -34,5 +60,18 @@ export async function loadCharacter(id) {
 }
 
 export async function loadAllCharacters(ids) {
-  return Promise.all(ids.map(loadCharacter));
+  const characters = new Array(ids.length);
+  let nextIndex = 0;
+
+  async function worker() {
+    while (nextIndex < ids.length) {
+      const index = nextIndex;
+      nextIndex += 1;
+      characters[index] = await loadCharacter(ids[index]);
+    }
+  }
+
+  const workerCount = Math.min(CHARACTER_LOAD_CONCURRENCY, ids.length);
+  await Promise.all(Array.from({ length: workerCount }, () => worker()));
+  return characters;
 }
