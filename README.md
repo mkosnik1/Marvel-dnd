@@ -134,3 +134,5 @@ Przy testach cech i umiejętności, rzutach obronnych, inicjatywie, atakach, moc
 ## Uwaga prawna
 
 To fanowski, nieoficjalny projekt przeznaczony do prywatnej gry. Nazwy i postacie Marvela należą do ich odpowiednich właścicieli. Projekt nie jest powiązany z Marvel ani Disney.
+
+Wirtualne rzuty wykorzystują przypiętą wersję `@3d-dice/dice-box` 1.1.4 (licencja MIT) z fizyką BabylonJS/AmmoJS. Moduł i jego modele są ładowane na żądanie z UNPKG; w razie braku WebGL albo niedostępności CDN aplikacja nadal zwraca bezpiecznie wylosowany wynik liczbowy.
