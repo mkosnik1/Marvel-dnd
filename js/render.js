@@ -1,8 +1,9 @@
-import { getCounter, setCounter, safeId } from "./state.js";
+import { getCounter, setCounter, safeId, getValue, setValue, addHistory, getHistory } from "./state.js";
 import { canonicalFeatureDescription, canonicalFeat, canonicalSpell } from "./mechanics-pl.js";
 
 const PB = 3;
 const ABILITIES = ["STR","DEX","CON","INT","WIS","CHA"];
+let activeView = "combat";
 
 const CLASS_PL = {
   Fighter: "Wojownik", Artificer: "Wynalazca", Paladin: "Paladyn", Barbarian: "Barbarzyńca",
@@ -160,6 +161,27 @@ function passive(character, skill, rules){ return 10 + skillBonus(character, ski
 function saveBonus(character, ability){ return mod(character.stats[ability]) + (character.saveProfs.includes(ability) ? PB : 0); }
 function escapeAttr(value){ return String(value).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
 
+function diceExpression(value){
+  const match = String(value || "").match(/(\d*)[dk](\d+)(?:\s*([+-])\s*(\d+))?/i);
+  if (!match) return "";
+  const count = match[1] || "1";
+  const modifier = match[3] ? `${match[3]}${match[4]}` : "";
+  return `${count}d${match[2]}${modifier}`;
+}
+
+function effectDiceExpression(value){
+  const text = String(value || "");
+  const explicit = text.match(/\d+[dk]\d+(?:\s*[+-]\s*\d+)?/i);
+  if (explicit) return diceExpression(explicit[0]);
+  const namedDie = text.match(/koś(?:ć|ci)\s+(?:\w+\s+)?[dk](\d+)/i);
+  return namedDie ? `1d${namedDie[1]}` : "";
+}
+
+function rollButton(expression, label, text="Rzuć kością"){
+  if (!expression) return "";
+  return `<button class="inline-roll" data-roll="${escapeAttr(expression)}" data-roll-label="${escapeAttr(label)}">🎲 ${text}</button>`;
+}
+
 function skillDisplayName(character, skill, rules){
   return character.skillAliases?.[skill] || rules.skillAliasDefault[skill] || rules.skillPL[skill] || skill;
 }
@@ -172,9 +194,13 @@ function skillTooltip(character, skill, rules){
 
 function card(title, body, full=false){ return `<section class="card ${full ? "full" : ""}"><div class="card-head"><h3>${title}</h3></div><div class="card-body">${body}</div></section>`; }
 function rows(items){ return `<div class="rows">${items.map(([k,v]) => `<div class="row"><div class="k">${k}</div><div class="v">${translateGameText(v)}</div></div>`).join("")}</div>`; }
+function rollableRows(items){ return `<div class="rows">${items.map(([k,v,expression]) => `<div class="row"><div class="k">${k}</div><div class="v">${translateGameText(v)} ${rollButton(expression, k, "Rzuć")}</div></div>`).join("")}</div>`; }
 function features(items){
   if (!items?.length) return `<div class="note">Brak danych.</div>`;
-  return items.map(item => `<div class="feature"><h4>${featureName(item)}</h4><p>${featureDescription(item)}</p></div>`).join("");
+  return items.map(item => {
+    const name = featureName(item), description = featureDescription(item);
+    return `<div class="feature"><h4>${name}</h4><p>${description}</p>${rollButton(effectDiceExpression(description), name)}</div>`;
+  }).join("");
 }
 
 function featList(character){
@@ -183,12 +209,14 @@ function featList(character){
     const canonical = canonicalFeat(item.name);
     const name = canonical?.name || translateGameText(item.name);
     const description = canonical?.description || translateGameText(item.description);
-    return `<div class="feature"><h4>${name}</h4><p>${translateGameText(description)}</p></div>`;
+    return `<div class="feature"><h4>${name}</h4><p>${translateGameText(description)}</p>${rollButton(effectDiceExpression(description), name)}</div>`;
   }).join("");
   if (!character.feats?.length) return `<div class="note">Brak atutów.</div>`;
   return character.feats.map(feat => {
     const canonical = canonicalFeat(feat);
-    return `<div class="feature"><h4>${canonical?.name || translateGameText(feat)}</h4><p>${canonical?.description || "Pełny efekt tego atutu jest opisany w odpowiedniej cesze rozwoju postaci."}</p></div>`;
+    const name = canonical?.name || translateGameText(feat);
+    const description = canonical?.description || "Pełny efekt tego atutu jest opisany w odpowiedniej cesze rozwoju postaci.";
+    return `<div class="feature"><h4>${name}</h4><p>${description}</p>${rollButton(effectDiceExpression(description), name)}</div>`;
   }).join("");
 }
 
@@ -197,7 +225,8 @@ function skillTable(character, rules){
   const header = `<div class="skill-header"><div>Umiejętność</div><div>Cecha</div><div>Premia</div><div>Wyszkolenie</div></div>`;
   const body = names.map(skill => {
     const exp = character.expertise.includes(skill), prof = character.skillProfs.includes(skill), ability = rules.skillAbility[skill];
-    return `<div class="skill-row"><strong><span class="skill-label" tabindex="0" data-tip="${escapeAttr(skillTooltip(character, skill, rules))}">${skillDisplayName(character, skill, rules)} <span class="info">i</span></span></strong><div class="ability">${rules.abilityPL[ability]}</div><div class="bonus">${fmt(skillBonus(character, skill, rules))}</div><div class="status">${exp ? '<span class="tag exp">Ekspertyza</span>' : prof ? '<span class="tag prof">Biegłość</span>' : '—'}</div></div>`;
+    const name = skillDisplayName(character, skill, rules), bonus = skillBonus(character, skill, rules);
+    return `<div class="skill-row"><strong><span class="skill-label" tabindex="0" data-tip="${escapeAttr(skillTooltip(character, skill, rules))}">${name} <span class="info">i</span></span></strong><div class="ability">${rules.abilityPL[ability]}</div><div class="bonus">${rollButton(`1d20${bonus >= 0 ? "+" : ""}${bonus}`, name, fmt(bonus))}</div><div class="status">${exp ? '<span class="tag exp">Ekspertyza</span>' : prof ? '<span class="tag prof">Biegłość</span>' : '—'}</div></div>`;
   }).join("");
   return `<div class="skill-help">Nazwy umiejętności są dopasowane do realiów Marvela. Najedź na nazwę, aby zobaczyć dokładnie, kiedy wykonujesz dany test, co możesz nim osiągnąć i jakie są jego ograniczenia.</div><div class="skill-grid">${header}${body}</div>`;
 }
@@ -207,17 +236,27 @@ function attackList(character){
   return character.attacks.map(a => {
     const spell = canonicalSpell(a[0]);
     const name = spell?.name || translateGameText(a[0]);
-    return `<div class="attack"><strong>${name}</strong><div>${translateGameText(a[1])}</div><div>${translateGameText(a[2])}</div><small>${translateGameText(a[3])}</small></div>`;
+    const attackBonus = String(a[1] || "").match(/^\s*([+-]?\d+)/)?.[1];
+    const attackModifier = attackBonus === undefined ? null : Number(attackBonus);
+    const damageDice = String(a[2] || "").match(/\d+[dk]\d+(?:\s*[+-]\s*\d+)?/i)?.[0]?.replace(/k/i,"d");
+    const attackRoll = attackModifier === null ? "" : `<button data-roll="1d20${attackModifier >= 0 ? "+" : ""}${attackModifier}" data-roll-label="${escapeAttr(name)}: rzut ataku">Rzut ataku</button>`;
+    const damageRoll = damageDice ? `<button data-roll="${damageDice}" data-roll-label="${escapeAttr(name)}: obrażenia">Obrażenia</button>` : "";
+    return `<article class="attack"><div class="attack-name"><strong>${name}</strong><small>${translateGameText(a[3])}</small></div><div class="attack-value"><span>Trafienie</span><b>${translateGameText(a[1])}</b></div><div class="attack-value"><span>Obrażenia</span><b>${translateGameText(a[2])}</b></div>${attackRoll || damageRoll ? `<div class="attack-rolls">${attackRoll}${damageRoll}</div>` : ""}</article>`;
   }).join("");
 }
 
-function spellList(character){
+function spellList(character, rules){
   if (!character.spellsDetailed?.length) return `<div class="note">Brak osobnych mocy aktywnych.</div>`;
   return character.spellsDetailed.map(spell => {
     const canonical = canonicalSpell(spell.name);
     const name = spell.flavorName || canonical?.name || translateGameText(spell.name);
     const description = canonical?.description || translateGameText(spell.description);
-    return `<div class="spell"><div><span class="tag level">${translateGameText(spell.levelLabel)}</span></div><strong>${translateGameText(name)}</strong><div class="desc">${translateGameText(description)}</div></div>`;
+    const ability = rules.spellAbility?.[character.cls];
+    const attackBonus = ability ? mod(character.stats[ability]) + PB : null;
+    const requiresAttack = /(spell attack|rzut ataku|atak mocą|ranged attack|melee attack)/i.test(description);
+    const attackRoll = requiresAttack && attackBonus !== null ? rollButton(`1d20${attackBonus >= 0 ? "+" : ""}${attackBonus}`, `${name}: rzut ataku`, "Rzut ataku") : "";
+    const effectRoll = rollButton(effectDiceExpression(description), `${name}: efekt`, "Rzut efektu");
+    return `<div class="spell"><div><span class="tag level">${translateGameText(spell.levelLabel)}</span></div><strong>${translateGameText(name)}</strong><div class="desc">${translateGameText(description)}<div class="spell-rolls">${attackRoll}${effectRoll}</div></div></div>`;
   }).join("");
 }
 
@@ -225,10 +264,13 @@ function resourceList(character){
   if (!character.resources?.length) return `<div class="note">Brak osobnej puli zasobów do śledzenia.</div>`;
   return `<div class="resource-grid">${character.resources.map((resource, index) => {
     const key = `${character.id}:resource:${index}`;
+    const name = reskinOnlyName(resource.name);
+    const current = resource.max !== null && resource.max !== undefined ? getCounter(key, resource.max) : null;
+    const expression = effectDiceExpression(resource.description) || diceExpression(resource.unit);
     const counter = resource.max !== null && resource.max !== undefined
-      ? `<div class="counter"><button data-counter-key="${key}" data-max="${resource.max}" data-delta="-1">−</button><span class="value" id="${safeId(key)}">${getCounter(key, resource.max)} / ${resource.max}${resource.unit ? ` ${translateGameText(resource.unit)}` : ""}</span><button data-counter-key="${key}" data-max="${resource.max}" data-delta="1">+</button></div>`
+      ? `<div class="resource-controls"><button class="use-resource" data-counter-key="${key}" data-counter-label="${escapeAttr(name)}" data-max="${resource.max}" data-delta="-1" ${expression ? `data-roll="${expression}" data-roll-label="${escapeAttr(name)}"` : ""} ${current <= 0 ? "disabled" : ""}>${expression ? "Użyj i wybierz rzut" : "Użyj"}</button><div class="counter"><button data-counter-key="${key}" data-counter-label="${escapeAttr(name)}" data-max="${resource.max}" data-delta="-1" ${current <= 0 ? "disabled" : ""}>−</button><span class="value" id="${safeId(key)}">${current} / ${resource.max}${resource.unit ? ` ${translateGameText(resource.unit)}` : ""}</span><button data-counter-key="${key}" data-counter-label="${escapeAttr(name)}" data-max="${resource.max}" data-delta="1" ${current >= resource.max ? "disabled" : ""}>+</button></div></div>`
       : "";
-    return `<div class="resource"><div class="resource-top"><h4>${reskinOnlyName(resource.name)}</h4><span class="recharge">${translateGameText(resource.recharge || "")}</span></div><p>${translateGameText(resource.description || "")}</p>${counter}</div>`;
+    return `<div class="resource"><div class="resource-top"><h4>${name}</h4><span class="recharge">${translateGameText(resource.recharge || "")}</span></div><p>${translateGameText(resource.description || "")}</p>${counter}</div>`;
   }).join("")}</div>`;
 }
 
@@ -236,7 +278,9 @@ function spellSlotList(character){
   if (!character.spellSlotsDetailed?.length) return `<div class="note">Ta postać nie korzysta z komórek mocy.</div>`;
   return `<div class="slot-grid">${character.spellSlotsDetailed.map(slot => {
     const key = `${character.id}:slot:${slot.level}`;
-    return `<div class="slot"><strong>Komórki mocy ${slot.level}. poziomu</strong><small>${translateGameText(slot.recharge)}</small><div class="counter"><button data-counter-key="${key}" data-max="${slot.max}" data-delta="-1">−</button><span class="value" id="${safeId(key)}">${getCounter(key, slot.max)} / ${slot.max}</span><button data-counter-key="${key}" data-max="${slot.max}" data-delta="1">+</button></div></div>`;
+    const label = `Komórki mocy ${slot.level}. poziomu`;
+    const current = getCounter(key, slot.max);
+    return `<div class="slot"><strong>${label}</strong><small>${translateGameText(slot.recharge)}</small><button class="use-resource" data-counter-key="${key}" data-counter-label="${label}" data-max="${slot.max}" data-delta="-1" ${current <= 0 ? "disabled" : ""}>Użyj komórki</button><div class="counter"><button data-counter-key="${key}" data-counter-label="${label}" data-max="${slot.max}" data-delta="-1" ${current <= 0 ? "disabled" : ""}>−</button><span class="value" id="${safeId(key)}">${current} / ${slot.max}</span><button data-counter-key="${key}" data-counter-label="${label}" data-max="${slot.max}" data-delta="1" ${current >= slot.max ? "disabled" : ""}>+</button></div></div>`;
   }).join("")}</div>`;
 }
 
@@ -261,34 +305,138 @@ function backgroundCard(character, rules){
   return card("Przeszłość", `<div class="feature"><h4>${backgroundName(character.background)}</h4><p>${translateGameText(desc)}</p></div>`, true);
 }
 
+function historyList(characterId) {
+  const history = getHistory(characterId);
+  if (!history.length) return `<div class="note">Historia pojawi się po zużyciu zasobu, zmianie PW albo odpoczynku.</div>`;
+  return `<ol class="history-list">${history.slice(0, 12).map(item => {
+    const date = new Date(item.at);
+    const time = Number.isNaN(date.getTime()) ? "" : date.toLocaleString("pl-PL", { day:"2-digit", month:"2-digit", hour:"2-digit", minute:"2-digit" });
+    return `<li><span class="history-dot ${item.kind || "change"}"></span><div><strong>${item.label}</strong><small>${item.detail || ""}</small></div><time>${time}</time></li>`;
+  }).join("")}</ol>`;
+}
+
+function combatTracker(character, rules) {
+  const maxHp = hp(character, rules);
+  const currentHp = getValue(`${character.id}:hp`, maxHp, 0, maxHp);
+  const temporaryHp = getValue(`${character.id}:temp-hp`, 0, 0, 999);
+  return `<section class="combat-dashboard card full">
+    <div class="health-block">
+      <div class="health-title"><span>Punkty wytrzymałości</span><strong id="currentHpValue">${currentHp}</strong><b>/ ${maxHp}</b></div>
+      <div class="health-bar"><i id="healthBar" style="width:${Math.round(currentHp / maxHp * 100)}%"></i></div>
+      <div class="health-actions"><button data-hp-delta="-5">−5</button><button data-hp-delta="-1">−1</button><button data-hp-delta="1">+1</button><button data-hp-delta="5">+5</button></div>
+    </div>
+    <div class="temp-hp-block"><span>Tymczasowe PW</span><strong id="tempHpValue">${temporaryHp}</strong><div class="health-actions"><button data-temp-hp-delta="-1">−</button><button data-temp-hp-delta="1">+</button></div></div>
+    <div class="combat-facts"><div><span>KP</span><strong>${character.ac}</strong></div><div><span>Inicjatywa</span><strong>${fmt(initiative(character))}</strong><button class="mini-roll" data-roll="1d20${initiative(character) >= 0 ? "+" : ""}${initiative(character)}" data-roll-label="${escapeAttr(character.name)}: inicjatywa">Rzuć</button></div><div><span>Szybkość</span><strong>${character.speed} stóp</strong></div></div>
+  </section>`;
+}
+
+function setView(view) {
+  activeView = view;
+  document.querySelectorAll("[data-view-panel]").forEach(panel => { panel.hidden = panel.dataset.viewPanel !== view; });
+  document.querySelectorAll("[data-view]").forEach(button => button.classList.toggle("active", button.dataset.view === view));
+}
+
+export function restCharacter(character, rules, type) {
+  let restored = 0;
+  character.resources?.forEach((resource, index) => {
+    if (resource.max === null || resource.max === undefined) return;
+    const recharge = String(resource.recharge || "").toLowerCase();
+    if (type === "long" || recharge.includes("short") || recharge.includes("krót")) {
+      const key = `${character.id}:resource:${index}`;
+      if (getCounter(key, resource.max) !== resource.max) restored += 1;
+      setCounter(key, resource.max, resource.max);
+    }
+  });
+  character.spellSlotsDetailed?.forEach(slot => {
+    const recharge = String(slot.recharge || "").toLowerCase();
+    if (type === "long" || recharge.includes("short") || recharge.includes("krót")) {
+      const key = `${character.id}:slot:${slot.level}`;
+      if (getCounter(key, slot.max) !== slot.max) restored += 1;
+      setCounter(key, slot.max, slot.max);
+    }
+  });
+  if (type === "long") {
+    setValue(`${character.id}:hp`, hp(character, rules), 0, hp(character, rules));
+    setValue(`${character.id}:temp-hp`, 0, 0, 999);
+  }
+  const detail = type === "long"
+    ? `Przywrócono pełne PW i odnowiono ${restored} pul(e) zasobów.`
+    : restored ? `Odnowiono ${restored} pul(e) zasobów.` : "Wszystkie odpowiednie zasoby były pełne.";
+  addHistory(character.id, { kind:"rest", label: type === "long" ? "Długi odpoczynek" : "Krótki odpoczynek", detail });
+}
+
 export function renderCharacter(character, rules, heroEl, contentEl){
-  heroEl.innerHTML = `<div class="eyebrow">${character.group} • poziom 5 • 6500 PD</div><h2>${character.name}</h2><div class="real">${character.realName}</div><div class="chips"><span class="chip">Pochodzenie: ${character.race}</span><span class="chip">${className(character.cls)} 5</span><span class="chip">${subclassName(character.subclass)}</span>${character.team ? `<span class="chip">${character.team}</span>` : ""}<span class="chip">${alignmentName(character.alignment)}</span></div><div class="stats">${ABILITIES.map(a => `<div class="stat"><div class="lab">${rules.abilityPL[a]}</div><div class="score">${character.stats[a]}</div><div class="mod">${fmt(mod(character.stats[a]))}</div></div>`).join("")}</div><div class="quick"><div class="q"><span>KP</span><strong>${character.ac}</strong></div><div class="q"><span>PW</span><strong>${hp(character, rules)}</strong></div><div class="q"><span>Szybkość</span><strong>${character.speed} stóp</strong></div><div class="q"><span>Inicjatywa</span><strong>${fmt(initiative(character))}</strong></div><div class="q"><span>Biegłość</span><strong>+3</strong></div><div class="q"><span>Kości wytrzymałości</span><strong>5k${rules.hitdie[character.cls]}</strong></div></div>`;
-  const saves = ABILITIES.map(a => [rules.abilityPL[a], `${fmt(saveBonus(character,a))}${character.saveProfs.includes(a) ? " • biegłość" : ""}`]);
-  contentEl.innerHTML =
-    card("Rzuty obronne", rows(saves)) +
-    card("Wartości pasywne", rows([["Pasywna czujność",passive(character,"Perception",rules)],["Pasywna analiza",passive(character,"Investigation",rules)],["Pasywne profilowanie",passive(character,"Insight",rules)]])) +
-    card("Umiejętności", skillTable(character,rules), true) +
-    card("Zasoby", resourceList(character), true) +
-    card("Komórki mocy", spellSlotList(character), true) +
-    backgroundCard(character, rules) +
-    card("Pochodzenie i cechy wrodzone", features(character.originFeatures), true) +
-    card("Cechy bohatera", features(character.classFeaturesDetailed), true) +
-    card("Specjalizacja", features(character.subclassFeaturesDetailed), true) +
-    card("Atuty", featList(character)) +
-    card("Moce i wyposażenie", character.marvel?.length ? character.marvel.map(x => `<div class="feature"><h4>${reskinOnlyName(x[0])} <span class="tag">zasada własna</span></h4><p>${translateGameText(x[1])}</p></div>`).join("") : `<div class="note">Brak dodatkowych zasad własnych.</div>`) +
-    card("Ataki", attackList(character), true) +
-    card("Moce aktywne", spellList(character), true) +
-    card("Biegłości i informacje", rows(profRows(character,rules)), true);
+  const maxHp = hp(character, rules);
+  const currentHp = getValue(`${character.id}:hp`, maxHp, 0, maxHp);
+  heroEl.innerHTML = `<div class="eyebrow">${character.group} • poziom 5 • 6500 PD</div><h2>${character.name}</h2><div class="real">${character.realName}</div><div class="chips"><span class="chip">Pochodzenie: ${character.race}</span><span class="chip">${className(character.cls)} 5</span><span class="chip">${subclassName(character.subclass)}</span>${character.team ? `<span class="chip">${character.team}</span>` : ""}<span class="chip">${alignmentName(character.alignment)}</span></div><div class="stats">${ABILITIES.map(a => `<button class="stat rollable-stat" data-roll="1d20${mod(character.stats[a]) >= 0 ? "+" : ""}${mod(character.stats[a])}" data-roll-label="${escapeAttr(character.name)}: ${rules.abilityPL[a]}"><span class="lab">${rules.abilityPL[a]}</span><span class="score">${character.stats[a]}</span><span class="mod">${fmt(mod(character.stats[a]))}</span></button>`).join("")}</div><div class="quick"><div class="q"><span>KP</span><strong>${character.ac}</strong></div><div class="q hp-summary"><span>PW</span><strong>${currentHp} / ${maxHp}</strong></div><div class="q"><span>Szybkość</span><strong>${character.speed} stóp</strong></div><div class="q"><span>Inicjatywa</span><strong>${fmt(initiative(character))}</strong></div><div class="q"><span>Biegłość</span><strong>+3</strong></div><div class="q"><span>Kości wytrzymałości</span><strong>5k${rules.hitdie[character.cls]}</strong></div></div>`;
+  const saves = ABILITIES.map(a => {
+    const bonus = saveBonus(character, a);
+    return [rules.abilityPL[a], `${fmt(bonus)}${character.saveProfs.includes(a) ? " • biegłość" : ""}`, `1d20${bonus >= 0 ? "+" : ""}${bonus}`];
+  });
+  contentEl.innerHTML = `<div class="view-grid" data-view-panel="combat">
+      ${combatTracker(character, rules)}
+      ${card("Ataki", attackList(character), true)}
+      ${card("Zasoby", resourceList(character), true)}
+      ${card("Komórki mocy", spellSlotList(character), true)}
+      ${card("Moce aktywne", spellList(character, rules), true)}
+      ${card("Historia użycia", `<div id="resourceHistory">${historyList(character.id)}</div>`, true)}
+    </div>
+    <div class="view-grid" data-view-panel="abilities">
+      ${card("Pochodzenie i cechy wrodzone", features(character.originFeatures), true)}
+      ${card("Cechy bohatera", features(character.classFeaturesDetailed), true)}
+      ${card("Specjalizacja", features(character.subclassFeaturesDetailed), true)}
+      ${card("Atuty", featList(character))}
+      ${card("Moce i wyposażenie", character.marvel?.length ? character.marvel.map(x => { const name = reskinOnlyName(x[0]); return `<div class="feature"><h4>${name} <span class="tag">zasada własna</span></h4><p>${translateGameText(x[1])}</p>${rollButton(effectDiceExpression(x[1]), name)}</div>`; }).join("") : `<div class="note">Brak dodatkowych zasad własnych.</div>`)}
+    </div>
+    <div class="view-grid" data-view-panel="sheet">
+      ${card("Rzuty obronne", rollableRows(saves))}
+      ${card("Wartości pasywne", rows([["Pasywna czujność",passive(character,"Perception",rules)],["Pasywna analiza",passive(character,"Investigation",rules)],["Pasywne profilowanie",passive(character,"Insight",rules)]]))}
+      ${card("Umiejętności", skillTable(character,rules), true)}
+      ${backgroundCard(character, rules)}
+      ${card("Biegłości i informacje", rows(profRows(character,rules)), true)}
+    </div>`;
+
+  document.getElementById("gameTabs").querySelectorAll("[data-view]").forEach(button => button.onclick = () => setView(button.dataset.view));
+  setView(activeView);
+
+  const refreshHistory = () => { const target = document.getElementById("resourceHistory"); if (target) target.innerHTML = historyList(character.id); };
+
+  contentEl.querySelectorAll("[data-hp-delta], [data-temp-hp-delta]").forEach(button => {
+    button.addEventListener("click", () => {
+      const isTemp = button.hasAttribute("data-temp-hp-delta");
+      const delta = Number(isTemp ? button.dataset.tempHpDelta : button.dataset.hpDelta);
+      const key = `${character.id}:${isTemp ? "temp-hp" : "hp"}`;
+      const maximum = isTemp ? 999 : maxHp;
+      const before = getValue(key, isTemp ? 0 : maxHp, 0, maximum);
+      const next = setValue(key, before + delta, 0, maximum);
+      if (before === next) return;
+      addHistory(character.id, { kind: delta < 0 ? "spent" : "restored", label: isTemp ? "Tymczasowe PW" : "Punkty wytrzymałości", detail: `${before} → ${next}` });
+      document.getElementById(isTemp ? "tempHpValue" : "currentHpValue").textContent = next;
+      if (!isTemp) {
+        document.getElementById("healthBar").style.width = `${Math.round(next / maxHp * 100)}%`;
+        const summary = heroEl.querySelector(".hp-summary strong"); if (summary) summary.textContent = `${next} / ${maxHp}`;
+      }
+      refreshHistory();
+    });
+  });
 
   contentEl.querySelectorAll("[data-counter-key]").forEach(button => {
     button.addEventListener("click", () => {
       const key = button.dataset.counterKey;
       const max = Number(button.dataset.max);
       const delta = Number(button.dataset.delta);
-      const next = setCounter(key, max, getCounter(key,max) + delta);
+      const before = getCounter(key,max);
+      const next = setCounter(key, max, before + delta);
+      if (before === next) return;
       const target = document.getElementById(safeId(key));
       const resource = character.resources?.find((_,i) => `${character.id}:resource:${i}` === key);
       target.textContent = `${next} / ${max}${resource?.unit ? ` ${translateGameText(resource.unit)}` : ""}`;
+      contentEl.querySelectorAll(`[data-counter-key="${key}"]`).forEach(control => {
+        const controlDelta = Number(control.dataset.delta);
+        control.disabled = (controlDelta < 0 && next <= 0) || (controlDelta > 0 && next >= max);
+      });
+      addHistory(character.id, { kind: delta < 0 ? "spent" : "restored", label: button.dataset.counterLabel || "Zasób", detail: `${before} → ${next}` });
+      refreshHistory();
     });
   });
 }

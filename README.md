@@ -20,6 +20,7 @@ Fanowski zestaw interaktywnych kart bohaterów Marvela zbudowany jako w pełni s
 │   └── workflows/
 │       └── pages.yml
 ├── css/
+│   ├── game.css
 │   └── styles.css
 ├── data/
 │   ├── character.schema.json
@@ -33,6 +34,7 @@ Fanowski zestaw interaktywnych kart bohaterów Marvela zbudowany jako w pełni s
 ├── js/
 │   ├── app.js
 │   ├── data-loader.js
+│   ├── dice.js
 │   ├── render.js
 │   └── state.js
 ├── tools/
@@ -122,6 +124,12 @@ W skrócie: wrzuć repo na GitHub, wejdź w **Settings → Pages**, ustaw **Sour
 ## Dane gracza
 
 Liczniki HP/slotów/zasobów używają `localStorage`, więc są zapisywane w konkretnej przeglądarce. Nie są synchronizowane pomiędzy urządzeniami.
+
+## Tryb gry
+
+Widok **Walka** zbiera aktualne PW, tymczasowe PW, KP, inicjatywę, ataki, moce i zasoby. Zasób lub komórkę mocy zużywasz bezpośrednio przyciskiem **Użyj**. Zmiany PW oraz użycia zasobów są zapisywane w historii wraz z datą i godziną. Krótki i długi odpoczynek odnawiają właściwe pule automatycznie.
+
+Przy testach cech i umiejętności, rzutach obronnych, inicjatywie, atakach, mocach oraz zdolnościach aplikacja podpowiada właściwą kość i modyfikator. Gracz może wykonać rzut własnymi kośćmi albo uruchomić animowany rzut wirtualny. Przycisk **Kości** pozwala też przygotować dowolny rzut.
 
 ## Uwaga prawna
 

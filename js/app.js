@@ -2,8 +2,9 @@ import "./mechanics-pl-extra.js";
 import "./mechanics-pl-final.js";
 import { loadRules, loadCharacterRegistry, loadAllCharacters } from "./data-loader.js";
 import { resetCharacterCounters } from "./state.js";
-import { renderCharacter } from "./render.js";
+import { renderCharacter, restCharacter } from "./render.js";
 import { cleanupRenderedCard } from "./post-render-cleanup.js";
+import { initDiceRoller } from "./dice.js";
 
 const heroEl = document.getElementById("hero");
 const contentEl = document.getElementById("content");
@@ -76,5 +77,18 @@ document.getElementById("resetBtn").addEventListener("click", () => {
   resetCharacterCounters(activeCharacterId);
   selectCharacter(activeCharacterId);
 });
+document.getElementById("shortRestBtn").addEventListener("click", () => {
+  const character = characters.find(c => c.id === activeCharacterId);
+  if (!character) return;
+  restCharacter(character, rules, "short");
+  selectCharacter(activeCharacterId);
+});
+document.getElementById("longRestBtn").addEventListener("click", () => {
+  const character = characters.find(c => c.id === activeCharacterId);
+  if (!character) return;
+  restCharacter(character, rules, "long");
+  selectCharacter(activeCharacterId);
+});
 
+initDiceRoller();
 init();
