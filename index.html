@@ -6,6 +6,7 @@
 <title>Marvel D&D 5e – Karty bohaterów</title>
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/game.css">
+<link rel="stylesheet" href="vendor/css-dice-roller/style.css">
 </head>
 <body>
 <div class="app">
@@ -39,7 +40,7 @@
       <div class="dice-canvas" id="diceBox" hidden></div>
       <div class="dice-fallback" id="diceFallback"></div>
     </div>
-    <div class="dice-result" id="diceResult" aria-live="polite"></div>
+    <div class="dice-roll-summary" id="diceResult" aria-live="polite"></div>
     <div class="dice-mode-actions" id="diceModeActions">
       <button type="button" class="manual-roll" id="manualRollBtn">Rzucam ręcznie</button>
       <button type="button" class="virtual-roll primary" id="virtualRollBtn">Rzut wirtualny</button>
@@ -55,6 +56,6 @@
     </details>
   </form>
 </dialog>
-<script type="module" src="js/app.js?v=3d-4"></script>
+<script type="module" src="js/app.js?v=css-1"></script>
 </body>
 </html>
