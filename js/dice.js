@@ -1,3 +1,5 @@
+import DiceBox from "../vendor/dice-box/dice-box-threejs.es.js";
+
 const DICE_RE = /(\d*)[dk](\d+)(?:\s*([+-])\s*(\d+))?/i;
 
 function parseExpression(value) {
@@ -14,11 +16,8 @@ function formatExpression({ count, sides, modifier }) {
   return `${count}k${sides}${modifier > 0 ? ` + ${modifier}` : modifier < 0 ? ` - ${Math.abs(modifier)}` : ""}`;
 }
 
-function randomDie(sides) {
-  const range = Math.floor(0x100000000 / sides) * sides;
-  const buffer = new Uint32Array(1);
-  do { crypto.getRandomValues(buffer); } while (buffer[0] >= range);
-  return (buffer[0] % sides) + 1;
+function libraryExpression({ count, sides, modifier }) {
+  return `${count}d${sides}${modifier > 0 ? `+${modifier}` : modifier < 0 ? `${modifier}` : ""}`;
 }
 
 export function initDiceRoller() {
@@ -32,32 +31,76 @@ export function initDiceRoller() {
   const virtual = document.getElementById("virtualRollBtn");
   let current = { count: 1, sides: 20, modifier: 0 };
   let currentLabel = "Własny rzut";
+  let diceBox;
+  let diceBoxReady;
+
+  function ensureDiceBox() {
+    if (!diceBoxReady) {
+      diceBox = new DiceBox("#diceCanvas", {
+        assetPath: new URL("../vendor/dice-box/", import.meta.url).href,
+        sounds: false,
+        shadows: true,
+        theme_surface: "green-felt",
+        theme_colorset: "white",
+        theme_customColorset: {
+          name: "Marvel",
+          foreground: "#f8fbff",
+          background: "#214a78",
+          outline: "#86c2ff",
+          texture: "none"
+        },
+        theme_material: "plastic",
+        onRollComplete: onRollComplete
+      });
+      diceBoxReady = diceBox.initialize().catch(error => {
+        diceBoxReady = undefined;
+        throw error;
+      });
+    }
+    return diceBoxReady;
+  }
 
   function prepare(expression, label = "Rzut kością") {
     current = parseExpression(expression) || { count: 1, sides: 20, modifier: 0 };
     currentLabel = label;
     title.textContent = label;
     instruction.textContent = `Rzuć ${formatExpression(current)}. Możesz użyć własnych kości albo wykonać rzut tutaj.`;
-    stage.innerHTML = "";
+    stage.classList.remove("is-rolling");
+    if (diceBox?.initialized) diceBox.clearDice();
     result.textContent = "";
     if (!dialog.open) dialog.showModal();
   }
 
   function showManual() {
-    stage.innerHTML = `<div class="manual-card"><strong>${formatExpression(current)}</strong><span>Rzuć ${current.count === 1 ? `kością k${current.sides}` : `${current.count} kośćmi k${current.sides}`} i ${current.modifier > 0 ? `dodaj ${current.modifier}` : current.modifier < 0 ? `odejmij ${Math.abs(current.modifier)}` : "nie dodawaj modyfikatora"}.</span></div>`;
+    stage.classList.remove("is-rolling");
+    if (diceBox?.initialized) diceBox.clearDice();
     result.textContent = "Rzut rozstrzygasz przy stole.";
   }
 
-  function rollVirtual() {
-    const rolls = Array.from({ length: current.count }, () => randomDie(current.sides));
-    stage.innerHTML = rolls.map((value, index) => `<div class="flying-die" style="--i:${index}" aria-label="Wynik ${value} na kości k${current.sides}"><span>k${current.sides}</span><strong>${value}</strong></div>`).join("");
-    result.textContent = "Kości lecą…";
-    window.setTimeout(() => {
-      const subtotal = rolls.reduce((sum, value) => sum + value, 0);
-      const total = subtotal + current.modifier;
-      result.innerHTML = `<span>${rolls.join(" + ")}${current.modifier ? ` ${current.modifier > 0 ? "+" : "−"} ${Math.abs(current.modifier)}` : ""}</span><strong>${total}</strong>`;
-      window.dispatchEvent(new CustomEvent("marvel:dice-roll", { detail: { label: currentLabel, expression: formatExpression(current), rolls, total } }));
-    }, 900);
+  function onRollComplete(data) {
+    const rolls = data.sets.flatMap(set => set.rolls.map(roll => roll.value));
+    result.innerHTML = `<span>${rolls.join(" + ")}${current.modifier ? ` ${current.modifier > 0 ? "+" : "−"} ${Math.abs(current.modifier)}` : ""}</span><strong>${data.total}</strong>`;
+    stage.classList.remove("is-rolling");
+    virtual.disabled = false;
+    window.dispatchEvent(new CustomEvent("marvel:dice-roll", {
+      detail: { label: currentLabel, expression: formatExpression(current), rolls, total: data.total }
+    }));
+  }
+
+  async function rollVirtual() {
+    virtual.disabled = true;
+    result.textContent = "Przygotowuję stół…";
+    stage.classList.add("is-rolling");
+    try {
+      await ensureDiceBox();
+      result.textContent = "Kości lecą…";
+      await diceBox.roll(libraryExpression(current));
+    } catch (error) {
+      console.error("Dice roller failed:", error);
+      stage.classList.remove("is-rolling");
+      virtual.disabled = false;
+      result.textContent = "Nie udało się uruchomić rzutu. Spróbuj ponownie albo rzuć ręcznie.";
+    }
   }
 
   launcher.addEventListener("click", () => prepare("1d20", "Własny rzut"));
