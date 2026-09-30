@@ -1,7 +1,6 @@
-import DiceBox from "https://unpkg.com/@3d-dice/dice-box@1.1.4/dist/dice-box.es.min.js";
-
 const DICE_RE = /(\d*)[dk](\d+)(?:\s*([+-])\s*(\d+))?/i;
 const DICE_COLOR = "#e23636";
+const DICE_BASE_URL = "https://unpkg.com/@3d-dice/dice-box@1.1.4/dist/";
 
 function parseExpression(value) {
   const match = String(value || "").replace(/\s/g, "").match(DICE_RE);
@@ -58,24 +57,26 @@ export function initDiceRoller() {
   async function getDiceBox() {
     if (!diceBoxPromise) {
       stage.classList.add("is-loading");
-      const box = new DiceBox({
-        container: "#diceBox",
-        origin: "",
-        assetPath: "https://unpkg.com/@3d-dice/dice-box@1.1.4/dist/assets/",
-        theme: "default",
-        themeColor: DICE_COLOR,
-        offscreen: true,
-        scale: 5,
-        gravity: 1.15,
-        throwForce: 6,
-        spinForce: 5,
-        lightIntensity: 1.2,
-        shadowTransparency: 0.72
-      });
-      diceBoxPromise = box.init().then(() => {
+      diceBoxPromise = (async () => {
+        const { default: DiceBox } = await import(`${DICE_BASE_URL}dice-box.es.min.js`);
+        const box = new DiceBox({
+          container: "#diceBox",
+          origin: DICE_BASE_URL,
+          assetPath: "assets/",
+          theme: "default",
+          themeColor: DICE_COLOR,
+          offscreen: false,
+          scale: 5,
+          gravity: 1.15,
+          throwForce: 6,
+          spinForce: 5,
+          lightIntensity: 1.2,
+          shadowTransparency: 0.72
+        });
+        await box.init();
         if (!surface.querySelector("canvas")) throw new Error("WebGL jest niedostępny.");
         return box;
-      }).catch(error => {
+      })().catch(error => {
         diceBoxPromise = undefined;
         throw error;
       }).finally(() => stage.classList.remove("is-loading"));
