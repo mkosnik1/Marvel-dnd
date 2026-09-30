@@ -72,7 +72,10 @@ export function initDiceRoller() {
         lightIntensity: 1.2,
         shadowTransparency: 0.72
       });
-      diceBoxPromise = box.init().then(() => {\n        if (!surface.querySelector("canvas")) throw new Error("WebGL jest niedostępny.");\n        return box;\n      }).catch(error => {
+      diceBoxPromise = box.init().then(() => {
+        if (!surface.querySelector("canvas")) throw new Error("WebGL jest niedostępny.");
+        return box;
+      }).catch(error => {
         diceBoxPromise = undefined;
         throw error;
       }).finally(() => stage.classList.remove("is-loading"));
