@@ -1,4 +1,7 @@
+import DiceBox from "https://unpkg.com/@3d-dice/dice-box@1.1.4/dist/dice-box.es.min.js";
+
 const DICE_RE = /(\d*)[dk](\d+)(?:\s*([+-])\s*(\d+))?/i;
+const DICE_COLOR = "#e23636";
 
 function parseExpression(value) {
   const match = String(value || "").replace(/\s/g, "").match(DICE_RE);
@@ -8,6 +11,10 @@ function parseExpression(value) {
     sides: Math.max(2, Math.min(100, Number(match[2]))),
     modifier: (match[3] === "-" ? -1 : 1) * Number(match[4] || 0)
   };
+}
+
+function notation({ count, sides, modifier }) {
+  return `${count}d${sides}${modifier > 0 ? `+${modifier}` : modifier < 0 ? modifier : ""}`;
 }
 
 function formatExpression({ count, sides, modifier }) {
@@ -27,37 +34,93 @@ export function initDiceRoller() {
   const title = document.getElementById("diceTitle");
   const instruction = document.getElementById("diceInstruction");
   const stage = document.getElementById("diceStage");
+  const surface = document.getElementById("diceBox");
+  const fallback = document.getElementById("diceFallback");
   const result = document.getElementById("diceResult");
   const manual = document.getElementById("manualRollBtn");
   const virtual = document.getElementById("virtualRollBtn");
   let current = { count: 1, sides: 20, modifier: 0 };
   let currentLabel = "Własny rzut";
+  let diceBoxPromise;
+
+  function showSurface() {
+    surface.hidden = false;
+    fallback.hidden = true;
+  }
+
+  function showFallback(message, isError = false) {
+    surface.hidden = true;
+    fallback.hidden = false;
+    fallback.classList.toggle("error", isError);
+    fallback.innerHTML = message;
+  }
+
+  async function getDiceBox() {
+    if (!diceBoxPromise) {
+      stage.classList.add("is-loading");
+      const box = new DiceBox({
+        container: "#diceBox",
+        origin: "",
+        assetPath: "https://unpkg.com/@3d-dice/dice-box@1.1.4/dist/assets/",
+        theme: "default",
+        themeColor: DICE_COLOR,
+        offscreen: true,
+        scale: 5,
+        gravity: 1.15,
+        throwForce: 6,
+        spinForce: 5,
+        lightIntensity: 1.2,
+        shadowTransparency: 0.72
+      });
+      diceBoxPromise = box.init().then(() => box).catch(error => {
+        diceBoxPromise = undefined;
+        throw error;
+      }).finally(() => stage.classList.remove("is-loading"));
+    }
+    return diceBoxPromise;
+  }
 
   function prepare(expression, label = "Rzut kością") {
     current = parseExpression(expression) || { count: 1, sides: 20, modifier: 0 };
     currentLabel = label;
     title.textContent = label;
-    instruction.textContent = `Rzuć ${formatExpression(current)}. Możesz użyć własnych kości albo wykonać rzut tutaj.`;
-    stage.innerHTML = "";
+    instruction.textContent = `Rzuć ${formatExpression(current)}. Możesz użyć własnych kości albo wykonać rzut 3D tutaj.`;
+    showFallback(`<span class="dice-placeholder-icon">◈</span><span>Wybierz rzut ręczny albo uruchom kości 3D.</span>`);
     result.textContent = "";
     if (!dialog.open) dialog.showModal();
   }
 
   function showManual() {
-    stage.innerHTML = `<div class="manual-card"><strong>${formatExpression(current)}</strong><span>Rzuć ${current.count === 1 ? `kością k${current.sides}` : `${current.count} kośćmi k${current.sides}`} i ${current.modifier > 0 ? `dodaj ${current.modifier}` : current.modifier < 0 ? `odejmij ${Math.abs(current.modifier)}` : "nie dodawaj modyfikatora"}.</span></div>`;
+    showFallback(`<div class="manual-card"><strong>${formatExpression(current)}</strong><span>Rzuć ${current.count === 1 ? `kością k${current.sides}` : `${current.count} kośćmi k${current.sides}`} i ${current.modifier > 0 ? `dodaj ${current.modifier}` : current.modifier < 0 ? `odejmij ${Math.abs(current.modifier)}` : "nie dodawaj modyfikatora"}.</span></div>`);
     result.textContent = "Rzut rozstrzygasz przy stole.";
   }
 
-  function rollVirtual() {
-    const rolls = Array.from({ length: current.count }, () => randomDie(current.sides));
-    stage.innerHTML = rolls.map((value, index) => `<div class="flying-die" style="--i:${index}" aria-label="Wynik ${value} na kości k${current.sides}"><span>k${current.sides}</span><strong>${value}</strong></div>`).join("");
-    result.textContent = "Kości lecą…";
-    window.setTimeout(() => {
-      const subtotal = rolls.reduce((sum, value) => sum + value, 0);
-      const total = subtotal + current.modifier;
-      result.innerHTML = `<span>${rolls.join(" + ")}${current.modifier ? ` ${current.modifier > 0 ? "+" : "−"} ${Math.abs(current.modifier)}` : ""}</span><strong>${total}</strong>`;
-      window.dispatchEvent(new CustomEvent("marvel:dice-roll", { detail: { label: currentLabel, expression: formatExpression(current), rolls, total } }));
-    }, 900);
+  function publishResult(rolls, total) {
+    result.innerHTML = `<span>${rolls.join(" + ")}${current.modifier ? ` ${current.modifier > 0 ? "+" : "−"} ${Math.abs(current.modifier)}` : ""}</span><strong>${total}</strong>`;
+    window.dispatchEvent(new CustomEvent("marvel:dice-roll", { detail: { label: currentLabel, expression: formatExpression(current), rolls, total } }));
+  }
+
+  async function rollVirtual() {
+    virtual.disabled = true;
+    result.textContent = "Ładowanie stołu 3D…";
+    showSurface();
+    try {
+      const box = await getDiceBox();
+      result.textContent = "Kości lecą…";
+      await box.roll(notation(current), { themeColor: DICE_COLOR });
+      const groups = box.getRollResults();
+      const rolls = groups.flatMap(group => group.rolls.map(die => Number(die.value)));
+      const total = groups.reduce((sum, group) => sum + Number(group.value), 0);
+      publishResult(rolls, total);
+    } catch (error) {
+      console.error("Nie udało się uruchomić kości 3D", error);
+      const rolls = Array.from({ length: current.count }, () => randomDie(current.sides));
+      const total = rolls.reduce((sum, value) => sum + value, 0) + current.modifier;
+      showFallback("<strong>Tryb 3D jest niedostępny.</strong><span>Wynik został bezpiecznie wylosowany bez animacji.</span>", true);
+      publishResult(rolls, total);
+    } finally {
+      virtual.disabled = false;
+    }
   }
 
   launcher.addEventListener("click", () => prepare("1d20", "Własny rzut"));
