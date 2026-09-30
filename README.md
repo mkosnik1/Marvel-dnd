@@ -39,7 +39,6 @@ Fanowski zestaw interaktywnych kart bohaterów Marvela zbudowany jako w pełni s
 │   ├── rebuild_index.py
 │   └── validate.py
 ├── .gitignore
-├── .nojekyll
 ├── GITHUB_PAGES.md
 ├── index.html
 ├── start-server.bat
