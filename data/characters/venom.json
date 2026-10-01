@@ -160,14 +160,6 @@
       "description": "Bonus Action. +2 damage do ataków STR, Advantage na STR checks/saves i resistance na B/P/S.",
       "kind": "resource",
       "unit": "użycia"
-    },
-    {
-      "name": "Rage",
-      "max": 3,
-      "recharge": "Long Rest",
-      "description": "3 użycia na Long Rest.",
-      "kind": "resource",
-      "unit": "użycia"
     }
   ],
   "featDetails": [

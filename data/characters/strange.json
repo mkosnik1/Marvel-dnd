@@ -15,7 +15,7 @@
     "WIS": 15,
     "CHA": 10
   },
-  "ac": 14,
+  "ac": 11,
   "speed": 30,
   "saveProfs": [
     "INT",
@@ -159,7 +159,7 @@
       "flavorName": null,
       "level": 1,
       "levelLabel": "1. poziom",
-      "description": "AC = 13 + DEX modifier przez 8 godzin."
+      "description": "Action, komórka 1. poziomu. KP 14 (13 + ZR) przez 8 godzin; bez zaklęcia KP 11."
     },
     {
       "name": "Magic Missile",

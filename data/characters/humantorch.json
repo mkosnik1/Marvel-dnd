@@ -15,7 +15,7 @@
     "WIS": 10,
     "CHA": 16
   },
-  "ac": 15,
+  "ac": 12,
   "speed": 30,
   "saveProfs": [
     "CON",
@@ -38,7 +38,7 @@
     ],
     [
       "Nova Burst",
-      "Raz na Long Rest może rzucić Fireball bez spell slota. Po użyciu do końca następnej tury ma Disadvantage na Stealth z powodu płomieni."
+      "Nova Burst jest wizualną postacią Fireball. Wymaga Action i komórki 3. poziomu: punkt w 150 ft, promień 20 ft, DEX Save DC 14, 8d6 fire albo połowa przy sukcesie."
     ]
   ],
   "attacks": [
@@ -204,7 +204,7 @@
       "flavorName": "Nova Burst",
       "level": 3,
       "levelLabel": "3. poziom",
-      "description": "20-ft radius. DEX Save. 8d6 fire."
+      "description": "Action, komórka 3. poziomu, punkt w 150 ft, promień 20 ft. DEX Save DC 14: 8d6 fire przy porażce, połowa przy sukcesie."
     },
     {
       "name": "Fly",
@@ -244,14 +244,6 @@
       "max": 1,
       "recharge": "Long Rest",
       "description": "Masz 1 darmowe użycie Flame Blade bez zużywania spell slota. Użycie wraca po Long Rest.",
-      "kind": "resource",
-      "unit": "użycia"
-    },
-    {
-      "name": "Nova Burst",
-      "max": 1,
-      "recharge": "Long Rest",
-      "description": "Raz na Long Rest może rzucić Fireball bez spell slota. Po użyciu do końca następnej tury ma Disadvantage na Stealth z powodu płomieni.",
       "kind": "resource",
       "unit": "użycia"
     }

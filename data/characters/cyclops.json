@@ -36,7 +36,7 @@
   "marvel": [
     [
       "Optic Blast",
-      "Specjalna ranged weapon. Zadaje force damage, range 120/300. Może być używana z Extra Attack i Fighting Style: Archery."
+      "Specjalna ranged weapon. Zadaje force damage, range 120/300. Może być używana z Extra Attack i Fighting Style: Archery. Każde trafienie zadaje 1d10+3 force; Sharpshooter może zmienić atak na +3 i dodać +10 damage."
     ],
     [
       "Ricochet Beam",
@@ -47,7 +47,7 @@
     [
       "Optic Blast",
       "+8",
-      "2d8+3 force",
+      "1d10+3 force",
       "120/300 ft"
     ],
     [

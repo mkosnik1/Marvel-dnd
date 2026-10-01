@@ -35,7 +35,7 @@
   "marvel": [
     [
       "Regeneration",
-      "Na początku swojej tury, jeśli masz co najmniej 1 HP, odzyskujesz 2 HP. Raz na Long Rest, gdy spadasz do 0 HP, możesz natychmiast wrócić na 1 HP."
+      "Na początku swojej tury, jeśli masz od 1 HP do mniej niż połowy maximum HP, odzyskujesz 2 HP. Raz na Long Rest, gdy obrażenia sprowadzą cię do 0 HP, możesz zamiast tego pozostać na 1 HP, chyba że obrażenia zabijają cię od razu."
     ]
   ],
   "attacks": [
@@ -182,7 +182,7 @@
       "name": "Regeneration",
       "max": 1,
       "recharge": "Long Rest",
-      "description": "Na początku swojej tury, jeśli masz co najmniej 1 HP, odzyskujesz 2 HP. Raz na Long Rest, gdy spadasz do 0 HP, możesz natychmiast wrócić na 1 HP.",
+      "description": "Jedno użycie na Long Rest: gdy obrażenia sprowadzą cię do 0 HP, możesz zamiast tego pozostać na 1 HP, chyba że obrażenia zabijają cię od razu. Regeneracja 2 HP przy mniej niż połowie maksimum jest pasywna.",
       "kind": "resource",
       "unit": "użycia"
     }

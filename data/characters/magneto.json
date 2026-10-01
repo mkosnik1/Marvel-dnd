@@ -15,7 +15,7 @@
     "WIS": 13,
     "CHA": 18
   },
-  "ac": 13,
+  "ac": 10,
   "speed": 30,
   "saveProfs": [
     "CON",

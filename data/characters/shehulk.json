@@ -167,14 +167,6 @@
       "description": "Stone's Endurance: Reaction, redukcja 1d12 + Proficiency Bonus.",
       "kind": "resource",
       "unit": "użycia"
-    },
-    {
-      "name": "Rage",
-      "max": 3,
-      "recharge": "Long Rest",
-      "description": "3 użycia na Long Rest.",
-      "kind": "resource",
-      "unit": "użycia"
     }
   ],
   "featDetails": [
