@@ -15,7 +15,7 @@
     "WIS": 12,
     "CHA": 16
   },
-  "ac": 15,
+  "ac": 12,
   "speed": 30,
   "saveProfs": [
     "CON",
@@ -34,7 +34,7 @@
   "marvel": [
     [
       "Power Cosmic",
-      "Guiding Bolt: +6, 4d6 radiant na 120 ft. Ray of Frost: +6, 2d8 cold na 60 ft i -10 ft Speed celu do początku twojej następnej tury. Raz na Long Rest możesz stworzyć Cosmic Burst: DEX Save DC 14, 8d6 radiant w 20-ft radius, połowa przy sukcesie."
+      "Guiding Bolt: atak +6, 4d6 radiant za komórkę 1. poziomu. Ray of Frost: atak +6, 2d8 cold i -10 ft Speed. Cosmic Burst to wizualna postać Fireball: Action, komórka 3. poziomu, punkt w 150 ft, DEX Save DC 14, 8d6 fire w promieniu 20 ft, połowa przy sukcesie."
     ],
     [
       "Cosmic Board",
@@ -57,8 +57,8 @@
     [
       "Cosmic Burst",
       "DEX DC 14",
-      "8d6 radiant",
-      "20-ft radius, 1/LR"
+      "8d6 fire",
+      "150 ft, 20-ft radius; komórka 3. poziomu"
     ]
   ],
   "group": "Duże ziemniaczki",
@@ -201,10 +201,10 @@
     },
     {
       "name": "Fireball",
-      "flavorName": "Wybuch kosmicznej energii",
+      "flavorName": "Cosmic Burst",
       "level": 3,
       "levelLabel": "3. poziom",
-      "description": "Action, punkt w 150 ft, 20-ft radius. Każde stworzenie wykonuje DEX Save DC 14; otrzymuje 8d6 energy/fire przy porażce albo połowę przy sukcesie."
+      "description": "Action, komórka 3. poziomu, punkt w 150 ft, promień 20 ft. DEX Save DC 14: 8d6 fire przy porażce, połowa przy sukcesie. Kosmiczny wygląd nie zmienia typu obrażeń."
     },
     {
       "name": "Fly",

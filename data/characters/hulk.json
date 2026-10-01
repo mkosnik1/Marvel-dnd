@@ -34,7 +34,7 @@
   "marvel": [
     [
       "Hulk Smash",
-      "Melee attack +7. Trafienie zadaje 2d6+4 bludgeoning; podczas Rage 2d6+6. Dzięki Extra Attack wykonujesz dwa takie ataki w ramach jednej Attack Action."
+      "Melee attack +7. Trafienie zadaje 1d10+4 bludgeoning; podczas Rage 1d10+6. Dzięki Extra Attack wykonujesz dwa takie ataki w ramach jednej Attack Action."
     ],
     [
       "Gamma Leap",
@@ -45,7 +45,7 @@
     [
       "Hulk Smash",
       "+7",
-      "2d6+6 bludgeoning",
+      "1d10+6 bludgeoning",
       "w Rage"
     ],
     [
@@ -159,14 +159,6 @@
       "max": 3,
       "recharge": "Long Rest",
       "description": "Stone's Endurance: Reaction, redukcja 1d12 + Proficiency Bonus.",
-      "kind": "resource",
-      "unit": "użycia"
-    },
-    {
-      "name": "Rage",
-      "max": 3,
-      "recharge": "Long Rest",
-      "description": "3 użycia na Long Rest, +2 damage, resistance na B/P/S oraz Advantage na STR checks i saves.",
       "kind": "resource",
       "unit": "użycia"
     }

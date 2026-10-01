@@ -35,7 +35,7 @@
   "marvel": [
     [
       "Vibranium Suit",
-      "Redukuje otrzymywane bludgeoning, piercing lub slashing damage o 1d4. Raz na Short Rest po otrzymaniu obrażeń od celu w 10 ft zadaje mu thunder damage równy Proficiency Bonus."
+      "Reaction, raz na Short Rest, gdy otrzymujesz bludgeoning, piercing albo slashing damage od stworzenia w 10 ft, zmniejszasz te obrażenia o 1d4 i zadajesz temu stworzeniu thunder damage równy Proficiency Bonus."
     ]
   ],
   "attacks": [
@@ -190,7 +190,7 @@
       "name": "Vibranium Suit",
       "max": 1,
       "recharge": "Short Rest",
-      "description": "Redukuje otrzymywane bludgeoning, piercing lub slashing damage o 1d4. Raz na Short Rest po otrzymaniu obrażeń od celu w 10 ft zadaje mu thunder damage równy Proficiency Bonus.",
+      "description": "Reaction, raz na Short Rest, gdy otrzymujesz bludgeoning, piercing albo slashing damage od stworzenia w 10 ft, zmniejszasz te obrażenia o 1d4 i zadajesz temu stworzeniu thunder damage równy Proficiency Bonus.",
       "kind": "resource",
       "unit": "użycia"
     }

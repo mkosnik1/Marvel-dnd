@@ -160,14 +160,6 @@
       "description": "Relentless Endurance: po spadku do 0 HP zostajesz na 1 HP.",
       "kind": "resource",
       "unit": "użycia"
-    },
-    {
-      "name": "Rage",
-      "max": 3,
-      "recharge": "Long Rest",
-      "description": "3 użycia na Long Rest.",
-      "kind": "resource",
-      "unit": "użycia"
     }
   ],
   "featDetails": [

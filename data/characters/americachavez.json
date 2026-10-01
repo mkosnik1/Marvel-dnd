@@ -199,10 +199,10 @@
       "unit": "użycia"
     },
     {
-      "name": "Zaklęcie 1. poziomu z Fey Touched",
+      "name": "Bless z Fey Touched",
       "max": 1,
       "recharge": "Long Rest",
-      "description": "Jedno darmowe użycie bez slotu.",
+      "description": "Jedno darmowe użycie Bless bez komórki na Long Rest.",
       "kind": "resource",
       "unit": "użycia"
     },
@@ -219,14 +219,6 @@
       "max": 1,
       "recharge": "Short Rest",
       "description": "Raz na Short Rest po trafieniu unarmed strike może dodać 2d6 force.",
-      "kind": "resource",
-      "unit": "użycia"
-    },
-    {
-      "name": "Fey Touched",
-      "max": 1,
-      "recharge": "Long Rest",
-      "description": "Misty Step raz na Long Rest bez slotu.",
       "kind": "resource",
       "unit": "użycia"
     }
